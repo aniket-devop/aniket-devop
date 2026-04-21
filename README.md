@@ -1,6 +1,6 @@
-<!-- 🔥 ANIMATED DEVOPS HERO -->
+<!-- 🔥 PREMIUM DEVOPS HERO -->
 <p align="center">
-  <img src="https://media.giphy.com/media/SWoSkN6DxTszqIKEqv/giphy.gif" width="700"/>
+  <img src="https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif" width="700"/>
 </p>
 
 <h1 align="center">⚡ Aniket Kumar ⚡</h1>
@@ -25,6 +25,7 @@
 ## ⚡ Tech Arsenal
 
 <p align="center">
+
 <img src="https://skillicons.dev/icons?i=aws" height="55"/>
 <img src="https://skillicons.dev/icons?i=azure" height="55"/>
 <img src="https://skillicons.dev/icons?i=docker" height="55"/>
@@ -42,6 +43,7 @@
 
 <img src="https://skillicons.dev/icons?i=prometheus" height="55"/>
 <img src="https://skillicons.dev/icons?i=grafana" height="55"/>
+
 </p>
 
 ---
