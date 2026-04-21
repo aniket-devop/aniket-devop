@@ -1,6 +1,6 @@
 <!-- 🔥 ANIMATED DEVOPS HERO -->
 <p align="center">
-  <img src="https://media.giphy.com/media/juua9i2c2fA0AIp2iq/giphy.gif" width="600"/>
+  <img src="https://media.giphy.com/media/SWoSkN6DxTszqIKEqv/giphy.gif" width="700"/>
 </p>
 
 <h1 align="center">⚡ Aniket Kumar ⚡</h1>
@@ -25,7 +25,6 @@
 ## ⚡ Tech Arsenal
 
 <p align="center">
-
 <img src="https://skillicons.dev/icons?i=aws" height="55"/>
 <img src="https://skillicons.dev/icons?i=azure" height="55"/>
 <img src="https://skillicons.dev/icons?i=docker" height="55"/>
@@ -43,7 +42,6 @@
 
 <img src="https://skillicons.dev/icons?i=prometheus" height="55"/>
 <img src="https://skillicons.dev/icons?i=grafana" height="55"/>
-
 </p>
 
 ---
@@ -72,7 +70,7 @@
 ## 🎓 Training
 
 <p align="center">
-📚 <b>TrainWithShubham (24 Jan 2026 – 24 May 2026)</b><br>
+📚 <b>TrainWithShubham</b><br>
 🚀 Hands-on DevOps projects & cloud deployments
 </p>
 
@@ -83,14 +81,6 @@
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=aniket-devop&show_icons=true&theme=radical" height="150"/>
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=aniket-devop&theme=radical" height="150"/>
-</p>
-
----
-
-## 🐍 Contribution Snake
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/aniket-devop/aniket-devop/output/github-contribution-grid-snake.svg"/>
 </p>
 
 ---
