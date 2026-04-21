@@ -85,15 +85,11 @@
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=aniket-devop&theme=radical" height="150"/>
 </p>
 
----
-
-## 🐍 Contribution Snake
+<h2 align="center">🐍 Contribution Snake</h2>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/aniket-devop/aniket-devop/output/github-contribution-grid-snake.svg"/>
+  <img src="https://raw.githubusercontent.com/aniket-devop/aniket-devop/output/snake.svg"/>
 </p>
-
----
 
 ## 🌐 Connect
 
