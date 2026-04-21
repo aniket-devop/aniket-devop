@@ -51,11 +51,10 @@
 
 ### 🌐 Connect with me:
 <p align="center">
-  <a href="https://www.linkedin.com/in/YOUR-LINK">
+  <a href="https://www.linkedin.com/in/aniket484">
     <img src="https://img.shields.io/badge/LinkedIn-blue?logo=linkedin" />
   </a>
 </p>
-
 ---
 
 <!-- 🌐 Connect -->
