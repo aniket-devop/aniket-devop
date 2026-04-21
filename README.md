@@ -90,7 +90,7 @@
 ## 🚀 DevOps in Action
 
 <p align="center">
-  <img src="https://media.giphy.com/media/coxQHKASG60HrHtvkt/giphy.gif" width="500"/>
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=25&pause=1000&color=00C2FF&center=true&vCenter=true&width=750&lines=CI%2FCD+Pipeline+Automation;Terraform+Infrastructure+Provisioning;Kubernetes+Container+Orchestration;Cloud+Monitoring+%26+Observability;Secure+DevSecOps+Workflows" />
 </p>
 
 ---
