@@ -1,19 +1,23 @@
-<h1 align="center">Enjoy your time 🚀</h1>
+<h1 align="center">Enjoy your time 💙</h1>
 
 <p align="center">
 Hey, My name is <b>Aniket Kumar</b> and I am passionate about building 
-<strong>secure, scalable and automated cloud systems</strong>.  
-I work with DevOps & DevSecOps tools to improve software delivery,  
-optimize workflows and implement security best practices. ⚡
+<strong>secure, scalable and efficient DevOps systems</strong>.  
+I focus on cloud computing, automation and DevSecOps practices to improve  
+software delivery and system reliability. 🚀
 </p>
 
 ---
 
-## 📊 GitHub Stats
+## 📊 GitHub Overview
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=aniket-devop&show_icons=true&theme=tokyonight" height="150"/>
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=aniket-devop&theme=tokyonight" height="150"/>
+</p>
+
+<p align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=aniket-devop&theme=tokyonight" />
 </p>
 
 ---
@@ -21,16 +25,14 @@ optimize workflows and implement security best practices. ⚡
 ## ⚡ Skills
 
 <p align="center">
-  
-<img src="https://skillicons.dev/icons?i=linux" />
-<img src="https://skillicons.dev/icons?i=aws" />
-<img src="https://skillicons.dev/icons?i=azure" />
-<img src="https://skillicons.dev/icons?i=docker" />
-<img src="https://skillicons.dev/icons?i=kubernetes" />
-<img src="https://skillicons.dev/icons?i=terraform" />
-<img src="https://skillicons.dev/icons?i=githubactions" />
-<img src="https://skillicons.dev/icons?i=git" />
-
+  <img src="https://skillicons.dev/icons?i=linux" />
+  <img src="https://skillicons.dev/icons?i=aws" />
+  <img src="https://skillicons.dev/icons?i=azure" />
+  <img src="https://skillicons.dev/icons?i=docker" />
+  <img src="https://skillicons.dev/icons?i=kubernetes" />
+  <img src="https://skillicons.dev/icons?i=terraform" />
+  <img src="https://skillicons.dev/icons?i=githubactions" />
+  <img src="https://skillicons.dev/icons?i=git" />
 </p>
 
 ---
@@ -38,11 +40,9 @@ optimize workflows and implement security best practices. ⚡
 ## 🔐 DevSecOps
 
 <p align="center">
-
-<img src="https://img.shields.io/badge/Trivy-Container%20Security-blue?style=for-the-badge" />
-<img src="https://img.shields.io/badge/SonarQube-Code%20Analysis-green?style=for-the-badge" />
-<img src="https://img.shields.io/badge/Checkov-IaC%20Security-purple?style=for-the-badge" />
-
+  <img src="https://img.shields.io/badge/Trivy-Container%20Security-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/SonarQube-Code%20Analysis-green?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Checkov-IaC%20Security-purple?style=for-the-badge" />
 </p>
 
 ---
@@ -50,9 +50,7 @@ optimize workflows and implement security best practices. ⚡
 ## 🚀 GitOps
 
 <p align="center">
-
-<img src="https://img.shields.io/badge/ArgoCD-GitOps-orange?style=for-the-badge" />
-
+  <img src="https://img.shields.io/badge/ArgoCD-GitOps-orange?style=for-the-badge" />
 </p>
 
 ---
@@ -60,11 +58,9 @@ optimize workflows and implement security best practices. ⚡
 ## 📊 Monitoring & Observability
 
 <p align="center">
-
-<img src="https://img.shields.io/badge/Prometheus-Monitoring-red?style=for-the-badge" />
-<img src="https://img.shields.io/badge/Grafana-Dashboards-orange?style=for-the-badge" />
-<img src="https://img.shields.io/badge/OpenTelemetry-Observability-blue?style=for-the-badge" />
-
+  <img src="https://img.shields.io/badge/Prometheus-Monitoring-red?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Grafana-Dashboards-orange?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/OpenTelemetry-Observability-blue?style=for-the-badge" />
 </p>
 
 ---
