@@ -87,7 +87,15 @@
 
 ---
 
-<img src="https://github.com/Platane/snk/raw/output/github-contribution-grid-snake.svg"/>
+<h2 align="center">🐍 Contribution Snake</h2>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/aniket-devop/aniket-devop/output/snake.gif" />
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/aniket-devop/aniket-devop/output/snake-dark.gif" />
+</p>
 
 ## 🌐 Connect
 
