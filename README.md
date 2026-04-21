@@ -90,7 +90,7 @@
 ## 🚀 DevOps in Action
 
 <p align="center">
-  <img src="https://media.giphy.com/media/3o7aCTfyhYawdOXcFW/giphy.gif" width="500"/>
+  <img src="https://media.giphy.com/media/l3vR85PnGsBwu1PFK/giphy.gif" width="550"/>
 </p>
 
 ---
