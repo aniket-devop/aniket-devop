@@ -1,12 +1,17 @@
-<!-- 🔥 DEVOPS ANIMATED BANNER -->
+<!-- 🔥 DEVOPS ANIMATED GIF -->
 <p align="center">
-  <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="500"/>
+  <img src="https://media.giphy.com/media/kH1DBkPNyZPOk0BxrM/giphy.gif" width="500"/>
 </p>
 
-<h2 align="center">Hi 👋 I'm Aniket</h2>
+<h1 align="center">Hi 👋, I'm Aniket</h1>
 
 <p align="center">
-🚀 DevOps & DevSecOps Engineer | Cloud • Security • Automation • Observability
+🚀 DevOps & DevSecOps • Cloud • Automation • Observability
+</p>
+
+<p align="center">
+  <a href="mailto:aniketkmr484@gmail.com">📧 Email</a> •
+  <a href="https://www.linkedin.com/in/aniket484">🔗 LinkedIn</a>
 </p>
 
 ---
@@ -14,8 +19,8 @@
 ## 👨‍💻 About Me
 
 <p align="center">
-I build <b>secure, scalable and automated cloud systems</b><br>
-using DevOps, DevSecOps & Cloud technologies ⚡
+I build <b>secure, scalable and automated cloud systems</b> using modern DevOps & DevSecOps practices ⚡<br>
+Focused on CI/CD, Cloud Infrastructure, Security and Observability 🚀
 </p>
 
 ---
@@ -24,34 +29,52 @@ using DevOps, DevSecOps & Cloud technologies ⚡
 
 <p align="center">
 
-<!-- ROW 1 -->
-<img src="https://cdn.simpleicons.org/amazonaws/white" height="50"/>
-<img src="https://cdn.simpleicons.org/microsoftazure/0078D4" height="50"/>
-<img src="https://cdn.simpleicons.org/docker/2496ED" height="50"/>
-<img src="https://cdn.simpleicons.org/kubernetes/326CE5" height="50"/>
-<img src="https://cdn.simpleicons.org/terraform/7B42BC" height="50"/>
+<img src="https://skillicons.dev/icons?i=aws" />
+<img src="https://skillicons.dev/icons?i=azure" />
+<img src="https://skillicons.dev/icons?i=docker" />
+<img src="https://skillicons.dev/icons?i=kubernetes" />
+<img src="https://skillicons.dev/icons?i=terraform" />
 
 <br><br>
 
-<!-- ROW 2 -->
-<img src="https://cdn.simpleicons.org/githubactions/2088FF" height="50"/>
-<img src="https://cdn.simpleicons.org/linux/FCC624" height="50"/>
-<img src="https://cdn.simpleicons.org/git/F05032" height="50"/>
-<img src="https://cdn.simpleicons.org/ansible/EE0000" height="50"/>
+<img src="https://skillicons.dev/icons?i=githubactions" />
+<img src="https://skillicons.dev/icons?i=linux" />
+<img src="https://skillicons.dev/icons?i=git" />
+<img src="https://skillicons.dev/icons?i=ansible" />
 
 <br><br>
 
-<!-- ROW 3 -->
-<img src="https://cdn.simpleicons.org/sonarqube/4E9BCD" height="50"/>
-<img src="https://cdn.simpleicons.org/prometheus/E6522C" height="50"/>
-<img src="https://cdn.simpleicons.org/grafana/F46800" height="50"/>
-<img src="https://cdn.simpleicons.org/opentelemetry/000000" height="50"/>
+<img src="https://skillicons.dev/icons?i=prometheus" />
+<img src="https://skillicons.dev/icons?i=grafana" />
 
-<br><br>
+</p>
 
-<!-- ROW 4 -->
-<img src="https://cdn.simpleicons.org/argo/EF7B4D" height="50"/>
+---
 
+## 🔐 DevSecOps
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Trivy-Container%20Security-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/SonarQube-Code%20Analysis-green?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Checkov-IaC%20Security-purple?style=for-the-badge" />
+</p>
+
+---
+
+## 🚀 GitOps
+
+<p align="center">
+  <img src="https://img.shields.io/badge/ArgoCD-GitOps-orange?style=for-the-badge" />
+</p>
+
+---
+
+## 📊 Monitoring & Observability
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Prometheus-Monitoring-red?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Grafana-Dashboards-orange?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/OpenTelemetry-Observability-blue?style=for-the-badge" />
 </p>
 
 ---
@@ -65,19 +88,14 @@ using DevOps, DevSecOps & Cloud technologies ⚡
 
 ---
 
-## 🌐 Connect
+## 📈 Contribution Activity
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/aniket484">
-    <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin"/>
-  </a>
-  <a href="mailto:aniketkmr484@gmail.com">
-    <img src="https://img.shields.io/badge/Email-red?style=for-the-badge&logo=gmail"/>
-  </a>
+  <img src="https://github.com/aniket-devop/aniket-devop/blob/output/github-contribution-grid-snake.svg" />
 </p>
 
 ---
 
 <p align="center">
-🔥 <b>Automate • Secure • Scale</b>
+🔥 <b>Automate • Secure • Monitor</b>
 </p>
