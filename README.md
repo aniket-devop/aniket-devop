@@ -1,13 +1,11 @@
-<!-- 🔥 DEVOPS ANIMATED GIF -->
+<!-- 🔥 HERO BANNER -->
 <p align="center">
-  <img src="https://media.giphy.com/media/kH1DBkPNyZPOk0BxrM/giphy.gif" width="500"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,100:2c5364&height=220&section=header&text=Aniket%20Kumar&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=35"/>
 </p>
 
-<h1 align="center">Hi 👋, I'm Aniket Kumar</h1>
-
-<p align="center">
-🚀 DevOps & DevSecOps Engineer | Cloud • Security • Automation • Observability
-</p>
+<h3 align="center">
+🚀 DevOps & DevSecOps • Cloud • Automation • Observability
+</h3>
 
 <p align="center">
   <a href="mailto:aniketkmr484@gmail.com">📧 Email</a> •
@@ -19,8 +17,8 @@
 ## 👨‍💻 About Me
 
 <p align="center">
-I build <b>secure, scalable and automated cloud systems</b> using DevOps & DevSecOps practices ⚡<br>
-Focused on CI/CD, Cloud Infrastructure, Security and Observability 🚀
+I design and build <b>secure, scalable & automated cloud systems</b>.<br>
+Focused on <b>CI/CD • Infrastructure as Code • Security • Observability</b>.
 </p>
 
 ---
@@ -28,10 +26,10 @@ Focused on CI/CD, Cloud Infrastructure, Security and Observability 🚀
 ## 💼 Experience
 
 ### 🏢 DevOps Intern — DevOps Insiders
-- Worked on real-world cloud & CI/CD pipelines  
-- Automated deployments using GitHub Actions  
-- Implemented DevSecOps tools (Trivy, SonarQube, Checkov)  
-- Hands-on with Docker, Kubernetes & Terraform  
+- Built CI/CD pipelines using GitHub Actions  
+- Implemented DevSecOps (Trivy, SonarQube, Checkov)  
+- Worked with Docker, Kubernetes & Terraform  
+- Deployed cloud infra on AWS  
 
 ---
 
@@ -39,22 +37,15 @@ Focused on CI/CD, Cloud Infrastructure, Security and Observability 🚀
 
 ### 📚 DevOps Training — TrainWithShubham  
 📅 Jan 2024 – May 2024  
-- Learned CI/CD pipelines, Docker & Kubernetes  
-- Hands-on projects on AWS & DevOps tools  
-- Built real-world automation workflows  
+- CI/CD, Docker, Kubernetes (hands-on)  
+- AWS deployments & automation projects  
 
 ---
 
-## ⚡ Tools & Technologies
+## 🧰 Tech Stack
 
 <p align="center">
-
-<img src="https://skillicons.dev/icons?i=aws,azure,docker,kubernetes,terraform" />
-<br><br>
-<img src="https://skillicons.dev/icons?i=githubactions,linux,git,ansible" />
-<br><br>
-<img src="https://skillicons.dev/icons?i=prometheus,grafana" />
-
+  <img src="https://skillicons.dev/icons?i=aws,azure,docker,kubernetes,terraform,githubactions,linux,git,ansible,prometheus,grafana" />
 </p>
 
 ---
@@ -69,34 +60,64 @@ Focused on CI/CD, Cloud Infrastructure, Security and Observability 🚀
 
 ---
 
-## 🚀 GitOps & Observability
+## 🚀 Featured Projects (MOST IMPORTANT)
 
-<p align="center">
-  <img src="https://img.shields.io/badge/ArgoCD-GitOps-orange?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Prometheus-Monitoring-red?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Grafana-Dashboards-orange?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/OpenTelemetry-Observability-blue?style=for-the-badge" />
-</p>
+### 🔹 DevSecOps CI/CD Pipeline
+- GitHub Actions + Docker + Trivy + SonarQube  
+- Automated build → scan → deploy workflow  
+
+### 🔹 Kubernetes Deployment Project
+- Containerized app deployed on K8s  
+- Used Helm + monitoring with Prometheus & Grafana  
+
+### 🔹 Terraform Infrastructure
+- AWS infra automated using Terraform  
+- Modular & reusable IaC setup  
 
 ---
 
-## 📊 GitHub Stats
+## 📊 GitHub Insights
+
+<details>
+<summary>📈 View Stats</summary>
+
+<br>
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=aniket-devop&show_icons=true&theme=tokyonight" height="150"/>
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=aniket-devop&theme=tokyonight" height="150"/>
 </p>
 
----
+</details>
 
-## 📈 Contribution Activity
+<details>
+<summary>📊 Contribution Activity</summary>
+
+<br>
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/aniket-devop/aniket-devop/output/github-contribution-grid-snake.svg" />
 </p>
 
+</details>
+
 ---
 
+## 🌐 Connect With Me
+
 <p align="center">
-🔥 <b>Automate • Secure • Monitor</b>
+  <a href="https://www.linkedin.com/in/aniket484">
+    <img src="https://img.shields.io/badge/LinkedIn-Aniket-blue?style=for-the-badge&logo=linkedin"/>
+  </a>
+  <a href="mailto:aniketkmr484@gmail.com">
+    <img src="https://img.shields.io/badge/Email-Contact-red?style=for-the-badge&logo=gmail"/>
+  </a>
+</p>
+
+---
+
+<h3 align="center">💚 Thanks for visiting!</h3>
+
+<p align="center">
+🔥 <b>Automate • Secure • Scale</b>
 </p>
