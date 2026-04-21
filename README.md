@@ -10,40 +10,32 @@
 
 <!-- ======================== PREMIUM DEVOPS GIF ======================== -->
 <p align="center">
-  <img src="https://media.giphy.com/media/SWoSkN6DxTszqIKEqv/giphy.gif" width="850"/>
+  <img src="https://media.g<!-- ================= HERO SECTION ================= -->
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0F2027,50:203A43,100:2C5364&height=260&section=header&text=Aniket%20Kumar&fontSize=55&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=DevOps%20Engineer%20|%20Cloud%20Automation%20|%20DevSecOps&descAlignY=60&descSize=20"/>
 </p>
 
-<!-- ======================== CYBER BADGES ======================== -->
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=aniket-devop&style=for-the-badge&color=blueviolet"/>
-  <img src="https://img.shields.io/github/followers/aniket-devop?style=for-the-badge&color=00c7ff"/>
-  <img src="https://img.shields.io/github/stars/aniket-devop?style=for-the-badge&color=ff00ff"/>
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=24&pause=1200&color=00F7FF&center=true&vCenter=true&width=900&lines=DevOps+Engineer;Cloud+Infrastructure+Automation;CI%2FCD+Pipelines+%7C+Kubernetes+%7C+Terraform;Building+Secure+and+Scalable+Systems" />
+</p>
+
+<p align="center">
+  <img src="https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif" width="700"/>
 </p>
 
 ---
 
-# <p align="center">💠 ABOUT ME 💠</p>
-
-<p align="center">
-  <img src="https://media.giphy.com/media/f3iwJFOVOwuy7K6FFw/giphy.gif" width="280"/>
-</p>
+## 👨‍💻 About Me
 
 ```yaml
-Name: Aniket Kumar
-Role: DevOps Engineer
-Experience: DevOps Intern
-Focus:
-  - CI/CD Automation
-  - Kubernetes Orchestration
-  - Infrastructure as Code
-  - DevSecOps Security
-Cloud:
+name: Aniket Kumar
+role: DevOps Engineer
+specialization:
+  - CI/CD Pipelines
+  - Kubernetes
+  - Terraform
+  - DevSecOps
+cloud:
   - AWS
   - Azure
-DevOps Tools:
-  - Docker
-  - Terraform
-  - GitHub Actions
-Monitoring:
-  - Prometheus
-  - Grafana
+focus: Building scalable and secure infrastructure
