@@ -1,37 +1,49 @@
-<h1 align="center">⚡ Aniket Kumar ⚡</h1>
+<!-- 🔥 ANIMATED DEVOPS HERO -->
+<p align="center">
+  <img src="https://media.giphy.com/media/ZVik7pBtu9dNS/giphy.gif" width="800"/>
+</p>
+
+<h1 align="center">⚡ Aniket⚡</h1>
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?color=36BCF7&center=true&vCenter=true&lines=DevOps+Engineer;DevSecOps+Learner;Cloud+Automation+Enthusiast;CI/CD+Pipeline+Builder" />
+💻 DevOps Engineer • 🔐 DevSecOps • ☁️ Cloud • ⚙️ Automation
 </p>
 
 ---
 
-## 🧠 About Me
+## 🧠 Who Am I?
 
 <p align="center">
-🚀 Passionate about building scalable cloud infrastructure <br>
-🔐 Focused on securing CI/CD pipelines using DevSecOps tools <br>
-⚙️ Love automating infrastructure and deployments <br>
-📊 Interested in monitoring, optimization, and reliability engineering
+🚀 I build <b>production-ready cloud systems</b><br>
+🔐 I secure pipelines using DevSecOps tools<br>
+⚙️ I automate everything I can<br>
+📊 I monitor & optimize systems continuously
 </p>
 
 ---
 
-## ⚡ Tech Arsenal
+## ⚡ Skills
 
-### ☁️ Cloud & Containers
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=aws,azure,docker,kubernetes,terraform" />
-</p>
 
-### ⚙️ CI/CD & Automation
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=githubactions,linux,git,ansible" />
-</p>
+<img src="https://skillicons.dev/icons?i=aws" height="55"/>
+<img src="https://skillicons.dev/icons?i=azure" height="55"/>
+<img src="https://skillicons.dev/icons?i=docker" height="55"/>
+<img src="https://skillicons.dev/icons?i=kubernetes" height="55"/>
+<img src="https://skillicons.dev/icons?i=terraform" height="55"/>
 
-### 📊 Monitoring
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=prometheus,grafana" />
+<br><br>
+
+<img src="https://skillicons.dev/icons?i=githubactions" height="55"/>
+<img src="https://skillicons.dev/icons?i=linux" height="55"/>
+<img src="https://skillicons.dev/icons?i=git" height="55"/>
+<img src="https://skillicons.dev/icons?i=ansible" height="55"/>
+
+<br><br>
+
+<img src="https://skillicons.dev/icons?i=prometheus" height="55"/>
+<img src="https://skillicons.dev/icons?i=grafana" height="55"/>
+
 </p>
 
 ---
@@ -39,9 +51,9 @@
 ## 🔐 DevSecOps Stack
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Trivy-Container_Security-blue?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/SonarQube-Code_Analysis-green?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/Checkov-IaC_Security-purple?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/🔍 Trivy-Container Security-blue?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/🧪 SonarQube-Code Analysis-green?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/🛠️ Checkov-IaC Security-purple?style=for-the-badge"/>
 </p>
 
 ---
@@ -49,10 +61,10 @@
 ## 💼 Experience
 
 <p align="center">
-🏢 <b>DevOps Intern — DevOps Insiders</b><br><br>
-Built CI/CD pipelines for deployment automation <br>
-Implemented security scanning in pipelines <br>
-Worked with Docker, Kubernetes, Terraform, Linux & Cloud
+🏢 <b>DevOps Intern — DevOps Insiders</b><br>
+⚙️ Built CI/CD pipelines & automated deployments<br>
+🔐 Implemented security scanning tools<br>
+☁️ Worked with AWS, Docker, Kubernetes & Terraform
 </p>
 
 ---
@@ -60,30 +72,30 @@ Worked with Docker, Kubernetes, Terraform, Linux & Cloud
 ## 🎓 Training
 
 <p align="center">
-📚 <b>TrainWithShubham</b><br><br>
-Hands-on experience with DevOps projects, CI/CD pipelines, infrastructure automation, and cloud deployment.
+📚 <b>TrainWithShubham (24 Jan 2026 – 24 May 2026)</b><br>
+🚀 Hands-on DevOps projects & cloud deployments
 </p>
 
 ---
 
-## 📊 GitHub Stats
+## 📊 GitHub Power
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=aniket-devop&show_icons=true&theme=tokyonight" height="165"/>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=aniket-devop&theme=tokyonight" height="165"/>
+  <img src="https://github-readme-stats.vercel.app/api?username=aniket-devop&show_icons=true&theme=radical" height="150"/>
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=aniket-devop&theme=radical" height="150"/>
 </p>
 
 ---
 
-## 🏆 Achievements
+## 🐍 Contribution Snake
 
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=aniket-devop&theme=tokyonight&row=1&column=6"/>
+  <img src="https://raw.githubusercontent.com/aniket-devop/aniket-devop/output/github-contribution-grid-snake.svg"/>
 </p>
 
 ---
 
-## 🌐 Connect With Me
+## 🌐 Connect
 
 <p align="center">
   <a href="https://www.linkedin.com/in/aniket484">
@@ -96,4 +108,4 @@ Hands-on experience with DevOps projects, CI/CD pipelines, infrastructure automa
 
 ---
 
-<h3 align="center">⚡ Automate • Secure • Scale ⚡</h3>
+<h2 align="center">🔥 "Automate • Secure • Scale" 🔥</h2>
