@@ -1,6 +1,6 @@
-<!-- 🔥 PREMIUM DEVOPS HERO -->
+<!-- 🔥 ANIMATED DEVOPS HERO -->
 <p align="center">
-  <img src="https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif" width="700"/>
+  <img src="https://media.giphy.com/media/ZVik7pBtu9dNS/giphy.gif" width="600"/>
 </p>
 
 <h1 align="center">⚡ Aniket Kumar ⚡</h1>
@@ -72,7 +72,7 @@
 ## 🎓 Training
 
 <p align="center">
-📚 <b>TrainWithShubham</b><br>
+📚 <b>TrainWithShubham (24 Jan 2026 – 24 May 2026)</b><br>
 🚀 Hands-on DevOps projects & cloud deployments
 </p>
 
@@ -83,6 +83,14 @@
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=aniket-devop&show_icons=true&theme=radical" height="150"/>
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=aniket-devop&theme=radical" height="150"/>
+</p>
+
+---
+
+## 🐍 Contribution Snake
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/aniket-devop/aniket-devop/output/github-contribution-grid-snake.svg"/>
 </p>
 
 ---
