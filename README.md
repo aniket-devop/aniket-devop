@@ -69,19 +69,16 @@
 
 ---
 
-## 🚀 Featured Projects
+## ⚙️ Engineering Focus
 
-### 🔹 CI/CD Pipeline Automation
-- GitHub Actions + Docker + AWS EC2  
-- Automated build, test & deployment workflow  
-
-### 🔹 Terraform Cloud Infrastructure
-- Provisioned AWS & Azure resources using IaC  
-- Modular and reusable infrastructure design  
-
-### 🔹 Kubernetes Deployment Project
-- Containerized microservices deployment  
-- Scaling & service exposure using Kubernetes  
+<p align="center">
+☁️ Cloud Infrastructure (AWS / Azure)  
+🔄 CI/CD Pipeline Automation  
+📦 Containerization (Docker / Kubernetes)  
+🧱 Infrastructure as Code (Terraform)  
+🔐 DevSecOps Integration  
+📊 Monitoring & Observability  
+</p>
 
 ---
 
@@ -94,10 +91,10 @@
 
 ---
 
-## 🚀 DevOps Workflow in Action
+## 🚀 Engineering Philosophy
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&pause=1000&color=00C2FF&center=true&vCenter=true&width=700&lines=CI%2FCD+Automation;Terraform+Infrastructure+as+Code;Kubernetes+Orchestration;Cloud+Monitoring+%26+Observability;DevSecOps+Security+Integration" />
+<b>Automate Everything • Secure by Design • Scale Without Limits</b>
 </p>
 
 ---
