@@ -1,57 +1,60 @@
 <h1 align="center">Hi 👋, I'm Aniket</h1>
-<h3 align="center">🚀 Junior DevSecOps Engineer | Cloud • Security • Observability • Automation</h3>
+
+<h3 align="center">
+🚀 DevOps & DevSecOps Enthusiast | Cloud • Security • Observability • Automation
+</h3>
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?color=00F7FF&center=true&vCenter=true&lines=DevSecOps+Engineer;AWS+%7C+Azure+Cloud;CI/CD+%7C+GitOps;Observability+Enthusiast" />
+  <img src="https://readme-typing-svg.herokuapp.com?color=00F7FF&center=true&vCenter=true&lines=Cloud+Engineer;DevSecOps+Builder;CI/CD+Automation;Observability+Explorer" />
 </p>
 
 ---
 
 ### 👨‍💻 About Me
-<p>
-💼 DevOps Intern at <b>DevOps Insiders</b> (1 Year Experience)<br>
-🎓 DevOps Training at <b>TrainWithShubham</b> (Jan 2024 – May 2024)<br>
-🔭 Building Secure CI/CD & Cloud Infrastructure<br>
-🌱 Exploring Kubernetes, DevSecOps & Observability<br>
-⚡ Passionate about Automation & Scalable Systems<br>
-📫 Reach me at: <b>aniketkmr484@gmail.com</b>
+<p align="center">
+💼 Hands-on experience in CI/CD & Cloud Infrastructure <br>
+🔐 DevSecOps with Trivy • SonarQube • Checkov <br>
+☁️ AWS & Azure Deployments <br>
+⚙️ Docker • Kubernetes • Terraform <br>
+🚀 GitOps (ArgoCD) & Observability Stack <br>
+📫 <b>aniketkmr484@gmail.com</b>
 </p>
 
 ---
 
-### ☁️ Cloud & DevOps
+## ☁️ Cloud & DevOps 🚀
 <p align="center">
   <img src="https://skillicons.dev/icons?i=aws,azure,docker,kubernetes,terraform,githubactions,linux,git" />
 </p>
 
 ---
 
-### 🔐 DevSecOps
+## 🔐 DevSecOps 🛡️
 <p align="center">
-  <img src="https://img.shields.io/badge/Trivy-Container%20Security-blue?logo=aquasecurity" />
-  <img src="https://img.shields.io/badge/SonarQube-Code%20Analysis-green?logo=sonarqube" />
-  <img src="https://img.shields.io/badge/Checkov-IaC%20Security-purple" />
+  <img src="https://img.shields.io/badge/🔍%20Trivy-Container%20Security-0A66C2?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/🧪%20SonarQube-Code%20Analysis-4CAF50?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/🛠️%20Checkov-IaC%20Security-9C27B0?style=for-the-badge" />
 </p>
 
 ---
 
-### 🚀 GitOps
+## 🚀 GitOps ⚙️
 <p align="center">
-  <img src="https://img.shields.io/badge/ArgoCD-GitOps-orange?logo=argo" />
+  <img src="https://img.shields.io/badge/⚡%20ArgoCD-GitOps-FF6F00?style=for-the-badge" />
 </p>
 
 ---
 
-### 📊 Monitoring & Observability
+## 📊 Monitoring & Observability 📈
 <p align="center">
-  <img src="https://img.shields.io/badge/Prometheus-Monitoring-red?logo=prometheus" />
-  <img src="https://img.shields.io/badge/Grafana-Dashboards-orange?logo=grafana" />
-  <img src="https://img.shields.io/badge/OpenTelemetry-Observability-blue" />
+  <img src="https://img.shields.io/badge/📡%20Prometheus-Monitoring-E6522C?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/📊%20Grafana-Dashboards-F46800?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/🔎%20OpenTelemetry-Observability-3F51B5?style=for-the-badge" />
 </p>
 
 ---
 
-### 📊 GitHub Analytics
+## 📊 GitHub Analytics 📈
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=aniket-devop&show_icons=true&theme=tokyonight" />
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=aniket-devop&theme=tokyonight" />
@@ -63,25 +66,7 @@
 
 ---
 
-### 🐍 Contribution Activity
-<p align="center">
-  <img src="https://github.com/aniket-devop/aniket-devop/blob/output/github-contribution-grid-snake.svg" />
-</p>
-
----
-
-### 🚀 Featured Projects
-<p>
-🔹 CI/CD Pipeline with Security (Trivy + SonarQube + Checkov)<br>
-🔹 Terraform Infrastructure (AWS & Azure)<br>
-🔹 Kubernetes Deployment with Monitoring<br>
-🔹 GitOps Deployment using Argo CD<br>
-🔹 Observability Setup (Prometheus + Grafana + OpenTelemetry)
-</p>
-
----
-
-### 🌐 Connect With Me
+## 🌐 Connect With Me 🌍
 <p align="center">
   <a href="https://www.linkedin.com/in/aniket484">
     <img src="https://img.shields.io/badge/LinkedIn-Aniket-blue?logo=linkedin&style=for-the-badge" />
@@ -93,4 +78,6 @@
 
 ---
 
-<p align="center">🔥 "Building Secure, Scalable & Observable Cloud Systems"</p>
+<p align="center">
+🔥 <b>"Automate Everything. Secure Always. Monitor Continuously."</b> 🚀
+</p>
