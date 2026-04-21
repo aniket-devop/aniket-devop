@@ -1,9 +1,9 @@
 <!-- 🔥 ANIMATED DEVOPS HERO -->
 <p align="center">
-  <img src="https://media.giphy.com/media/ZVik7pBtu9dNS/giphy.gif" width="800"/>
+  <img src="https://media.giphy.com/media/ZVik7pBtu9dNS/giphy.gif" width="600"/>
 </p>
 
-<h1 align="center">⚡ Aniket⚡</h1>
+<h1 align="center">⚡ Aniket kumar⚡</h1>
 
 <p align="center">
 💻 DevOps Engineer • 🔐 DevSecOps • ☁️ Cloud • ⚙️ Automation
@@ -26,23 +26,23 @@
 
 <p align="center">
 
-<img src="https://skillicons.dev/icons?i=aws" height="55"/>
-<img src="https://skillicons.dev/icons?i=azure" height="55"/>
-<img src="https://skillicons.dev/icons?i=docker" height="55"/>
-<img src="https://skillicons.dev/icons?i=kubernetes" height="55"/>
-<img src="https://skillicons.dev/icons?i=terraform" height="55"/>
+<img src="https://skillicons.dev/icons?i=aws" height="65"/>
+<img src="https://skillicons.dev/icons?i=azure" height="65"/>
+<img src="https://skillicons.dev/icons?i=docker" height="65"/>
+<img src="https://skillicons.dev/icons?i=kubernetes" height="65"/>
+<img src="https://skillicons.dev/icons?i=terraform" height="65"/>
 
 <br><br>
 
-<img src="https://skillicons.dev/icons?i=githubactions" height="55"/>
-<img src="https://skillicons.dev/icons?i=linux" height="55"/>
-<img src="https://skillicons.dev/icons?i=git" height="55"/>
-<img src="https://skillicons.dev/icons?i=ansible" height="55"/>
+<img src="https://skillicons.dev/icons?i=githubactions" height="65"/>
+<img src="https://skillicons.dev/icons?i=linux" height="65"/>
+<img src="https://skillicons.dev/icons?i=git" height="65"/>
+<img src="https://skillicons.dev/icons?i=ansible" height="65"/>
 
 <br><br>
 
-<img src="https://skillicons.dev/icons?i=prometheus" height="55"/>
-<img src="https://skillicons.dev/icons?i=grafana" height="55"/>
+<img src="https://skillicons.dev/icons?i=prometheus" height="65"/>
+<img src="https://skillicons.dev/icons?i=grafana" height="65"/>
 
 </p>
 
