@@ -1,6 +1,8 @@
+<!-- 🔥 ANIMATED DEVOPS HERO -->
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&pause=1000&color=00F7FF&center=true&vCenter=true&width=700&lines=DevOps+Engineer;Cloud+%7C+AWS+%7C+Azure;CI%2FCD+Automation;DevSecOps+Practitioner;Infrastructure+as+Code" />
+  <img src="https://media.giphy.com/media/ZVik7pBtu9dNS/giphy.gif" width="600"/>
 </p>
+
 <h1 align="center">⚡ Aniket Kumar ⚡</h1>
 
 <p align="center">
@@ -83,7 +85,15 @@
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=aniket-devop&theme=radical" height="150"/>
 </p>
 
-<img src="https://github.com/Platane/snk/raw/output/github-contribution-grid-snake.svg"/>
+---
+
+## 🐍 Contribution Snake
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/aniket-devop/aniket-devop/output/github-contribution-grid-snake.svg"/>
+</p>
+
+---
 
 ## 🌐 Connect
 
