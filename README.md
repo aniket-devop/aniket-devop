@@ -11,38 +11,26 @@
 
 ---
 
-## 🧠 Who Am I?
+## 🧠 About Me
 
 <p align="center">
-🚀 I build <b>production-ready cloud systems</b><br>
-🔐 I secure pipelines using DevSecOps tools<br>
-⚙️ I automate everything I can<br>
-📊 I monitor & optimize systems continuously
+🚀 Building production-grade cloud & DevOps systems<br>
+🔐 Focused on secure CI/CD (DevSecOps mindset)<br>
+⚙️ Automating infrastructure & deployments<br>
+📊 Monitoring & optimizing systems for scalability
 </p>
 
 ---
 
-## ⚡ Tech Arsenal
+## ⚡ Tech Stack
 
 <p align="center">
 
-<img src="https://skillicons.dev/icons?i=aws" height="55"/>
-<img src="https://skillicons.dev/icons?i=azure" height="55"/>
-<img src="https://skillicons.dev/icons?i=docker" height="55"/>
-<img src="https://skillicons.dev/icons?i=kubernetes" height="55"/>
-<img src="https://skillicons.dev/icons?i=terraform" height="55"/>
+<img src="https://skillicons.dev/icons?i=aws,azure,docker,kubernetes,terraform,linux,git,githubactions,ansible" height="55"/>
 
 <br><br>
 
-<img src="https://skillicons.dev/icons?i=githubactions" height="55"/>
-<img src="https://skillicons.dev/icons?i=linux" height="55"/>
-<img src="https://skillicons.dev/icons?i=git" height="55"/>
-<img src="https://skillicons.dev/icons?i=ansible" height="55"/>
-
-<br><br>
-
-<img src="https://skillicons.dev/icons?i=prometheus" height="55"/>
-<img src="https://skillicons.dev/icons?i=grafana" height="55"/>
+<img src="https://skillicons.dev/icons?i=prometheus,grafana" height="55"/>
 
 </p>
 
@@ -51,34 +39,53 @@
 ## 🔐 DevSecOps Stack
 
 <p align="center">
-  <img src="https://img.shields.io/badge/🔍 Trivy-Container Security-blue?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/🧪 SonarQube-Code Analysis-green?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/🛠️ Checkov-IaC Security-purple?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Trivy-Container_Security-blue?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/SonarQube-Code_Analysis-green?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Checkov-IaC_Security-purple?style=for-the-badge"/>
 </p>
 
 ---
 
 ## 💼 Experience
 
-<p align="center">
-🏢 <b>DevOps Intern — DevOps Insiders</b><br>
-⚙️ Built CI/CD pipelines & automated deployments<br>
-🔐 Implemented security scanning tools<br>
-☁️ Worked with AWS, Docker, Kubernetes & Terraform
-</p>
+### 🏢 DevOps Intern — DevOps Insider
+⚙️ 2024 – 2025  
+
+- Built CI/CD pipelines using GitHub Actions  
+- Automated deployments using Docker  
+- Worked with AWS, Terraform & Kubernetes  
+- Integrated DevSecOps tools into pipelines  
 
 ---
 
 ## 🎓 Training
 
-<p align="center">
-📚 <b>TrainWithShubham (24 Jan 2026 – 24 May 2026)</b><br>
-🚀 Hands-on DevOps projects & cloud deployments
-</p>
+### 🚀 TrainWithShubham (DevOps Program)
+📅 Jan 2026 – May 2026  
+
+- Hands-on DevOps + Cloud deployments  
+- Real-world CI/CD & Kubernetes projects  
+- Infrastructure as Code (Terraform practice)  
 
 ---
 
-## 📊 GitHub Power
+## 🚀 Featured Projects
+
+### 🔹 CI/CD Pipeline Automation
+- GitHub Actions + Docker + AWS EC2  
+- Automated build, test & deployment workflow  
+
+### 🔹 Terraform Cloud Infrastructure
+- Provisioned AWS & Azure resources using IaC  
+- Modular and reusable infrastructure design  
+
+### 🔹 Kubernetes Deployment Project
+- Containerized microservices deployment  
+- Scaling & service exposure using Kubernetes  
+
+---
+
+## 📊 GitHub Stats
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=aniket-devop&show_icons=true&theme=radical" height="150"/>
@@ -87,15 +94,15 @@
 
 ---
 
-## 🚀 DevOps in Action
+## 🚀 DevOps Workflow in Action
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=25&pause=1000&color=00C2FF&center=true&vCenter=true&width=750&lines=CI%2FCD+Pipeline+Automation;Terraform+Infrastructure+Provisioning;Kubernetes+Container+Orchestration;Cloud+Monitoring+%26+Observability;Secure+DevSecOps+Workflows" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&pause=1000&color=00C2FF&center=true&vCenter=true&width=700&lines=CI%2FCD+Automation;Terraform+Infrastructure+as+Code;Kubernetes+Orchestration;Cloud+Monitoring+%26+Observability;DevSecOps+Security+Integration" />
 </p>
 
 ---
 
-## 🌐 Connect
+## 🌐 Connect With Me
 
 <p align="center">
   <a href="https://www.linkedin.com/in/aniket484">
@@ -108,4 +115,4 @@
 
 ---
 
-<h2 align="center">🔥 "Automate • Secure • Scale" 🔥</h2>
+<h2 align="center">🔥 Automate • Secure • Scale 🔥</h2>
