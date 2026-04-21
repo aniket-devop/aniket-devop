@@ -1,112 +1,111 @@
-<!-- ========================= PREMIUM HEADER ========================= -->
+<!-- 🔥 ANIMATED DEVOPS HERO -->
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&height=280&color=0:0f2027,50:203a43,100:2c5364&text=Aniket%20Kumar&fontColor=ffffff&fontSize=50&animation=fadeIn&fontAlignY=35&desc=DevOps%20Engineer%20•%20Cloud%20Automation%20•%20DevSecOps&descAlignY=58&descSize=20"/>
+  <img src="https://media.giphy.com/media/SWoSkN6DxTszqIKEqv/giphy.gif" width="650"/>
 </p>
 
-<!-- ========================= TYPING INTRO ========================= -->
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=1000&color=00F7FF&center=true&vCenter=true&width=850&lines=Building+Scalable+Cloud+Infrastructure;Automating+CI%2FCD+Pipelines;Securing+Workflows+with+DevSecOps;AWS+%7C+Azure+%7C+Docker+%7C+Kubernetes+%7C+Terraform" />
-</p>
+<h1 align="center">⚡ Aniket Kumar ⚡</h1>
 
-<!-- ========================= HERO GIF ========================= -->
 <p align="center">
-  <img src="https://media.giphy.com/media/f3iwJFOVOwuy7K6FFw/giphy.gif" width="700"/>
+💻 DevOps Engineer • 🔐 DevSecOps • ☁️ Cloud • ⚙️ Automation
 </p>
 
 ---
 
-<h2 align="center">⚡ DevOps Engineer | Cloud Enthusiast | Automation First ⚡</h2>
+## 🧠 Who Am I?
 
 <p align="center">
-I design <b>cloud-native infrastructure</b>, automate <b>CI/CD workflows</b>, secure pipelines using <b>DevSecOps</b>, and build scalable deployment systems.
+🚀 I build <b>production-ready cloud systems</b><br>
+🔐 I secure pipelines using DevSecOps tools<br>
+⚙️ I automate everything I can<br>
+📊 I monitor & optimize systems continuously
 </p>
 
 ---
 
-## 🚀 Core Expertise
+## ⚡ Tech Arsenal
 
 <p align="center">
-☁️ Cloud Infrastructure &nbsp; | &nbsp;
-⚙️ Infrastructure as Code &nbsp; | &nbsp;
-🔐 DevSecOps &nbsp; | &nbsp;
-📊 Monitoring & Observability
+
+<img src="https://skillicons.dev/icons?i=aws" height="55"/>
+<img src="https://skillicons.dev/icons?i=azure" height="55"/>
+<img src="https://skillicons.dev/icons?i=docker" height="55"/>
+<img src="https://skillicons.dev/icons?i=kubernetes" height="55"/>
+<img src="https://skillicons.dev/icons?i=terraform" height="55"/>
+
+<br><br>
+
+<img src="https://skillicons.dev/icons?i=githubactions" height="55"/>
+<img src="https://skillicons.dev/icons?i=linux" height="55"/>
+<img src="https://skillicons.dev/icons?i=git" height="55"/>
+<img src="https://skillicons.dev/icons?i=ansible" height="55"/>
+
+<br><br>
+
+<img src="https://skillicons.dev/icons?i=prometheus" height="55"/>
+<img src="https://skillicons.dev/icons?i=grafana" height="55"/>
+
 </p>
 
 ---
 
-## 🛠 Tech Stack
+## 🔐 DevSecOps Stack
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=aws,azure,docker,kubernetes,terraform,githubactions,linux,git,ansible,prometheus,grafana,bash" />
+  <img src="https://img.shields.io/badge/🔍 Trivy-Container Security-blue?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/🧪 SonarQube-Code Analysis-green?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/🛠️ Checkov-IaC Security-purple?style=for-the-badge"/>
 </p>
 
 ---
 
-## 🔐 Security & Automation
+## 💼 Experience
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Trivy-Container%20Scanning-blue?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/SonarQube-Code%20Quality-green?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/Checkov-IaC%20Security-purple?style=for-the-badge"/>
+🏢 <b>DevOps Intern — DevOps Insiders</b><br>
+⚙️ Built CI/CD pipelines & automated deployments<br>
+🔐 Implemented security scanning tools<br>
+☁️ Worked with AWS, Docker, Kubernetes & Terraform
 </p>
 
 ---
 
-## 💼 Professional Experience
-
-### 🏢 DevOps Intern — DevOps Insiders
-
-- Built CI/CD pipelines for automated deployments
-- Managed cloud infrastructure using Terraform
-- Containerized applications with Docker
-- Orchestrated workloads using Kubernetes
-- Integrated security scanning into deployment pipelines
-- Configured monitoring with Prometheus and Grafana
-
----
-
-## 📊 GitHub Analytics
+## 🎓 Training
 
 <p align="center">
-  <img width="48%" src="https://github-readme-stats.vercel.app/api?username=aniket-devop&show_icons=true&theme=tokyonight&hide_border=true"/>
-  <img width="48%" src="https://github-readme-streak-stats.herokuapp.com/?user=aniket-devop&theme=tokyonight&hide_border=true"/>
-</p>
-
-<p align="center">
-  <img width="45%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=aniket-devop&layout=compact&theme=tokyonight&hide_border=true"/>
+📚 <b>TrainWithShubham (24 Jan 2026 – 24 May 2026)</b><br>
+🚀 Hands-on DevOps projects & cloud deployments
 </p>
 
 ---
 
-## ⚙️ DevOps Lifecycle
+## 📊 GitHub Power
 
 <p align="center">
-  <img src="https://media.giphy.com/media/L8K62iTDkzGX6/giphy.gif" width="550"/>
-</p>
-
-<p align="center">
-<b>Code → Build → Test → Secure → Deploy → Monitor</b>
+  <img src="https://github-readme-stats.vercel.app/api?username=aniket-devop&show_icons=true&theme=radical" height="150"/>
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=aniket-devop&theme=radical" height="150"/>
 </p>
 
 ---
 
-## 🌐 Connect With Me
+## 🚀 DevOps in Action
+
+<p align="center">
+  <img src="https://media.giphy.com/media/L8K62iTDkzGX6/giphy.gif" width="500"/>
+</p>
+
+---
+
+## 🌐 Connect
 
 <p align="center">
   <a href="https://www.linkedin.com/in/aniket484">
-    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
+    <img src="https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin"/>
   </a>
   <a href="mailto:aniketkmr484@gmail.com">
-    <img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/>
+    <img src="https://img.shields.io/badge/Email-Contact-red?style=for-the-badge&logo=gmail"/>
   </a>
 </p>
 
 ---
 
-<p align="center">
-  <b>⚡ Automate • Secure • Scale ⚡</b>
-</p>
-
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&height=120&color=0:0f2027,50:203a43,100:2c5364&section=footer"/>
-</p>
+<h2 align="center">🔥 "Automate • Secure • Scale" 🔥</h2>
