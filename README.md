@@ -6,7 +6,7 @@
 <h1 align="center">⚡ Aniket Kumar ⚡</h1>
 
 <p align="center">
-💻 DevOps Engineer • 🔐 DevSecOps • ☁️ Cloud • ⚙️ Automation
+🚀 DevOps Engineer • Cloud Automation • Kubernetes • Terraform • DevSecOps
 </p>
 
 ---
@@ -15,9 +15,9 @@
 
 <p align="center">
 🚀 I build <b>production-ready cloud systems</b><br>
-🔐 I secure pipelines using DevSecOps tools<br>
-⚙️ I automate everything I can<br>
-📊 I monitor & optimize systems continuously
+🔐 I secure CI/CD pipelines using DevSecOps tools<br>
+⚙️ I automate infrastructure using Terraform & Kubernetes<br>
+📊 I monitor and optimize systems for reliability and scale
 </p>
 
 ---
@@ -69,6 +69,19 @@
 
 ---
 
+## 🚀 Featured Projects
+
+### 🔹 Kubernetes Three-Tier Deployment
+Deployed a scalable three-tier application on Kubernetes using Deployments, Services, Ingress, ConfigMaps and persistent volumes.
+
+### 🔹 Terraform AWS Infrastructure
+Provisioned EC2, VPC, Security Groups and S3 buckets on AWS using reusable Terraform modules.
+
+### 🔹 CI/CD Pipeline with GitHub Actions
+Built automated CI/CD workflows for build, security scan, Docker image creation and deployment.
+
+---
+
 ## 🎓 Training
 
 <p align="center">
@@ -83,6 +96,14 @@
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=aniket-devop&show_icons=true&theme=radical" height="150"/>
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=aniket-devop&theme=radical" height="150"/>
+</p>
+
+---
+
+## 📈 GitHub Activity
+
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=aniket-devop&theme=react-dark&hide_border=true"/>
 </p>
 
 ---
