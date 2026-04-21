@@ -1,9 +1,5 @@
-<!-- HERO BANNER -->
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=220&section=header&text=Aniket%20Kumar&fontSize=45&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=DevOps%20Engineer%20|%20DevSecOps%20|%20Cloud%20Automation&descAlignY=55" width="100%"/>
-</p>
+<h1 align="center">⚡ Aniket Kumar ⚡</h1>
 
-<!-- TYPING ANIMATION -->
 <p align="center">
   <img src="https://readme-typing-svg.herokuapp.com?color=36BCF7&center=true&vCenter=true&lines=DevOps+Engineer;DevSecOps+Learner;Cloud+Automation+Enthusiast;CI/CD+Pipeline+Builder" />
 </p>
@@ -13,16 +9,10 @@
 ## 🧠 About Me
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Production_Ready-Cloud_Systems-blue?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/DevSecOps-Secure_Pipelines-success?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/Automation-Everything-orange?style=for-the-badge"/>
-</p>
-
-<p align="center">
-🚀 Passionate about building scalable infrastructure<br>
-🔐 Focused on securing CI/CD pipelines<br>
-⚙️ Love automating repetitive tasks<br>
-📊 Monitoring & optimizing systems continuously
+🚀 Passionate about building scalable cloud infrastructure <br>
+🔐 Focused on securing CI/CD pipelines using DevSecOps tools <br>
+⚙️ Love automating infrastructure and deployments <br>
+📊 Interested in monitoring, optimization, and reliability engineering
 </p>
 
 ---
@@ -49,9 +39,9 @@
 ## 🔐 DevSecOps Stack
 
 <p align="center">
-  <img src="https://img.shields.io/badge/🔍_Trivy-Container_Security-blue?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/🧪_SonarQube-Code_Analysis-green?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/🛠️_Checkov-IaC_Security-purple?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Trivy-Container_Security-blue?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/SonarQube-Code_Analysis-green?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Checkov-IaC_Security-purple?style=for-the-badge"/>
 </p>
 
 ---
@@ -60,9 +50,9 @@
 
 <p align="center">
 🏢 <b>DevOps Intern — DevOps Insiders</b><br><br>
-⚙️ Built CI/CD pipelines for automated deployments<br>
-🔐 Implemented security scanning in pipelines<br>
-☁️ Worked on AWS, Docker, Kubernetes & Terraform
+Built CI/CD pipelines for deployment automation <br>
+Implemented security scanning in pipelines <br>
+Worked with Docker, Kubernetes, Terraform, Linux & Cloud
 </p>
 
 ---
@@ -71,7 +61,7 @@
 
 <p align="center">
 📚 <b>TrainWithShubham</b><br><br>
-Hands-on DevOps projects with cloud deployment, automation, and CI/CD implementation.
+Hands-on experience with DevOps projects, CI/CD pipelines, infrastructure automation, and cloud deployment.
 </p>
 
 ---
@@ -93,14 +83,6 @@ Hands-on DevOps projects with cloud deployment, automation, and CI/CD implementa
 
 ---
 
-## 🐍 Contribution Graph
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/aniket-devop/aniket-devop/output/github-contribution-grid-snake.svg"/>
-</p>
-
----
-
 ## 🌐 Connect With Me
 
 <p align="center">
@@ -114,7 +96,4 @@ Hands-on DevOps projects with cloud deployment, automation, and CI/CD implementa
 
 ---
 
-<!-- FOOTER -->
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:2c5364,100:0f2027&height=120&section=footer&text=Automate%20•%20Secure%20•%20Scale&fontSize=28&fontColor=ffffff"/>
-</p>
+<h3 align="center">⚡ Automate • Secure • Scale ⚡</h3>
