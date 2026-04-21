@@ -1,111 +1,99 @@
-<!-- 🔥 ANIMATED DEVOPS HERO -->
+<!-- 🔥 PREMIUM HEADER -->
 <p align="center">
-  <img src="https://media.giphy.com/media/ZVik7pBtu9dNS/giphy.gif" width="600"/>
+  <img src="https://capsule-render.vercel.app/api?type=blur&color=0:141E30,100:243B55&height=200&section=header&text=Aniket%20Kumar&fontSize=45&fontColor=ffffff&animation=fadeIn" />
 </p>
 
-<h1 align="center">⚡ Aniket Kumar ⚡</h1>
+<h3 align="center">
+DevOps • DevSecOps • Cloud • Automation • Observability
+</h3>
 
 <p align="center">
-💻 DevOps Engineer • 🔐 DevSecOps • ☁️ Cloud • ⚙️ Automation
-</p>
-
----
-
-## 🧠 Who Am I?
-
-<p align="center">
-🚀 I build <b>production-ready cloud systems</b><br>
-🔐 I secure pipelines using DevSecOps tools<br>
-⚙️ I automate everything I can<br>
-📊 I monitor & optimize systems continuously
+  <a href="mailto:aniketkmr484@gmail.com">Email</a> •
+  <a href="https://www.linkedin.com/in/aniket484">LinkedIn</a>
 </p>
 
 ---
 
-## ⚡ Tech Arsenal
+## 👨‍💻 About
 
-<p align="center">
-
-<img src="https://skillicons.dev/icons?i=aws" height="55"/>
-<img src="https://skillicons.dev/icons?i=azure" height="55"/>
-<img src="https://skillicons.dev/icons?i=docker" height="55"/>
-<img src="https://skillicons.dev/icons?i=kubernetes" height="55"/>
-<img src="https://skillicons.dev/icons?i=terraform" height="55"/>
-
-<br><br>
-
-<img src="https://skillicons.dev/icons?i=githubactions" height="55"/>
-<img src="https://skillicons.dev/icons?i=linux" height="55"/>
-<img src="https://skillicons.dev/icons?i=git" height="55"/>
-<img src="https://skillicons.dev/icons?i=ansible" height="55"/>
-
-<br><br>
-
-<img src="https://skillicons.dev/icons?i=prometheus" height="55"/>
-<img src="https://skillicons.dev/icons?i=grafana" height="55"/>
-
-</p>
-
----
-
-## 🔐 DevSecOps Stack
-
-<p align="center">
-  <img src="https://img.shields.io/badge/🔍 Trivy-Container Security-blue?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/🧪 SonarQube-Code Analysis-green?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/🛠️ Checkov-IaC Security-purple?style=for-the-badge"/>
-</p>
+I focus on building **secure, scalable and automated cloud systems** using modern DevOps practices.  
+My work revolves around **CI/CD pipelines, Infrastructure as Code, security integration and observability**.
 
 ---
 
 ## 💼 Experience
 
-<p align="center">
-🏢 <b>DevOps Intern — DevOps Insiders</b><br>
-⚙️ Built CI/CD pipelines & automated deployments<br>
-🔐 Implemented security scanning tools<br>
-☁️ Worked with AWS, Docker, Kubernetes & Terraform
-</p>
+**DevOps Intern — DevOps Insiders**
+- Built CI/CD pipelines using GitHub Actions  
+- Integrated security tools (Trivy, SonarQube, Checkov)  
+- Worked with Docker, Kubernetes & Terraform  
+- Deployed applications on AWS  
 
 ---
 
 ## 🎓 Training
 
+**TrainWithShubham (24 Jan 2026 – 24 May 2026)**
+- Hands-on DevOps & Cloud projects  
+- CI/CD, Docker, Kubernetes, AWS  
+
+---
+
+## 🧰 Tech Stack
+
 <p align="center">
-📚 <b>TrainWithShubham (24 Jan 2026 – 24 May 2026)</b><br>
-🚀 Hands-on DevOps projects & cloud deployments
+  <img src="https://skillicons.dev/icons?i=aws,azure,docker,kubernetes,terraform,githubactions,linux,git,ansible,prometheus,grafana" />
 </p>
 
 ---
 
-## 📊 GitHub Power
+## 🔐 DevSecOps
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=aniket-devop&show_icons=true&theme=radical" height="150"/>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=aniket-devop&theme=radical" height="150"/>
+  <img src="https://img.shields.io/badge/Trivy-blue?style=flat-square"/>
+  <img src="https://img.shields.io/badge/SonarQube-green?style=flat-square"/>
+  <img src="https://img.shields.io/badge/Checkov-purple?style=flat-square"/>
 </p>
 
 ---
 
-## 🐍 Contribution Snake
+## 🚀 Projects
+
+- **DevSecOps CI/CD Pipeline**  
+  Secure pipeline with build, scan and deploy stages  
+
+- **Kubernetes Deployment Setup**  
+  Containerized app deployed with monitoring  
+
+- **Terraform Cloud Infrastructure**  
+  AWS infra automated using IaC  
+
+---
+
+## 📊 GitHub Stats
+
+<details>
+<summary>View Stats</summary>
+
+<br>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/aniket-devop/aniket-devop/output/github-contribution-grid-snake.svg"/>
+  <img src="https://github-readme-stats.vercel.app/api?username=aniket-devop&show_icons=true&theme=tokyonight"/>
 </p>
+
+</details>
 
 ---
 
 ## 🌐 Connect
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/aniket484">
-    <img src="https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin"/>
-  </a>
-  <a href="mailto:aniketkmr484@gmail.com">
-    <img src="https://img.shields.io/badge/Email-Contact-red?style=for-the-badge&logo=gmail"/>
-  </a>
+  <a href="https://www.linkedin.com/in/aniket484">LinkedIn</a> •
+  <a href="mailto:aniketkmr484@gmail.com">Email</a>
 </p>
 
 ---
 
-<h2 align="center">🔥 "Automate • Secure • Scale" 🔥</h2>
+<p align="center">
+<b>Automate • Secure • Scale</b>
+</p>
