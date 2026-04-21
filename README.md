@@ -1,7 +1,6 @@
 <p align="center">
-  <img src="https://media.giphy.com/media/kH1DBkPNyZPOk0BxrM/giphy.gif" width="650"/>
+  <img src="https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif" width="650"/>
 </p>
-
 <h1 align="center">⚡ Aniket Kumar ⚡</h1>
 
 <p align="center">
