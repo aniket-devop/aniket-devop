@@ -1,6 +1,5 @@
-<!-- 🔥 ANIMATED DEVOPS HERO -->
 <p align="center">
-  <img src="https://media.giphy.com/media/ZVik7pBtu9dNS/giphy.gif" width="600"/>
+  <img src="https://media.giphy.com/media/kH1DBkPNyZPOk0BxrM/giphy.gif" width="650"/>
 </p>
 
 <h1 align="center">⚡ Aniket Kumar ⚡</h1>
