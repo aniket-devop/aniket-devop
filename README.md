@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="650"/>
+  <img src="https://user-images.githubusercontent.com/74038190/212744276-1b9b6d8f-7b18-4a5c-8c69-7a1f9c0f0c8a.gif" width="650"/>
 </p>
 <h1 align="center">⚡ Aniket Kumar ⚡</h1>
 
