@@ -1,83 +1,87 @@
-<h1 align="center">Hi 👋, I'm Aniket</h1>
-
-<h3 align="center">
-🚀 DevOps & DevSecOps Enthusiast | Cloud • Security • Observability • Automation
-</h3>
+<h1 align="center">Enjoy your time 🚀</h1>
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?color=00F7FF&center=true&vCenter=true&lines=Cloud+Engineer;DevSecOps+Builder;CI/CD+Automation;Observability+Explorer" />
+Hey, My name is <b>Aniket Kumar</b> and I am passionate about building 
+<strong>secure, scalable and automated cloud systems</strong>.  
+I work with DevOps & DevSecOps tools to improve software delivery,  
+optimize workflows and implement security best practices. ⚡
 </p>
 
 ---
 
-### 👨‍💻 About Me
+## 📊 GitHub Stats
+
 <p align="center">
-💼 Hands-on experience in CI/CD & Cloud Infrastructure <br>
-🔐 DevSecOps with Trivy • SonarQube • Checkov <br>
-☁️ AWS & Azure Deployments <br>
-⚙️ Docker • Kubernetes • Terraform <br>
-🚀 GitOps (ArgoCD) & Observability Stack <br>
-📫 <b>aniketkmr484@gmail.com</b>
+  <img src="https://github-readme-stats.vercel.app/api?username=aniket-devop&show_icons=true&theme=tokyonight" height="150"/>
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=aniket-devop&theme=tokyonight" height="150"/>
 </p>
 
 ---
 
-## ☁️ Cloud & DevOps 🚀
+## ⚡ Skills
+
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=aws,azure,docker,kubernetes,terraform,githubactions,linux,git" />
+  
+<img src="https://skillicons.dev/icons?i=linux" />
+<img src="https://skillicons.dev/icons?i=aws" />
+<img src="https://skillicons.dev/icons?i=azure" />
+<img src="https://skillicons.dev/icons?i=docker" />
+<img src="https://skillicons.dev/icons?i=kubernetes" />
+<img src="https://skillicons.dev/icons?i=terraform" />
+<img src="https://skillicons.dev/icons?i=githubactions" />
+<img src="https://skillicons.dev/icons?i=git" />
+
 </p>
 
 ---
 
-## 🔐 DevSecOps 🛡️
+## 🔐 DevSecOps
+
 <p align="center">
-  <img src="https://img.shields.io/badge/🔍%20Trivy-Container%20Security-0A66C2?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/🧪%20SonarQube-Code%20Analysis-4CAF50?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/🛠️%20Checkov-IaC%20Security-9C27B0?style=for-the-badge" />
+
+<img src="https://img.shields.io/badge/Trivy-Container%20Security-blue?style=for-the-badge" />
+<img src="https://img.shields.io/badge/SonarQube-Code%20Analysis-green?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Checkov-IaC%20Security-purple?style=for-the-badge" />
+
 </p>
 
 ---
 
-## 🚀 GitOps ⚙️
+## 🚀 GitOps
+
 <p align="center">
-  <img src="https://img.shields.io/badge/⚡%20ArgoCD-GitOps-FF6F00?style=for-the-badge" />
+
+<img src="https://img.shields.io/badge/ArgoCD-GitOps-orange?style=for-the-badge" />
+
 </p>
 
 ---
 
-## 📊 Monitoring & Observability 📈
+## 📊 Monitoring & Observability
+
 <p align="center">
-  <img src="https://img.shields.io/badge/📡%20Prometheus-Monitoring-E6522C?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/📊%20Grafana-Dashboards-F46800?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/🔎%20OpenTelemetry-Observability-3F51B5?style=for-the-badge" />
+
+<img src="https://img.shields.io/badge/Prometheus-Monitoring-red?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Grafana-Dashboards-orange?style=for-the-badge" />
+<img src="https://img.shields.io/badge/OpenTelemetry-Observability-blue?style=for-the-badge" />
+
 </p>
 
 ---
 
-## 📊 GitHub Analytics 📈
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=aniket-devop&show_icons=true&theme=tokyonight" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=aniket-devop&theme=tokyonight" />
-</p>
+## 🌐 Connect With Me
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=aniket-devop&layout=compact&theme=tokyonight" />
-</p>
-
----
-
-## 🌐 Connect With Me 🌍
 <p align="center">
   <a href="https://www.linkedin.com/in/aniket484">
     <img src="https://img.shields.io/badge/LinkedIn-Aniket-blue?logo=linkedin&style=for-the-badge" />
   </a>
   <a href="mailto:aniketkmr484@gmail.com">
-    <img src="https://img.shields.io/badge/Email-Contact%20Me-red?logo=gmail&style=for-the-badge" />
+    <img src="https://img.shields.io/badge/Email-Contact-red?logo=gmail&style=for-the-badge" />
   </a>
 </p>
 
 ---
 
 <p align="center">
-🔥 <b>"Automate Everything. Secure Always. Monitor Continuously."</b> 🚀
+🔥 <b>"Automate Everything. Secure Always. Monitor Continuously."</b>
 </p>
