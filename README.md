@@ -1,102 +1,122 @@
-<div align="center">
+<!-- ================= HERO ================= -->
 
-# ANIKET KUMAR
+<p align="center">
+  <img src="YOUR-DEVOPS-BANNER.gif" width="100%"/>
+</p>
 
-<img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&weight=700&size=28&pause=1000&color=00E6FF&center=true&vCenter=true&width=900&lines=DEVOPS+ENGINEER;CLOUD+INFRASTRUCTURE;KUBERNETES+%7C+AWS+%7C+TERRAFORM;AUTOMATION+%7C+SECURITY+%7C+SCALABILITY"/>
+<h1 align="center">⚡ ANIKET KUMAR ⚡</h1>
 
-<br>
-
-<img src="https://i.pinimg.com/originals/6f/7a/89/6f7a89d7d7f6f1e8f5b4f2a4d6cbf8ff.gif" width="100%"/>
-
-</div>
-
----
-
-<div align="center">
-
-```text
-Building cloud-native systems that are scalable,
-secure, automated, and production-ready.
-```
-
-</div>
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=24&pause=1000&color=00E5FF&center=true&vCenter=true&width=800&lines=DevOps+Engineer;Cloud+Infrastructure;Kubernetes+%7C+AWS+%7C+Terraform;CI%2FCD+Automation;DevSecOps"/>
+</p>
 
 ---
 
-# STACK
+## 🧠 ABOUT ME
 
 <p align="center">
 
-<img src="https://skillicons.dev/icons?i=aws,kubernetes,docker,terraform,linux,githubactions,prometheus,grafana,bash,python&theme=dark"/>
+🚀 Building production-grade cloud infrastructure  
+⚙️ Automating CI/CD pipelines  
+🔐 Securing systems with DevSecOps  
+📊 Monitoring scalable environments  
 
 </p>
 
 ---
 
-# CURRENT FOCUS
+## ⚡ TECH STACK
 
-```yaml
-- Kubernetes Infrastructure
+<p align="center">
+
+<img src="https://skillicons.dev/icons?i=aws,docker,kubernetes,terraform,githubactions,linux,ansible,prometheus,grafana,git,bash,python&theme=dark"/>
+
+</p>
+
+---
+
+## 🔐 DEVSECOPS
+
+<p align="center">
+
+<img src="https://img.shields.io/badge/TRIVY-Container%20Security-blue?style=for-the-badge"/>
+
+<img src="https://img.shields.io/badge/SONARQUBE-Code%20Quality-green?style=for-the-badge"/>
+
+<img src="https://img.shields.io/badge/CHECKOV-IaC%20Security-purple?style=for-the-badge"/>
+
+</p>
+
+---
+
+## 🚀 FEATURED PROJECT
+
+# Banking Fraud Detection System
+
+```text
+GitHub → GitHub Actions → Docker → Security Scan
+        → Kubernetes → AWS → Monitoring
+```
+
+### ✨ Features
+
 - CI/CD Automation
-- DevSecOps
-- Cloud Architecture
-- Monitoring & Observability
-```
+- Dockerized Deployment
+- Kubernetes Orchestration
+- Terraform Infrastructure
+- DevSecOps Scanning
+- Monitoring with Prometheus & Grafana
 
 ---
 
-# DEPLOYMENT FLOW
-
-```text
-Code → Build → Scan → Deploy → Monitor → Scale
-```
-
----
-
-# GITHUB STATS
+## 📊 GITHUB STATS
 
 <p align="center">
 
-<img width="49%" src="https://github-readme-stats.vercel.app/api?username=aniket-devop&show_icons=true&theme=github_dark&hide_border=true"/>
+<img height="170" src="https://github-readme-stats.vercel.app/api?username=aniket-devop&show_icons=true&theme=tokyonight&hide_border=true"/>
 
-<img width="49%" src="https://github-readme-streak-stats.herokuapp.com/?user=aniket-devop&theme=github-dark-blue&hide_border=true"/>
+<img height="170" src="https://github-readme-streak-stats.herokuapp.com/?user=aniket-devop&theme=tokyonight&hide_border=true"/>
+
+</p>
+
+<p align="center">
+
+<img width="80%" src="https://github-readme-activity-graph.vercel.app/graph?username=aniket-devop&theme=tokyo-night&hide_border=true"/>
 
 </p>
 
 ---
 
-# ACTIVITY
+## 🐍 CONTRIBUTION SNAKE
 
 <p align="center">
-
-<img width="95%" src="https://github-readme-activity-graph.vercel.app/graph?username=aniket-devop&theme=react-dark&hide_border=true"/>
-
+  <img src="https://github.com/Platane/snk/raw/output/github-contribution-grid-snake-dark.svg"/>
 </p>
 
 ---
 
-# CONNECT
+## 🌐 CONNECT
 
-<div align="center">
+<p align="center">
 
 <a href="https://www.linkedin.com/in/aniket484">
-<img src="https://img.shields.io/badge/LINKEDIN-111111?style=for-the-badge&logo=linkedin&logoColor=white"/>
+<img src="https://img.shields.io/badge/LINKEDIN-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
 </a>
 
 <a href="mailto:aniketkmr484@gmail.com">
-<img src="https://img.shields.io/badge/GMAIL-111111?style=for-the-badge&logo=gmail&logoColor=white"/>
+<img src="https://img.shields.io/badge/GMAIL-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/>
 </a>
 
 <a href="https://github.com/aniket-devop">
-<img src="https://img.shields.io/badge/GITHUB-111111?style=for-the-badge&logo=github&logoColor=white"/>
+<img src="https://img.shields.io/badge/GITHUB-181717?style=for-the-badge&logo=github&logoColor=white"/>
 </a>
 
-</div>
+</p>
 
 ---
 
-<div align="center">
+<h2 align="center">
 
-# ⚡ AUTOMATE • SECURE • SCALE ⚡
+⚡ AUTOMATE • SECURE • SCALE ⚡
 
-</div>
+</h2>
