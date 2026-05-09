@@ -1,196 +1,95 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=320&text=ANIKET%20KUMAR&fontAlign=50&fontAlignY=40&color=0:050816,25:0B1026,50:111827,75:0F172A,100:1E293B&fontColor=00E5FF&fontSize=65&desc=DEVOPS%20ENGINEER%20%7C%20CLOUD%20ARCHITECT%20%7C%20DEVSECOPS&descAlignY=62&animation=fadeIn"/>
+# ANIKET KUMAR
 
-<img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&weight=700&size=34&pause=1000&color=00F7FF&center=true&vCenter=true&random=false&width=1200&lines=Building+Production+Grade+Cloud+Infrastructure;Kubernetes+%7C+AWS+%7C+Terraform+%7C+DevSecOps;CI%2FCD+Automation+Engineer;Cloud+Native+Systems+Architect"/>
+<img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&weight=700&size=28&pause=1000&color=00E6FF&center=true&vCenter=true&width=900&lines=DEVOPS+ENGINEER;CLOUD+INFRASTRUCTURE;KUBERNETES+%7C+AWS+%7C+TERRAFORM;AUTOMATION+%7C+SECURITY+%7C+SCALABILITY"/>
 
-<br><br>
+<br>
 
-<img src="https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif" width="100%"/>
+<img src="https://i.pinimg.com/originals/6f/7a/89/6f7a89d7d7f6f1e8f5b4f2a4d6cbf8ff.gif" width="100%"/>
 
 </div>
 
 ---
 
 <div align="center">
-
-# ⚡ SYSTEM STATUS
-
-</div>
-
-<img align="right" width="400" src="https://media.giphy.com/media/f3iwJFOVOwuy7K6FFw/giphy.gif"/>
-
-```yaml
-name: Aniket Kumar
-
-role: DevOps Engineer
-
-specialization:
-  - Kubernetes
-  - AWS Cloud
-  - Infrastructure as Code
-  - CI/CD Automation
-  - DevSecOps
-  - Monitoring & Observability
-
-stack:
-  - Docker
-  - Terraform
-  - GitHub Actions
-  - Linux
-  - Prometheus
-  - Grafana
-
-mindset:
-  - automate_everything
-  - secure_by_default
-  - scale_without_fear
-
-currently_learning:
-  - GitOps
-  - Platform Engineering
-  - Advanced Kubernetes
-```
-
-<br clear="right"/>
-
----
-
-<div align="center">
-
-# ⚔️ TECH ARSENAL
-
-</div>
-
-<p align="center">
-
-<img src="https://skillicons.dev/icons?i=aws,docker,kubernetes,terraform,linux,ansible,githubactions,git,prometheus,grafana,bash,python,mongodb,mysql,redis,nginx&theme=dark"/>
-
-</p>
-
----
-
-<div align="center">
-
-# 🚀 DEVOPS PIPELINE
-
-</div>
-
-<p align="center">
-
-<img src="https://img.shields.io/badge/CODE-00E5FF?style=for-the-badge"/>
-
-<img src="https://img.shields.io/badge/BUILD-111827?style=for-the-badge"/>
-
-<img src="https://img.shields.io/badge/SCAN-0F172A?style=for-the-badge"/>
-
-<img src="https://img.shields.io/badge/TEST-1E293B?style=for-the-badge"/>
-
-<img src="https://img.shields.io/badge/DEPLOY-00E5FF?style=for-the-badge"/>
-
-<img src="https://img.shields.io/badge/MONITOR-111827?style=for-the-badge"/>
-
-<img src="https://img.shields.io/badge/SCALE-0F172A?style=for-the-badge"/>
-
-</p>
-
----
-
-<div align="center">
-
-# 🔥 FEATURED PROJECT
-
-</div>
-
-<div align="center">
-
-## Banking Fraud Detection System
-
-</div>
 
 ```text
-Developer
-    ↓
-GitHub Repository
-    ↓
-GitHub Actions CI/CD
-    ↓
-Docker Build & Push
-    ↓
-Trivy Security Scan
-    ↓
-Kubernetes Deployment
-    ↓
-AWS Cloud Infrastructure
-    ↓
-Prometheus + Grafana
+Building cloud-native systems that are scalable,
+secure, automated, and production-ready.
+```
+
+</div>
+
+---
+
+# STACK
+
+<p align="center">
+
+<img src="https://skillicons.dev/icons?i=aws,kubernetes,docker,terraform,linux,githubactions,prometheus,grafana,bash,python&theme=dark"/>
+
+</p>
+
+---
+
+# CURRENT FOCUS
+
+```yaml
+- Kubernetes Infrastructure
+- CI/CD Automation
+- DevSecOps
+- Cloud Architecture
+- Monitoring & Observability
 ```
 
 ---
 
-<div align="center">
+# DEPLOYMENT FLOW
 
-# 📊 GITHUB ANALYTICS
+```text
+Code → Build → Scan → Deploy → Monitor → Scale
+```
 
-</div>
+---
 
-<p align="center">
-
-<img width="49%" src="https://github-readme-stats.vercel.app/api?username=aniket-devop&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117"/>
-
-<img width="49%" src="https://github-readme-streak-stats.herokuapp.com/?user=aniket-devop&theme=tokyonight&hide_border=true&background=0D1117"/>
-
-</p>
+# GITHUB STATS
 
 <p align="center">
 
-<img width="60%" src="https://github-readme-activity-graph.vercel.app/graph?username=aniket-devop&theme=tokyo-night&hide_border=true&bg_color=0D1117"/>
+<img width="49%" src="https://github-readme-stats.vercel.app/api?username=aniket-devop&show_icons=true&theme=github_dark&hide_border=true"/>
+
+<img width="49%" src="https://github-readme-streak-stats.herokuapp.com/?user=aniket-devop&theme=github-dark-blue&hide_border=true"/>
 
 </p>
 
 ---
 
-<div align="center">
-
-# 🐍 CONTRIBUTION SNAKE
-
-</div>
+# ACTIVITY
 
 <p align="center">
 
-<img src="https://github.com/Platane/snk/raw/output/github-contribution-grid-snake-dark.svg"/>
+<img width="95%" src="https://github-readme-activity-graph.vercel.app/graph?username=aniket-devop&theme=react-dark&hide_border=true"/>
 
 </p>
 
 ---
 
+# CONNECT
+
 <div align="center">
-
-# 🌐 CONNECT
-
-</div>
-
-<p align="center">
 
 <a href="https://www.linkedin.com/in/aniket484">
-<img src="https://img.shields.io/badge/LINKEDIN-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
+<img src="https://img.shields.io/badge/LINKEDIN-111111?style=for-the-badge&logo=linkedin&logoColor=white"/>
 </a>
 
 <a href="mailto:aniketkmr484@gmail.com">
-<img src="https://img.shields.io/badge/GMAIL-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/>
+<img src="https://img.shields.io/badge/GMAIL-111111?style=for-the-badge&logo=gmail&logoColor=white"/>
 </a>
 
 <a href="https://github.com/aniket-devop">
-<img src="https://img.shields.io/badge/GITHUB-000000?style=for-the-badge&logo=github&logoColor=white"/>
+<img src="https://img.shields.io/badge/GITHUB-111111?style=for-the-badge&logo=github&logoColor=white"/>
 </a>
-
-</p>
-
----
-
-<div align="center">
-
-<img src="https://komarev.com/ghpvc/?username=aniket-devop&label=PROFILE+VIEWS&color=00E5FF&style=for-the-badge"/>
 
 </div>
 
