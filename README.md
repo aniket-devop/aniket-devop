@@ -1,197 +1,106 @@
-<!-- ========================= HERO SECTION ========================= -->
+<div align="center">
 
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f172a,100:38bdf8&height=260&section=header&text=Aniket%20Kumar&fontSize=55&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=DevOps%20•%20DevSecOps%20•%20Cloud%20Engineer&descAlignY=58"/>
+# Aniket Kumar
+
+### DevOps Engineer • Cloud Infrastructure • DevSecOps
+
+<p>
+Building scalable infrastructure, secure CI/CD pipelines, and production-grade cloud systems.
 </p>
 
-<p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&pause=1000&color=38BDF8&center=true&vCenter=true&width=900&lines=DevOps+Engineer;Cloud+Infrastructure+Automation;CI%2FCD+Pipeline+Specialist;AWS+%7C+Docker+%7C+Kubernetes+%7C+Terraform;DevSecOps+%7C+Monitoring+%7C+GitOps"/>
-</p>
+<br>
+
+[LinkedIn](https://www.linkedin.com/in/aniket484) •
+[GitHub](https://github.com/aniket-devop) •
+[Email](mailto:aniketkmr484@gmail.com)
+
+</div>
 
 ---
 
-# 💫 About Me
+## About
 
 ```yaml
 name: Aniket Kumar
 role: DevOps Engineer
-specialization:
+
+focus:
   - Cloud Infrastructure
-  - CI/CD Automation
   - Kubernetes
+  - CI/CD Automation
   - DevSecOps
-  - Infrastructure as Code
+  - Monitoring & Observability
 
 currently_learning:
   - GitOps
-  - ArgoCD
-  - Advanced Kubernetes
   - Platform Engineering
-
-focus:
-  - Production-grade infrastructure
-  - Secure automation pipelines
-  - Scalable cloud deployments
+  - Advanced Kubernetes
 ```
 
 ---
 
-# ⚙️ Tech Stack
+## Tech Stack
 
-<p align="center">
+<p align="left">
 
-<img src="https://skillicons.dev/icons?i=aws,docker,kubernetes,terraform,ansible,linux,git,githubactions,jenkins,prometheus,grafana,python,bash,mongodb,mysql,nginx" />
+<img src="https://skillicons.dev/icons?i=aws,docker,kubernetes,terraform,linux,ansible,githubactions,git,prometheus,grafana,python,bash" />
 
 </p>
 
 ---
 
-# 🚀 DevOps Expertise
+## Featured Project
 
-<table align="center">
-<tr>
-<td align="center" width="300">
+### Banking Fraud Detection System
 
-### ☁️ Cloud
-AWS • EC2 • VPC  
-IAM • S3 • CloudWatch
+Production-grade DevOps project focused on CI/CD automation, containerization, infrastructure provisioning, and monitoring.
 
-</td>
+#### Stack
 
-<td align="center" width="300">
+- Docker
+- Kubernetes
+- Terraform
+- GitHub Actions
+- Prometheus
+- Grafana
+- AWS
 
-### ⚙️ CI/CD
-GitHub Actions  
-Jenkins Pipelines  
-Automation Workflows
+#### Highlights
 
-</td>
-
-<td align="center" width="300">
-
-### 📦 Containers
-Docker  
-Kubernetes  
-Helm
-
-</td>
-</tr>
-
-<tr>
-<td align="center">
-
-### 🔐 DevSecOps
-Trivy  
-SonarQube  
-Checkov
-
-</td>
-
-<td align="center">
-
-### 📊 Monitoring
-Prometheus  
-Grafana  
-Logging
-
-</td>
-
-<td align="center">
-
-### 🏗️ IaC
-Terraform  
-Ansible  
-Reusable Modules
-
-</td>
-</tr>
-</table>
-
----
-
-# 🔥 Featured Project
-
-## 🚀 Banking Fraud Detection System
-
-> Production-grade DevOps + DevSecOps project with complete CI/CD automation.
-
-### ✨ Features
-
-- CI/CD using GitHub Actions
-- Dockerized microservices
+- Automated CI/CD pipeline
+- Container security scanning
+- Infrastructure as Code
 - Kubernetes deployment
-- Terraform Infrastructure
-- Trivy image scanning
-- SonarQube code analysis
-- Monitoring with Prometheus & Grafana
-- AWS EC2 deployment
-
-### 🛠️ Architecture
-
-```text
-Developer → GitHub → GitHub Actions → Docker → Security Scan
-        → Kubernetes → AWS EC2 → Monitoring Stack
-```
+- Monitoring & observability setup
 
 ---
 
-# 📈 GitHub Analytics
+## GitHub Stats
 
-<p align="center">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=aniket-devop&show_icons=true&theme=tokyonight&hide_border=true"/>
-  
-  <img height="170" src="https://github-readme-streak-stats.herokuapp.com/?user=aniket-devop&theme=tokyonight&hide_border=true"/>
-</p>
+<div align="center">
 
-<p align="center">
-  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=aniket-devop&layout=compact&theme=tokyonight&hide_border=true"/>
-</p>
+<img height="170" src="https://github-readme-stats.vercel.app/api?username=aniket-devop&show_icons=true&theme=github_dark&hide_border=true"/>
+
+<img height="170" src="https://github-readme-streak-stats.herokuapp.com/?user=aniket-devop&theme=github-dark&hide_border=true"/>
+
+</div>
 
 ---
 
-# 🐍 Contribution Snake
+## Experience
 
-<p align="center">
-  <img src="https://github.com/Platane/snk/raw/output/github-contribution-grid-snake-dark.svg"/>
-</p>
+### DevOps Intern — DevOps Insiders
 
----
-
-# 🏆 Certifications & Learning
-
-- DevOps Training — TrainWithShubham
-- AWS & Cloud Fundamentals
-- Kubernetes Hands-on Labs
-- CI/CD & DevSecOps Practice
+- Built CI/CD pipelines
+- Automated deployments
+- Worked on AWS infrastructure
+- Implemented DevSecOps tools
+- Managed Docker & Kubernetes workloads
 
 ---
 
-# 🌐 Connect With Me
+## Philosophy
 
-<p align="center">
-
-<a href="https://www.linkedin.com/in/aniket484">
-<img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
-</a>
-
-<a href="mailto:aniketkmr484@gmail.com">
-<img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/>
-</a>
-
-<a href="https://github.com/aniket-devop">
-<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
-</a>
-
-</p>
-
----
-
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=aniket-devop&label=Profile%20Views&color=0e75b6&style=flat" />
-</p>
-
----
-
-<h3 align="center">
-⚡ Automate • Secure • Scale ⚡
-</h3>
+> Automate everything.  
+> Secure by default.  
+> Build for scale.
