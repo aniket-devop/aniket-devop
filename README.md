@@ -1,45 +1,49 @@
-<!-- 🔥 DEVOPS HERO -->
+<!-- ========================== HERO SECTION ========================== -->
 
 <p align="center">
-  <img src="https://media.giphy.com/media/ZVik7pBtu9dNS/giphy.gif" width="700"/>
+  <img src="https://media.giphy.com/media/ZVik7pBtu9dNS/giphy.gif" width="850"/>
 </p>
 
 <h1 align="center">⚡ ANIKET KUMAR ⚡</h1>
 
 <p align="center">
-  💻 DevOps Engineer • 🔐 DevSecOps • ☁️ Cloud • ⚙️ Automation
+  <b>DevOps Engineer</b> • <b>DevSecOps</b> • <b>Cloud Infrastructure</b> • <b>Automation</b>
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=22&pause=1000&color=00E5FF&center=true&vCenter=true&width=700&lines=AWS+%7C+Docker+%7C+Kubernetes;Terraform+%7C+CI%2FCD+%7C+Linux;Building+Production+Grade+Systems"/>
+  <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=24&pause=1000&color=00E5FF&center=true&vCenter=true&width=850&lines=AWS+%7C+Docker+%7C+Kubernetes+%7C+Terraform;CI%2FCD+Automation+Engineer;Building+Production+Grade+Cloud+Systems;DevSecOps+%7C+Monitoring+%7C+Scalability"/>
 </p>
 
----
-
-## 🧠 WHO AM I?
-
 <p align="center">
-
-🚀 Building production-ready cloud infrastructure  
-🔐 Securing CI/CD pipelines using DevSecOps tools  
-⚙️ Automating deployments & workflows  
-📊 Monitoring scalable systems continuously  
-
+  <img src="https://komarev.com/ghpvc/?username=aniket-devop&label=PROFILE+VIEWS&color=0e75b6&style=for-the-badge"/>
 </p>
 
 ---
 
-## ⚡ TECH STACK
+# 🧠 ABOUT ME
 
 <p align="center">
 
-<img src="https://skillicons.dev/icons?i=aws,azure,docker,kubernetes,terraform,githubactions,linux,git,ansible,prometheus,grafana,bash,python&theme=dark"/>
+🚀 Building scalable & production-grade cloud infrastructure  
+🔐 Securing CI/CD pipelines using DevSecOps practices  
+⚙️ Automating deployments, workflows & infrastructure  
+📊 Monitoring highly available cloud-native systems  
 
 </p>
 
 ---
 
-## 🔐 DEVSECOPS STACK
+# ⚡ TECH STACK
+
+<p align="center">
+
+<img src="https://skillicons.dev/icons?i=aws,azure,docker,kubernetes,terraform,githubactions,linux,git,ansible,prometheus,grafana,bash,python,mongodb,mysql,nginx&theme=dark"/>
+
+</p>
+
+---
+
+# 🔐 DEVSECOPS STACK
 
 <p align="center">
 
@@ -49,49 +53,77 @@
 
 <img src="https://img.shields.io/badge/Checkov-IaC_Security-purple?style=for-the-badge"/>
 
+<img src="https://img.shields.io/badge/GitHub_Actions-CI/CD-2088FF?style=for-the-badge"/>
+
 </p>
 
 ---
 
-## 💼 EXPERIENCE
+# 🚀 FEATURED PROJECT
+
+## Banking Fraud Detection System
+
+```text
+Developer
+   ↓
+GitHub Repository
+   ↓
+GitHub Actions CI/CD
+   ↓
+Docker Build & Push
+   ↓
+Security Scanning
+   ↓
+Kubernetes Deployment
+   ↓
+AWS Cloud Infrastructure
+   ↓
+Monitoring & Observability
+```
+
+### ✨ KEY FEATURES
+
+- CI/CD Automation
+- Dockerized Deployment
+- Kubernetes Orchestration
+- Infrastructure as Code using Terraform
+- DevSecOps Security Scanning
+- Monitoring with Prometheus & Grafana
+- AWS Cloud Deployment
+
+---
+
+# 💼 EXPERIENCE
 
 <p align="center">
 
 🏢 <b>DevOps Intern — DevOps Insiders</b><br>
-⚙️ Built CI/CD pipelines & automated deployments<br>
+⚙️ Built CI/CD pipelines & deployment automation<br>
 ☁️ Worked with AWS, Docker, Kubernetes & Terraform<br>
-🔐 Implemented security scanning tools
+🔐 Implemented security scanning & monitoring solutions
 
 </p>
 
 ---
 
-## 🎓 TRAINING
+# 🎓 TRAINING
 
 <p align="center">
 
 📚 <b>TrainWithShubham</b><br>
-🚀 Hands-on DevOps projects & cloud deployments
+🚀 Hands-on DevOps, Cloud & Automation Training
 
 </p>
 
 ---
 
-## 🚀 CURRENT FOCUS
-
-```text
-Cloud Infrastructure • Kubernetes • DevSecOps • Automation
-```
-
----
-
-## 📊 GITHUB STATS
+# 📊 GITHUB ANALYTICS
 
 <p align="center">
 
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=aniket-devop&show_icons=true&theme=tokyonight&hide_border=true"/>
+<img height="170" src="https://github-readme-stats.vercel.app/api?username=aniket-devop&show_icons=true&theme=tokyonight&hide_border=true"/>
 
-<img height="165" src="https://github-readme-streak-stats.herokuapp.com/?user=aniket-devop&theme=tokyonight&hide_border=true"/>
+<img height="170" src="https://github-readme-streak-stats.herokuapp.com/?user=aniket-devop&theme=tokyonight&hide_border=true"/>
 
 </p>
 
@@ -103,7 +135,7 @@ Cloud Infrastructure • Kubernetes • DevSecOps • Automation
 
 ---
 
-## 🐍 CONTRIBUTION SNAKE
+# 🐍 CONTRIBUTION SNAKE
 
 <p align="center">
   <img src="https://github.com/Platane/snk/raw/output/github-contribution-grid-snake-dark.svg"/>
@@ -111,7 +143,7 @@ Cloud Infrastructure • Kubernetes • DevSecOps • Automation
 
 ---
 
-## 🌐 CONNECT WITH ME
+# 🌐 CONNECT WITH ME
 
 <p align="center">
 
