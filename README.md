@@ -1,35 +1,61 @@
-<!-- ========================== HERO SECTION ========================== -->
+<!-- ========================= CYBER DEVOPS HERO ========================= -->
 
 <p align="center">
-  <img src="https://media.giphy.com/media/ZVik7pBtu9dNS/giphy.gif" width="850"/>
+  <img src="https://media.giphy.com/media/ZVik7pBtu9dNS/giphy.gif" width="900"/>
 </p>
 
 <h1 align="center">⚡ ANIKET KUMAR ⚡</h1>
 
 <p align="center">
-  <b>DevOps Engineer</b> • <b>DevSecOps</b> • <b>Cloud Infrastructure</b> • <b>Automation</b>
+  <b>DEVOPS ENGINEER</b> • <b>DEVSECOPS</b> • <b>CLOUD INFRASTRUCTURE</b> • <b>AUTOMATION</b>
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=24&pause=1000&color=00E5FF&center=true&vCenter=true&width=850&lines=AWS+%7C+Docker+%7C+Kubernetes+%7C+Terraform;CI%2FCD+Automation+Engineer;Building+Production+Grade+Cloud+Systems;DevSecOps+%7C+Monitoring+%7C+Scalability"/>
+
+<img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=24&pause=1000&color=00E5FF&center=true&vCenter=true&width=900&lines=AWS+%7C+Docker+%7C+Kubernetes+%7C+Terraform;CI%2FCD+Automation+Engineer;Building+Production+Grade+Systems;Cloud+Native+Infrastructure;DevSecOps+%7C+Monitoring+%7C+Scalability"/>
+
 </p>
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=aniket-devop&label=PROFILE+VIEWS&color=0e75b6&style=for-the-badge"/>
+
+<img src="https://img.shields.io/github/followers/aniket-devop?style=for-the-badge&color=00E5FF"/>
+
+<img src="https://img.shields.io/github/stars/aniket-devop?style=for-the-badge&color=111827"/>
+
+<img src="https://komarev.com/ghpvc/?username=aniket-devop&label=PROFILE+VIEWS&color=0e75b6&style=for-the-badge"/>
+
 </p>
 
 ---
 
-# 🧠 ABOUT ME
+# 🧠 WHO AM I?
 
-<p align="center">
+<div align="center">
 
-🚀 Building scalable & production-grade cloud infrastructure  
-🔐 Securing CI/CD pipelines using DevSecOps practices  
-⚙️ Automating deployments, workflows & infrastructure  
-📊 Monitoring highly available cloud-native systems  
+```yaml
+name: Aniket Kumar
 
-</p>
+role: DevOps Engineer
+
+specialization:
+  - Cloud Infrastructure
+  - Kubernetes
+  - CI/CD Automation
+  - DevSecOps
+  - Monitoring & Observability
+
+currently_learning:
+  - GitOps
+  - Platform Engineering
+  - Advanced Kubernetes
+
+mindset:
+  - automate_everything
+  - secure_by_default
+  - build_for_scale
+```
+
+</div>
 
 ---
 
@@ -37,23 +63,27 @@
 
 <p align="center">
 
-<img src="https://skillicons.dev/icons?i=aws,azure,docker,kubernetes,terraform,githubactions,linux,git,ansible,prometheus,grafana,bash,python,mongodb,mysql,nginx&theme=dark"/>
+<img src="https://skillicons.dev/icons?i=aws,azure,docker,kubernetes,terraform,githubactions,linux,git,ansible,prometheus,grafana,bash,python,mongodb,mysql,redis,nginx&theme=dark"/>
 
 </p>
 
 ---
 
-# 🔐 DEVSECOPS STACK
+# 🔐 DEVSECOPS TOOLCHAIN
 
 <p align="center">
 
-<img src="https://img.shields.io/badge/Trivy-Container_Security-blue?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/TRIVY-Container_Security-blue?style=for-the-badge"/>
 
-<img src="https://img.shields.io/badge/SonarQube-Code_Analysis-green?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/SONARQUBE-Code_Analysis-green?style=for-the-badge"/>
 
-<img src="https://img.shields.io/badge/Checkov-IaC_Security-purple?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/CHECKOV-IaC_Security-purple?style=for-the-badge"/>
 
 <img src="https://img.shields.io/badge/GitHub_Actions-CI/CD-2088FF?style=for-the-badge"/>
+
+<img src="https://img.shields.io/badge/PROMETHEUS-Monitoring-orange?style=for-the-badge"/>
+
+<img src="https://img.shields.io/badge/GRAFANA-Visualization-red?style=for-the-badge"/>
 
 </p>
 
@@ -61,59 +91,74 @@
 
 # 🚀 FEATURED PROJECT
 
+<div align="center">
+
 ## Banking Fraud Detection System
+
+Production-grade DevOps & DevSecOps Infrastructure Project
+
+</div>
+
+---
+
+# ⚙️ DEPLOYMENT ARCHITECTURE
 
 ```text
 Developer
-   ↓
+    ↓
 GitHub Repository
-   ↓
+    ↓
 GitHub Actions CI/CD
-   ↓
+    ↓
 Docker Build & Push
-   ↓
-Security Scanning
-   ↓
+    ↓
+Trivy Security Scan
+    ↓
 Kubernetes Deployment
-   ↓
+    ↓
 AWS Cloud Infrastructure
-   ↓
-Monitoring & Observability
+    ↓
+Prometheus + Grafana Monitoring
 ```
 
-### ✨ KEY FEATURES
+---
 
-- CI/CD Automation
-- Dockerized Deployment
+# ✨ PROJECT HIGHLIGHTS
+
+- Fully Automated CI/CD Pipeline
+- Dockerized Deployment Workflow
 - Kubernetes Orchestration
-- Infrastructure as Code using Terraform
-- DevSecOps Security Scanning
-- Monitoring with Prometheus & Grafana
-- AWS Cloud Deployment
+- Infrastructure as Code with Terraform
+- DevSecOps Security Integration
+- Cloud Monitoring & Alerting
+- AWS Production Deployment
 
 ---
 
 # 💼 EXPERIENCE
 
-<p align="center">
+<div align="center">
 
-🏢 <b>DevOps Intern — DevOps Insiders</b><br>
-⚙️ Built CI/CD pipelines & deployment automation<br>
-☁️ Worked with AWS, Docker, Kubernetes & Terraform<br>
-🔐 Implemented security scanning & monitoring solutions
+### DevOps Intern — DevOps Insiders
 
-</p>
+⚙️ Built CI/CD pipelines & deployment automation  
+☁️ Worked with AWS, Docker, Kubernetes & Terraform  
+🔐 Implemented DevSecOps security scanning  
+📊 Configured monitoring & observability systems  
+
+</div>
 
 ---
 
 # 🎓 TRAINING
 
-<p align="center">
+<div align="center">
 
-📚 <b>TrainWithShubham</b><br>
-🚀 Hands-on DevOps, Cloud & Automation Training
+### TrainWithShubham
 
-</p>
+Hands-on DevOps, Cloud & Automation Training
+
+</div>
 
 ---
 
@@ -129,7 +174,7 @@ Monitoring & Observability
 
 <p align="center">
 
-<img width="85%" src="https://github-readme-activity-graph.vercel.app/graph?username=aniket-devop&theme=tokyo-night&hide_border=true"/>
+<img width="90%" src="https://github-readme-activity-graph.vercel.app/graph?username=aniket-devop&theme=tokyo-night&hide_border=true"/>
 
 </p>
 
@@ -138,7 +183,9 @@ Monitoring & Observability
 # 🐍 CONTRIBUTION SNAKE
 
 <p align="center">
-  <img src="https://github.com/Platane/snk/raw/output/github-contribution-grid-snake-dark.svg"/>
+
+<img src="https://github.com/Platane/snk/raw/output/github-contribution-grid-snake-dark.svg"/>
+
 </p>
 
 ---
@@ -148,19 +195,23 @@ Monitoring & Observability
 <p align="center">
 
 <a href="https://www.linkedin.com/in/aniket484">
-  <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
+<img src="https://img.shields.io/badge/LINKEDIN-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
 </a>
 
 <a href="mailto:aniketkmr484@gmail.com">
-  <img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/>
+<img src="https://img.shields.io/badge/GMAIL-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/>
 </a>
 
 <a href="https://github.com/aniket-devop">
-  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
+<img src="https://img.shields.io/badge/GITHUB-181717?style=for-the-badge&logo=github&logoColor=white"/>
 </a>
 
 </p>
 
 ---
 
-<h2 align="center">⚡ AUTOMATE • SECURE • SCALE ⚡</h2>
+<div align="center">
+
+# ⚡ AUTOMATE • SECURE • SCALE ⚡
+
+</div>
