@@ -1,7 +1,7 @@
 <!-- ========================= CYBER DEVOPS HERO ========================= -->
 
 <p align="center">
-  <img src="https://media.giphy.com/media/ZVik7pBtu9dNS/giphy.gif" width="900"/>
+  <img src="https://media.giphy.com/media/ZVik7pBtu9dNS/giphy.gif" width="600"/>
 </p>
 
 <h1 align="center">⚡ ANIKET KUMAR ⚡</h1>
@@ -35,7 +35,7 @@
 ```yaml
 name: Aniket Kumar
 
-role: DevOps Engineer
+role: DevOps Engineer/ DevsecOps Engineer
 
 specialization:
   - Cloud Infrastructure
