@@ -69,13 +69,6 @@
 
 ---
 
-## 🎓 Training
-
-<p align="center">
-📚 <b>TrainWithShubham (24 Jan 2026 – 24 May 2026)</b><br>
-🚀 Hands-on DevOps projects & cloud deployments
-</p>
-
 ---
 
 ## 📊 GitHub Power
