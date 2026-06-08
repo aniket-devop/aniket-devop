@@ -12,7 +12,7 @@
 
 ---
 
-<h2 align="center">🧠 Who Am I?</h2>
+<h2 align="center">🧠 ## 🚀 About Me </h2>
 
 <p align="center">
 🚀 I build <b>production-ready cloud systems</b><br>
@@ -65,7 +65,7 @@
 🏢 <b>DevOps Intern — DevOps Insiders</b><br>
 ⚙️ Built CI/CD pipelines & automated deployments<br>
 🔐 Implemented security scanning tools<br>
-☁️ Worked with AWS, Docker, Kubernetes & Terraform
+☁️ Worked with Azure, Docker, Kubernetes & Terraform
 </p>
 
 ---
