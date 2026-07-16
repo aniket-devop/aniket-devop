@@ -6,6 +6,16 @@
 
 I build small Azure environments in Terraform and spend most of my effort on the security and CI side of them — getting a change to deploy is the easy part, getting it to deploy safely is the part worth doing properly.
 
+<br>
+
+<img src="diagrams/hero-banner-v2.svg"
+     width="92%"
+     style="max-width: 1100px;"
+     alt="Git → Azure DevOps Pipeline → Terraform → Azure Landing Zone → Private AKS → ArgoCD/Helm → Monitoring"/>
+
+<br>
+<br>
+
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/aniket484)
 [![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:aniketkmr484@gmail.com)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/aniket-devop)
