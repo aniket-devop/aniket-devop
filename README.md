@@ -15,7 +15,86 @@ I build small Azure environments in Terraform and spend most of my effort on the
 </div>
 
 <br>
+## Stack
 
+<table>
+<tr>
+<td valign="top" width="50%">
+
+**☁️ Cloud Platform**
+<br>
+<img src="https://skillicons.dev/icons?i=azure" height="32"/>
+
+Azure, Azure DevOps, Microsoft Entra ID
+
+Building cloud infrastructure with focus on security, governance, and automation.
+
+<br>
+
+**🏗 Infrastructure as Code**
+<br>
+<img src="https://skillicons.dev/icons?i=terraform" height="32"/>
+
+Terraform, Azure Resource Manager, Bicep
+
+Designing reusable infrastructure modules, remote state management, and automated provisioning.
+
+<br>
+
+**🐳 Containers & Kubernetes**
+<br>
+<img src="https://skillicons.dev/icons?i=docker,kubernetes" height="32"/>
+
+Docker, Kubernetes, Helm, ArgoCD
+
+Deploying containerized applications with Kubernetes-based workflows.
+
+</td>
+
+<td valign="top" width="50%">
+
+**⚙️ CI/CD & Automation**
+<br>
+<img src="https://skillicons.dev/icons?i=githubactions,jenkins" height="32"/>
+
+Azure Pipelines, GitHub Actions
+
+Automating build, test, security checks, and deployment workflows.
+
+<br>
+
+**🔐 DevSecOps**
+<br>
+
+Trivy, Checkov, SonarQube, Azure Key Vault
+
+Integrating security scanning and secret management into CI/CD pipelines.
+
+<br>
+
+**📊 Observability**
+<br>
+<img src="https://skillicons.dev/icons?i=prometheus,grafana" height="32"/>
+
+Prometheus, Grafana, Loki
+
+Building monitoring stacks for infrastructure and applications.
+
+<br>
+
+**💻 Scripting & Version Control**
+<br>
+<img src="https://skillicons.dev/icons?i=python,bash,git,github" height="32"/>
+
+Python, Bash, Git, GitHub
+
+Automation scripts and infrastructure workflow management.
+
+</td>
+</tr>
+</table>
+
+<br>
 ## About
 
 I'm a BCA graduate with hands-on experience from my DevOps internship at DevOps Insider. Outside of that role, I build Azure and Terraform projects on my own time to get deeper into areas I wanted to explore further — landing zone patterns, private AKS clusters, and pipelines that actually stop a bad change instead of just logging it after the fact.
