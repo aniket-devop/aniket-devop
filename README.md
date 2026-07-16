@@ -86,7 +86,7 @@ Three projects here instead of a longer list of smaller ones. It felt more hones
 <br>
 
 ### 1. Azure Landing Zone in Terraform
-🔗 [Repo](https://github.com/aniket-devop) *(link once pushed / share on request)*
+🔗 [Repo](https://github.com/aniket-devop/azure-landing-zone-terraform)
 
 This one started because I kept copy-pasting the same networking module between two "environments" and got tired of it. Rebuilt it as a proper hub-and-spoke setup instead.
 
