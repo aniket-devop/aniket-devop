@@ -10,9 +10,27 @@ Turning Microsoft's reference architectures into infrastructure I've actually st
 [![Email](https://img.shields.io/badge/Email-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:aniketkmr484@gmail.com)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/aniket-devop)
 
+![Profile Views](https://komarev.com/ghpvc/?username=aniket-devop&style=flat-square&color=0A66C2&label=Profile+Views)
+
 </div>
 
 <br>
+
+<div align="center">
+
+| | |
+|---|---|
+| 🎓 **Background** | 1-year DevOps internship — DevOps Insider |
+| ☁️ **Core stack** | Azure, Terraform, Kubernetes |
+| 🔐 **Focus area** | DevSecOps & Platform Engineering |
+| 🛠️ **Currently building** | Private AKS platform + policy-gated CI/CD |
+| 📍 **Open to** | DevOps / Platform / Cloud Engineer roles |
+
+</div>
+
+<br>
+
+---
 
 ## About
 
@@ -25,6 +43,8 @@ I'm not inventing new patterns here. I'm implementing the architectures Microsof
 Everything below is labeled honestly: what's working, what's sandbox-only, and what I haven't tested yet.
 
 <br>
+
+---
 
 ## Tech Stack
 
@@ -49,6 +69,8 @@ Everything below is labeled honestly: what's working, what's sandbox-only, and w
 *(skillicons.dev doesn't have logos for ArgoCD, Checkov, Trivy, SonarQube, Prometheus/Grafana/Loki — those are listed in the table above instead of as icons.)*
 
 <br>
+
+---
 
 ## Featured Projects
 
@@ -140,6 +162,8 @@ flowchart LR
 
 <br>
 
+---
+
 ## GitHub Stats
 
 <div align="center">
@@ -147,7 +171,13 @@ flowchart LR
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=aniket-devop&layout=compact&theme=default&hide_border=true" height="165"/>
 </div>
 
+<div align="center">
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=aniket-devop&theme=default&hide_border=true" height="165"/>
+</div>
+
 <br>
+
+---
 
 ## Currently Learning
 
@@ -158,7 +188,11 @@ flowchart LR
 
 <br>
 
+---
+
 ## Contact
+
+If any of this lines up with a role you're hiring for, I'd like to talk — happy to walk through the Terraform, the pipeline, or a specific decision in more depth.
 
 <div align="center">
 
