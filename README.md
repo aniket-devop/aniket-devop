@@ -4,6 +4,8 @@
 
 **Azure DevOps Engineer · DevSecOps · Platform Automation**
 
+I design Azure infrastructure as Terraform modules, then gate every change through security scanning and policy checks before it reaches `apply`.
+
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/aniket484)
 [![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:aniketkmr484@gmail.com)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/aniket-devop)
@@ -16,9 +18,9 @@
 
 ## About
 
-I build Azure infrastructure with Terraform, and wire DevSecOps controls (scanning, policy checks, quality gates) directly into the CI/CD pipelines that deploy it. My work centers on treating infrastructure the same way application code is treated: version-controlled, reviewed, and reproducible rather than hand-configured.
+My focus is Azure infrastructure built with Terraform, with DevSecOps controls (Trivy, Checkov, SonarQube) enforced as pipeline gates rather than post-deployment audits. I treat infrastructure like application code: modularized, version-controlled, and reviewed before it ships.
 
-I'm not claiming production-scale enterprise experience — the projects below are infrastructure I designed and built myself to work the way real production systems do, and that's the level I'm operating at right now.
+These are self-built projects, not enterprise production systems — each one is designed to reflect the patterns a real production environment would need (private networking, least-privilege access, policy gates), so that's the level of judgment on display here, not the scale.
 
 <br>
 
@@ -75,75 +77,122 @@ Prometheus · Grafana
 
 <br>
 
+## Featured Repositories
+
+> Replace the `#` links below with the actual repo URLs once pinned — placeholders only, not invented paths.
+
+| Repository | What it demonstrates |
+|---|---|
+| [azure-landing-zone-terraform](#) | CAF-aligned landing zone, hub-and-spoke, modular Terraform |
+| [aks-production-infra](#) | Private AKS cluster, managed identity, Terraform-provisioned |
+| [azure-devops-secure-pipeline](#) | CI/CD with Trivy / Checkov / SonarQube as hard gates |
+| [gitops-argocd-helm](#) | Git-reconciled Kubernetes deployments via ArgoCD |
+| [monitoring-prometheus-grafana](#) | Metrics and dashboards provisioned alongside infra |
+
+<br>
+
 ## Projects
 
 ### Azure Landing Zone — Terraform
 
-A reusable landing zone built against Microsoft's Cloud Adoption Framework, structured as composable Terraform modules rather than one-off scripts.
+**Problem:** A landing zone is only useful if teams can extend it without copy-pasting Terraform. A single monolithic config doesn't survive a second environment.
+
+**Design decisions:**
+- Structured around Microsoft's Cloud Adoption Framework rather than an ad-hoc layout, so the resource hierarchy matches what a reviewer coming from another CAF-based environment would already expect
+- Hub-and-spoke networking with NSGs at the spoke boundary — segmentation is enforced at the network layer, not left to convention
+- Azure Bastion instead of public IPs/jump boxes on VMs — removes an entire class of exposed-management-port misconfiguration
+- RBAC scoped per resource group, not subscription-wide — least privilege as a default, not an afterthought
+
+**Outcome:** A set of parameterized Terraform modules that can stand up a new environment (dev/stage/prod-shaped) by changing variables, not rewriting configuration.
 
 | Component | Implementation |
 |---|---|
-| Networking | Hub-and-spoke topology, NSGs, Azure Bastion for private access |
-| Identity & Access | RBAC role assignments, least-privilege scoping |
-| Secrets | Azure Key Vault integration |
-| Structure | Resource organization by environment/subscription boundary |
-| Reusability | Modularized Terraform, parameterized for reuse across environments |
+| Networking | Hub-and-spoke, NSGs, Azure Bastion |
+| Identity & Access | RBAC, least-privilege scoping |
+| Secrets | Azure Key Vault |
+| Structure | Resource organization by environment boundary |
+| Reusability | Modularized, parameterized Terraform |
 
 ### AKS Production Infrastructure — Terraform
 
-An AKS environment provisioned to reflect production patterns — private networking and managed identity rather than default/public configurations.
+**Problem:** Default AKS quickstarts expose the API server publicly and use static credentials for registry access — neither is something a production cluster should ship with.
 
-- Azure Kubernetes Service + Azure Container Registry, provisioned together
-- Managed Identity for cluster-to-registry auth (no stored credentials)
-- Private networking for the cluster control plane
-- Monitoring wired in at provision time, not bolted on after
+**Design decisions:**
+- Private networking for the control plane, closing off the most common AKS misconfiguration
+- Managed Identity for AKS→ACR authentication instead of stored service principal credentials — nothing to rotate, nothing to leak
+- Monitoring provisioned in the same Terraform run as the cluster, so observability isn't a manual step someone forgets after the fact
+
+**Outcome:** An AKS + ACR pair where the trust relationship is identity-based end to end, provisioned as one reproducible Terraform apply.
 
 ### Azure DevOps CI/CD Pipeline
 
-A pipeline that treats security scanning as a gate, not an afterthought.
+**Problem:** Security scanning that runs *after* deployment only tells you what already broke. The gate needs to sit before `apply`, not after.
+
+**Design decisions:**
+- Trivy and Checkov run against the Terraform plan output, not the live infrastructure — issues get caught before anything is provisioned
+- SonarQube quality gates block on code smell / maintainability thresholds, not just pass/fail test results
+- Manual approval sits between `plan` and `apply` deliberately — automated gates catch known issues, but infra changes still get a human review before they're irreversible
 
 ```
-Terraform Validate → Terraform Plan → Manual Approval → Terraform Apply
-                              ↓
-                    Trivy Scan · Checkov Scan · SonarQube Quality Gate
+Terraform Validate → Terraform Plan → Trivy Scan → Checkov Scan → SonarQube Gate → Manual Approval → Terraform Apply
 ```
 
-Infrastructure changes don't reach `apply` without passing static analysis and a human sign-off.
+**Outcome:** No infrastructure change reaches `apply` without passing static analysis and a human sign-off — the pipeline enforces this, not a checklist.
 
 ### GitOps Deployment — ArgoCD + Helm
 
-Kubernetes application state is defined in Git and reconciled by ArgoCD, not applied manually via `kubectl`. Helm charts define the desired state; Git is the single source of truth; drift gets corrected automatically rather than silently accumulating.
+**Problem:** Manual `kubectl apply` means cluster state and Git history diverge silently over time, and nobody notices until something breaks.
+
+**Design decisions:**
+- Helm charts define desired state as versioned, reviewable artifacts instead of imperative commands
+- ArgoCD continuously reconciles live cluster state against Git — drift is corrected automatically rather than discovered during an incident
+
+**Outcome:** Git is the actual source of truth for what's running, not a record of what was *supposed* to be applied.
 
 ### Monitoring Stack — Prometheus + Grafana
 
-Metrics collection and dashboards provisioned alongside the infrastructure they observe, so observability isn't a separate manual step after deployment.
+**Problem:** Observability bolted on after infrastructure exists usually means half the metrics you need were never exposed.
+
+**Design decisions:**
+- Prometheus and Grafana provisioned in the same IaC workflow as the infrastructure they monitor, so dashboards exist from day one instead of being retrofitted
+
+**Outcome:** Metrics and dashboards ship with the infrastructure, not as a follow-up task.
 
 <br>
 
 ## GitHub Activity
 
 <div align="center">
-
-<img src="https://github-readme-stats.vercel.app/api?username=aniket-devop&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" height="165"/>
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=aniket-devop&layout=compact&theme=tokyonight&hide_border=true" height="165"/>
+<table>
+<tr>
+<td><img src="https://github-readme-stats.vercel.app/api?username=aniket-devop&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" height="165"/></td>
+<td><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=aniket-devop&layout=compact&theme=tokyonight&hide_border=true" height="165"/></td>
+</tr>
+</table>
 
 <img src="https://github-readme-streak-stats.herokuapp.com/?user=aniket-devop&theme=tokyonight&hide_border=true"/>
-
 </div>
 
 <br>
 
 ## Currently Working On
 
-- Azure Policy and governance at the landing-zone level
-- Kubernetes security hardening (OPA, Kyverno)
-- Terraform module testing
-- Crossplane as an alternative control-plane model
+| Area | Specifically |
+|---|---|
+| Governance | Azure Policy at the landing-zone level |
+| Kubernetes Security | OPA and Kyverno for admission control |
+| Terraform | Module testing practices |
+| Control Planes | Crossplane as an alternative to direct provider modules |
 
 <br>
 
 ## Contact
 
-**Email** — [aniketkmr484@gmail.com](mailto:aniketkmr484@gmail.com)
-**LinkedIn** — [linkedin.com/in/aniket484](https://linkedin.com/in/aniket484)
-**GitHub** — [github.com/aniket-devop](https://github.com/aniket-devop)
+<div align="center">
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/aniket484)
+[![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:aniketkmr484@gmail.com)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/aniket-devop)
+
+</div>
+
