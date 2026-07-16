@@ -2,9 +2,9 @@
 
 # Aniket Kumar
 
-**DevOps Intern — Azure, Terraform, Kubernetes**
+**DevOps Fresher — Azure, Terraform, Kubernetes**
 
-I spend most of my time building small Azure environments in Terraform and trying to get the security/CI side of them right, not just the "it deploys" part.
+One year of internship experience, spent mostly figuring out how to make small Azure environments in Terraform behave like they'd survive a code review, not just a demo.
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/aniket484)
 [![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:aniketkmr484@gmail.com)
@@ -18,76 +18,50 @@ I spend most of my time building small Azure environments in Terraform and tryin
 
 ## About
 
-I'm a BCA grad who did a 1-year DevOps internship, and outside of that I build small Azure/Terraform projects on my own to practice the stuff I don't get enough hands-on time with at work — mainly landing zone patterns, private AKS clusters, and pipelines that actually block bad changes instead of just running after the fact.
+I think about infrastructure the same way I'd want to think about application code: if it's not in version control and it's not repeatable, I don't fully trust it. That's basically why I use Terraform instead of clicking through the portal — not because click-ops doesn't work, but because I can't review a click, and I can review a diff.
 
-None of this is production infrastructure with real traffic. It's self-built, sized for one person to run and re-run, but I've tried to follow the same patterns (private networking, scoped access, gates before apply) that a real environment would need, since that's the part I actually want to get good at.
+The automation side comes from the same place. Anything I find myself doing by hand more than twice, I try to script or put in a pipeline, mostly because I'm not disciplined enough to do a manual step correctly the same way every time.
+
+Security in CI/CD is the part I care about most right now, honestly because it's the part I got wrong first. Early on I had scans running after deployment, which meant they were really just telling me what I'd already broken. Moving the checks before `apply` was the single change that made the rest of this feel like an actual pipeline instead of a script that happens to run in order.
 
 <br>
 
-## Stack
+## Tech Stack
 
-<table>
-<tr>
-<td valign="top" width="50%">
+Only listing what shows up in the repos below — not a wishlist.
 
-**Cloud**
+| Area | Tools |
+|---|---|
+| Cloud | Azure, Azure DevOps |
+| IaC | Terraform |
+| Containers | Docker, Kubernetes, Helm |
+| GitOps | ArgoCD |
+| CI/CD | Azure Pipelines, GitHub Actions (personal repos) |
+| Security scanning | Trivy, Checkov, SonarQube, Azure Key Vault |
+| Monitoring | Prometheus, Grafana |
+| Scripting | Python, Bash |
+
 <br>
-<img src="https://skillicons.dev/icons?i=azure" height="32"/>
 
-Azure, Azure DevOps, Entra ID — day-to-day comfortable with these
+## Featured Repositories
 
-**Infrastructure as Code**
-<br>
-<img src="https://skillicons.dev/icons?i=terraform" height="32"/>
+Table structure is here so it's easy to keep updated as repos go public — links get added as each one is cleaned up, not before.
 
-Terraform (main tool I use), some Bicep, Ansible for config management on a couple of projects
-
-**Containers & Orchestration**
-<br>
-<img src="https://skillicons.dev/icons?i=docker,kubernetes" height="32"/>
-
-Docker, Kubernetes, Helm, ArgoCD
-
-</td>
-<td valign="top" width="50%">
-
-**CI/CD**
-<br>
-<img src="https://skillicons.dev/icons?i=githubactions,jenkins" height="32"/>
-
-Azure Pipelines mostly, GitHub Actions for personal repos, a bit of Jenkins
-
-**Security scanning**
-
-Trivy and Checkov in pipelines, SonarQube for code quality, Key Vault for secrets. HashiCorp Vault I've only used in a sandbox, not comfortable calling that a strength yet.
-
-**Monitoring**
-<br>
-<img src="https://skillicons.dev/icons?i=prometheus,grafana" height="32"/>
-
-Prometheus + Grafana, provisioned alongside infra rather than bolted on after
-
-**Languages & VCS**
-<br>
-<img src="https://skillicons.dev/icons?i=python,bash,git,github" height="32"/>
-
-Python and Bash for scripting/automation, Git daily
-
-</td>
-</tr>
-</table>
+| # | Repository | Stack | What it demonstrates |
+|---|---|---|---|
+| 1 | _(link pending)_ | Terraform, Azure | Hub-and-spoke landing zone, per-RG RBAC |
+| 2 | _(link pending)_ | Terraform, AKS | Private cluster, managed identity to ACR, no static creds |
+| 3 | _(link pending)_ | Azure Pipelines, Trivy, Checkov, SonarQube | Scans gate `apply`, pipeline fails closed |
+| 4 | _(link pending)_ | ArgoCD, Helm | Git-reconciled deploys, drift detection |
+| 5 | _(link pending)_ | Prometheus, Grafana | Monitoring provisioned with the infra it watches |
 
 <br>
 
 ## Projects
 
-A quick note before these: repos are being cleaned up (removing hardcoded values I used while testing, adding proper `.tfvars.example` files) before I make them public one at a time. I'll link each one here as it's ready instead of leaving dead links sitting around.
-
-<br>
-
 ### 1. Azure Landing Zone in Terraform
 
-This one started because I kept copy-pasting the same networking module between two "environments" and got tired of it. So I rebuilt it as a proper hub-and-spoke setup instead.
+This one started because I kept copy-pasting the same networking module between two "environments" and got tired of it. So I rebuilt it as a proper hub-and-spoke setup instead of a single flat network.
 
 ```mermaid
 flowchart TB
@@ -119,24 +93,22 @@ flowchart TB
     class MG,SUB mg
 ```
 
-*(Cleaner diagram with proper Azure icons — adding it as `diagrams/landing-zone.png` once I export one properly.)*
-
 What I went with, and why:
 
-- Hub-and-spoke instead of one flat network — mainly so the firewall and Bastion live in one place instead of every spoke reinventing them
-- NSGs at the spoke boundary so the AKS subnet isn't just trusting whatever's on the VNet
-- Bastion instead of a jump box with a public IP — this was actually a mistake I made in an earlier version of this project (had a VM with a public IP for "just testing"), so I fixed it here on purpose
-- RBAC scoped to the resource group, not the subscription, because I didn't want one broad role assignment covering everything
+- Hub-and-spoke so the firewall and Bastion live in one place instead of every spoke reinventing them
+- NSGs at the spoke boundary so the AKS subnet isn't just trusting whatever's on the VNet by default
+- Bastion instead of a jump box with a public IP — an earlier version of this project actually had a public-IP test VM "just for now," so this was a deliberate fix, not the original design
+- RBAC scoped to the resource group rather than the subscription, mainly so one broad role assignment doesn't end up covering things it shouldn't
 
-It's parameterized enough that I can spin up a second "environment" by changing tfvars instead of duplicating the whole module — that was the actual goal, more than the security stuff, if I'm honest.
+Parameterizing it so a second environment is a tfvars change instead of a copy-paste was the real goal here — the security patterns came along with doing it properly, more than being the starting point.
 
-**Repo:** cleaning up before publishing — will link here once it's done
+**Repo:** _(link pending — cleaning up hardcoded test values first)_
 
 <br>
 
-### 2. Private AKS Cluster + ACR (no static credentials)
+### 2. Private AKS Cluster + ACR, no static credentials
 
-The default AKS quickstart tutorials all leave the API server public and use a service principal secret for pulling from ACR. I wanted to see if I could avoid both.
+Default AKS quickstarts leave the API server public and use a service principal secret for pulling from ACR. Wanted to see if I could avoid both.
 
 ```mermaid
 flowchart TD
@@ -181,19 +153,19 @@ flowchart LR
     class ACR,MI,MON2 ext
 ```
 
-The module split (networking → security → identity → AKS → monitoring) came out of trial and error, not planning — I originally had everything in one module and Terraform kept trying to create resources out of order because of implicit dependencies I hadn't thought through. Splitting it fixed that and made it obvious what depends on what.
+The module split (networking → security → identity → AKS → monitoring) came out of trial and error, not upfront planning. I originally had it all in one module and Terraform kept trying to create things in an order that didn't respect the actual dependencies. Splitting it made the dependency chain explicit and fixed the ordering problem.
 
-The main thing I wanted working: AKS talking to ACR through a managed identity, with nothing to rotate and nothing that could leak in a `.tfvars` file by accident. Private endpoints for ACR and Key Vault so nothing goes over the public endpoint even inside the VNet.
+Core thing I wanted: AKS authenticating to ACR through a managed identity, nothing to rotate, nothing that could end up in a `.tfvars` file by accident. Private endpoints for ACR and Key Vault so traffic stays off the public endpoint even from inside the VNet.
 
-Still on my list: I haven't load-tested this or tried to break the private endpoint routing under real traffic — it's only ever run empty or with a couple of test pods.
+What I haven't done: any real load testing, or tried to break the private endpoint routing under actual traffic. It's only ever run with a couple of test pods.
 
-**Repo:** cleaning up before publishing — will link here once it's done
+**Repo:** _(link pending — cleaning up hardcoded test values first)_
 
 <br>
 
-### 3. Pipeline that actually blocks bad Terraform
+### 3. A pipeline that blocks bad Terraform instead of just reporting on it
 
-Small thing that annoyed me: most of the pipeline examples I found online run security scans *after* you've already applied. By then the scan is just telling you what you already broke.
+Most of the pipeline examples I found online run security scans after you've already applied. By then the scan is just confirming what you already broke.
 
 ```mermaid
 flowchart LR
@@ -223,17 +195,17 @@ flowchart LR
     class AZURE,MON azure
 ```
 
-So this pipeline runs Checkov and Trivy against the `terraform plan` output before anything gets created, plus a SonarQube quality gate. If any of them fail, the pipeline stops — it doesn't just warn and continue, which is what I had in an early version and quickly realized defeats the point.
+Checkov and Trivy run against the `terraform plan` output before anything gets created, alongside a SonarQube quality gate. If any of them fail, the pipeline stops — it doesn't warn and continue, which is what an early version of this did before I realized that defeats the point of having a gate at all.
 
-I kept a manual approval step between plan and apply on purpose. Partly because automated scans don't catch everything, and partly because I wanted a moment to actually read the plan output myself before anything changes — habit I picked up after a Terraform apply once did something I didn't expect during the internship.
+There's a manual approval step between plan and apply on purpose. Scans catch known issues, but I still wanted a point where I read the plan output myself before anything irreversible happens — a habit from a Terraform apply during the internship that did something I hadn't expected.
 
-**Repo:** cleaning up before publishing — will link here once it's done
+**Repo:** _(link pending — cleaning up hardcoded test values first)_
 
 <br>
 
 ### 4. GitOps deploys with ArgoCD
 
-Got tired of `kubectl apply`-ing manually and then forgetting what I'd changed a week later, so I moved deployments to ArgoCD.
+Got tired of `kubectl apply`-ing by hand and then forgetting a week later exactly what I'd changed, so I moved deployments to ArgoCD.
 
 ```mermaid
 flowchart LR
@@ -257,17 +229,17 @@ flowchart LR
     class CLUSTER,PODS,PROM,GRAFANA cluster
 ```
 
-Helm charts hold the desired state, ArgoCD reconciles the cluster against them and flags drift instead of me finding out something changed when a pod is already crash-looping. Also means I stopped needing a `kubectl` context with write access on my own laptop for day-to-day deploys, which is a smaller win but a real one.
+Helm charts hold the desired state, ArgoCD reconciles the cluster against them and flags drift instead of me discovering a change only once something's already crash-looping. Side benefit I didn't originally plan for: I stopped needing a `kubectl` context with write access on my own laptop for routine deploys.
 
-Nothing exotic here — this is the smallest and most "textbook" of these projects. I built it mostly to get comfortable with the sync/drift workflow, not because I hit some interesting problem along the way.
+This is the smallest and most textbook of the five projects — built mainly to get comfortable with the sync/drift workflow itself, not because I ran into a particularly interesting problem along the way.
 
-**Repo:** cleaning up before publishing — will link here once it's done
+**Repo:** _(link pending — cleaning up hardcoded test values first)_
 
 <br>
 
 ### 5. Monitoring with Prometheus + Grafana
 
-Smallest project of the five, and I'll be upfront that it's the least developed. Point of it was just to stop treating monitoring as a thing you add after infra exists — so Prometheus and Grafana get provisioned in the same Terraform run as the cluster.
+The least developed of the five, and I'd rather say that upfront than pad it out. The point was to stop treating monitoring as something you bolt on after infrastructure exists.
 
 ```mermaid
 flowchart LR
@@ -286,9 +258,39 @@ flowchart LR
     class DASH,ALERT out
 ```
 
-Dashboards exist from the first `terraform apply` instead of being something I remember to add three weeks later. That's really the whole idea — I haven't built out alerting rules beyond the defaults yet, that's next.
+Prometheus and Grafana get provisioned in the same Terraform run as the cluster, so dashboards exist from the first `apply` instead of being something I remember to add three weeks in. Alerting is still just the defaults — building out real alert rules is the obvious next step, not something I've done yet.
 
-**Repo:** cleaning up before publishing — will link here once it's done
+**Repo:** _(link pending — cleaning up hardcoded test values first)_
+
+<br>
+
+## Architecture notes
+
+The diagrams above are Mermaid, mainly so they render directly on GitHub without extra setup, and they only show resources that are actually in each Terraform module — nothing added for looks. For a version with proper Azure iconography (closer to what you'd see in the Azure Architecture Center), the plan is to redraw the landing-zone and AKS diagrams in draw.io once I'm done iterating on the modules themselves — no point polishing a diagram for infrastructure that's still changing shape.
+
+<br>
+
+## Why validation happens before apply
+
+The CI/CD project above is really the answer to one question: what's the cost of finding out something's wrong? Running Checkov and Trivy against `terraform plan` output means the cost is a failed pipeline run. Running them after deployment means the cost is whatever that misconfigured resource was exposed to in the meantime. Once I framed it that way, "gate before apply" stopped being a nice-to-have and became the only version of the pipeline that made sense to build.
+
+## Why reconciliation instead of manual deploys
+
+Manual `kubectl apply` means the cluster and the Git repo can quietly disagree with each other, and nothing tells you until something breaks. ArgoCD's continuous reconciliation just removes that gap — the cluster is either in sync with Git or ArgoCD is telling me it isn't. It's a small change in workflow that removes an entire category of "wait, who changed this" debugging.
+
+## Why monitoring ships with the infrastructure
+
+If observability is a follow-up task, it competes with whatever's next on the list and usually loses. Provisioning Prometheus and Grafana in the same Terraform run as the cluster means there's no "add monitoring later" step to forget — the dashboards exist because the infrastructure exists, not because someone remembered to circle back.
+
+<br>
+
+## Engineering principles these repos actually demonstrate
+
+- Prefer managed identities over long-lived secrets, where the resource supports it
+- Treat infrastructure as version-controlled, reviewable code — not console changes
+- Fail during validation and plan, not after something's already applied
+- Build a reusable module before duplicating the same config a second time
+- Provision monitoring alongside the platform, not as a follow-up task
 
 <br>
 
@@ -307,11 +309,11 @@ Dashboards exist from the first `terraform apply` instead of being something I r
 
 <br>
 
-## What I'm working on right now
+## Currently working on
 
-- Azure Policy at the landing-zone level — governance stuff I skipped the first time around
+- Azure Policy at the landing-zone level — governance I skipped the first time around
 - OPA / Kyverno for admission control on the AKS project
-- Actually testing Terraform modules instead of just running `plan` and eyeballing it
+- Actually testing Terraform modules instead of just running `plan` and eyeballing the output
 - Looking at Crossplane as an alternative to the provider modules I've been using — no strong opinion yet, just curious
 
 <br>
@@ -325,4 +327,5 @@ Dashboards exist from the first `terraform apply` instead of being something I r
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/aniket-devop)
 
 </div>
+
 
