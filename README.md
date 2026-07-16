@@ -18,7 +18,7 @@ I build small Azure environments in Terraform and spend most of my effort on the
 
 ## About
 
-I'm a BCA graduate who completed a 1-year DevOps internship at DevOps Insider. Outside of that role, I build Azure and Terraform projects on my own time to get hands-on practice with things I didn't always have room to go deep on at work — landing zone patterns, private AKS clusters, and pipelines that actually stop a bad change instead of just logging it after the fact.
+I'm a BCA graduate with hands-on experience from my DevOps internship at DevOps Insider. Outside of that role, I build Azure and Terraform projects on my own time to get deeper into areas I wanted to explore further — landing zone patterns, private AKS clusters, and pipelines that actually stop a bad change instead of just logging it after the fact.
 
 None of this is production infrastructure with real traffic. It's self-built and sized for one person to run and re-run, but I've tried to carry over the patterns a real environment would need — private networking, scoped access, gates before apply — since that judgment is what I'm actually trying to build.
 
