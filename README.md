@@ -16,7 +16,7 @@ Turning Microsoft's reference architectures into infrastructure I've actually st
 
 ## About
 
-I finished a BCA in 2024 and spent the following year as a DevOps intern at DevOps Insider, working on Azure infrastructure, Azure DevOps pipelines, and containerized deployments.
+I spent a year as a DevOps intern at DevOps Insider, working on Azure infrastructure, Azure DevOps pipelines, and containerized deployments.
 
 Outside of that internship, I build Azure/Terraform projects on my own to get deeper on specific things — landing zone design, private AKS networking, and pipelines that check infrastructure changes before they're applied instead of after.
 
@@ -27,6 +27,12 @@ Everything below is labeled honestly: what's working, what's sandbox-only, and w
 <br>
 
 ## Tech Stack
+
+<div align="center">
+<img src="https://skillicons.dev/icons?i=azure,terraform,docker,kubernetes,githubactions,python,bash,git,github" />
+</div>
+
+<br>
 
 | Area | Tools |
 |---|---|
@@ -39,6 +45,8 @@ Everything below is labeled honestly: what's working, what's sandbox-only, and w
 | Observability | Prometheus, Grafana, Loki |
 | Scripting | Python, Bash |
 | VCS | Git, GitHub |
+
+*(skillicons.dev doesn't have logos for ArgoCD, Checkov, Trivy, SonarQube, Prometheus/Grafana/Loki — those are listed in the table above instead of as icons.)*
 
 <br>
 
