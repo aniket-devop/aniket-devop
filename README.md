@@ -68,33 +68,9 @@ Automating build, test, security checks, and deployment workflows.
 
 Trivy, Checkov, SonarQube, Azure Key Vault
 
-Integrating security scanning and secret management into CI/CD pipelines.
 
-<br>
 
-**📊 Observability**
-<br>
-<img src="https://skillicons.dev/icons?i=prometheus,grafana" height="32"/>
 
-Prometheus, Grafana, Loki
-
-Building monitoring stacks for infrastructure and applications.
-
-<br>
-
-**💻 Scripting & Version Control**
-<br>
-<img src="https://skillicons.dev/icons?i=python,bash,git,github" height="32"/>
-
-Python, Bash, Git, GitHub
-
-Automation scripts and infrastructure workflow management.
-
-</td>
-</tr>
-</table>
-
-<br>
 ## About
 
 I'm a BCA graduate and DevOps Engineer focused on building secure, repeatable cloud infrastructure.
@@ -106,60 +82,6 @@ These projects are self-built and designed to be reproducible rather than produc
 The tools below are not a list of technologies I've explored once — they are the ones actively used across my projects.
 <br>
 
-## Stack
-
-<table>
-<tr>
-<td valign="top" width="50%">
-
-**Cloud**
-<br>
-<img src="https://skillicons.dev/icons?i=azure" height="32"/>
-
-Azure, Azure DevOps, Entra ID — day-to-day comfortable with these
-
-**Infrastructure as Code**
-<br>
-<img src="https://skillicons.dev/icons?i=terraform" height="32"/>
-
-Terraform (main tool I use), some Bicep, Ansible for config management on a couple of projects
-
-**Containers & Orchestration**
-<br>
-<img src="https://skillicons.dev/icons?i=docker,kubernetes" height="32"/>
-
-Docker, Kubernetes, Helm, ArgoCD
-
-</td>
-<td valign="top" width="50%">
-
-**CI/CD**
-<br>
-<img src="https://skillicons.dev/icons?i=githubactions,jenkins" height="32"/>
-
-Azure Pipelines mostly, GitHub Actions for personal repos, a bit of Jenkins
-
-**Security scanning**
-
-Trivy and Checkov in pipelines, SonarQube for code quality, Key Vault for secrets. HashiCorp Vault I've only used in a sandbox, not comfortable calling that a strength yet.
-
-**Monitoring**
-<br>
-<img src="https://skillicons.dev/icons?i=prometheus,grafana" height="32"/>
-
-Prometheus + Grafana, provisioned alongside infra rather than bolted on after
-
-**Languages & VCS**
-<br>
-<img src="https://skillicons.dev/icons?i=python,bash,git,github" height="32"/>
-
-Python and Bash for scripting/automation, Git daily
-
-</td>
-</tr>
-</table>
-
-<br>
 
 ## Projects
 
