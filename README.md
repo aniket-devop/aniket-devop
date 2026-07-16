@@ -4,7 +4,7 @@
 
 **DevOps Intern — Azure, Terraform, Kubernetes**
 
-I spend most of my time building small Azure environments in Terraform and trying to get the security/CI side of them right, not just the "it deploys" part.
+I did a 1-year DevOps internship at DevOps Insider, and outside of that I build small Azure environments in Terraform, trying to get the security/CI side right, not just the "it deploys" part.
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/aniket484)
 [![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:aniketkmr484@gmail.com)
@@ -18,7 +18,7 @@ I spend most of my time building small Azure environments in Terraform and tryin
 
 ## About
 
-I'm a BCA grad who did a 1-year DevOps internship, and outside of that I build small Azure/Terraform projects on my own to practice the stuff I don't get enough hands-on time with at work — mainly landing zone patterns, private AKS clusters, and pipelines that actually block bad changes instead of just running after the fact.
+I'm a BCA grad who spent a year as a DevOps intern at DevOps Insider. Outside of that, I build small Azure/Terraform projects on my own to get hands-on time with things I don't always get enough of at work — mainly landing zone patterns, private AKS clusters, and pipelines that actually block bad changes instead of just running after the fact.
 
 None of this is production infrastructure with real traffic. It's self-built, sized for one person to run and re-run, but I've tried to follow the same patterns (private networking, scoped access, gates before apply) that a real environment would need, since that's the part I actually want to get good at.
 
@@ -81,7 +81,7 @@ Python and Bash for scripting/automation, Git daily
 
 ## Projects
 
-A quick note before these: repos are being cleaned up (removing hardcoded values I used while testing, adding proper `.tfvars.example` files) before I make them public one at a time. I'll link each one here as it's ready instead of leaving dead links sitting around.
+Three projects here instead of a longer list of smaller ones — felt more honest to combine the pieces that actually run together (the AKS cluster, how it gets deployed to, and how it's monitored) into one write-up rather than presenting them as separate demos. Repos are being cleaned up before I make them public; I'll add links here as each one's ready.
 
 <br>
 
@@ -130,13 +130,15 @@ What I went with, and why:
 
 It's parameterized enough that I can spin up a second "environment" by changing tfvars instead of duplicating the whole module — that was the actual goal, more than the security stuff, if I'm honest.
 
-**Repo:** cleaning up before publishing — will link here once it's done
-
 <br>
 
-### 2. Private AKS Cluster + ACR (no static credentials)
+### 2. Private AKS Platform — cluster, deployments, and observability together
 
-The default AKS quickstart tutorials all leave the API server public and use a service principal secret for pulling from ACR. I wanted to see if I could avoid both.
+This is the biggest of the three, mainly because I kept adding to it instead of starting something new each time I learned a bit more. It started as just "can I stand up an AKS cluster without a public API server," and grew to cover how things actually get deployed onto it and how I'd know if something broke.
+
+**The cluster itself**
+
+Default AKS quickstart tutorials leave the API server public and use a service principal secret for pulling from ACR. Wanted to see if I could avoid both.
 
 ```mermaid
 flowchart TD
@@ -183,17 +185,57 @@ flowchart LR
 
 The module split (networking → security → identity → AKS → monitoring) came out of trial and error, not planning — I originally had everything in one module and Terraform kept trying to create resources out of order because of implicit dependencies I hadn't thought through. Splitting it fixed that and made it obvious what depends on what.
 
-The main thing I wanted working: AKS talking to ACR through a managed identity, with nothing to rotate and nothing that could leak in a `.tfvars` file by accident. Private endpoints for ACR and Key Vault so nothing goes over the public endpoint even inside the VNet.
+Core thing I wanted working: AKS talking to ACR through a managed identity, with nothing to rotate and nothing that could leak in a `.tfvars` file by accident. Private endpoints for ACR and Key Vault so nothing goes over the public endpoint even inside the VNet.
 
-Still on my list: I haven't load-tested this or tried to break the private endpoint routing under real traffic — it's only ever run empty or with a couple of test pods.
+**Getting things onto the cluster — ArgoCD + Helm**
 
-**Repo:** cleaning up before publishing — will link here once it's done
+Once the cluster existed, `kubectl apply`-ing manually got old fast, and I didn't trust myself to remember a week later exactly what I'd changed. So deployments go through ArgoCD instead.
+
+```mermaid
+flowchart LR
+    DEV["Developer"] --> REPO["Git Repo (Helm charts)"]
+    REPO -->|pushes| ARGOCD["ArgoCD"]
+    ARGOCD -->|syncs| PODS["Application Pods"]
+    ARGOCD -.watches drift.-> CLUSTER["AKS Cluster"]
+
+    classDef gitops fill:#e6d9f2,stroke:#7B42BC,stroke-width:2px
+    classDef cluster fill:#eaf2fb,stroke:#0078D4,stroke-width:2px
+    class ARGOCD,REPO gitops
+    class CLUSTER,PODS cluster
+```
+
+Helm charts hold the desired state, ArgoCD reconciles the cluster against them and flags drift instead of me finding out something changed when a pod is already crash-looping. It also meant I stopped needing a `kubectl` context with write access on my own laptop for day-to-day deploys — smaller win than the drift detection, but a real one.
+
+**Knowing what's happening — Prometheus + Grafana**
+
+Observability went in from the start of this iteration rather than as an afterthought, since I'd already made the "add monitoring later" mistake on an earlier project.
+
+```mermaid
+flowchart LR
+    AKSM["AKS"] --> PROM["Prometheus"]
+    PROM --> GRAFANA["Grafana"]
+    GRAFANA --> DASH["Dashboards"]
+    GRAFANA --> ALERT["Alerts"]
+
+    classDef aks fill:#eaf2fb,stroke:#0078D4,stroke-width:2px
+    classDef prom fill:#fde8e6,stroke:#c0392b,stroke-width:2px
+    classDef graf fill:#fff2cc,stroke:#d6b656,stroke-width:2px
+    classDef out fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px
+    class AKSM aks
+    class PROM prom
+    class GRAFANA graf
+    class DASH,ALERT out
+```
+
+Prometheus and Grafana are provisioned by the same Terraform run as the cluster, so dashboards exist from the first `apply`. Alerting is still just the defaults — building out real alert rules is the obvious next step, haven't gotten to it yet.
+
+**What I haven't done:** no real load testing, and I haven't tried to break the private endpoint routing or the ArgoCD sync under actual traffic — everything above has only run with a couple of test pods.
 
 <br>
 
-### 3. Pipeline that actually blocks bad Terraform
+### 3. Azure DevOps CI/CD + DevSecOps Pipeline
 
-Small thing that annoyed me: most of the pipeline examples I found online run security scans *after* you've already applied. By then the scan is just telling you what you already broke.
+Most of the pipeline examples I found online run security scans *after* you've already applied. By then the scan is just telling you what you already broke.
 
 ```mermaid
 flowchart LR
@@ -223,72 +265,11 @@ flowchart LR
     class AZURE,MON azure
 ```
 
-So this pipeline runs Checkov and Trivy against the `terraform plan` output before anything gets created, plus a SonarQube quality gate. If any of them fail, the pipeline stops — it doesn't just warn and continue, which is what I had in an early version and quickly realized defeats the point.
+This pipeline runs Checkov and Trivy against the `terraform plan` output before anything gets created, plus a SonarQube quality gate. If any of them fail, the pipeline stops — it doesn't just warn and continue, which is what I had in an early version and quickly realized defeats the point.
 
-I kept a manual approval step between plan and apply on purpose. Partly because automated scans don't catch everything, and partly because I wanted a moment to actually read the plan output myself before anything changes — habit I picked up after a Terraform apply once did something I didn't expect during the internship.
+I kept a manual approval step between plan and apply on purpose. Partly because automated scans don't catch everything, and partly because I wanted a moment to actually read the plan output myself before anything changes — a habit I picked up after a Terraform apply once did something I didn't expect during the internship.
 
-**Repo:** cleaning up before publishing — will link here once it's done
-
-<br>
-
-### 4. GitOps deploys with ArgoCD
-
-Got tired of `kubectl apply`-ing manually and then forgetting what I'd changed a week later, so I moved deployments to ArgoCD.
-
-```mermaid
-flowchart LR
-    DEV["Developer"] --> REPO["Git Repo (Helm charts)"]
-    REPO -->|pushes| ARGOCD["ArgoCD"]
-
-    subgraph CLUSTER["AKS Cluster"]
-        PODS["Application Pods"]
-        PROM["Prometheus"]
-        GRAFANA["Grafana"]
-        PODS -->|metrics| PROM
-        PROM -->|dashboards| GRAFANA
-    end
-
-    ARGOCD -->|syncs| PODS
-    ARGOCD -.watches drift.-> CLUSTER
-
-    classDef gitops fill:#e6d9f2,stroke:#7B42BC,stroke-width:2px
-    classDef cluster fill:#eaf2fb,stroke:#0078D4,stroke-width:2px
-    class ARGOCD,REPO gitops
-    class CLUSTER,PODS,PROM,GRAFANA cluster
-```
-
-Helm charts hold the desired state, ArgoCD reconciles the cluster against them and flags drift instead of me finding out something changed when a pod is already crash-looping. Also means I stopped needing a `kubectl` context with write access on my own laptop for day-to-day deploys, which is a smaller win but a real one.
-
-Nothing exotic here — this is the smallest and most "textbook" of these projects. I built it mostly to get comfortable with the sync/drift workflow, not because I hit some interesting problem along the way.
-
-**Repo:** cleaning up before publishing — will link here once it's done
-
-<br>
-
-### 5. Monitoring with Prometheus + Grafana
-
-Smallest project of the five, and I'll be upfront that it's the least developed. Point of it was just to stop treating monitoring as a thing you add after infra exists — so Prometheus and Grafana get provisioned in the same Terraform run as the cluster.
-
-```mermaid
-flowchart LR
-    AKSM["AKS"] --> PROM["Prometheus"]
-    PROM --> GRAFANA["Grafana"]
-    GRAFANA --> DASH["Dashboards"]
-    GRAFANA --> ALERT["Alerts"]
-
-    classDef aks fill:#eaf2fb,stroke:#0078D4,stroke-width:2px
-    classDef prom fill:#fde8e6,stroke:#c0392b,stroke-width:2px
-    classDef graf fill:#fff2cc,stroke:#d6b656,stroke-width:2px
-    classDef out fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px
-    class AKSM aks
-    class PROM prom
-    class GRAFANA graf
-    class DASH,ALERT out
-```
-
-Dashboards exist from the first `terraform apply` instead of being something I remember to add three weeks later. That's really the whole idea — I haven't built out alerting rules beyond the defaults yet, that's next.
-
-**Repo:** cleaning up before publishing — will link here once it's done
+This pipeline is what actually deploys the landing zone and AKS platform above — it's not a standalone demo, it's the thing that gates changes to both.
 
 <br>
 
