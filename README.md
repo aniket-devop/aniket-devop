@@ -97,12 +97,13 @@ Automation scripts and infrastructure workflow management.
 <br>
 ## About
 
-I'm a BCA graduate with hands-on experience from my DevOps internship at DevOps Insider. Outside of that role, I build Azure and Terraform projects on my own time to get deeper into areas I wanted to explore further — landing zone patterns, private AKS clusters, and pipelines that actually stop a bad change instead of just logging it after the fact.
+I'm a BCA graduate and DevOps Engineer focused on building secure, repeatable cloud infrastructure.
 
-None of this is production infrastructure with real traffic. It's self-built and sized for one person to run and re-run, but I've tried to carry over the patterns a real environment would need — private networking, scoped access, gates before apply — since that judgment is what I'm actually trying to build.
+During my DevOps internship at DevOps Insider, I worked on CI/CD automation and cloud workflows. Outside of that, I build Azure and Terraform projects to go deeper into areas I wanted more hands-on experience with — Azure Landing Zone patterns, private AKS clusters, Infrastructure as Code, and pipelines with security checks before changes reach infrastructure.
 
-The tools below are the ones that show up in the projects, not a general list of things I've heard of:
+These projects are self-built and designed to be reproducible rather than production workloads handling real traffic. My focus is on applying real engineering practices: private networking, least-privilege access, infrastructure validation, and automated deployment gates.
 
+The tools below are not a list of technologies I've explored once — they are the ones actively used across my projects.
 <br>
 
 ## Stack
