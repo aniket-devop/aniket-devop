@@ -2,304 +2,151 @@
 
 # Aniket Kumar
 
-**DevOps Engineer — Azure, Terraform, Kubernetes**
+**DevOps Engineer | Azure · Terraform · Kubernetes**
 
-I build small Azure environments in Terraform and spend most of my effort on the security and CI side of them — getting a change to deploy is the easy part, getting it to deploy safely is the part worth doing properly.
+Turning Microsoft's reference architectures into infrastructure I've actually stood up and broken myself.
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/aniket484)
-[![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:aniketkmr484@gmail.com)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/aniket-devop)
-
-![Profile Views](https://komarev.com/ghpvc/?username=aniket-devop&style=flat-square&color=blue)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/aniket484)
+[![Email](https://img.shields.io/badge/Email-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:aniketkmr484@gmail.com)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/aniket-devop)
 
 </div>
 
 <br>
-## Stack
-
-<table>
-<tr>
-<td valign="top" width="50%">
-
-**☁️ Cloud Platform**
-<br>
-<img src="https://skillicons.dev/icons?i=azure" height="32"/>
-
-Azure, Azure DevOps, Microsoft Entra ID
-
-Building cloud infrastructure with focus on security, governance, and automation.
-
-<br>
-
-**🏗 Infrastructure as Code**
-<br>
-<img src="https://skillicons.dev/icons?i=terraform" height="32"/>
-
-Terraform, Azure Resource Manager, Bicep
-
-Designing reusable infrastructure modules, remote state management, and automated provisioning.
-
-<br>
-
-**🐳 Containers & Kubernetes**
-<br>
-<img src="https://skillicons.dev/icons?i=docker,kubernetes" height="32"/>
-
-Docker, Kubernetes, Helm, ArgoCD
-
-Deploying containerized applications with Kubernetes-based workflows.
-
-</td>
-
-<td valign="top" width="50%">
-
-**⚙️ CI/CD & Automation**
-<br>
-<img src="https://skillicons.dev/icons?i=githubactions,jenkins" height="32"/>
-
-Azure Pipelines, GitHub Actions
-
-Automating build, test, security checks, and deployment workflows.
-
-<br>
-
-**🔐 DevSecOps**
-<br>
-
-Trivy, Checkov, SonarQube, Azure Key Vault
-
-
-
 
 ## About
 
-I'm a BCA graduate and DevOps Engineer focused on building secure, repeatable cloud infrastructure.
+I finished a BCA in 2024 and spent the following year as a DevOps intern at DevOps Insider, working on Azure infrastructure, Azure DevOps pipelines, and containerized deployments.
 
-During my DevOps internship at DevOps Insider, I worked on CI/CD automation and cloud workflows. Outside of that, I build Azure and Terraform projects to go deeper into areas I wanted more hands-on experience with — Azure Landing Zone patterns, private AKS clusters, Infrastructure as Code, and pipelines with security checks before changes reach infrastructure.
+Outside of that internship, I build Azure/Terraform projects on my own to get deeper on specific things — landing zone design, private AKS networking, and pipelines that check infrastructure changes before they're applied instead of after.
 
-These projects are self-built and designed to be reproducible rather than production workloads handling real traffic. My focus is on applying real engineering practices: private networking, least-privilege access, infrastructure validation, and automated deployment gates.
+I'm not inventing new patterns here. I'm implementing the architectures Microsoft already documents (Cloud Adoption Framework, private cluster guidance, etc.) and paying attention to the parts that are easy to skip — private networking, scoped RBAC, and gates that actually block a bad change instead of just logging one.
 
-The tools below are not a list of technologies I've explored once — they are the ones actively used across my projects.
-<br>
-
-
-## Projects
-
-Three projects here instead of a longer list of smaller ones — it felt more honest to group the pieces that actually run together (the AKS cluster, how it gets deployed to, and how it's monitored) into one write-up rather than present them as separate demos. Repository links will be added as documentation for each project is finished, rather than pointing to something half-written.
+Everything below is labeled honestly: what's working, what's sandbox-only, and what I haven't tested yet.
 
 <br>
 
-### 1. Azure Landing Zone in Terraform
+## Tech Stack
 
-This one started because I kept copy-pasting the same networking module between two "environments" and got tired of it. So I rebuilt it as a proper hub-and-spoke setup instead.
+| Area | Tools |
+|---|---|
+| Cloud | Azure, Azure DevOps, Microsoft Entra ID |
+| IaC | Terraform (primary), some Bicep |
+| Containers | Docker, Kubernetes, Helm |
+| GitOps / Delivery | ArgoCD |
+| Security scanning | Checkov, Trivy, SonarQube |
+| Secrets | Azure Key Vault |
+| Observability | Prometheus, Grafana, Loki |
+| Scripting | Python, Bash |
+| VCS | Git, GitHub |
+
+<br>
+
+## Featured Projects
+
+### 1. Azure Landing Zone (Terraform)
+
+A hub-and-spoke network built in Terraform, modularized so a second environment is a `tfvars` change, not a copy-paste job.
 
 ```mermaid
 flowchart TB
-    subgraph MG["Management Group: mg-platform"]
-        subgraph SUB["Subscription: sub-platform-prod"]
-            subgraph HUB["Hub VNet — 10.0.0.0/16"]
-                FW["Azure Firewall"]
-                BASTION["Azure Bastion"]
-                SHARED["Shared Services"]
-            end
-            subgraph SPOKE["Spoke VNet — 10.1.0.0/16"]
-                subgraph NSGB["NSG boundary"]
-                    AKSC["AKS Cluster"]
-                end
-                KV["Key Vault"]
-                RBAC["RBAC — scoped per RG"]
-            end
-        end
+    subgraph HUB["Hub VNet"]
+        FW["Azure Firewall"]
+        BAS["Azure Bastion"]
     end
-
-    HUB -.VNet Peering.- SPOKE
-    FW -."controls egress".-> NSGB
-
-    classDef hub fill:#eaf2fb,stroke:#0078D4,stroke-width:2px
-    classDef spoke fill:#eafaf1,stroke:#2e7d32,stroke-width:2px
-    classDef mg fill:#f5f5f5,stroke:#6c8ebf,stroke-width:1px,stroke-dasharray: 4 3
-    class HUB hub
-    class SPOKE,NSGB spoke
-    class MG,SUB mg
+    subgraph SPOKE["Spoke VNet"]
+        NSG["NSG boundary"]
+        WORKLOAD["Workload subnet"]
+        KV["Key Vault"]
+    end
+    HUB -- peering --> SPOKE
+    FW -- "controls egress" --> NSG
+    NSG --> WORKLOAD
 ```
 
-*(Cleaner diagram with proper Azure icons — adding it as `diagrams/landing-zone.png` once I export one properly.)*
+**Why I built it:** I had the same networking setup copy-pasted across two "environments" and wanted a version I could actually reuse instead of maintaining two copies by hand.
 
-What I went with, and why:
+**What I learned:** Centralizing the firewall and Bastion in the hub instead of duplicating them per spoke, scoping RBAC to the resource group rather than the subscription, and structuring Terraform modules so remote state and outputs are shared cleanly between hub and spoke.
 
-- Hub-and-spoke instead of one flat network — mainly so the firewall and Bastion live in one place instead of every spoke reinventing them
-- NSGs at the spoke boundary so the AKS subnet isn't just trusting whatever's on the VNet
-- Bastion instead of a jump box with a public IP — this was actually a mistake I made in an earlier version of this project (had a VM with a public IP for "just testing"), so I fixed it here on purpose
-- RBAC scoped to the resource group, not the subscription, because I didn't want one broad role assignment covering everything
+**Current limitations:** No automated tests on the modules yet — validated by `plan`/`apply` and manual review only. No multi-region setup, single subscription.
 
-It's parameterized enough that I can spin up a second "environment" by changing tfvars instead of duplicating the whole module — that was the actual goal, more than the security stuff, if I'm honest.
+**Repo:** _link added once module docs are in place_
 
 <br>
 
-### 2. Private AKS Platform — cluster, deployments, and observability together
+### 2. Private AKS Platform
 
-This is the biggest of the three, mainly because I kept adding to it instead of starting something new each time I learned a bit more. It started as just "can I stand up an AKS cluster without a public API server," and grew to cover how things actually get deployed onto it and how I'd know if something broke.
-
-**The cluster itself**
-
-Default AKS quickstart tutorials leave the API server public and use a service principal secret for pulling from ACR. Wanted to see if I could avoid both.
-
-```mermaid
-flowchart TD
-    ROOT["Root Module"] --> NET["Networking"]
-    NET --> SEC["Security"]
-    SEC --> ID["Identity"]
-    ID --> AKSM["AKS"]
-    AKSM --> MON["Monitoring"]
-
-    classDef mod fill:#e6d9f2,stroke:#7B42BC,stroke-width:2px
-    class ROOT,NET,SEC,ID,AKSM,MON mod
-```
+An AKS cluster with no public API server endpoint, built to see how far I could get without a public control plane or a stored service principal secret.
 
 ```mermaid
 flowchart LR
-    subgraph VNET["Private VNet — 10.2.0.0/16"]
-        subgraph APISUB["Private API Server Subnet"]
-            API["AKS API Server (private endpoint only)"]
-        end
-        subgraph NODESUB["Node Subnet"]
-            SYS["System Node Pool"]
-            USR["User Node Pool"]
-        end
-        subgraph PESUB["Private Endpoints Subnet"]
-            ACRPE["ACR Private Endpoint"]
-            KVPE["Key Vault Private Endpoint"]
-        end
+    subgraph VNET["Private VNet"]
+        API["AKS API server — private endpoint only"]
+        NODES["Node pool"]
+        PE["Private endpoints: ACR, Key Vault"]
     end
-    ACR["Azure Container Registry"]
     MI["Managed Identity"]
-    MON2["Azure Monitor"]
+    ACR["Azure Container Registry"]
 
-    USR -->|pulls images via| ACRPE
-    ACRPE -.-> ACR
-    USR -->|authenticates via| MI
-    MI -.no stored credentials.-> ACR
-    NODESUB -->|metrics| MON2
-
-    classDef vnet fill:#eaf2fb,stroke:#0078D4,stroke-width:2px
-    classDef ext fill:#fff2cc,stroke:#d6b656,stroke-width:2px
-    class VNET,APISUB,NODESUB,PESUB vnet
-    class ACR,MI,MON2 ext
+    NODES -- pulls via --> PE
+    PE -.-> ACR
+    NODES -- authenticates via --> MI
+    MI -. no stored credentials .-> ACR
 ```
 
-The module split (networking → security → identity → AKS → monitoring) came out of trial and error, not planning — I originally had everything in one module and Terraform kept trying to create resources out of order because of implicit dependencies I hadn't thought through. Splitting it fixed that and made it obvious what depends on what.
+**Why I built it:** Every AKS quickstart I found left the API server public and used a service principal secret for image pulls. I wanted to know if that was actually necessary.
 
-Core thing I wanted working: AKS talking to ACR through a managed identity, with nothing to rotate and nothing that could leak in a `.tfvars` file by accident. Private endpoints for ACR and Key Vault so nothing goes over the public endpoint even inside the VNet.
+**What I learned:** Wiring managed identity into ACR pulls instead of a secret, routing ACR/Key Vault traffic through private endpoints, and structuring the Terraform (networking → security → identity → AKS → monitoring) after Terraform kept ordering resources wrong when it was one flat module. Deployments go through ArgoCD watching Helm charts, and Prometheus/Grafana/Loki are provisioned in the same `apply` as the cluster rather than bolted on later.
 
-**Getting things onto the cluster — ArgoCD + Helm**
+**Current limitations:** No load testing. Only run with a couple of test pods, so failure behavior under real traffic (node pressure, private endpoint routing under load, ArgoCD sync during an incident) is untested. Alerting is default, not tuned.
 
-Once the cluster existed, `kubectl apply`-ing manually got old fast, and I didn't trust myself to remember a week later exactly what I'd changed. So deployments go through ArgoCD instead.
-
-```mermaid
-flowchart LR
-    DEV["Developer"] --> REPO["Git Repo (Helm charts)"]
-    REPO -->|pushes| ARGOCD["ArgoCD"]
-    ARGOCD -->|syncs| PODS["Application Pods"]
-    ARGOCD -.watches drift.-> CLUSTER["AKS Cluster"]
-
-    classDef gitops fill:#e6d9f2,stroke:#7B42BC,stroke-width:2px
-    classDef cluster fill:#eaf2fb,stroke:#0078D4,stroke-width:2px
-    class ARGOCD,REPO gitops
-    class CLUSTER,PODS cluster
-```
-
-Helm charts hold the desired state, ArgoCD reconciles the cluster against them and flags drift instead of me finding out something changed when a pod is already crash-looping. It also meant I stopped needing a `kubectl` context with write access on my own laptop for day-to-day deploys — smaller win than the drift detection, but a real one.
-
-**Knowing what's happening — Prometheus + Grafana**
-
-This time monitoring went in alongside the cluster instead of after it. On an earlier project I told myself I'd "add monitoring later" and then just never circled back to it, so here it's part of the same Terraform run from day one.
-
-```mermaid
-flowchart LR
-    AKSM["AKS"] --> PROM["Prometheus"]
-    PROM --> GRAFANA["Grafana"]
-    GRAFANA --> DASH["Dashboards"]
-    GRAFANA --> ALERT["Alerts"]
-
-    classDef aks fill:#eaf2fb,stroke:#0078D4,stroke-width:2px
-    classDef prom fill:#fde8e6,stroke:#c0392b,stroke-width:2px
-    classDef graf fill:#fff2cc,stroke:#d6b656,stroke-width:2px
-    classDef out fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px
-    class AKSM aks
-    class PROM prom
-    class GRAFANA graf
-    class DASH,ALERT out
-```
-
-Prometheus and Grafana are provisioned by the same Terraform run as the cluster, so dashboards exist from the first `apply`. Alerting is still just the defaults — building out real alert rules is the obvious next step, haven't gotten to it yet.
-
-**What I haven't done:** no real load testing, and I haven't tried to break the private endpoint routing or the ArgoCD sync under actual traffic — everything above has only run with a couple of test pods.
+**Repo:** _link added once module docs are in place_
 
 <br>
 
-### 3. Azure DevOps CI/CD + DevSecOps Pipeline
+### 3. Azure DevOps DevSecOps Pipeline
 
-Most of the pipeline examples I found online run security scans *after* you've already applied. By then the scan is just telling you what you already broke.
+The pipeline that deploys the two projects above — Terraform changes are scanned before `apply`, not after.
 
 ```mermaid
 flowchart LR
     GIT["Git Push"] --> VAL["Terraform Validate"]
     VAL --> PLAN["Terraform Plan"]
     PLAN --> GATE
-
     subgraph GATE["Security Gate"]
-        direction TB
-        CHECKOV["Checkov — IaC scan"]
-        TRIVY["Trivy — vuln scan"]
-        SONAR["SonarQube — quality gate"]
+        CHECKOV["Checkov"]
+        TRIVY["Trivy"]
+        SONAR["SonarQube"]
     end
-
     GATE --> APPROVE["Manual Approval"]
     APPROVE --> APPLY["Terraform Apply"]
-    APPLY --> AZURE["Azure"]
-    AZURE --> MON["Monitoring"]
-
-    classDef tf fill:#e6d9f2,stroke:#7B42BC,stroke-width:2px
-    classDef gate fill:#fde8e6,stroke:#c0392b,stroke-width:2px
-    classDef approve fill:#fff2cc,stroke:#d6b656,stroke-width:2px
-    classDef azure fill:#dae8fc,stroke:#0078D4,stroke-width:2px
-    class VAL,PLAN,APPLY tf
-    class GATE,CHECKOV,TRIVY,SONAR gate
-    class APPROVE approve
-    class AZURE,MON azure
 ```
 
-This pipeline runs Checkov and Trivy against the `terraform plan` output before anything gets created, plus a SonarQube quality gate. If any of them fail, the pipeline stops — it doesn't just warn and continue, which is what I had in an early version and quickly realized defeats the point.
+**Why I built it:** Most pipeline examples I saw ran security scans after the apply step, which just tells you what you already broke. I wanted the scan to be a gate, not a report.
 
-There's still a manual approval step between plan and apply, and I've kept it deliberately rather than trying to automate it away. Automated scans don't catch everything, and during the internship a Terraform apply once did something I hadn't expected — since then I want a moment to actually read the plan output myself before anything changes.
+**What I learned:** Checkov and Trivy run against the `plan` output, and a failure stops the pipeline — an earlier version of mine only warned and continued, which defeats the point. I kept a manual approval step between plan and apply on purpose; during the internship a `terraform apply` once did something I didn't expect, and I want a chance to read the plan myself before anything changes.
 
-This pipeline is what actually deploys the landing zone and AKS platform above — it's not a standalone demo, it's the thing that gates changes to both.
+**Current limitations:** Manual approval means this isn't fully automated end-to-end, which is intentional for now but worth revisiting once I trust the scan coverage more. No policy-as-code (OPA/Conftest) yet — currently just the three scanners above.
+
+**Repo:** _link added once module docs are in place_
 
 <br>
 
-## GitHub Activity
+## GitHub Stats
 
 <div align="center">
-<table>
-<tr>
-<td><img src="https://github-readme-stats.vercel.app/api?username=aniket-devop&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" height="165"/></td>
-<td><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=aniket-devop&layout=compact&theme=tokyonight&hide_border=true" height="165"/></td>
-</tr>
-</table>
-
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=aniket-devop&theme=tokyonight&hide_border=true"/>
+<img src="https://github-readme-stats.vercel.app/api?username=aniket-devop&show_icons=true&theme=default&hide_border=true&count_private=true" height="165"/>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=aniket-devop&layout=compact&theme=default&hide_border=true" height="165"/>
 </div>
 
 <br>
 
-Beyond the three projects above, here's what's actually on my plate at the moment:
+## Currently Learning
 
-## What I'm working on right now
-
-- Azure Policy at the landing-zone level — governance stuff I skipped the first time around
+- Azure Policy at the landing-zone level — I skipped governance the first time through and I'm going back for it
 - OPA / Kyverno for admission control on the AKS project
-- Actually testing Terraform modules instead of just running `plan` and eyeballing it
-- Looking at Crossplane as an alternative to the provider modules I've been using — no strong opinion yet, just curious
+- Writing actual tests for Terraform modules instead of just eyeballing `plan` output
+- HashiCorp Vault — used it in a sandbox, not comfortable calling it a strength yet
 
 <br>
 
@@ -307,8 +154,9 @@ Beyond the three projects above, here's what's actually on my plate at the momen
 
 <div align="center">
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/aniket484)
-[![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:aniketkmr484@gmail.com)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/aniket-devop)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/aniket484)
+[![Email](https://img.shields.io/badge/Email-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:aniketkmr484@gmail.com)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/aniket-devop)
 
 </div>
+
