@@ -1,111 +1,246 @@
-<!-- 🔥 ANIMATED DEVOPS HERO -->
+<div align="center">
 
-<p align="center">
-  <img src="https://media.giphy.com/media/ZVik7pBtu9dNS/giphy.gif" width="600"/>
+# Hi, I'm Aniket Kumar 👋
+
+### DevOps Engineer | Azure | Terraform | Kubernetes | DevSecOps
+
+I enjoy building secure cloud infrastructure, automating deployments, and creating production-ready CI/CD pipelines using Azure and Infrastructure as Code.
+
+<p>
+<a href="https://www.linkedin.com/in/aniket484"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
+<a href="mailto:aniketkmr484@gmail.com"><img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/></a>
+<a href="https://github.com/aniket-devop"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/></a>
 </p>
 
-<h1 align="center">⚡ Aniket Kumar ⚡</h1>
-
-<p align="center">
-💻 DevOps Engineer • 🔐 DevSecOps • ☁️ Cloud • ⚙️ Automation
-</p>
+</div>
 
 ---
 
-<h2 align="center">🧠 ## 🚀 About Me </h2>
+# 🚀 About Me
 
-<p align="center">
-🚀 I build <b>production-ready cloud systems</b><br>
-🔐 I secure pipelines using DevSecOps tools<br>
-⚙️ I automate everything I can<br>
-📊 I monitor & optimize systems continuously
-</p>
+I'm an aspiring DevOps Engineer with hands-on experience gained through a one-year internship and personal cloud projects.
 
----
+My primary interests are:
 
-<h2 align="center">⚡ Tech Arsenal</h2>
+- ☁️ Azure Cloud
+- 🏗 Infrastructure as Code (Terraform)
+- ⚙️ CI/CD Automation
+- 🐳 Docker & Kubernetes
+- 🔐 DevSecOps
+- 📊 Monitoring & Observability
 
-<p align="center">
-
-<img src="https://skillicons.dev/icons?i=aws" height="55"/>
-<img src="https://skillicons.dev/icons?i=azure" height="55"/>
-<img src="https://skillicons.dev/icons?i=docker" height="55"/>
-<img src="https://skillicons.dev/icons?i=kubernetes" height="55"/>
-<img src="https://skillicons.dev/icons?i=terraform" height="55"/>
-
-<br><br>
-
-<img src="https://skillicons.dev/icons?i=githubactions" height="55"/>
-<img src="https://skillicons.dev/icons?i=linux" height="55"/>
-<img src="https://skillicons.dev/icons?i=git" height="55"/>
-<img src="https://skillicons.dev/icons?i=ansible" height="55"/>
-
-<br><br>
-
-<img src="https://skillicons.dev/icons?i=prometheus" height="55"/>
-<img src="https://skillicons.dev/icons?i=grafana" height="55"/>
-
-</p>
+I enjoy designing infrastructure that is reusable, automated, secure, and easy to maintain.
 
 ---
 
-<h2 align="center">🔐 DevSecOps Stack</h2>
+# 🛠 Tech Stack
 
-<p align="center">
-  <img src="https://img.shields.io/badge/🔍 Trivy-Container Security-blue?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/🧪 SonarQube-Code Analysis-green?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/🛠️ Checkov-IaC Security-purple?style=for-the-badge"/>
-</p>
+## ☁️ Cloud
 
----
-
-<h2 align="center">💼 Experience</h2>
-
-<p align="center">
-🏢 <b>DevOps Intern — DevOps Insiders</b><br>
-⚙️ Built CI/CD pipelines & automated deployments<br>
-🔐 Implemented security scanning tools<br>
-☁️ Worked with Azure, Docker, Kubernetes & Terraform
-</p>
+- Microsoft Azure
+- Azure Virtual Network
+- Azure Storage
+- Azure App Service
+- Azure Load Balancer
+- Azure Application Gateway
+- Azure Key Vault
+- Azure Bastion
+- Azure Kubernetes Service (AKS)
 
 ---
 
-<h2 align="center">🎓 Training</h2>
+## Infrastructure as Code
 
-<p align="center">
-📚 <b>TrainWithShubham (24 Jan 2026 – 24 May 2026)</b><br>
-🚀 Hands-on DevOps projects & cloud deployments
-</p>
-
----
-
-<h2 align="center">📊 GitHub Power</h2>
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=aniket-devop&show_icons=true&theme=radical" height="150"/>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=aniket-devop&theme=radical" height="150"/>
-</p>
+- Terraform
+- Terraform Modules
+- Remote Backend
+- State Management
 
 ---
 
-<p align="center">
-  <img src="https://github.com/Platane/snk/raw/output/github-contribution-grid-snake.svg"/>
-</p>
+## Containers
+
+- Docker
+- Docker Compose
+- Kubernetes
+- AKS
 
 ---
 
-<h2 align="center">🌐 Connect</h2>
+## CI/CD
 
-<p align="center">
-  <a href="https://www.linkedin.com/in/aniket484">
-    <img src="https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin"/>
-  </a>
-
-  <a href="mailto:aniketkmr484@gmail.com">
-    <img src="https://img.shields.io/badge/Email-Contact-red?style=for-the-badge&logo=gmail"/>
-  </a>
-</p>
+- Azure DevOps Pipelines
+- GitHub Actions
+- Git
+- GitHub
 
 ---
 
-<h2 align="center">🔥 Automate • Secure • Scale 🔥</h2>
+## DevSecOps
+
+- Trivy
+- Checkov
+- SonarQube
+- tfsec
+
+---
+
+## Monitoring
+
+- Prometheus
+- Grafana
+- Loki
+- Alertmanager
+
+---
+
+## Operating System & Scripting
+
+- Linux
+- Bash
+- Python
+
+---
+
+# 💼 Experience
+
+## DevOps Intern
+
+**DevOps Insider**
+
+**Duration:** Oct 2024 – Mar 2025
+
+### Responsibilities
+
+- Built Azure infrastructure using Terraform.
+- Worked on reusable Terraform modules.
+- Automated infrastructure deployment through Azure DevOps Pipelines.
+- Worked with Git branching strategy and Pull Requests.
+- Built Docker images and deployed containerized applications.
+- Worked with Kubernetes and Azure Kubernetes Service (AKS).
+- Integrated Trivy, Checkov and SonarQube into CI/CD pipelines.
+- Assisted in Azure Landing Zone implementation.
+- Monitored applications using Prometheus and Grafana.
+
+---
+
+# 🚀 Featured Projects
+
+## 🔹 Azure Landing Zone using Terraform
+
+Designed a production-style Azure Landing Zone following Microsoft CAF principles.
+
+**Tech Used**
+
+- Azure
+- Terraform
+- Azure DevOps
+- GitHub
+
+Repository
+
+➡️ https://github.com/aniket-devop/YOUR-REPO
+
+---
+
+## 🔹 AKS Production Infrastructure
+
+Provisioned Azure Kubernetes Service with Infrastructure as Code.
+
+Features
+
+- AKS
+- Azure Container Registry
+- Kubernetes
+- Docker
+- Terraform
+
+Repository
+
+➡️ https://github.com/aniket-devop/YOUR-REPO
+
+---
+
+## 🔹 Banking Fraud Detection System
+
+CI/CD pipeline for deploying an ML application using Docker and GitHub Actions.
+
+Repository
+
+➡️ https://github.com/aniket-devop/YOUR-REPO
+
+---
+
+## 🔹 Portfolio Website
+
+Personal portfolio built using modern frontend technologies.
+
+Repository
+
+➡️ https://github.com/aniket-devop/portfolio-website
+
+---
+
+# 📚 Currently Learning
+
+- Azure Landing Zone (Enterprise Scale)
+- Kubernetes Security
+- Platform Engineering
+- GitOps
+- Helm
+- Azure Architecture
+- Cloud Security
+
+---
+
+# 📈 GitHub Stats
+
+<div align="center">
+
+![](https://github-readme-stats.vercel.app/api?username=aniket-devop&show_icons=true&theme=tokyonight&hide_border=true)
+
+![](https://github-readme-stats.vercel.app/api/top-langs/?username=aniket-devop&layout=compact&theme=tokyonight&hide_border=true)
+
+</div>
+
+---
+
+<div align="center">
+
+![](https://github.com/aniket-devop/aniket-devop/raw/output/github-contribution-grid-snake.svg)
+
+</div>
+
+---
+
+# 📜 Certifications
+
+- Scaler — Fundamentals of Docker & Kubernetes
+- Microsoft Azure Certifications *(Add after completion)*
+- Google Cloud Skills Boost *(Add completed badges)*
+
+---
+
+# 🤝 Let's Connect
+
+📧 **Email**
+
+aniketkmr484@gmail.com
+
+💼 **LinkedIn**
+
+https://www.linkedin.com/in/aniket484
+
+💻 **GitHub**
+
+https://github.com/aniket-devop
+
+---
+
+<div align="center">
+
+### ⭐ Thanks for visiting my profile!
+
+*"Automating infrastructure, securing pipelines, and continuously learning modern cloud technologies."*
+
+</div>
