@@ -2,9 +2,9 @@
 
 # Aniket Kumar
 
-**DevOps Intern — Azure, Terraform, Kubernetes**
+**DevOps Engineer — Azure, Terraform, Kubernetes**
 
-I did a 1-year DevOps internship at DevOps Insider, and outside of that I build small Azure environments in Terraform, trying to get the security/CI side right, not just the "it deploys" part.
+I build small Azure environments in Terraform and spend most of my effort on the security and CI side of them — getting a change to deploy is the easy part, getting it to deploy safely is the part worth doing properly.
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/aniket484)
 [![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:aniketkmr484@gmail.com)
@@ -18,9 +18,11 @@ I did a 1-year DevOps internship at DevOps Insider, and outside of that I build 
 
 ## About
 
-I'm a BCA grad who spent a year as a DevOps intern at DevOps Insider. Outside of that, I build small Azure/Terraform projects on my own to get hands-on time with things I don't always get enough of at work — mainly landing zone patterns, private AKS clusters, and pipelines that actually block bad changes instead of just running after the fact.
+I'm a BCA graduate who completed a 1-year DevOps internship at DevOps Insider. Outside of that role, I build Azure and Terraform projects on my own time to get hands-on practice with things I didn't always have room to go deep on at work — landing zone patterns, private AKS clusters, and pipelines that actually stop a bad change instead of just logging it after the fact.
 
-None of this is production infrastructure with real traffic. It's self-built, sized for one person to run and re-run, but I've tried to follow the same patterns (private networking, scoped access, gates before apply) that a real environment would need, since that's the part I actually want to get good at.
+None of this is production infrastructure with real traffic. It's self-built and sized for one person to run and re-run, but I've tried to carry over the patterns a real environment would need — private networking, scoped access, gates before apply — since that judgment is what I'm actually trying to build.
+
+The tools below are the ones that show up in the projects, not a general list of things I've heard of:
 
 <br>
 
@@ -81,7 +83,7 @@ Python and Bash for scripting/automation, Git daily
 
 ## Projects
 
-Three projects here instead of a longer list of smaller ones — felt more honest to combine the pieces that actually run together (the AKS cluster, how it gets deployed to, and how it's monitored) into one write-up rather than presenting them as separate demos. Repos are being cleaned up before I make them public; I'll add links here as each one's ready.
+Three projects here instead of a longer list of smaller ones — it felt more honest to group the pieces that actually run together (the AKS cluster, how it gets deployed to, and how it's monitored) into one write-up rather than present them as separate demos. Repository links will be added as documentation for each project is finished, rather than pointing to something half-written.
 
 <br>
 
@@ -208,7 +210,7 @@ Helm charts hold the desired state, ArgoCD reconciles the cluster against them a
 
 **Knowing what's happening — Prometheus + Grafana**
 
-Observability went in from the start of this iteration rather than as an afterthought, since I'd already made the "add monitoring later" mistake on an earlier project.
+This time monitoring went in alongside the cluster instead of after it. On an earlier project I told myself I'd "add monitoring later" and then just never circled back to it, so here it's part of the same Terraform run from day one.
 
 ```mermaid
 flowchart LR
@@ -267,7 +269,7 @@ flowchart LR
 
 This pipeline runs Checkov and Trivy against the `terraform plan` output before anything gets created, plus a SonarQube quality gate. If any of them fail, the pipeline stops — it doesn't just warn and continue, which is what I had in an early version and quickly realized defeats the point.
 
-I kept a manual approval step between plan and apply on purpose. Partly because automated scans don't catch everything, and partly because I wanted a moment to actually read the plan output myself before anything changes — a habit I picked up after a Terraform apply once did something I didn't expect during the internship.
+There's still a manual approval step between plan and apply, and I've kept it deliberately rather than trying to automate it away. Automated scans don't catch everything, and during the internship a Terraform apply once did something I hadn't expected — since then I want a moment to actually read the plan output myself before anything changes.
 
 This pipeline is what actually deploys the landing zone and AKS platform above — it's not a standalone demo, it's the thing that gates changes to both.
 
@@ -288,6 +290,8 @@ This pipeline is what actually deploys the landing zone and AKS platform above �
 
 <br>
 
+Beyond the three projects above, here's what's actually on my plate at the moment:
+
 ## What I'm working on right now
 
 - Azure Policy at the landing-zone level — governance stuff I skipped the first time around
@@ -306,3 +310,4 @@ This pipeline is what actually deploys the landing zone and AKS platform above �
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/aniket-devop)
 
 </div>
+
