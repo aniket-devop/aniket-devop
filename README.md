@@ -1,6 +1,6 @@
 <div align="center">
 
-# Aniket Kumar
+# Hi, I'm Aniket Kumar 👋
 
 **DevOps Engineer — Azure, Terraform, Kubernetes**
 
@@ -14,17 +14,17 @@ I build small Azure environments in Terraform and spend most of my effort on the
 
 <br>
 
-## About
+## About Me
 
-I'm a BCA graduate who completed a 1-year DevOps internship at DevOps Insider. Outside of that role, I build Azure and Terraform projects on my own time to get hands-on practice with things I didn't always have room to go deep on at work: landing zone patterns, private AKS clusters, pipelines that stop a bad change instead of just logging it after the fact.
+I'm a BCA graduate (Chandigarh Group of Colleges, Mohali) currently doing a DevOps internship at **DevOps Insiders**, where I write Terraform modules, build CI/CD pipelines, and help keep dev/QA/staging environments in sync for a small team.
+
+Outside of that role, I build Azure and Terraform projects on my own time to go deeper on things I don't always get to at work — landing zone patterns, private AKS clusters, pipelines that stop a bad change instead of just logging it after the fact.
 
 None of this is production infrastructure with real traffic. It's self-built and sized for one person to run and re-run, but I've tried to carry over the patterns a real environment needs: private networking, scoped access, gates before apply. That judgment is what I'm actually trying to build.
 
-The tools below are the ones that show up in the projects, not a general list of things I've heard of.
-
 <br>
 
-## Stack
+## 🧰 Stack
 
 <table>
 <tr>
@@ -46,7 +46,7 @@ Terraform (main tool I use), some Bicep, Ansible for config management on a coup
 <br>
 <img src="https://skillicons.dev/icons?i=docker,kubernetes" height="32"/>
 
-Docker, Kubernetes, Helm, ArgoCD
+Docker, Kubernetes (AKS), Helm, ArgoCD
 
 </td>
 <td valign="top" width="50%">
@@ -55,7 +55,7 @@ Docker, Kubernetes, Helm, ArgoCD
 <br>
 <img src="https://skillicons.dev/icons?i=githubactions,jenkins" height="32"/>
 
-Azure Pipelines mostly, GitHub Actions for personal repos, a bit of Jenkins
+Azure Pipelines, GitHub Actions, a bit of Jenkins
 
 **Security scanning**
 
@@ -79,16 +79,26 @@ Python and Bash for scripting/automation, Git daily
 
 <br>
 
-## Projects
+## 💼 Experience
 
-Three projects here instead of a longer list of smaller ones. It felt more honest to group the pieces that actually run together (the AKS cluster, how it gets deployed to, how it's monitored) into one write-up instead of presenting them as separate demos.
+**DevOps Intern — DevOps Insiders** · Feb 2025 – Present
+- Wrote Terraform modules to provision Azure resource groups, VNets, and VMs for dev, QA, and staging — replacing manual portal setup with version-controlled, repeatable infra.
+- Built and maintained GitHub Actions and Azure DevOps pipelines for 3+ microservices (build, test, deploy stages on PRs and merges).
+- Diagnosed environment/integration issues — config drift, dependency mismatches, failed deployments — with a 4-person team.
+- Added automated test stages ahead of deployment steps, surfacing failures before builds reached staging.
+
+<br>
+
+## 🚀 Projects
+
+Three projects here instead of a longer list of smaller ones — grouping the pieces that actually run together (the AKS cluster, how it gets deployed to, how it's monitored) felt more honest than presenting them as separate demos.
 
 <br>
 
 ### 1. Azure Landing Zone in Terraform
 🔗 [Repo](https://github.com/aniket-devop/azure-landing-zone-terraform)
 
-This one started because I kept copy-pasting the same networking module between two "environments" and got tired of it. Rebuilt it as a proper hub-and-spoke setup instead.
+Started because I kept copy-pasting the same networking module between two "environments." Rebuilt as a proper hub-and-spoke setup instead.
 
 ```mermaid
 flowchart TB
@@ -120,21 +130,23 @@ flowchart TB
     class MG,SUB mg
 ```
 
-What I went with, and why:
+**What I went with, and why:**
+- Hub-and-spoke instead of one flat network, so the firewall and Bastion live in one place instead of every spoke reinventing them.
+- NSGs at the spoke boundary (deny-by-default, explicit allow) so the AKS subnet isn't just trusting whatever's on the VNet.
+- Bastion instead of a jump box with a public IP — a mistake in an earlier version of this project I fixed on purpose here.
+- RBAC scoped to the resource group, not the subscription.
+- Firewall rule collections + UDRs forcing spoke egress through the firewall.
+- Key Vault behind a private endpoint with a Private DNS zone for internal resolution.
+- Remote state in Azure Storage with locking; `terraform fmt/validate/plan` on every PR with a manual approval gate before apply.
 
-- Hub-and-spoke instead of one flat network, mainly so the firewall and Bastion live in one place instead of every spoke reinventing them
-- NSGs at the spoke boundary so the AKS subnet isn't just trusting whatever's on the VNet
-- Bastion instead of a jump box with a public IP. This was a mistake in an earlier version of this project — had a VM with a public IP for "just testing" — so I fixed it here on purpose
-- RBAC scoped to the resource group, not the subscription. Didn't want one broad role assignment covering everything
-
-It's parameterized enough that I can spin up a second "environment" by changing tfvars instead of duplicating the whole module. That was the actual goal, more than the security stuff, if I'm honest.
+Parameterized enough that a second "environment" is a tfvars change, not a duplicated module. That was the actual goal, more than the security stuff, if I'm honest.
 
 <br>
 
 ### 2. Private AKS Platform — cluster, deployments, and observability together
-🔗 [Repo](https://github.com/aniket-devop) *(link once pushed / share on request)*
+🔗 *Repo link once pushed / share on request*
 
-The biggest of the three, mainly because I kept adding to it instead of starting something new each time I learned a bit more. Started as just "can I stand up an AKS cluster without a public API server," and grew to cover how things get deployed onto it and how I'd know if something broke.
+The biggest of the three — kept adding to it instead of starting something new each time I learned a bit more. Started as "can I stand up an AKS cluster without a public API server," and grew to cover deployment and observability too.
 
 **The cluster itself**
 
@@ -183,13 +195,11 @@ flowchart LR
     class ACR,MI,MON2 ext
 ```
 
-The module split (networking → security → identity → AKS → monitoring) came out of trial and error, not planning. I originally had everything in one module and Terraform kept trying to create resources out of order because of implicit dependencies I hadn't thought through. Splitting it fixed that and made the dependency chain obvious.
+The module split (networking → security → identity → AKS → monitoring) came out of trial and error, not planning — Terraform kept trying to create resources out of order because of implicit dependencies I hadn't thought through. Splitting fixed that.
 
-Core thing I wanted working: AKS talking to ACR through a managed identity, nothing to rotate, nothing that could leak in a `.tfvars` file by accident. Private endpoints for ACR and Key Vault so nothing goes over the public endpoint even inside the VNet.
+Core goal: AKS talking to ACR through a managed identity — nothing to rotate, nothing that could leak in a `.tfvars` file by accident. Private endpoints for ACR and Key Vault so nothing goes over the public endpoint even inside the VNet.
 
 **Getting things onto the cluster — ArgoCD + Helm**
-
-Once the cluster existed, `kubectl apply`-ing manually got old fast, and I didn't trust myself to remember a week later exactly what I'd changed. Deployments go through ArgoCD instead.
 
 ```mermaid
 flowchart LR
@@ -204,11 +214,9 @@ flowchart LR
     class CLUSTER,PODS cluster
 ```
 
-Helm charts hold the desired state, ArgoCD reconciles the cluster against them and flags drift instead of me finding out something changed when a pod is already crash-looping. It also meant I stopped needing a `kubectl` context with write access on my own laptop for day-to-day deploys.
+Helm charts hold desired state; ArgoCD reconciles the cluster against them and flags drift with automated self-healing, instead of me finding out something changed when a pod is already crash-looping. Dev/staging/prod configs are managed from a single repo via Helm value overrides and ApplicationSets, with rollback via ArgoCD's revision history when a deploy goes bad.
 
 **Knowing what's happening — Prometheus + Grafana**
-
-Monitoring went in alongside the cluster this time instead of after it. On an earlier project I told myself I'd "add monitoring later" and never circled back, so here it's part of the same Terraform run from day one.
 
 ```mermaid
 flowchart LR
@@ -227,16 +235,16 @@ flowchart LR
     class DASH,ALERT out
 ```
 
-Prometheus and Grafana are provisioned by the same Terraform run as the cluster, so dashboards exist from the first `apply`. Alerting is still just the defaults; building out real alert rules is next.
+Prometheus and Grafana are provisioned by the same Terraform run as the cluster, tracking pod health, CPU/memory, and request latency from the first `apply`. Alerting is still just the defaults — building out real alert rules is next.
 
-**What I haven't done:** no real load testing, and I haven't tried to break the private endpoint routing or the ArgoCD sync under actual traffic. Everything above has only run with a couple of test pods.
+**What I haven't done:** no real load testing, and I haven't tried to break private endpoint routing or ArgoCD sync under actual traffic. Everything above has only run with a couple of test pods.
 
 <br>
 
 ### 3. Azure DevOps CI/CD + DevSecOps Pipeline
-🔗 [Repo](https://github.com/aniket-devop) *(link once pushed / share on request)*
+🔗 *Repo link once pushed / share on request*
 
-Most of the pipeline examples I found online run security scans after you've already applied. By then the scan is just telling you what you already broke.
+Most pipeline examples I found online run security scans after you've already applied. By then the scan is just telling you what you already broke.
 
 ```mermaid
 flowchart LR
@@ -266,15 +274,15 @@ flowchart LR
     class AZURE,MON azure
 ```
 
-This pipeline runs Checkov and Trivy against the `terraform plan` output before anything gets created, plus a SonarQube quality gate. If any of them fail, the pipeline stops. An early version just warned and continued, which defeats the point.
+This pipeline runs Checkov and Trivy against the `terraform plan` output before anything gets created, plus a SonarQube quality gate — if any of them fail, the pipeline stops. An early version just warned and continued, which defeats the point.
 
-There's a manual approval step between plan and apply, kept deliberately rather than automated away. During the internship, a Terraform apply once did something I hadn't expected, and since then I want a moment to actually read the plan output before anything changes.
+There's a manual approval step between plan and apply, kept deliberately rather than automated away. During the internship, a Terraform apply once did something I hadn't expected — since then I want a moment to actually read the plan output before anything changes.
 
-This pipeline is what deploys the landing zone and AKS platform above. It's not a standalone demo, it's the gate for both.
+This pipeline (commit → build → scan → quality gate → deploy → monitor) is what deploys the landing zone and AKS platform above. It's not a standalone demo, it's the gate for both.
 
 <br>
 
-## GitHub Activity
+## 📊 GitHub Activity
 
 <div align="center">
 <table>
@@ -287,7 +295,7 @@ This pipeline is what deploys the landing zone and AKS platform above. It's not 
 
 <br>
 
-## What I'm working on right now
+## 🔭 What I'm working on right now
 
 - Azure Policy at the landing-zone level — governance I skipped the first time around
 - OPA / Kyverno for admission control on the AKS project
@@ -296,7 +304,7 @@ This pipeline is what deploys the landing zone and AKS platform above. It's not 
 
 <br>
 
-## Contact
+## 📫 Contact
 
 <div align="center">
 
@@ -305,3 +313,4 @@ This pipeline is what deploys the landing zone and AKS platform above. It's not 
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/aniket-devop)
 
 </div>
+
