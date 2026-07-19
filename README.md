@@ -1,77 +1,87 @@
 <div align="center">
 
-# Hi, I'm Aniket Kumar 👋
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0078D4,100:7B42BC&height=200&section=header&text=Aniket%20Kumar&fontSize=48&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=DevOps%20Engineer%20%7C%20Azure%20%C2%B7%20Terraform%20%C2%B7%20Kubernetes&descAlignY=55&descSize=18" width="100%"/>
 
-**DevOps Engineer — Azure, Terraform, Kubernetes**
+<a href="https://linkedin.com/in/aniket484"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
+<a href="mailto:aniketkmr484@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/></a>
+<a href="https://github.com/aniket-devop"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/></a>
 
-I build small Azure environments in Terraform and spend most of my effort on the security and CI side of them. Getting a change to deploy is the easy part. Getting it to deploy safely is the part worth doing properly.
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/aniket484)
-[![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:aniketkmr484@gmail.com)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/aniket-devop)
+<img src="https://komarev.com/ghpvc/?username=aniket-devop&style=for-the-badge&color=0078D4&label=PROFILE+VIEWS"/>
 
 </div>
 
 <br>
 
-## About Me
+> I build small Azure environments in Terraform and spend most of my effort on the security and CI side of them. Getting a change to deploy is the easy part. Getting it to deploy safely is the part worth doing properly.
+
+<br>
+
+## 👋 About Me
 
 I'm a BCA graduate (Chandigarh Group of Colleges, Mohali) currently doing a DevOps internship at **DevOps Insiders**, where I write Terraform modules, build CI/CD pipelines, and help keep dev/QA/staging environments in sync for a small team.
 
 Outside of that role, I build Azure and Terraform projects on my own time to go deeper on things I don't always get to at work — landing zone patterns, private AKS clusters, pipelines that stop a bad change instead of just logging it after the fact.
 
-None of this is production infrastructure with real traffic. It's self-built and sized for one person to run and re-run, but I've tried to carry over the patterns a real environment needs: private networking, scoped access, gates before apply. That judgment is what I'm actually trying to build.
+None of this is production infrastructure with real traffic. It's self-built and sized for one person to run and re-run, but I've tried to carry over the patterns a real environment needs: private networking, scoped access, gates before apply. **That judgment is what I'm actually trying to build.**
+
+```
+🎓 BCA · Chandigarh Group of Colleges, Mohali   |   💼 DevOps Intern @ DevOps Insiders   |   📍 Noida, India
+```
 
 <br>
 
-## 🧰 Stack
+## 🧰 Tech Stack
 
-<table>
-<tr>
-<td valign="top" width="50%">
+<div align="center">
 
-**Cloud**
+**Cloud & IaC**
 <br>
-<img src="https://skillicons.dev/icons?i=azure" height="32"/>
-
-Azure, Azure DevOps, Entra ID — day-to-day comfortable with these
-
-**Infrastructure as Code**
-<br>
-<img src="https://skillicons.dev/icons?i=terraform" height="32"/>
-
-Terraform (main tool I use), some Bicep, Ansible for config management on a couple of projects
+<img src="https://skillicons.dev/icons?i=azure,terraform" height="40"/>
 
 **Containers & Orchestration**
 <br>
-<img src="https://skillicons.dev/icons?i=docker,kubernetes" height="32"/>
+<img src="https://skillicons.dev/icons?i=docker,kubernetes,helm" height="40"/>
 
-Docker, Kubernetes (AKS), Helm, ArgoCD
-
-</td>
-<td valign="top" width="50%">
-
-**CI/CD**
+**CI/CD & GitOps**
 <br>
-<img src="https://skillicons.dev/icons?i=githubactions,jenkins" height="32"/>
+<img src="https://skillicons.dev/icons?i=githubactions,jenkins,git" height="40"/>
+&nbsp;<img src="https://img.shields.io/badge/Argo_CD-EF7B4D?style=for-the-badge&logo=argo&logoColor=white"/>
+<img src="https://img.shields.io/badge/Azure_DevOps-0078D7?style=for-the-badge&logo=azuredevops&logoColor=white"/>
 
-Azure Pipelines, GitHub Actions, a bit of Jenkins
-
-**Security scanning**
-
-Trivy and Checkov in pipelines, SonarQube for code quality, Key Vault for secrets. HashiCorp Vault I've only used in a sandbox — not comfortable calling that a strength yet.
+**Security & Quality Gates**
+<br>
+<img src="https://img.shields.io/badge/Trivy-1904DA?style=for-the-badge&logo=aquasecurity&logoColor=white"/>
+<img src="https://img.shields.io/badge/Checkov-4B0082?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/SonarQube-4E9BCD?style=for-the-badge&logo=sonarqube&logoColor=white"/>
+<img src="https://img.shields.io/badge/Key_Vault-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white"/>
 
 **Monitoring**
 <br>
-<img src="https://skillicons.dev/icons?i=prometheus,grafana" height="32"/>
+<img src="https://skillicons.dev/icons?i=prometheus,grafana" height="40"/>
 
-Prometheus + Grafana, provisioned alongside infra rather than bolted on after
-
-**Languages & VCS**
+**Languages**
 <br>
-<img src="https://skillicons.dev/icons?i=python,bash,git,github" height="32"/>
+<img src="https://skillicons.dev/icons?i=python,bash" height="40"/>
 
-Python and Bash for scripting/automation, Git daily
+</div>
+
+<sub>Honest scoping: HashiCorp Vault — sandbox only, not a strength yet. Bicep/Ansible — used on select projects, Terraform is my main tool.</sub>
+
+<br>
+
+## 💼 Experience
+
+<table>
+<tr>
+<td>
+
+**DevOps Intern — DevOps Insiders**
+`Feb 2025 – Present`
+
+- Wrote Terraform modules to provision Azure resource groups, VNets, and VMs for dev, QA, and staging — replacing manual portal setup with version-controlled, repeatable infra
+- Built and maintained GitHub Actions and Azure DevOps pipelines for 3+ microservices (build, test, deploy stages on PRs and merges)
+- Diagnosed environment/integration issues — config drift, dependency mismatches, failed deployments — with a 4-person team
+- Added automated test stages ahead of deployment steps, surfacing failures before builds reached staging
 
 </td>
 </tr>
@@ -79,24 +89,58 @@ Python and Bash for scripting/automation, Git daily
 
 <br>
 
-## 💼 Experience
-
-**DevOps Intern — DevOps Insiders** · 
-- Wrote Terraform modules to provision Azure resource groups, VNets, and VMs for dev, QA, and staging — replacing manual portal setup with version-controlled, repeatable infra.
-- Built and maintained GitHub Actions and Azure DevOps pipelines for 3+ microservices (build, test, deploy stages on PRs and merges).
-- Diagnosed environment/integration issues — config drift, dependency mismatches, failed deployments — with a 4-person team.
-- Added automated test stages ahead of deployment steps, surfacing failures before builds reached staging.
-
-<br>
-
-## 🚀 Projects
+## 🚀 Featured Projects
 
 Three projects here instead of a longer list of smaller ones — grouping the pieces that actually run together (the AKS cluster, how it gets deployed to, how it's monitored) felt more honest than presenting them as separate demos.
 
 <br>
 
-### 1. Azure Landing Zone in Terraform
+<table>
+<tr>
+<td width="33%" valign="top">
+
+### 🏗️ Landing Zone
+**Hub-and-spoke Azure network in Terraform**
+
+Firewall + Bastion in the hub, NSG-bound spokes, RBAC scoped per resource group, Key Vault behind a private endpoint.
+
+`Terraform` `Azure Firewall` `Bastion` `Key Vault`
+
 🔗 [Repo](https://github.com/aniket-devop/azure-landing-zone-terraform)
+
+</td>
+<td width="33%" valign="top">
+
+### ☸️ Private AKS Platform
+**Cluster + GitOps + observability**
+
+Private API server, managed-identity ACR pulls, ArgoCD-driven deploys, Prometheus/Grafana from the first `apply`.
+
+`AKS` `ArgoCD` `Helm` `Prometheus`
+
+🔗 *Repo link on request*
+
+</td>
+<td width="33%" valign="top">
+
+### 🔒 DevSecOps Pipeline
+**Scan-before-apply CI/CD**
+
+Checkov + Trivy + SonarQube gate the `terraform plan` output; manual approval before anything touches Azure.
+
+`Checkov` `Trivy` `SonarQube`
+
+🔗 *Repo link on request*
+
+</td>
+</tr>
+</table>
+
+<br>
+
+<details>
+<summary><b>1. Azure Landing Zone in Terraform — full write-up</b></summary>
+<br>
 
 Started because I kept copy-pasting the same networking module between two "environments." Rebuilt as a proper hub-and-spoke setup instead.
 
@@ -131,20 +175,21 @@ flowchart TB
 ```
 
 **What I went with, and why:**
-- Hub-and-spoke instead of one flat network, so the firewall and Bastion live in one place instead of every spoke reinventing them.
-- NSGs at the spoke boundary (deny-by-default, explicit allow) so the AKS subnet isn't just trusting whatever's on the VNet.
-- Bastion instead of a jump box with a public IP — a mistake in an earlier version of this project I fixed on purpose here.
-- RBAC scoped to the resource group, not the subscription.
-- Firewall rule collections + UDRs forcing spoke egress through the firewall.
-- Key Vault behind a private endpoint with a Private DNS zone for internal resolution.
-- Remote state in Azure Storage with locking; `terraform fmt/validate/plan` on every PR with a manual approval gate before apply.
+- Hub-and-spoke instead of one flat network, so the firewall and Bastion live in one place instead of every spoke reinventing them
+- NSGs at the spoke boundary (deny-by-default, explicit allow) so the AKS subnet isn't just trusting whatever's on the VNet
+- Bastion instead of a jump box with a public IP — a mistake in an earlier version of this project I fixed on purpose here
+- RBAC scoped to the resource group, not the subscription
+- Firewall rule collections + UDRs forcing spoke egress through the firewall
+- Key Vault behind a private endpoint with a Private DNS zone for internal resolution
+- Remote state in Azure Storage with locking; `terraform fmt/validate/plan` on every PR with a manual approval gate before apply
 
 Parameterized enough that a second "environment" is a tfvars change, not a duplicated module. That was the actual goal, more than the security stuff, if I'm honest.
 
-<br>
+</details>
 
-### 2. Private AKS Platform — cluster, deployments, and observability together
-🔗 *Repo link once pushed / share on request*
+<details>
+<summary><b>2. Private AKS Platform — full write-up</b></summary>
+<br>
 
 The biggest of the three — kept adding to it instead of starting something new each time I learned a bit more. Started as "can I stand up an AKS cluster without a public API server," and grew to cover deployment and observability too.
 
@@ -239,10 +284,11 @@ Prometheus and Grafana are provisioned by the same Terraform run as the cluster,
 
 **What I haven't done:** no real load testing, and I haven't tried to break private endpoint routing or ArgoCD sync under actual traffic. Everything above has only run with a couple of test pods.
 
-<br>
+</details>
 
-### 3. Azure DevOps CI/CD + DevSecOps Pipeline
-🔗 *Repo link once pushed / share on request*
+<details>
+<summary><b>3. Azure DevOps CI/CD + DevSecOps Pipeline — full write-up</b></summary>
+<br>
 
 Most pipeline examples I found online run security scans after you've already applied. By then the scan is just telling you what you already broke.
 
@@ -280,22 +326,26 @@ There's a manual approval step between plan and apply, kept deliberately rather 
 
 This pipeline (commit → build → scan → quality gate → deploy → monitor) is what deploys the landing zone and AKS platform above. It's not a standalone demo, it's the gate for both.
 
+</details>
+
 <br>
 
-## 📊 GitHub Activity
+## 📊 GitHub Stats
 
 <div align="center">
-<table>
-<tr>
-<td><img src="https://github-readme-stats.vercel.app/api?username=aniket-devop&show_icons=true&theme=tokyonight&hide_border=true" height="165"/></td>
-<td><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=aniket-devop&layout=compact&theme=tokyonight&hide_border=true" height="165"/></td>
-</tr>
-</table>
+
+<img src="https://github-readme-stats.vercel.app/api?username=aniket-devop&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" height="165"/>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=aniket-devop&layout=compact&theme=tokyonight&hide_border=true" height="165"/>
+
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=aniket-devop&theme=tokyonight&hide_border=true" height="165"/>
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=aniket-devop&theme=tokyo-night&hide_border=true" width="95%"/>
+
 </div>
 
 <br>
 
-## 🔭 What I'm working on right now
+## 🔭 What I'm Working On Right Now
 
 - Azure Policy at the landing-zone level — governance I skipped the first time around
 - OPA / Kyverno for admission control on the AKS project
@@ -304,13 +354,17 @@ This pipeline (commit → build → scan → quality gate → deploy → monitor
 
 <br>
 
-## 📫 Contact
+## 📫 Let's Connect
 
 <div align="center">
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/aniket484)
-[![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:aniketkmr484@gmail.com)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/aniket-devop)
+<a href="https://linkedin.com/in/aniket484"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
+<a href="mailto:aniketkmr484@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/></a>
+<a href="https://github.com/aniket-devop"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/></a>
+
+<br><br>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:7B42BC,100:0078D4&height=100&section=footer"/>
 
 </div>
 
