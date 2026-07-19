@@ -81,7 +81,7 @@ Python and Bash for scripting/automation, Git daily
 
 ## 💼 Experience
 
-**DevOps Intern — DevOps Insiders** · 
+**DevOps Intern — DevOps Insiders** _ Noida India
 
 - Wrote Terraform modules to provision Azure resource groups, VNets, and VMs for dev, QA, and staging — replacing manual portal setup with version-controlled, repeatable infra.
 - Built and maintained GitHub Actions and Azure DevOps pipelines for 3+ microservices (build, test, deploy stages on PRs and merges).
