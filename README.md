@@ -285,16 +285,7 @@ This pipeline (commit → build → scan → quality gate → deploy → monitor
 
 ## 📊 GitHub Activity
 
-<div align="center">
-<table>
-<tr>
-<td><img src="https://github-readme-stats.vercel.app/api?username=aniket-devop&show_icons=true&theme=tokyonight&hide_border=true" height="165"/></td>
-<td><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=aniket-devop&layout=compact&theme=tokyonight&hide_border=true" height="165"/></td>
-</tr>
-</table>
-</div>
-
-<br>
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=aniket-devop&theme=tokyo-night"/>
 
 ## 🔭 What I'm working on right now
 
