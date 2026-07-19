@@ -285,9 +285,7 @@ This pipeline (commit → build → scan → quality gate → deploy → monitor
 
 ## 📊 GitHub Activity
 
-## 🐍 Contribution Snake
 
-<h2 align="center">📈 GitHub Activity Graph</h2>
 
 <p align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=aniket-devop&theme=tokyo-night&hide_border=true" width="100%"/>
