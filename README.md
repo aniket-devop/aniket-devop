@@ -323,129 +323,168 @@ Treating security scans as **hard gates** rather than advisory reports was the b
 ---
 
 <br/>
-
 ## 3. AWS Landing Network (Personal Project)
 
-`Terraform` `VPC` `EC2` `ALB` `IAM` `S3` `DynamoDB`
-*Repository not yet public — available on request.*
+`Terraform` `AWS` `VPC` `EC2` `ALB` `NAT Gateway` `IAM` `S3` `DynamoDB` `GitHub Actions`
 
-A self-driven project to build AWS depth using the same "no direct internet exposure" principle as the Azure landing zone — multi-AZ, private compute, and locked-down remote state.
+🔗 **Repository:** *Coming Soon*
 
-### Architecture Diagram
+A production-inspired AWS landing network built with Terraform following enterprise networking best practices. The infrastructure uses a multi-AZ VPC, public and private subnets, an Application Load Balancer, NAT Gateways, IAM Roles, and Terraform Remote State (S3 + DynamoDB) with GitHub Actions for Infrastructure as Code automation.
 
-```mermaid
-flowchart TB
-    Internet((🌐 Internet)) --> IGW["🚪 Internet Gateway"]
-    IGW --> ALB["⚖️ Application Load Balancer<br/>Public Subnets"]
+---
 
-    subgraph VPC["☁️ VPC — Multi-AZ — 10.0.0.0/16"]
-        subgraph PUB["🟦 Public Subnets"]
-            ALB
-            NAT["🔁 NAT Gateway"]
-        end
+## 🏗️ Architecture Diagram
 
-        subgraph AZ1["🟩 Private Subnet — AZ-1"]
-            SGA["🛡️ SG: Allow ALB only"]
-            EC2A["🖥️ EC2<br/>Scoped IAM Role"]
-            SGA --> EC2A
-        end
+<p align="center">
+  <img src="./diagrams/aws-landing-network-architecture.png" alt="AWS Landing Network Architecture" width="100%">
+</p>
 
-        subgraph AZ2["🟩 Private Subnet — AZ-2"]
-            SGB["🛡️ SG: Allow ALB only"]
-            EC2B["🖥️ EC2<br/>Scoped IAM Role"]
-            SGB --> EC2B
-        end
+> 📌 Enterprise AWS Landing Network Architecture built with **Terraform**, featuring **Multi-AZ VPC**, **Application Load Balancer**, **Private EC2 Instances**, **NAT Gateway**, **IAM Roles**, **GitHub Actions CI/CD**, and **Terraform Remote State (S3 + DynamoDB Locking).**
 
-        ALB --> EC2A
-        ALB --> EC2B
-        EC2A -.->|Outbound only| NAT
-        EC2B -.->|Outbound only| NAT
-        NAT --> IGW
-    end
-
-    GHA["⚙️ GitHub Actions<br/>fmt → validate → plan"] -.->|Terraform| VPC
-    S3[("🪣 S3<br/>Remote State")] === DDB[("🔒 DynamoDB<br/>State Lock")]
-    GHA -.-> S3
-
-    style ALB fill:#FF9900,color:#232F3E,stroke:#b36b00
-    style IGW fill:#FF9900,color:#232F3E,stroke:#b36b00
-    style NAT fill:#FF9900,color:#232F3E,stroke:#b36b00
-    style S3 fill:#3F8624,color:#fff,stroke:#265014
-    style DDB fill:#4053D6,color:#fff,stroke:#232f80
-```
-
-> 📎 Official-icon version: [`diagrams/aws-landing-network.drawio`](diagrams/aws-landing-network.drawio)
+---
 
 <details>
-<summary><b>📖 Architecture Flow — click to expand</b></summary>
+<summary><b>📖 Architecture Flow (Click to Expand)</b></summary>
 
-1. All inbound traffic hits the **Internet Gateway**, then the **ALB** in the public subnets — nothing else is internet-facing.
-2. The ALB forwards requests to EC2 instances in **private subnets across two AZs**, giving basic fault tolerance.
-3. EC2 security groups accept traffic **only from the ALB's security group** — no direct internet access, no open ports.
-4. Outbound-only internet access (package updates, external API calls) goes through the **NAT Gateway**.
-5. Each EC2 instance assumes a **scoped IAM instance role** (least privilege) instead of a broad admin policy.
-6. Terraform state is stored remotely in **S3**, with **DynamoDB** providing state locking to prevent concurrent-apply corruption.
-7. Every PR runs `fmt`, `validate`, and `plan` via GitHub Actions before any human applies changes.
+1. GitHub Actions executes **terraform fmt**, **validate**, and **plan** before infrastructure deployment.
+2. Terraform stores its remote state in **Amazon S3** while **DynamoDB** prevents concurrent state modifications.
+3. Infrastructure is provisioned inside a dedicated **AWS VPC (10.0.0.0/16)**.
+4. The VPC spans **two Availability Zones** for high availability.
+5. Public subnets host the **Application Load Balancer** and **NAT Gateway**.
+6. Internet traffic reaches only the **Application Load Balancer** through the Internet Gateway.
+7. The ALB forwards requests to EC2 instances running inside **private subnets**.
+8. EC2 instances never receive public IP addresses.
+9. Security Groups allow inbound traffic **only from the ALB**, preventing direct internet access.
+10. IAM Roles provide secure access to AWS services without storing credentials.
+11. Outbound internet connectivity for private instances is routed through the **NAT Gateway**.
+12. The architecture follows a secure landing-zone approach with least-privilege access and isolated workloads.
 
 </details>
+
+---
 
 <details>
 <summary><b>📁 Folder Structure</b></summary>
 
-```
+```text
 aws-landing-network/
 ├── modules/
-│   ├── vpc/              # VPC, subnets, route tables, IGW, NAT
-│   ├── alb/               # ALB, target groups, listeners
-│   ├── ec2/               # Launch template, IAM instance role
-│   └── state-backend/     # S3 + DynamoDB
+│   ├── networking/
+│   ├── alb/
+│   ├── ec2/
+│   ├── iam/
+│   └── backend/
+│
 ├── environments/
 │   └── dev/
-│       ├── main.tf
-│       └── dev.tfvars
+│       ├── backend.tfvars
+│       └── terraform.tfvars
+│
 ├── .github/
 │   └── workflows/
 │       └── terraform.yml
+│
+├── diagrams/
+│   └── aws-landing-network-architecture.png
+│
+├── main.tf
+├── variables.tf
+├── outputs.tf
 └── README.md
 ```
 
 </details>
 
-### ⚙️ Features
-- Multi-AZ design for basic high availability on the compute tier
-- Fully private compute layer — EC2 instances have no public IPs
-- Remote state with locking, safe for team/CI use without state corruption
+---
 
-### 🔒 Security
-- Security groups scoped to ALB-only ingress on EC2
-- IAM instance roles scoped to only the permissions the instance needs
-- No inbound internet path to compute — only outbound, via NAT
+## ⚙️ Features
 
-### 🔁 CI/CD
-`PR opened` → GitHub Actions runs `terraform fmt` → `validate` → `plan` → plan posted on PR for review → apply on approval/merge.
-
-### 🖥️ Commands
-```bash
-terraform init
-terraform fmt -check
-terraform validate
-terraform plan -var-file=environments/dev/dev.tfvars
-terraform apply -var-file=environments/dev/dev.tfvars
-```
-
-### 📚 Learning
-Setting up S3 + DynamoDB remote state from scratch made the "why" behind state locking concrete — without it, two people (or two pipeline runs) applying at once can corrupt state.
-
-### 🚀 Future Improvements
-- Add Auto Scaling Group instead of fixed EC2 count
-- Add AWS WAF in front of the ALB
-- Migrate compute to ECS Fargate to remove instance management entirely
-
-<br/>
+- Enterprise-style Multi-AZ VPC architecture
+- Public and Private subnet isolation
+- Application Load Balancer
+- Private EC2 instances
+- IAM Roles (Least Privilege)
+- NAT Gateway for secure outbound internet
+- Terraform Remote State using Amazon S3
+- DynamoDB State Locking
+- GitHub Actions CI pipeline
+- Modular Terraform codebase
 
 ---
 
-<br/>
+## 🔒 Security
+
+- No public IPs on application servers
+- ALB is the only internet-facing component
+- Security Groups restrict EC2 access to ALB only
+- IAM Roles eliminate static credentials
+- Terraform state secured with S3 + DynamoDB
+- Private subnet architecture for workloads
+
+---
+
+## 🔁 CI/CD
+
+```
+Developer
+      │
+      ▼
+GitHub Repository
+      │
+      ▼
+GitHub Actions
+      │
+      ├── terraform fmt
+      ├── terraform validate
+      ├── terraform plan
+      ▼
+Manual Approval
+      ▼
+terraform apply
+```
+
+---
+
+## 🖥️ Terraform Commands
+
+```bash
+terraform init
+
+terraform fmt -check
+
+terraform validate
+
+terraform plan -var-file=environments/dev/terraform.tfvars
+
+terraform apply -var-file=environments/dev/terraform.tfvars
+```
+
+---
+
+## 📚 Learning Outcomes
+
+- Designed an enterprise-style AWS landing network.
+- Implemented Infrastructure as Code using reusable Terraform modules.
+- Learned secure networking using Public and Private Subnets.
+- Configured ALB, NAT Gateway and Internet Gateway.
+- Implemented IAM Roles following least-privilege principles.
+- Configured Terraform Remote State with S3 and DynamoDB.
+- Automated infrastructure validation using GitHub Actions.
+
+---
+
+## 🚀 Future Enhancements
+
+- Auto Scaling Group
+- AWS WAF
+- ACM HTTPS Certificate
+- Route53
+- CloudWatch Monitoring
+- AWS Systems Manager Session Manager
+- ECS Fargate Migration
+- AWS Config & GuardDuty
+- VPC Flow Logs
+- Terraform Apply via GitHub Actions with Approval
 
 ## 💼 Professional Experience
 
