@@ -2,1177 +2,482 @@
 
 # Hi, I'm Aniket Kumar 👋
 
-### DevOps Engineer • Azure • AWS • Terraform • Kubernetes • CI/CD
+### DevOps Engineer — Azure · AWS · Terraform · Kubernetes · CI/CD
 
-<p>
-Building secure cloud infrastructure, production-ready CI/CD pipelines, and Infrastructure as Code using Terraform, Azure, and AWS.
-</p>
+![Azure](https://img.shields.io/badge/Azure-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white)
+![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=for-the-badge&logo=terraform&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![GitHubActions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
 
-<p>
-Focused on designing scalable cloud platforms, automating deployments, and implementing DevSecOps best practices.
-</p>
-
-<br>
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/aniket484)
-[![Email](https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:aniketkmr484@gmail.com)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/aniket-devop)
-
-<img src="https://komarev.com/ghpvc/?username=aniket-devop&label=Profile%20Views&color=0e75b6&style=flat" alt="Profile Views"/>
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/aniket484)
+[![Email](https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:aniketkmr484@gmail.com)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/aniket-devop)
+![Profile Views](https://komarev.com/ghpvc/?username=aniket-devop&style=flat-square&color=blue)
 
 </div>
 
----
+<br/>
 
-# 👨‍💻 About Me
+## 📌 About Me
 
-I'm a **DevOps Engineer** with hands-on experience designing cloud infrastructure, automating deployments, and building production-ready CI/CD pipelines.
+DevOps Engineer with 1 year of hands-on experience automating cloud infrastructure and CI/CD pipelines on Microsoft Azure. I design infrastructure as code with Terraform, deploy and secure containerized workloads on Azure Kubernetes Service (AKS), and build security scanning and observability directly into the delivery pipeline instead of bolting it on afterward. Currently extending this foundation into AWS through a self-driven infrastructure project.
 
-My focus is on building secure, scalable, and maintainable cloud platforms using **Infrastructure as Code** and modern DevOps practices.
+- 🔧 DevOps Intern @ **DevOps Insiders** — provisioning and maintaining Azure infrastructure across Dev, QA, and Staging
+- 🌱 Building cross-cloud depth on AWS (VPC, EC2, ALB, IAM) through a personal landing-zone project
+- 🎓 BCA, Chandigarh Group of Colleges, Mohali
+- 📍 Noida, India
+- 🎯 Looking for a full-time **Junior DevOps / Cloud Engineer** role
 
-Currently, I'm expanding my expertise across both **Microsoft Azure** and **Amazon Web Services (AWS)** while building enterprise-style infrastructure projects that closely resemble real production environments.
+<br/>
 
----
+## 🧰 Tech Stack
 
-## 🚀 What I Do
+<div align="center">
 
-- ☁️ Design Cloud Infrastructure on **Azure** and **AWS**
-- 🏗️ Build reusable **Terraform Modules**
-- ⚙️ Create Production CI/CD Pipelines
-- ☸️ Deploy Applications on Kubernetes (AKS)
-- 🐳 Containerize Applications using Docker
-- 🔐 Implement DevSecOps with Trivy & SonarQube
-- 📈 Monitor Infrastructure using Prometheus & Grafana
-- 🔄 Automate everything possible
+![Azure](https://skillicons.dev/icons?i=azure) ![AWS](https://skillicons.dev/icons?i=aws) ![Terraform](https://skillicons.dev/icons?i=terraform) ![Docker](https://skillicons.dev/icons?i=docker) ![Kubernetes](https://skillicons.dev/icons?i=kubernetes) ![GithubActions](https://skillicons.dev/icons?i=githubactions) ![Grafana](https://skillicons.dev/icons?i=grafana) ![Prometheus](https://skillicons.dev/icons?i=prometheus) ![Python](https://skillicons.dev/icons?i=python) ![Bash](https://skillicons.dev/icons?i=bash) ![Linux](https://skillicons.dev/icons?i=linux) ![Git](https://skillicons.dev/icons?i=git)
 
----
+</div>
 
-# 💼 Current Role
+| Category | Tools |
+|---|---|
+| **Cloud** | Microsoft Azure (VNets, Load Balancer, Firewall, Bastion, Key Vault, AKS), AWS (EC2, VPC, IAM, S3, ALB, DynamoDB) |
+| **IaC** | Terraform — reusable modules, remote state, plan/apply workflows |
+| **CI/CD** | GitHub Actions, Azure DevOps Pipelines |
+| **Containers** | Docker, Kubernetes (AKS), Helm |
+| **Security & Scanning** | Trivy, SonarQube, NSGs, scoped IAM |
+| **Monitoring** | Prometheus, Grafana |
+| **Scripting** | Python, Bash |
+| **Version Control** | Git, GitHub |
 
-### DevOps Intern — DevOps Insiders
-
-Working on production Azure infrastructure and DevOps automation.
-
-### Responsibilities
-
-- Azure Infrastructure Automation
-- Terraform Module Development
-- Azure Kubernetes Service (AKS)
-- GitHub Actions
-- Azure DevOps Pipelines
-- Infrastructure Monitoring
-- Security Hardening
-- CI/CD Automation
+<br/>
 
 ---
 
-# 🎯 Career Objective
-
-I'm actively looking for a **Junior DevOps Engineer** or **Cloud Engineer** role where I can contribute to production cloud platforms, infrastructure automation, Kubernetes deployments, and DevSecOps initiatives.
+## 🏗️ Featured Projects
 
 ---
 
-# 🛠 Tech Stack
+<br/>
 
-## ☁️ Cloud
+## 1. Azure Landing Zone — Hub-and-Spoke Network
 
-<p>
-<img src="https://skillicons.dev/icons?i=azure" />
-<img src="https://skillicons.dev/icons?i=aws" />
-</p>
+🔗 **Repo:** [azure-landing-zone-terraform](https://github.com/aniket-devop/azure-landing-zone-terraform)
+`Terraform` `Azure Firewall` `Bastion` `Key Vault` `Private DNS` `GitHub Actions`
 
----
+A hub-and-spoke enterprise network topology — the same pattern Microsoft recommends for real Azure landing zones — built entirely from reusable Terraform modules, with centralized security (Firewall + Bastion) and zero public exposure on workload VMs.
 
-## 🏗 Infrastructure as Code
+### Architecture Diagram
 
-<p>
-<img src="https://skillicons.dev/icons?i=terraform" />
-</p>
+```mermaid
+flowchart TB
+    Internet((🌐 Internet)) -->|Inbound rules only| FW
 
----
+    subgraph HUB["🔷 Hub VNet — 10.0.0.0/16"]
+        direction TB
+        FW["🔥 Azure Firewall<br/>Central egress/ingress control"]
+        BAS["🔑 Azure Bastion<br/>No public IPs on VMs"]
+        KV[("🔐 Key Vault<br/>Private Endpoint")]
+    end
 
-## ☸️ Containers & Orchestration
+    Admin([👤 Admin]) -->|HTTPS 443 only| BAS
 
-<p>
-<img src="https://skillicons.dev/icons?i=docker" />
-<img src="https://skillicons.dev/icons?i=kubernetes" />
-<img src="https://skillicons.dev/icons?i=helm" />
-</p>
+    FW <==>|VNet Peering| SPOKE1
+    FW <==>|VNet Peering| SPOKE2
 
----
+    subgraph SPOKE1["🟢 Spoke VNet — Dev — 10.1.0.0/24"]
+        NSG1["🛡️ NSG — Deny by Default"]
+        VM1["🖥️ App Workloads"]
+        NSG1 --> VM1
+    end
 
-## ⚙️ CI/CD
+    subgraph SPOKE2["🟡 Spoke VNet — QA/Staging — 10.2.0.0/24"]
+        NSG2["🛡️ NSG — Deny by Default"]
+        VM2["🖥️ App Workloads"]
+        NSG2 --> VM2
+    end
 
-<p>
-<img src="https://skillicons.dev/icons?i=githubactions" />
-<img src="https://skillicons.dev/icons?i=azuredevops" />
-</p>
+    BAS -.->|Private RDP/SSH| VM1
+    BAS -.->|Private RDP/SSH| VM2
+    VM1 -.->|Fetch secrets| KV
+    VM2 -.->|Fetch secrets| KV
 
----
+    GHA["⚙️ GitHub Actions<br/>plan → manual approval → apply"] ==>|Terraform| HUB
+    GHA ==>|Terraform| SPOKE1
+    GHA ==>|Terraform| SPOKE2
 
-## 📊 Monitoring
+    style FW fill:#0078D4,color:#fff,stroke:#003a63
+    style BAS fill:#0078D4,color:#fff,stroke:#003a63
+    style KV fill:#5C2D91,color:#fff,stroke:#3a1a5c
+    style GHA fill:#2088FF,color:#fff,stroke:#0b3d91
+```
 
-<p>
-<img src="https://skillicons.dev/icons?i=prometheus" />
-<img src="https://skillicons.dev/icons?i=grafana" />
-</p>
+> 📎 A full icon-based (official Azure icon set) version of this diagram is included as [`diagrams/azure-landing-zone.drawio`](diagrams/azure-landing-zone.drawio) — open it in [draw.io](https://app.diagrams.net) for the enterprise-documentation look.
 
----
+<details>
+<summary><b>📖 Architecture Flow — click to expand</b></summary>
 
-## 🔐 Security
+1. Admin connects to **Azure Bastion** over HTTPS (443) — no VM ever has a public IP.
+2. Bastion proxies RDP/SSH internally to VMs in the spoke VNets.
+3. All inter-VNet traffic between hub and spokes flows through **VNet Peering**, routed and inspected by **Azure Firewall**.
+4. Outbound internet access from spokes is forced through the firewall (no direct egress from workloads).
+5. Application secrets/connection strings are pulled from **Key Vault** via a **Private Endpoint** — never over the public Key Vault endpoint.
+6. Every subnet in the spokes sits behind a **deny-by-default NSG**; only explicitly required ports are opened.
+7. Infrastructure changes go through GitHub Actions: `terraform plan` and `validate` run automatically on every PR, and `apply` requires manual approval — no direct `apply` from a laptop.
 
-- Trivy
-- SonarQube
-- Azure NSGs
-- Azure Firewall
-- IAM Roles
-- Security Groups
-- Private Endpoints
+</details>
 
----
+<details>
+<summary><b>📁 Folder Structure</b></summary>
 
-## 💻 Languages
-
-<p>
-<img src="https://skillicons.dev/icons?i=python" />
-<img src="https://skillicons.dev/icons?i=bash" />
-</p>
-
----
-
-## 🖥 Operating Systems
-
-<p>
-<img src="https://skillicons.dev/icons?i=linux" />
-</p>
-
----
-
-## 📌 Featured Projects
-
-The following projects demonstrate production-style cloud architecture, Infrastructure as Code, DevSecOps, Kubernetes, monitoring, and cloud security best practices.
-
-# 🏗 Featured Project 01
-
-# Azure Landing Zone — Enterprise Hub & Spoke Architecture
-
-<p align="center">
-<img src="diagrams/azure-landing-zone.png" width="100%">
-</p>
-
-<p align="center">
-<b>Production-style Azure Landing Zone built using modular Terraform with Hub & Spoke networking, Azure Firewall, Bastion, Private Endpoints and GitHub Actions.</b>
-</p>
-
----
-
-## 🔗 Repository
-
-**Repository:** https://github.com/aniket-devop/azure-landing-zone-terraform
-
----
-
-## 📌 Overview
-
-This project demonstrates how enterprise Azure environments are commonly designed using a **Hub-and-Spoke Landing Zone Architecture**.
-
-Instead of deploying resources directly into one virtual network, the infrastructure separates shared services from application workloads, allowing centralized security, easier management, and scalable expansion.
-
-Everything is provisioned using reusable Terraform modules and automated through GitHub Actions.
-
----
-
-# 🏛 Architecture Highlights
-
-✔ Hub & Spoke Network
-
-✔ Azure Firewall
-
-✔ Azure Bastion
-
-✔ Private Endpoints
-
-✔ Azure Key Vault
-
-✔ Virtual Network Peering
-
-✔ GitHub Actions CI/CD
-
-✔ Infrastructure as Code
-
-✔ Zero Public VM Access
-
-✔ Environment Isolation
-
----
-
-# 🛠 Technologies Used
-
-| Category | Technology |
-|----------|------------|
-| Cloud | Microsoft Azure |
-| IaC | Terraform |
-| CI/CD | GitHub Actions |
-| Security | Azure Firewall |
-| Remote Access | Azure Bastion |
-| Secrets | Azure Key Vault |
-| Networking | VNet Peering |
-| OS | Linux |
-| Version Control | Git |
-
----
-
-# 🏗 Infrastructure Components
-
-### Networking
-
-- Hub Virtual Network
-- Dev Spoke VNet
-- QA Spoke VNet
-- Staging Spoke VNet
-- VNet Peering
-
----
-
-### Security
-
-- Azure Firewall
-- Azure Bastion
-- NSGs
-- Private Endpoints
-- Private DNS
-- Zero Public IP Strategy
-
----
-
-### Compute
-
-- Linux Virtual Machines
-
----
-
-### Secrets
-
-- Azure Key Vault
-
----
-
-### Automation
-
-- GitHub Actions
-- Terraform
-
----
-
-# 🔄 Architecture Flow
-
-1. Developer pushes code to GitHub.
-
-2. GitHub Actions automatically runs:
-
-- Terraform Format
-
-- Terraform Validate
-
-- Terraform Plan
-
-3. Infrastructure changes require approval.
-
-4. Terraform provisions Azure resources.
-
-5. Shared services are deployed into the Hub Network.
-
-6. Application workloads are deployed into Spoke Networks.
-
-7. Azure Firewall inspects inbound and outbound traffic.
-
-8. Azure Bastion provides secure RDP/SSH without exposing public IP addresses.
-
-9. Key Vault securely stores application secrets.
-
-10. Applications communicate privately using VNet Peering.
-
----
-
-# 🔐 Security Features
-
-✅ Zero Public IPs
-
-✅ Bastion-only Administration
-
-✅ Deny by Default NSGs
-
-✅ Centralized Firewall
-
-✅ Private Endpoint Access
-
-✅ Private DNS Resolution
-
-✅ Least Privilege Access
-
-✅ Infrastructure as Code
-
----
-
-# ⚙ CI/CD Pipeline
-
-GitHub Push
-
-↓
-
-Terraform Format
-
-↓
-
-Terraform Validate
-
-↓
-
-Terraform Plan
-
-↓
-
-Manual Approval
-
-↓
-
-Terraform Apply
-
-↓
-
-Azure Infrastructure Updated
-
----
-
-# 📁 Folder Structure
-
-```text
+```
 azure-landing-zone-terraform/
-
 ├── modules/
-│
-├── networking/
-│
-├── firewall/
-│
-├── bastion/
-│
-├── key-vault/
-│
-├── storage/
-│
+│   ├── networking/       # Hub + spoke VNets, subnets, peering
+│   ├── firewall/         # Azure Firewall + rule collections
+│   ├── bastion/          # Bastion host + NSG
+│   ├── key-vault/        # Key Vault + private endpoint
+│   └── storage/          # Remote state backend resources
 ├── environments/
-│
-├── dev/
-│
-├── qa/
-│
-├── staging/
-│
-├── .github/
-│
-├── workflows/
-│
-└── terraform.yml
-```
-
----
-
-# 💻 Common Commands
-
-```bash
-terraform init
-
-terraform fmt
-
-terraform validate
-
-terraform plan
-
-terraform apply
-```
-
----
-
-# 📈 Key Achievements
-
-✔ Modular Terraform Architecture
-
-✔ Enterprise Hub & Spoke Design
-
-✔ Secure Remote Administration
-
-✔ Zero Public Workload Exposure
-
-✔ Reusable Infrastructure Modules
-
-✔ Automated Infrastructure Provisioning
-
-✔ GitHub Actions Integration
-
-✔ Infrastructure Version Control
-
----
-
-# 📚 What I Learned
-
-During this project I gained practical experience with enterprise Azure networking concepts including Hub-and-Spoke topology, centralized security, virtual network peering, private endpoints, Infrastructure as Code, and production-style deployment workflows.
-
-More importantly, I learned how production environments prioritize security, scalability, and maintainability over simply deploying virtual machines.
-
----
-
-# 🚀 Future Improvements
-
-- Azure Policy
-
-- Azure Monitor
-
-- Log Analytics
-
-- Azure Sentinel
-
-- Multi-Region Disaster Recovery
-
-- Landing Zone Governance
-
----
-# 🚀 Featured Project 02
-
-# DevSecOps Pipeline for Microservices on Azure Kubernetes Service (AKS)
-
-<p align="center">
-<img src="diagrams/aks-devsecops.png" width="100%">
-</p>
-
-<p align="center">
-<b>Production-ready DevSecOps pipeline built with GitHub Actions, Docker, Kubernetes, Helm, Trivy, SonarQube, Prometheus and Grafana.</b>
-</p>
-
----
-
-## 🔗 Repository
-
-**Repository:** Available on Request
-
----
-
-# 📌 Overview
-
-This project demonstrates a complete **Commit-to-Production DevSecOps workflow** for a microservices application deployed on **Azure Kubernetes Service (AKS)**.
-
-Instead of treating security as an afterthought, vulnerability scanning and code quality validation are integrated directly into the CI/CD pipeline.
-
-Every deployment passes multiple automated quality gates before reaching the Kubernetes cluster.
-
----
-
-# 🎯 Project Goals
-
-✔ Automate Application Delivery
-
-✔ Secure CI/CD Pipeline
-
-✔ Container Security
-
-✔ Infrastructure Automation
-
-✔ Kubernetes Deployment
-
-✔ Monitoring & Observability
-
-✔ Zero Manual Production Deployments
-
----
-
-# 🛠 Technologies
-
-| Category | Technology |
-|-----------|------------|
-| Cloud | Microsoft Azure |
-| Containerization | Docker |
-| Orchestration | Kubernetes (AKS) |
-| Package Manager | Helm |
-| CI/CD | GitHub Actions |
-| Security | Trivy |
-| Code Quality | SonarQube |
-| Monitoring | Prometheus |
-| Dashboards | Grafana |
-| Version Control | Git |
-
----
-
-# 🏗 Architecture Components
-
-## Source Control
-
-- GitHub
-
----
-
-## Continuous Integration
-
-- GitHub Actions
-
-- Docker Build
-
-- Docker Image Creation
-
-- Image Tagging
-
----
-
-## Security
-
-- Trivy Image Scan
-
-- SonarQube Code Analysis
-
-- Security Gates
-
----
-
-## Deployment
-
-- Helm Charts
-
-- Kubernetes Deployments
-
-- Services
-
-- Ingress Controller
-
----
-
-## Monitoring
-
-- Prometheus
-
-- Grafana
-
-- Metrics Collection
-
-- Dashboard Visualization
-
----
-
-# 🔄 Pipeline Workflow
-
-Developer Push
-
-↓
-
-GitHub Actions Trigger
-
-↓
-
-Docker Build
-
-↓
-
-Docker Image Scan (Trivy)
-
-↓
-
-Code Quality Check (SonarQube)
-
-↓
-
-Security Gate Validation
-
-↓
-
-Docker Image Push
-
-↓
-
-Helm Deployment
-
-↓
-
-Azure Kubernetes Service
-
-↓
-
-Prometheus Metrics
-
-↓
-
-Grafana Dashboard
-
----
-
-# 🔐 Security Controls
-
-✅ Trivy Vulnerability Scanning
-
-✅ SonarQube Quality Gates
-
-✅ Secure Container Images
-
-✅ Automated Pipeline Validation
-
-✅ Kubernetes RBAC
-
-✅ Least Privilege Principle
-
-✅ No Manual Production Deployments
-
----
-
-# ☸ Kubernetes Architecture
-
-Application
-
-↓
-
-Ingress Controller
-
-↓
-
-Kubernetes Services
-
-↓
-
-Pods
-
-↓
-
-Container Images
-
-↓
-
-Azure Kubernetes Nodes
-
----
-
-# 📊 Monitoring Stack
-
-Prometheus continuously collects:
-
-- CPU Usage
-
-- Memory Usage
-
-- Pod Health
-
-- Restart Count
-
-- Node Metrics
-
-- Kubernetes Events
-
-- Cluster Health
-
-Grafana visualizes:
-
-- Application Health
-
-- Infrastructure Metrics
-
-- Cluster Performance
-
-- Resource Utilization
-
-- Pod Availability
-
----
-
-# ⚙ CI/CD Pipeline
-
-Git Push
-
-↓
-
-GitHub Actions
-
-↓
-
-Docker Build
-
-↓
-
-Trivy Scan
-
-↓
-
-SonarQube Scan
-
-↓
-
-Quality Gate
-
-↓
-
-Helm Upgrade
-
-↓
-
-AKS Deployment
-
-↓
-
-Production
-
----
-
-# 📁 Folder Structure
-
-```text
-aks-devsecops/
-
-├── services/
-│
-├── api/
-│
-├── auth/
-│
-├── frontend/
-│
-├── worker/
-│
-├── helm/
-│
-├── templates/
-│
-├── monitoring/
-│
-├── prometheus/
-│
-├── grafana/
-│
-├── .github/
-│
-├── workflows/
-│
-└── ci-cd.yml
-```
-
----
-
-# 💻 Common Commands
-
-```bash
-docker build .
-
-docker push
-
-helm upgrade --install
-
-kubectl get pods
-
-kubectl get svc
-
-kubectl get ingress
-
-kubectl logs
-
-kubectl describe pod
-```
-
----
-
-# 📈 Key Achievements
-
-✔ Complete CI/CD Automation
-
-✔ Production Kubernetes Deployment
-
-✔ Container Security Automation
-
-✔ Infrastructure Monitoring
-
-✔ Zero Manual Deployment
-
-✔ Security-first Pipeline
-
-✔ Infrastructure as Code
-
-✔ Cloud Native Deployment
-
----
-
-# 📚 What I Learned
-
-This project helped me understand how modern DevSecOps pipelines are designed in production environments.
-
-I gained practical experience with Kubernetes deployments, Helm packaging, container image management, GitHub Actions automation, vulnerability scanning, code quality enforcement, monitoring, and production release workflows.
-
-More importantly, I learned that automation alone is not enough—successful production pipelines also require strong security controls, observability, and reliable deployment strategies.
-
----
-
-# 🚀 Future Improvements
-
-- ArgoCD (GitOps)
-
-- Argo Rollouts
-
-- Blue-Green Deployment
-
-- Canary Deployment
-
-- OpenTelemetry
-
-- Azure Key Vault CSI Driver
-
-- External Secrets Operator
-
-- Horizontal Pod Autoscaler
-
-- Vertical Pod Autoscaler
-
-- KEDA Event-driven Autoscaling
-
----
-
-# ☁️ Featured Project 03
-
-# AWS Landing Network — Enterprise Multi-AZ Infrastructure
-
-<p align="center">
-<img src="diagrams/aws-landing-network.png" width="100%" alt="AWS Landing Network Architecture">
-</p>
-
-<p align="center">
-<b>Production-style AWS Landing Network built using Terraform across multiple Availability Zones with private compute, ALB, IAM, S3 Remote State and DynamoDB State Locking.</b>
-</p>
-
----
-
-## 🔗 Repository
-
-**Repository:** Available on Request
-
----
-
-# 📌 Overview
-
-This project demonstrates how production AWS environments are commonly designed using Infrastructure as Code.
-
-The architecture follows AWS best practices by separating public and private resources, protecting compute instances from direct internet exposure, implementing remote Terraform state management, and deploying workloads across multiple Availability Zones for high availability.
-
----
-
-# 🎯 Project Objectives
-
-✔ Enterprise VPC Architecture
-
-✔ Multi Availability Zone Design
-
-✔ Infrastructure as Code
-
-✔ Secure Networking
-
-✔ Private Compute Layer
-
-✔ Remote Terraform State
-
-✔ CI/CD Ready Infrastructure
-
-✔ Least Privilege IAM
-
----
-
-# 🛠 Technologies
-
-| Category | Technology |
-|-----------|------------|
-| Cloud | Amazon Web Services |
-| IaC | Terraform |
-| Compute | EC2 |
-| Networking | VPC |
-| Load Balancing | ALB |
-| Identity | IAM |
-| Storage | Amazon S3 |
-| State Locking | DynamoDB |
-| Automation | GitHub Actions |
-| Version Control | Git |
-
----
-
-# 🏗 Infrastructure Components
-
-## Networking
-
-- Amazon VPC
-
-- Public Subnets
-
-- Private Subnets
-
-- Internet Gateway
-
-- NAT Gateway
-
-- Route Tables
-
-- Security Groups
-
----
-
-## Compute
-
-- EC2 Instances
-
-- IAM Instance Roles
-
----
-
-## Load Balancing
-
-- Application Load Balancer
-
-- Target Groups
-
-- Health Checks
-
----
-
-## Terraform Backend
-
-- Amazon S3
-
-- DynamoDB Lock Table
-
----
-
-## Automation
-
-- GitHub Actions
-
-- Terraform
-
----
-
-# 🔄 Infrastructure Workflow
-
-Developer Push
-
-↓
-
-GitHub Actions
-
-↓
-
-Terraform Validate
-
-↓
-
-Terraform Plan
-
-↓
-
-Approval
-
-↓
-
-Terraform Apply
-
-↓
-
-AWS Infrastructure Provisioned
-
-↓
-
-Application Deployment
-
----
-
-# 🌐 Network Flow
-
-Internet
-
-↓
-
-Internet Gateway
-
-↓
-
-Application Load Balancer
-
-↓
-
-Private EC2 Instances
-
-↓
-
-IAM Roles
-
-↓
-
-Application Services
-
-↓
-
-Outbound Internet through NAT Gateway
-
----
-
-# 🔐 Security Architecture
-
-✅ No Public EC2 Instances
-
-✅ Private Subnets
-
-✅ Security Group Isolation
-
-✅ IAM Least Privilege
-
-✅ ALB-only Public Access
-
-✅ Remote Terraform State
-
-✅ DynamoDB State Locking
-
-✅ Infrastructure as Code
-
----
-
-# 🏗 High Availability Design
-
-The infrastructure is distributed across multiple Availability Zones.
-
-This provides:
-
-- High Availability
-
-- Fault Isolation
-
-- Improved Reliability
-
-- Better Scalability
-
-- Production-ready Architecture
-
----
-
-# ⚙ CI/CD Pipeline
-
-Git Push
-
-↓
-
-GitHub Actions
-
-↓
-
-Terraform Format
-
-↓
-
-Terraform Validate
-
-↓
-
-Terraform Plan
-
-↓
-
-Approval
-
-↓
-
-Terraform Apply
-
-↓
-
-AWS Infrastructure
-
----
-
-# 📁 Folder Structure
-
-```text
-aws-landing-network/
-
-├── diagrams/
-│   ├── aws-landing-network.png
-│   └── aws-landing-network.drawio
-│
-├── modules/
-│   ├── vpc/
-│   ├── alb/
-│   ├── ec2/
-│   └── state-backend/
-│
-├── environments/
-│   └── dev/
-│
+│   ├── dev/
+│   ├── qa/
+│   └── staging/
 ├── .github/
 │   └── workflows/
-│
-└── terraform.yml
+│       └── terraform.yml
+├── main.tf
+├── variables.tf
+├── outputs.tf
+└── README.md
 ```
+
+</details>
+
+### ⚙️ Features
+- Fully modular Terraform — each network component is an independently testable, reusable module
+- Environment isolation via separate `.tfvars` per environment (dev/QA/staging) on shared modules
+- Reduced new-environment provisioning time from days to **under 15 minutes**
+
+### 🔒 Security
+- Deny-by-default NSGs on every spoke subnet
+- Zero public IPs on workload VMs — access only via Bastion
+- Key Vault reachable only through a private endpoint
+- Centralized egress/ingress inspection through Azure Firewall
+
+### 🔁 CI/CD
+`PR opened` → **GitHub Actions** runs `terraform fmt` + `validate` + `plan` → plan output posted for review → **manual approval gate** → `terraform apply` on merge.
+
+### 🖥️ Commands
+```bash
+terraform init -backend-config=environments/dev/backend.tfvars
+terraform plan -var-file=environments/dev/dev.tfvars
+terraform apply -var-file=environments/dev/dev.tfvars
+```
+
+### 📚 Learning
+Designing for peered networks forced me to think in terms of blast radius and centralized control points rather than per-VM security — the firewall and Bastion become the two chokepoints everything must pass through.
+
+### 🚀 Future Improvements
+- Add Azure Policy for automated compliance enforcement across spokes
+- Integrate Private DNS Resolver for hybrid on-prem resolution
+- Add a 3rd spoke for a shared-services tier (DNS, patch management)
+
+<br/>
 
 ---
 
-# 💻 Common Commands
+<br/>
 
+## 2. DevSecOps Pipeline for Microservices on AKS
+
+`AKS` `Docker` `Kubernetes` `Helm` `Trivy` `SonarQube` `Prometheus` `Grafana` `GitHub Actions`
+*Repository not yet public — available on request.*
+
+A commit-to-cluster pipeline for a 4-service application where **security and quality gates block the deploy**, not just warn about it — paired with live pod-health observability post-deploy.
+
+### Architecture Diagram
+
+```mermaid
+flowchart LR
+    Dev([👤 Developer]) -->|git push / PR merge| GHA["⚙️ GitHub Actions"]
+
+    subgraph CI["🔨 CI Stage"]
+        GHA --> Build["🐳 Docker Build<br/>4 microservices"]
+        Build --> Trivy{"🛡️ Trivy Scan<br/>Critical CVEs?"}
+        Build --> Sonar{"📊 SonarQube<br/>Quality Gate"}
+    end
+
+    Trivy -->|❌ Fail| Block1["🚫 Build Blocked"]
+    Sonar -->|❌ Fail| Block2["🚫 Build Blocked"]
+
+    Trivy -->|✅ Pass| CD
+    Sonar -->|✅ Pass| CD
+
+    subgraph CD["🚀 CD Stage"]
+        Helm["⎈ Helm Chart Deploy"]
+    end
+
+    subgraph AKS["☸️ AKS Cluster"]
+        Ingress["🌐 Ingress Controller"]
+        Svc1["Service 1"]
+        Svc2["Service 2"]
+        Svc3["Service 3"]
+        Svc4["Service 4"]
+        Ingress --> Svc1
+        Ingress --> Svc2
+        Ingress --> Svc3
+        Ingress --> Svc4
+    end
+
+    Helm ==> AKS
+    AKS -->|metrics scrape| Prom["📈 Prometheus"]
+    Prom --> Graf["📊 Grafana Dashboards"]
+
+    style Trivy fill:#C7131F,color:#fff,stroke:#7a0d13
+    style Sonar fill:#4E9BCD,color:#fff,stroke:#2c5a7a
+    style Prom fill:#E6522C,color:#fff,stroke:#a13a1e
+    style Graf fill:#F46800,color:#fff,stroke:#a34500
+```
+
+> 📎 Official-icon version: [`diagrams/aks-devsecops.drawio`](diagrams/aks-devsecops.drawio)
+
+<details>
+<summary><b>📖 Architecture Flow — click to expand</b></summary>
+
+1. Developer merges a PR — GitHub Actions triggers the pipeline.
+2. All 4 services are containerized and built in parallel Docker build stages.
+3. Every image is scanned by **Trivy**; any critical CVE **fails the pipeline** before deploy.
+4. Code quality runs through **SonarQube**; a failed quality gate also blocks the merge from deploying.
+5. Only after both gates pass does **Helm** deploy the release to AKS.
+6. **Ingress** routes external traffic to the correct service based on path/host rules.
+7. **Prometheus** scrapes pod and node metrics continuously; **Grafana** visualizes health, latency, and resource usage in real time.
+
+</details>
+
+<details>
+<summary><b>📁 Folder Structure</b></summary>
+
+```
+aks-devsecops-pipeline/
+├── services/
+│   ├── service-1/
+│   ├── service-2/
+│   ├── service-3/
+│   └── service-4/
+├── helm/
+│   ├── Chart.yaml
+│   ├── values-dev.yaml
+│   ├── values-prod.yaml
+│   └── templates/
+│       ├── deployment.yaml
+│       ├── service.yaml
+│       └── ingress.yaml
+├── monitoring/
+│   ├── prometheus-values.yaml
+│   └── grafana-dashboards/
+├── .github/
+│   └── workflows/
+│       └── ci-cd.yml
+└── README.md
+```
+
+</details>
+
+### ⚙️ Features
+- Parallel multi-service builds to keep pipeline time down
+- Helm-driven pod scaling, service config, and ingress rules — no manual `kubectl apply`
+- Full commit-to-deploy automation, merged PR to running pod on AKS in **under 10 minutes**
+
+### 🔒 Security
+- Trivy blocks any image with a critical/high CVE from being deployed
+- SonarQube enforces a quality gate (coverage, code smells, duplication) before merge
+- No manual production deploys — everything routed through the pipeline
+
+### 🔁 CI/CD
+`Merge to main` → Docker build → **Trivy + SonarQube gates (parallel)** → both must pass → Helm upgrade/install → AKS rollout → Prometheus starts scraping new pods.
+
+### 📈 Monitoring
+- Prometheus scrapes CPU/memory/pod-restart metrics from the cluster
+- Grafana dashboards track per-service health and resource usage
+- Alerting rules configured for pod crash-loop and high resource utilization
+
+### 🖥️ Commands
+```bash
+docker build -t registry/service-1:$(git rev-parse --short HEAD) ./services/service-1
+trivy image registry/service-1:latest --severity CRITICAL,HIGH --exit-code 1
+helm upgrade --install my-app ./helm -f helm/values-prod.yaml --namespace production
+kubectl get pods -n production -w
+```
+
+### 📚 Learning
+Treating security scans as **hard gates** rather than advisory reports was the biggest shift — it forces you to fix vulnerabilities before they ever reach a cluster, not patch them after the fact.
+
+### 🚀 Future Improvements
+- Add canary/blue-green rollout strategy via Argo Rollouts
+- Add distributed tracing (OpenTelemetry) across the 4 services
+- Externalize secrets to Azure Key Vault via CSI driver instead of K8s secrets
+
+<br/>
+
+---
+
+<br/>
+
+## 3. AWS Landing Network (Personal Project)
+
+`Terraform` `VPC` `EC2` `ALB` `IAM` `S3` `DynamoDB`
+*Repository not yet public — available on request.*
+
+A self-driven project to build AWS depth using the same "no direct internet exposure" principle as the Azure landing zone — multi-AZ, private compute, and locked-down remote state.
+
+### Architecture Diagram
+
+```mermaid
+flowchart TB
+    Internet((🌐 Internet)) --> IGW["🚪 Internet Gateway"]
+    IGW --> ALB["⚖️ Application Load Balancer<br/>Public Subnets"]
+
+    subgraph VPC["☁️ VPC — Multi-AZ — 10.0.0.0/16"]
+        subgraph PUB["🟦 Public Subnets"]
+            ALB
+            NAT["🔁 NAT Gateway"]
+        end
+
+        subgraph AZ1["🟩 Private Subnet — AZ-1"]
+            SGA["🛡️ SG: Allow ALB only"]
+            EC2A["🖥️ EC2<br/>Scoped IAM Role"]
+            SGA --> EC2A
+        end
+
+        subgraph AZ2["🟩 Private Subnet — AZ-2"]
+            SGB["🛡️ SG: Allow ALB only"]
+            EC2B["🖥️ EC2<br/>Scoped IAM Role"]
+            SGB --> EC2B
+        end
+
+        ALB --> EC2A
+        ALB --> EC2B
+        EC2A -.->|Outbound only| NAT
+        EC2B -.->|Outbound only| NAT
+        NAT --> IGW
+    end
+
+    GHA["⚙️ GitHub Actions<br/>fmt → validate → plan"] -.->|Terraform| VPC
+    S3[("🪣 S3<br/>Remote State")] === DDB[("🔒 DynamoDB<br/>State Lock")]
+    GHA -.-> S3
+
+    style ALB fill:#FF9900,color:#232F3E,stroke:#b36b00
+    style IGW fill:#FF9900,color:#232F3E,stroke:#b36b00
+    style NAT fill:#FF9900,color:#232F3E,stroke:#b36b00
+    style S3 fill:#3F8624,color:#fff,stroke:#265014
+    style DDB fill:#4053D6,color:#fff,stroke:#232f80
+```
+
+> 📎 Official-icon version: [`diagrams/aws-landing-network.drawio`](diagrams/aws-landing-network.drawio)
+
+<details>
+<summary><b>📖 Architecture Flow — click to expand</b></summary>
+
+1. All inbound traffic hits the **Internet Gateway**, then the **ALB** in the public subnets — nothing else is internet-facing.
+2. The ALB forwards requests to EC2 instances in **private subnets across two AZs**, giving basic fault tolerance.
+3. EC2 security groups accept traffic **only from the ALB's security group** — no direct internet access, no open ports.
+4. Outbound-only internet access (package updates, external API calls) goes through the **NAT Gateway**.
+5. Each EC2 instance assumes a **scoped IAM instance role** (least privilege) instead of a broad admin policy.
+6. Terraform state is stored remotely in **S3**, with **DynamoDB** providing state locking to prevent concurrent-apply corruption.
+7. Every PR runs `fmt`, `validate`, and `plan` via GitHub Actions before any human applies changes.
+
+</details>
+
+<details>
+<summary><b>📁 Folder Structure</b></summary>
+
+```
+aws-landing-network/
+├── modules/
+│   ├── vpc/              # VPC, subnets, route tables, IGW, NAT
+│   ├── alb/               # ALB, target groups, listeners
+│   ├── ec2/               # Launch template, IAM instance role
+│   └── state-backend/     # S3 + DynamoDB
+├── environments/
+│   └── dev/
+│       ├── main.tf
+│       └── dev.tfvars
+├── .github/
+│   └── workflows/
+│       └── terraform.yml
+└── README.md
+```
+
+</details>
+
+### ⚙️ Features
+- Multi-AZ design for basic high availability on the compute tier
+- Fully private compute layer — EC2 instances have no public IPs
+- Remote state with locking, safe for team/CI use without state corruption
+
+### 🔒 Security
+- Security groups scoped to ALB-only ingress on EC2
+- IAM instance roles scoped to only the permissions the instance needs
+- No inbound internet path to compute — only outbound, via NAT
+
+### 🔁 CI/CD
+`PR opened` → GitHub Actions runs `terraform fmt` → `validate` → `plan` → plan posted on PR for review → apply on approval/merge.
+
+### 🖥️ Commands
 ```bash
 terraform init
-
-terraform fmt
-
+terraform fmt -check
 terraform validate
-
-terraform plan
-
-terraform apply
+terraform plan -var-file=environments/dev/dev.tfvars
+terraform apply -var-file=environments/dev/dev.tfvars
 ```
 
----
+### 📚 Learning
+Setting up S3 + DynamoDB remote state from scratch made the "why" behind state locking concrete — without it, two people (or two pipeline runs) applying at once can corrupt state.
 
-# 📈 Key Achievements
+### 🚀 Future Improvements
+- Add Auto Scaling Group instead of fixed EC2 count
+- Add AWS WAF in front of the ALB
+- Migrate compute to ECS Fargate to remove instance management entirely
 
-✔ Enterprise VPC Design
-
-✔ Multi-AZ Architecture
-
-✔ Infrastructure as Code
-
-✔ Secure Private Networking
-
-✔ Production-ready Terraform Modules
-
-✔ Remote State Management
-
-✔ Automated Deployment Workflow
-
-✔ AWS Best Practices
+<br/>
 
 ---
 
-# 📚 What I Learned
+<br/>
 
-This project strengthened my understanding of AWS networking fundamentals and production infrastructure design.
+## 💼 Professional Experience
 
-I gained hands-on experience with VPC architecture, subnet planning, routing, Application Load Balancers, IAM Roles, EC2 provisioning, remote Terraform state management, and Infrastructure as Code.
+**DevOps Intern — DevOps Insiders** · Aug 2025 – Jul 2026
 
-One of the most valuable lessons was understanding why **remote state locking with S3 and DynamoDB** is essential for collaborative infrastructure management and how **private networking** significantly improves cloud security.
+- Automated provisioning of Azure resource groups, VNets, and VMs across dev, QA, and staging using reusable Terraform modules — cut environment setup from ~a day of manual work to under 30 minutes
+- Built and maintained CI/CD pipelines (GitHub Actions + Azure DevOps Pipelines) for 3+ microservices, reducing manual deployment steps by ~70%
+- Collaborated with a 4-person engineering team to resolve 15+ deployment issues (config drift, dependency mismatches, failed deploys) across three environments
+- Implemented automated test stages ahead of deployment to surface failures earlier in the pipeline
 
----
+<br/>
 
-# 🚀 Future Improvements
+## 🎓 Education
+**BCA — Chandigarh Group of Colleges, Mohali**  · CGPA: 7.63/10
 
-- Auto Scaling Groups
+<br/>
 
-- AWS WAF
+## 📊 GitHub Stats
 
-- Amazon ECS
+<div align="center">
 
-- EKS
+<img src="https://github-readme-stats.vercel.app/api?username=aniket-devop&show_icons=true&theme=default&hide_border=true&count_private=true" alt="GitHub Stats" height="165"/>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=aniket-devop&layout=compact&hide_border=true&theme=default" alt="Top Languages" height="165"/>
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=aniket-devop&hide_border=true&theme=default" alt="GitHub Streak Stats"/>
 
-- CloudWatch Monitoring
+</div>
 
-- AWS Systems Manager
+<br/>
 
-- VPC Flow Logs
+## 📬 Contact
 
-- AWS Config
+**Email:** [aniketkmr484@gmail.com](mailto:aniketkmr484@gmail.com) · **LinkedIn:** [linkedin.com/in/aniket484](https://linkedin.com/in/aniket484) · **GitHub:** [github.com/aniket-devop](https://github.com/aniket-devop)
 
-- AWS GuardDuty
+Actively looking for full-time Junior DevOps / Cloud Engineering roles — happy to walk through any of the projects above in more depth.
 
-- Multi-Region Disaster Recovery
-
----
