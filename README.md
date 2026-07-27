@@ -324,6 +324,30 @@ Treating security scans as **hard gates** rather than advisory reports was the b
 
 <br/>
 
+##### Architecture Diagram
+
+<p align="center">
+  <img src="diagrams/aws-landing-network.png" alt="AWS Landing Network Architecture" width="100%">
+</p>
+
+<p align="center">
+  <em>Production-style AWS Landing Network built with Terraform across two Availability Zones.</em>
+</p>
+
+> 📎 Source diagram: [`diagrams/aws-landing-network.drawio`](diagrams/aws-landing-network.drawio)
+
+<details>
+<summary><b>📖 Architecture Flow — click to expand</b></summary>
+
+1. **GitHub Actions** runs `terraform fmt`, `validate`, and `plan` before infrastructure changes are applied.
+2. **Terraform** provisions AWS resources and stores the remote state in **S3**, while **DynamoDB** provides state locking.
+3. The **Internet Gateway** provides internet connectivity to the VPC.
+4. Public traffic reaches the **Application Load Balancer (ALB)** deployed across two Availability Zones.
+5. The ALB forwards requests to **EC2 instances** running in **private subnets**, ensuring compute resources are never directly exposed to the internet.
+6. **Security Groups** allow inbound traffic only from the ALB, following the principle of least exposure.
+7. Each EC2 instance uses a **scoped IAM Role** instead of long-lived credentials.
+8. Outbound internet access (package updates, external APIs, etc.) is routed through the **NAT Gateway**, while inbound internet access to EC2 remains blocked.
+
 ## 3. AWS Landing Network (Personal Project)
 
 `Terraform` `VPC` `EC2` `ALB` `IAM` `S3` `DynamoDB`
@@ -465,6 +489,53 @@ Setting up S3 + DynamoDB remote state from scratch made the "why" behind state l
 
 ## 📊 GitHub Stats
 
+</details>
+
+<details>
+<summary><b>📁 Folder Structure</b></summary>
+
+```text
+aws-landing-network/
+├── diagrams/
+│   ├── aws-landing-network.png
+│   └── aws-landing-network.drawio
+├── modules/
+│   ├── vpc/               # VPC, subnets, route tables, IGW, NAT
+│   ├── alb/               # ALB, target groups, listeners
+│   ├── ec2/               # EC2 instances, IAM instance roles
+│   └── state-backend/     # S3 + DynamoDB remote state
+├── environments/
+│   └── dev/
+│       ├── main.tf
+│       └── dev.tfvars
+├── .github/
+│   └── workflows/
+│       └── terraform.yml
+└── README.md
+```
+<img src="https://github-readme-stats.vercel.app/api?username=aniket-devop&show_icons=true&theme=default&hide_border=true&count_private=true" alt="GitHub Stats" height="165"/>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=aniket-devop&layout=compact&hide_border=true&theme=default" alt="Top Languages" height="165"/>
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=aniket-devop&hide_border=true&theme=default" alt="GitHub Streak Stats"/>
+
+</details>
+## 💼 Professional Experience
+
+**DevOps Intern — DevOps Insiders** · Aug 2025 – Jul 2026
+
+- Automated provisioning of Azure resource groups, VNets, and VMs across dev, QA, and staging using reusable Terraform modules — cut environment setup from ~a day of manual work to under 30 minutes
+- Built and maintained CI/CD pipelines (GitHub Actions + Azure DevOps Pipelines) for 3+ microservices, reducing manual deployment steps by ~70%
+- Collaborated with a 4-person engineering team to resolve 15+ deployment issues (config drift, dependency mismatches, failed deploys) across three environments
+- Implemented automated test stages ahead of deployment to surface failures earlier in the pipeline
+
+<br/>
+
+## 🎓 Education
+**BCA — Chandigarh Group of Colleges, Mohali**  · CGPA: 7.63/10
+
+<br/>
+
+## 📊 GitHub Stats
+
 <div align="center">
 
 <img src="https://github-readme-stats.vercel.app/api?username=aniket-devop&show_icons=true&theme=default&hide_border=true&count_private=true" alt="GitHub Stats" height="165"/>
@@ -472,6 +543,12 @@ Setting up S3 + DynamoDB remote state from scratch made the "why" behind state l
 <img src="https://github-readme-streak-stats.herokuapp.com/?user=aniket-devop&hide_border=true&theme=default" alt="GitHub Streak Stats"/>
 
 </div>
+
+<br/>
+
+## 📬 Contact
+
+**Email:** [aniketkmr484@gmail.com](mailto:aniketkmr484@gmail.com) · **LinkedIn:** [linkedin.com/in/aniket484](https://linkedin.com/in/aniket484) · **GitHub:** [github.com/aniket-devop](https://github.com/aniket-devop)
 
 <br/>
 
