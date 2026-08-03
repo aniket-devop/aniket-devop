@@ -1,15 +1,8 @@
-# Hi there, I'm Aniket Kumar 👋
+<div align="center">
 
-![Aniket Kumar — DevOps Engineer](github-banner.svg)
+# Hi, I'm Aniket Kumar 👋
 
-## About Me
-I'm a **DevOps Engineer** focused on building scalable, reliable cloud infrastructure on Microsoft Azure. I automate everything, ship fast, and keep systems running smoothly.
-
-- Cloud: **Microsoft Azure**
-- Containers: **Docker, Kubernetes**
-- IaC: **Terraform**
-- CI/CD: **GitHub Actions**
-- Monitoring: **Prometheus, Grafana**
+### DevOps Engineer — Azure · AWS · Terraform · Kubernetes · CI/CD
 
 ## Tech Stack
 ![Azure](https://img.shields.io/badge/Azure-0078D4?logo=microsoft-azure&logoColor=white)
