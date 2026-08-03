@@ -1,8 +1,35 @@
-<div align="center">
+# Hi there, I'm Aniket Kumar 👋
 
-# Hi, I'm Aniket Kumar 👋
+![Aniket Kumar — DevOps Engineer](github-banner.svg)
 
-### DevOps Engineer — Azure · AWS · Terraform · Kubernetes · CI/CD
+## About Me
+I'm a **DevOps Engineer** focused on building scalable, reliable cloud infrastructure on Microsoft Azure. I automate everything, ship fast, and keep systems running smoothly.
+
+- Cloud: **Microsoft Azure**
+- Containers: **Docker, Kubernetes**
+- IaC: **Terraform**
+- CI/CD: **GitHub Actions**
+- Monitoring: **Prometheus, Grafana**
+
+## Tech Stack
+![Azure](https://img.shields.io/badge/Azure-0078D4?logo=microsoft-azure&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?logo=kubernetes&logoColor=white)
+![Terraform](https://img.shields.io/badge/Terraform-7B42BC?logo=terraform&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?logo=github-actions&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=black)
+![Git](https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white)
+![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?logo=prometheus&logoColor=white)
+![Grafana](https://img.shields.io/badge/Grafana-F46800?logo=grafana&logoColor=white)
+
+## Connect
+- GitHub: [@your-username](https://github.com/your-username)
+- LinkedIn: [Aniket Kumar](https://linkedin.com/in/your-profile)
+
+---
+
+⭐ From [Aniket Kumar](https://github.com/your-username)
+es · CI/CD
 
 ![Azure](https://img.shields.io/badge/Azure-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white)
 ![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white)
