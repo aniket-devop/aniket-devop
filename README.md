@@ -18,6 +18,10 @@
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/aniket-devop)
 ![Profile Views](https://komarev.com/ghpvc/?username=aniket-devop&style=flat-square&color=blue)
 
+<br/>
+
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=378ADD&center=true&vCenter=true&width=600&lines=Automating+cloud+infrastructure+with+Terraform;Securing+deployments+with+DevSecOps+gates;Building+on+Azure+%2B+AWS+%2B+Kubernetes)](https://git.io/typing-svg)
+
 </div>
 
 <br/>
@@ -351,7 +355,7 @@ Setting up S3 + DynamoDB remote state from scratch made the "why" behind state l
 <br/>
 
 ## 🎓 Education
-**Bachelor of Computer Applications (BCA) — Chandigarh Group of Colleges, Mohali** · · CGPA: 7.63/10
+**Bachelor of Computer Applications (BCA) — Chandigarh Group of Colleges, Mohali**  · CGPA: 7.63/10
 
 <br/>
 
@@ -359,16 +363,30 @@ Setting up S3 + DynamoDB remote state from scratch made the "why" behind state l
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=aniket-devop&show_icons=true&theme=default&hide_border=true&count_private=true" alt="GitHub Stats" height="165"/>
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=aniket-devop&layout=compact&hide_border=true&theme=default" alt="Top Languages" height="165"/>
-<img src="https://streak-stats.demolab.com/?user=aniket-devop&hide_border=true&theme=default" alt="GitHub Streak Stats"/>
+<img src="https://streak-stats.demolab.com/?user=aniket-devop&hide_border=true&theme=dark&background=0D1117&ring=378ADD&fire=22C55E&currStreakLabel=378ADD" alt="GitHub Streak Stats"/>
 
 </div>
+
+<details>
+<summary><b>📈 GitHub profile stats — click to expand</b></summary>
+<br/>
+
+<div align="center">
+
+<img src="https://github-readme-stats.vercel.app/api?username=aniket-devop&show_icons=true&theme=default&hide_border=true&count_private=true" alt="GitHub Stats" height="165"/>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=aniket-devop&layout=compact&hide_border=true&theme=default" alt="Top Languages" height="165"/>
+
+</div>
+
+</details>
+
+<br/>
+
+*Always happy to connect with fellow DevOps engineers and recruiters — feel free to reach out!*
 
 <br/>
 
 ## 📬 Contact
 
 **Email:** [aniketkmr484@gmail.com](mailto:aniketkmr484@gmail.com) · **LinkedIn:** [linkedin.com/in/aniket484](https://linkedin.com/in/aniket484) · **GitHub:** [github.com/aniket-devop](https://github.com/aniket-devop)
-
 
