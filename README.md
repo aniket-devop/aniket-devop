@@ -4,10 +4,7 @@
 
 ### DevOps Engineer — Azure · AWS · Terraform · Kubernetes · CI/CD
 
-
 ---
-
-
 
 ![Azure](https://img.shields.io/badge/Azure-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white)
 ![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white)
@@ -75,50 +72,7 @@ A hub-and-spoke enterprise network topology — the same pattern Microsoft recom
 
 ### Architecture Diagram
 
-```mermaid
-flowchart TB
-    Internet((🌐 Internet)) -->|Inbound rules only| FW
-
-    subgraph HUB["🔷 Hub VNet — 10.0.0.0/16"]
-        direction TB
-        FW["🔥 Azure Firewall<br/>Central egress/ingress control"]
-        BAS["🔑 Azure Bastion<br/>No public IPs on VMs"]
-        KV[("🔐 Key Vault<br/>Private Endpoint")]
-    end
-
-    Admin([👤 Admin]) -->|HTTPS 443 only| BAS
-
-    FW <==>|VNet Peering| SPOKE1
-    FW <==>|VNet Peering| SPOKE2
-
-    subgraph SPOKE1["🟢 Spoke VNet — Dev — 10.1.0.0/24"]
-        NSG1["🛡️ NSG — Deny by Default"]
-        VM1["🖥️ App Workloads"]
-        NSG1 --> VM1
-    end
-
-    subgraph SPOKE2["🟡 Spoke VNet — QA/Staging — 10.2.0.0/24"]
-        NSG2["🛡️ NSG — Deny by Default"]
-        VM2["🖥️ App Workloads"]
-        NSG2 --> VM2
-    end
-
-    BAS -.->|Private RDP/SSH| VM1
-    BAS -.->|Private RDP/SSH| VM2
-    VM1 -.->|Fetch secrets| KV
-    VM2 -.->|Fetch secrets| KV
-
-    GHA["⚙️ GitHub Actions<br/>plan → manual approval → apply"] ==>|Terraform| HUB
-    GHA ==>|Terraform| SPOKE1
-    GHA ==>|Terraform| SPOKE2
-
-    style FW fill:#0078D4,color:#fff,stroke:#003a63
-    style BAS fill:#0078D4,color:#fff,stroke:#003a63
-    style KV fill:#5C2D91,color:#fff,stroke:#3a1a5c
-    style GHA fill:#2088FF,color:#fff,stroke:#0b3d91
-```
-
-> 📎 A full icon-based (official Azure icon set) version of this diagram is included as [`diagrams/azure-landing-zone.drawio`](diagrams/azure-landing-zone.drawio) — open it in [draw.io](https://app.diagrams.net) for the enterprise-documentation look.
+![Azure Landing Zone Architecture](https://raw.githubusercontent.com/aniket-devop/azure-landing-zone-terraform/main/diagrams/architecture.png)
 
 <details>
 <summary><b>📖 Architecture Flow — click to expand</b></summary>
@@ -196,56 +150,14 @@ Designing for peered networks forced me to think in terms of blast radius and ce
 
 ## 2. DevSecOps Pipeline for Microservices on AKS
 
+🔗 **Repo:** [aks-devsecops-pipeline](https://github.com/aniket-devop/aks-devsecops-pipeline)
 `AKS` `Docker` `Kubernetes` `Helm` `Trivy` `SonarQube` `Prometheus` `Grafana` `GitHub Actions`
-*Repository not yet public — available on request.*
 
 A commit-to-cluster pipeline for a 4-service application where **security and quality gates block the deploy**, not just warn about it — paired with live pod-health observability post-deploy.
 
 ### Architecture Diagram
 
-```mermaid
-flowchart LR
-    Dev([👤 Developer]) -->|git push / PR merge| GHA["⚙️ GitHub Actions"]
-
-    subgraph CI["🔨 CI Stage"]
-        GHA --> Build["🐳 Docker Build<br/>4 microservices"]
-        Build --> Trivy{"🛡️ Trivy Scan<br/>Critical CVEs?"}
-        Build --> Sonar{"📊 SonarQube<br/>Quality Gate"}
-    end
-
-    Trivy -->|❌ Fail| Block1["🚫 Build Blocked"]
-    Sonar -->|❌ Fail| Block2["🚫 Build Blocked"]
-
-    Trivy -->|✅ Pass| CD
-    Sonar -->|✅ Pass| CD
-
-    subgraph CD["🚀 CD Stage"]
-        Helm["⎈ Helm Chart Deploy"]
-    end
-
-    subgraph AKS["☸️ AKS Cluster"]
-        Ingress["🌐 Ingress Controller"]
-        Svc1["Service 1"]
-        Svc2["Service 2"]
-        Svc3["Service 3"]
-        Svc4["Service 4"]
-        Ingress --> Svc1
-        Ingress --> Svc2
-        Ingress --> Svc3
-        Ingress --> Svc4
-    end
-
-    Helm ==> AKS
-    AKS -->|metrics scrape| Prom["📈 Prometheus"]
-    Prom --> Graf["📊 Grafana Dashboards"]
-
-    style Trivy fill:#C7131F,color:#fff,stroke:#7a0d13
-    style Sonar fill:#4E9BCD,color:#fff,stroke:#2c5a7a
-    style Prom fill:#E6522C,color:#fff,stroke:#a13a1e
-    style Graf fill:#F46800,color:#fff,stroke:#a34500
-```
-
-> 📎 Official-icon version: [`diagrams/aks-devsecops.drawio`](diagrams/aks-devsecops.drawio)
+![AKS DevSecOps Pipeline Architecture](https://raw.githubusercontent.com/aniket-devop/aks-devsecops-pipeline/main/diagrams/architecture.png)
 
 <details>
 <summary><b>📖 Architecture Flow — click to expand</b></summary>
@@ -331,55 +243,16 @@ Treating security scans as **hard gates** rather than advisory reports was the b
 
 ## 3. AWS Landing Network (Personal Project)
 
+🔗 **Repo:** [aws-terraform-landing-zone-project](https://github.com/aniket-devop/aws-terraform-landing-zone-project)
 `Terraform` `VPC` `EC2` `ALB` `IAM` `S3` `DynamoDB`
-*Repository not yet public — available on request.*
 
 A self-driven project to build AWS depth using the same "no direct internet exposure" principle as the Azure landing zone — multi-AZ, private compute, and locked-down remote state.
 
 ### Architecture Diagram
 
-```mermaid
-flowchart TB
-    Internet((🌐 Internet)) --> IGW["🚪 Internet Gateway"]
-    IGW --> ALB["⚖️ Application Load Balancer<br/>Public Subnets"]
+![AWS Landing Zone Architecture](https://raw.githubusercontent.com/aniket-devop/aws-terraform-landing-zone-project/main/diagrams/architecture.png)
 
-    subgraph VPC["☁️ VPC — Multi-AZ — 10.0.0.0/16"]
-        subgraph PUB["🟦 Public Subnets"]
-            ALB
-            NAT["🔁 NAT Gateway"]
-        end
-
-        subgraph AZ1["🟩 Private Subnet — AZ-1"]
-            SGA["🛡️ SG: Allow ALB only"]
-            EC2A["🖥️ EC2<br/>Scoped IAM Role"]
-            SGA --> EC2A
-        end
-
-        subgraph AZ2["🟩 Private Subnet — AZ-2"]
-            SGB["🛡️ SG: Allow ALB only"]
-            EC2B["🖥️ EC2<br/>Scoped IAM Role"]
-            SGB --> EC2B
-        end
-
-        ALB --> EC2A
-        ALB --> EC2B
-        EC2A -.->|Outbound only| NAT
-        EC2B -.->|Outbound only| NAT
-        NAT --> IGW
-    end
-
-    GHA["⚙️ GitHub Actions<br/>fmt → validate → plan"] -.->|Terraform| VPC
-    S3[("🪣 S3<br/>Remote State")] === DDB[("🔒 DynamoDB<br/>State Lock")]
-    GHA -.-> S3
-
-    style ALB fill:#FF9900,color:#232F3E,stroke:#b36b00
-    style IGW fill:#FF9900,color:#232F3E,stroke:#b36b00
-    style NAT fill:#FF9900,color:#232F3E,stroke:#b36b00
-    style S3 fill:#3F8624,color:#fff,stroke:#265014
-    style DDB fill:#4053D6,color:#fff,stroke:#232f80
-```
-
-> 📎 Official-icon version: [`diagrams/aws-landing-network.drawio`](diagrams/aws-landing-network.drawio)
+> 📎 Full write-up and AWS Console deployment screenshots are in the [repo's README](https://github.com/aniket-devop/aws-terraform-landing-zone-project#readme).
 
 <details>
 <summary><b>📖 Architecture Flow — click to expand</b></summary>
@@ -398,19 +271,27 @@ flowchart TB
 <summary><b>📁 Folder Structure</b></summary>
 
 ```
-aws-landing-network/
-├── modules/
-│   ├── vpc/              # VPC, subnets, route tables, IGW, NAT
-│   ├── alb/               # ALB, target groups, listeners
-│   ├── ec2/               # Launch template, IAM instance role
-│   └── state-backend/     # S3 + DynamoDB
-├── environments/
-│   └── dev/
-│       ├── main.tf
-│       └── dev.tfvars
+aws-terraform-landing-zone-project/
+├── modules/                # VPC, ALB, EC2, IAM, etc. as reusable modules
+├── environments/            # Environment-specific variable files
+├── bootstrap/                # One-time setup for S3 + DynamoDB remote state
+├── diagrams/
+│   ├── architecture.png
+│   └── README.md
+├── images/                   # AWS Console screenshots (deployment proof)
+│   ├── aws-subnets.png
+│   ├── ec2-instance.png
+│   ├── application-load-balancer.png
+│   ├── alb-details.png
+│   └── target-group-health.png
 ├── .github/
 │   └── workflows/
-│       └── terraform.yml
+├── backend.tf
+├── main.tf
+├── outputs.tf
+├── providers.tf
+├── variables.tf
+├── versions.tf
 └── README.md
 ```
 
@@ -474,9 +355,16 @@ Setting up S3 + DynamoDB remote state from scratch made the "why" behind state l
 
 <img src="https://github-readme-stats.vercel.app/api?username=aniket-devop&show_icons=true&theme=default&hide_border=true&count_private=true" alt="GitHub Stats" height="165"/>
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=aniket-devop&layout=compact&hide_border=true&theme=default" alt="Top Languages" height="165"/>
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=aniket-devop&hide_border=true&theme=default" alt="GitHub Streak Stats"/>
+<img src="https://streak-stats.demolab.com/?user=aniket-devop&hide_border=true&theme=default" alt="GitHub Streak Stats"/>
 
 </div>
+
+<br/>
+
+## 📬 Contact
+
+**Email:** [aniketkmr484@gmail.com](mailto:aniketkmr484@gmail.com) · **LinkedIn:** [linkedin.com/in/aniket484](https://linkedin.com/in/aniket484) · **GitHub:** [github.com/aniket-devop](https://github.com/aniket-devop)
+
 
 <br/>
 
