@@ -24,13 +24,24 @@
 
 ## 📌 About Me
 
-DevOps Engineer with 1 year of hands-on experience automating cloud infrastructure and CI/CD pipelines on Microsoft Azure. I design infrastructure as code with Terraform, deploy and secure containerized workloads on Azure Kubernetes Service (AKS), and build security scanning and observability directly into the delivery pipeline instead of bolting it on afterward. Currently extending this foundation into AWS through a self-driven infrastructure project.
+DevOps Engineer with hands-on experience automating cloud infrastructure and CI/CD pipelines on Microsoft Azure. I design infrastructure as code with Terraform, deploy and secure containerized workloads on Azure Kubernetes Service (AKS), and build security scanning and observability directly into the delivery pipeline instead of bolting it on afterward. Currently extending this foundation into AWS through a self-driven infrastructure project.
 
-- 🔧 DevOps Intern @ **DevOps Insiders** — provisioning and maintaining Azure infrastructure across Dev, QA, and Staging
+- 🔧 Former DevOps Intern @ **DevOps Insiders** — provisioned and maintained Azure infrastructure across Dev, QA, and Staging
 - 🌱 Building cross-cloud depth on AWS (VPC, EC2, ALB, IAM) through a personal landing-zone project
 - 🎓 BCA, Chandigarh Group of Colleges, Mohali
 - 📍 Noida, India
 - 🎯 Looking for a full-time **Junior DevOps / Cloud Engineer** role
+
+<br/>
+
+## 💼 Professional Experience
+
+**DevOps Intern — DevOps Insiders** · 01 Aug 2025 – 15 Jul 2026
+
+- Automated provisioning of Azure resource groups, VNets, and VMs across dev, QA, and staging using reusable Terraform modules — cut environment setup from ~a day of manual work to under 30 minutes
+- Built and maintained CI/CD pipelines (GitHub Actions + Azure DevOps Pipelines) for 3+ microservices, reducing manual deployment steps by ~70%
+- Collaborated with a 4-person engineering team to resolve 15+ deployment issues (config drift, dependency mismatches, failed deploys) across three environments
+- Implemented automated test stages ahead of deployment to surface failures earlier in the pipeline
 
 <br/>
 
@@ -58,6 +69,12 @@ DevOps Engineer with 1 year of hands-on experience automating cloud infrastructu
 ---
 
 ## 🏗️ Featured Projects
+
+| Project | What it does | Stack |
+|---|---|---|
+| [Azure Landing Zone](#1-azure-landing-zone--hub-and-spoke-network) | Hub-and-spoke network, zero public IPs, Bastion-only access | Terraform, Azure Firewall, Bastion, Key Vault |
+| [AKS DevSecOps Pipeline](#2-devsecops-pipeline-for-microservices-on-aks) | Security/quality gates block deploys, not just warn | AKS, Trivy, SonarQube, Helm, Prometheus |
+| [AWS Landing Network](#3-aws-landing-network-personal-project) | Multi-AZ, fully private compute, locked remote state | Terraform, VPC, ALB, IAM, S3, DynamoDB |
 
 ---
 
@@ -333,19 +350,8 @@ Setting up S3 + DynamoDB remote state from scratch made the "why" behind state l
 
 <br/>
 
-## 💼 Professional Experience
-
-**DevOps Intern — DevOps Insiders** · Aug 2025 – Jul 2026
-
-- Automated provisioning of Azure resource groups, VNets, and VMs across dev, QA, and staging using reusable Terraform modules — cut environment setup from ~a day of manual work to under 30 minutes
-- Built and maintained CI/CD pipelines (GitHub Actions + Azure DevOps Pipelines) for 3+ microservices, reducing manual deployment steps by ~70%
-- Collaborated with a 4-person engineering team to resolve 15+ deployment issues (config drift, dependency mismatches, failed deploys) across three environments
-- Implemented automated test stages ahead of deployment to surface failures earlier in the pipeline
-
-<br/>
-
 ## 🎓 Education
-**BCA — Chandigarh Group of Colleges, Mohali**  · CGPA: 7.63/10
+**BCA — Chandigarh Group of Colleges, Mohali** · CGPA: 7.63/10
 
 <br/>
 
@@ -365,11 +371,3 @@ Setting up S3 + DynamoDB remote state from scratch made the "why" behind state l
 
 **Email:** [aniketkmr484@gmail.com](mailto:aniketkmr484@gmail.com) · **LinkedIn:** [linkedin.com/in/aniket484](https://linkedin.com/in/aniket484) · **GitHub:** [github.com/aniket-devop](https://github.com/aniket-devop)
 
-
-<br/>
-
-## 📬 Contact
-
-**Email:** [aniketkmr484@gmail.com](mailto:aniketkmr484@gmail.com) · **LinkedIn:** [linkedin.com/in/aniket484](https://linkedin.com/in/aniket484) · **GitHub:** [github.com/aniket-devop](https://github.com/aniket-devop)
-
-Actively looking for full-time Junior DevOps / Cloud Engineering roles — happy to walk through any of the projects above in more depth.
