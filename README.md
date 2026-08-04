@@ -7,8 +7,7 @@
 
 ---
 
-⭐ From [Aniket Kumar](https://github.com/your-username)
-es · CI/CD
+
 
 ![Azure](https://img.shields.io/badge/Azure-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white)
 ![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white)
