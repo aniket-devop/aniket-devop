@@ -351,7 +351,7 @@ Setting up S3 + DynamoDB remote state from scratch made the "why" behind state l
 <br/>
 
 ## 🎓 Education
-**Bachelor of Computer Applications (BCA) — Chandigarh Group of Colleges, Mohali** · Aug 2021 – Nov 2024 · CGPA: 7.63/10
+**Bachelor of Computer Applications (BCA) — Chandigarh Group of Colleges, Mohali** · · CGPA: 7.63/10
 
 <br/>
 
