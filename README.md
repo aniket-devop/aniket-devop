@@ -38,10 +38,10 @@ DevOps Engineer with hands-on experience automating cloud infrastructure and CI/
 
 **DevOps Intern — DevOps Insiders** · 01 Aug 2025 – 15 Jul 2026
 
-- Automated provisioning of Azure resource groups, VNets, and VMs across dev, QA, and staging using reusable Terraform modules — cut environment setup from ~a day of manual work to under 30 minutes
-- Built and maintained CI/CD pipelines (GitHub Actions + Azure DevOps Pipelines) for 3+ microservices, reducing manual deployment steps by ~70%
-- Collaborated with a 4-person engineering team to resolve 15+ deployment issues (config drift, dependency mismatches, failed deploys) across three environments
-- Implemented automated test stages ahead of deployment to surface failures earlier in the pipeline
+- Provisioned Azure infrastructure — Resource Groups, VNets, VMs, Storage Accounts, and Azure SQL Database — using Terraform across Development, QA, and Staging environments
+- Deployed and maintained 6+ CI/CD pipelines using GitHub Actions and Azure DevOps Pipelines, automating build, test, validation, and deployment for internal applications
+- Integrated `terraform fmt`, `validate`, TFLint, TFSEC, and Checkov into CI/CD pipelines for automated IaC validation and security checks
+- Collaborated with a team of 5+ developers using Git Flow branching, pull requests, and code reviews for smooth code integration and deployments
 
 <br/>
 
@@ -351,7 +351,7 @@ Setting up S3 + DynamoDB remote state from scratch made the "why" behind state l
 <br/>
 
 ## 🎓 Education
-**BCA — Chandigarh Group of Colleges, Mohali** · CGPA: 7.63/10
+**Bachelor of Computer Applications (BCA) — Chandigarh Group of Colleges, Mohali** · Aug 2021 – Nov 2024 · CGPA: 7.63/10
 
 <br/>
 
@@ -362,6 +362,14 @@ Setting up S3 + DynamoDB remote state from scratch made the "why" behind state l
 <img src="https://github-readme-stats.vercel.app/api?username=aniket-devop&show_icons=true&theme=default&hide_border=true&count_private=true" alt="GitHub Stats" height="165"/>
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=aniket-devop&layout=compact&hide_border=true&theme=default" alt="Top Languages" height="165"/>
 <img src="https://streak-stats.demolab.com/?user=aniket-devop&hide_border=true&theme=default" alt="GitHub Streak Stats"/>
+
+</div>
+
+<br/>
+
+## 📬 Contact
+
+**Email:** [aniketkmr484@gmail.com](mailto:aniketkmr484@gmail.com) · **LinkedIn:** [linkedin.com/in/aniket484](https://linkedin.com/in/aniket484) · **GitHub:** [github.com/aniket-devop](https://github.com/aniket-devop)
 
 </div>
 
