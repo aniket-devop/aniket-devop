@@ -386,8 +386,18 @@ Setting up S3 + DynamoDB remote state from scratch made the "why" behind state l
 
 <br/>
 
-## 📬 Contact
+<div align="center">
 
-**Email:** [aniketkmr484@gmail.com](mailto:aniketkmr484@gmail.com) 
-· **LinkedIn:** [linkedin.com/in/aniket484](https://linkedin.com/in/aniket484) 
-· **GitHub:** [github.com/aniket-devop](https://github.com/aniket-devop)
+### Let's connect
+
+<a href="https://linkedin.com/in/aniket484"><img src="icons/linkedin-flat.png" width="45" height="45"/></a>
+&nbsp;&nbsp;
+<a href="https://github.com/aniket-devop"><img src="icons/github-flat.png" width="45" height="45"/></a>
+&nbsp;&nbsp;
+<a href="mailto:aniketkmr484@gmail.com"><img src="icons/email-flat-blue.png" width="45" height="45"/></a>
+
+<br/><br/>
+
+**aniketkmr484@gmail.com** · **linkedin.com/in/aniket484** · **github.com/aniket-devop**
+
+</div>
