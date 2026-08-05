@@ -362,18 +362,20 @@ Setting up S3 + DynamoDB remote state from scratch made the "why" behind state l
 
 <div align="center">
 
-<img src="https://streak-stats.demolab.com/?user=aniket-devop&hide_border=true&theme=dark&background=0D1117&ring=378ADD&fire=22C55E&currStreakLabel=378ADD" alt="GitHub Streak Stats"/>
+<img src="https://streak-stats.demolab.com?user=aniket-devop&theme=tokyonight&hide_border=true&border_radius=10" alt="GitHub Streak"/>
 
 </div>
 
 <details>
-<summary><b>📈 GitHub profile stats — click to expand</b></summary>
+<summary><b>📈 GitHub Profile Stats — Click to Expand</b></summary>
+
 <br/>
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=aniket-devop&show_icons=true&theme=default&hide_border=true&count_private=true" alt="GitHub Stats" height="165"/>
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=aniket-devop&layout=compact&hide_border=true&theme=default" alt="Top Languages" height="165"/>
+<img height="170" src="https://github-readme-stats.vercel.app/api?username=aniket-devop&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true&rank_icon=github"/>
+
+<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=aniket-devop&layout=compact&theme=tokyonight&hide_border=true&langs_count=8"/>
 
 </div>
 
