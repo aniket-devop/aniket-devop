@@ -28,14 +28,13 @@
 
 ## 📌 About Me
 
-DevOps Engineer with hands-on experience automating cloud infrastructure and CI/CD pipelines on Microsoft Azure. I design infrastructure as code with Terraform, deploy and secure containerized workloads on Azure Kubernetes Service (AKS), and build security scanning and observability directly into the delivery pipeline instead of bolting it on afterward. Currently extending this foundation into AWS through a self-driven infrastructure project.
+DevOps Intern with hands-on experience automating cloud infrastructure and CI/CD pipelines on Microsoft Azure. I build infrastructure as code using Terraform, deploy containerized workloads on AKS, and integrate security scanning (TFSEC, Checkov, Trivy) into CI/CD pipelines. Currently expanding my AWS skills through a self-driven multi-AZ landing zone project.
 
-- 🔧 Former DevOps Intern @ **DevOps Insiders** — provisioned and maintained Azure infrastructure across Dev, QA, and Staging
-- 🌱 Building cross-cloud depth on AWS (VPC, EC2, ALB, IAM) through a personal landing-zone project
+- 🔧 Former DevOps Intern @ **DevOps Insiders** — provisioned Azure infrastructure (VNets, VMs, Storage, SQL) using Terraform and maintained 6+ CI/CD pipelines across Dev, QA, and Staging.
+- 🌱 Building AWS infrastructure (VPC, EC2, ALB, IAM) through a personal landing-zone project — [repo here](https://github.com/aniket-devop/aws-terraform-landing-zone-project)
 - 🎓 BCA, Chandigarh Group of Colleges, Mohali
 - 📍 Noida, India
-- 🎯 Looking for a full-time **Junior DevOps / Cloud Engineer** role
-
+- 💼 Open to Full-Time DevOps or Cloud Engineer Opportunities
 <br/>
 
 ## 💼 Professional Experience
