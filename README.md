@@ -178,7 +178,7 @@ A commit-to-cluster pipeline for a 4-service application where **security and qu
 
 ### Architecture Diagram
 
-![AKS DevSecOps Pipeline Architecture](https://raw.githubusercontent.com/aniket-devop/aks-devsecops-pipeline/main/diagrams/architecture.png)
+![AKS DevSecOps Pipeline Architecture](diagrams/aks-devsecops-architecture.png)
 
 <details>
 <summary><b>📖 Architecture Flow — click to expand</b></summary>
