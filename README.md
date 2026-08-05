@@ -28,13 +28,14 @@
 
 ## 📌 About Me
 
-DevOps Intern with hands-on experience automating cloud infrastructure and CI/CD pipelines on Microsoft Azure. I build infrastructure as code using Terraform, deploy containerized workloads on AKS, and integrate security scanning (TFSEC, Checkov, Trivy) into CI/CD pipelines. Currently expanding my AWS skills through a self-driven multi-AZ landing zone project.
+DevOps Engineer with hands-on experience automating cloud infrastructure and CI/CD pipelines on Microsoft Azure. I design infrastructure as code with Terraform, deploy and secure containerized workloads on Azure Kubernetes Service (AKS), and build security scanning and observability directly into the delivery pipeline instead of bolting it on afterward. Currently extending this foundation into AWS through a self-driven infrastructure project.
 
-- 🔧 Former DevOps Intern @ **DevOps Insiders** — provisioned Azure infrastructure (VNets, VMs, Storage, SQL) using Terraform and maintained 6+ CI/CD pipelines across Dev, QA, and Staging.
-- 🌱 Building AWS infrastructure (VPC, EC2, ALB, IAM) through a personal landing-zone project — [repo here](https://github.com/aniket-devop/aws-terraform-landing-zone-project)
+- 🔧 Former DevOps Intern @ **DevOps Insiders** — provisioned and maintained Azure infrastructure across Dev, QA, and Staging
+- 🌱 Building cross-cloud depth on AWS (VPC, EC2, ALB, IAM) through a personal landing-zone project
 - 🎓 BCA, Chandigarh Group of Colleges, Mohali
 - 📍 Noida, India
-- 💼 Open to Full-Time DevOps or Cloud Engineer Opportunities
+- 🎯 Looking for a full-time **Junior DevOps / Cloud Engineer** role
+
 <br/>
 
 ## 💼 Professional Experience
@@ -362,20 +363,18 @@ Setting up S3 + DynamoDB remote state from scratch made the "why" behind state l
 
 <div align="center">
 
-<img src="https://streak-stats.demolab.com?user=aniket-devop&theme=tokyonight&hide_border=true&border_radius=10" alt="GitHub Streak"/>
+<img src="https://streak-stats.demolab.com/?user=aniket-devop&hide_border=true&theme=dark&background=0D1117&ring=378ADD&fire=22C55E&currStreakLabel=378ADD" alt="GitHub Streak Stats"/>
 
 </div>
 
 <details>
-<summary><b>📈 GitHub Profile Stats — Click to Expand</b></summary>
-
+<summary><b>📈 GitHub profile stats — click to expand</b></summary>
 <br/>
 
 <div align="center">
 
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=aniket-devop&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true&rank_icon=github"/>
-
-<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=aniket-devop&layout=compact&theme=tokyonight&hide_border=true&langs_count=8"/>
+<img src="https://github-readme-stats.vercel.app/api?username=aniket-devop&show_icons=true&theme=default&hide_border=true&count_private=true" alt="GitHub Stats" height="165"/>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=aniket-devop&layout=compact&hide_border=true&theme=default" alt="Top Languages" height="165"/>
 
 </div>
 
