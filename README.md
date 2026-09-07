@@ -2,25 +2,21 @@
 
 # Hi, I'm Aniket Kumar 👋
 
-### DevOps Engineer — Azure · AWS · Terraform · Kubernetes · CI/CD
+### DevOps Engineer — Azure · Terraform · Kubernetes · CI/CD · GitOps
 
 ---
 
 ![Azure](https://img.shields.io/badge/Azure-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white)
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white)
 ![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=for-the-badge&logo=terraform&logoColor=white)
 ![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 ![GitHubActions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
+![AzureDevOps](https://img.shields.io/badge/Azure_DevOps-0078D7?style=for-the-badge&logo=azuredevops&logoColor=white)
+![ArgoCD](https://img.shields.io/badge/ArgoCD-EF7B4D?style=for-the-badge&logo=argo&logoColor=white)
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/aniket484)
 [![Email](https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:aniketkmr484@gmail.com)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/aniket-devop)
-![Profile Views](https://komarev.com/ghpvc/?username=aniket-devop&style=flat-square&color=blue)
-
-<br/>
-
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=378ADD&center=true&vCenter=true&width=600&lines=Automating+cloud+infrastructure+with+Terraform;Securing+deployments+with+DevSecOps+gates;Building+on+Azure+%2B+AWS+%2B+Kubernetes)](https://git.io/typing-svg)
 
 </div>
 
@@ -28,27 +24,22 @@
 
 ## 📌 About Me
 
-DevOps Engineer with hands-on experience automating cloud infrastructure and CI/CD pipelines on Microsoft Azure. I design infrastructure as code with Terraform, deploy and secure containerized workloads on Azure Kubernetes Service (AKS), and build security scanning and observability directly into the delivery pipeline instead of bolting it on afterward. Currently extending this foundation into AWS through a self-driven infrastructure project.
+DevOps Engineer with 2 years of hands-on experience focused on Azure infrastructure, Terraform, CI/CD automation, containerized deployments, Kubernetes, and DevSecOps practices.
 
-- 🔧 Former DevOps Intern @ **DevOps Insiders** — provisioned and maintained Azure infrastructure across Dev, QA, and Staging
-- 🌱 Building cross-cloud depth on AWS (VPC, EC2, ALB, IAM) through a personal landing-zone project
+I work with Infrastructure as Code using Terraform, deploy containerized workloads on Azure Kubernetes Service (AKS), build CI/CD pipelines using GitHub Actions and Azure DevOps, and implement monitoring and security checks across the delivery lifecycle.
+
+- 🔧 DevOps Engineer @ **DevOps Insiders**
+- ☁️ Azure infrastructure provisioning and automation using Terraform
+- ☸️ Containerized application deployments using Docker, Kubernetes, AKS, and Helm
+- 🚀 CI/CD automation using GitHub Actions and Azure DevOps
+- 🔐 DevSecOps and IaC security using Trivy, TFLint, TFSec, and Checkov
+- 📊 Monitoring and observability using Prometheus and Grafana
+- 🔄 GitOps deployments using ArgoCD
+- 🌱 Exploring AWS infrastructure through hands-on Terraform projects
 - 🎓 BCA, Chandigarh Group of Colleges, Mohali
 - 📍 Noida, India
-- 🎯 Looking for a full-time **Junior DevOps / Cloud Engineer** role
 
 <br/>
-
-## 💼 Professional Experience
-
-**DevOps Intern — DevOps Insiders** · 01 Aug 2025 – 15 Jul 2026
-
-- Provisioned Azure infrastructure — Resource Groups, VNets, VMs, Storage Accounts, and Azure SQL Database — using Terraform across Development, QA, and Staging environments
-- Deployed and maintained 6+ CI/CD pipelines using GitHub Actions and Azure DevOps Pipelines, automating build, test, validation, and deployment for internal applications
-- Integrated `terraform fmt`, `validate`, TFLint, TFSEC, and Checkov into CI/CD pipelines for automated IaC validation and security checks
-- Collaborated with a team of 5+ developers using Git Flow branching, pull requests, and code reviews for smooth code integration and deployments
-
-<br/>
-
 ## 🧰 Tech Stack
 
 <div align="center">
