@@ -37,7 +37,7 @@ I work with Infrastructure as Code using Terraform, deploy containerized workloa
 - 🔄 GitOps deployments using ArgoCD
 - 🌱 Hands-on AWS infrastructure project using Terraform
 - 🎓 BCA, Chandigarh Group of Colleges, Mohali
-- 📍 Noida, India
+- 📍 Bengaluru, Karnataka, India
 
 <br/>
 
