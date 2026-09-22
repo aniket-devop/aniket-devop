@@ -1,32 +1,42 @@
 <div align="center">
 
-# Hi, I'm Aniket Kumar 👋
+# Aniket Kumar
 
-### DevOps Engineer — Azure · Terraform · Kubernetes · CI/CD · GitOps
-
----
+### DevOps Engineer — I make infrastructure boring in the right way.
+No manual clicks. No "it works on my machine." Everything reproducible, everything in code.
 
 ![Azure](https://img.shields.io/badge/Azure-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white)
 ![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=for-the-badge&logo=terraform&logoColor=white)
 ![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 ![GitHubActions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
-![AzureDevOps](https://img.shields.io/badge/Azure_DevOps-0078D7?style=for-the-badge&logo=azuredevops&logoColor=white)
-![ArgoCD](https://img.shields.io/badge/ArgoCD-EF7B4D?style=for-the-badge&logo=argo&logoColor=white)
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/aniket484)
 [![Email](https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:aniketkmr484@gmail.com)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/aniket-devop)
 
 </div>
 
 <br/>
 
+> **Open to DevOps / Cloud Engineer roles.** If you're hiring, or just want to talk infrastructure, my inbox is always open — see [Contact](#-lets-talk) below.
+
+<br/>
+
+## 🎬 See it running, not just described
+
+Most portfolios show you code. This one shows you a **live AKS cluster serving real traffic** — 27 simulated industrial assets streaming telemetry every 5 seconds into a dashboard with 3D digital twins and real-time health scoring.
+
+https://github.com/aniket-devop/axion-cloud-infrastructure/raw/main/docs/demo/axion-deployment-demo.mp4
+
+**[→ Full writeup: Axion Intelligence Platform](#1-axion-intelligence-platform)** — Terraform, AKS, FastAPI, React, PostgreSQL, end-to-end on Azure.
+
+<br/>
+
 ## 📌 About Me
 
-DevOps Engineer with 2 years of hands-on experience focused on Azure infrastructure, Terraform, CI/CD automation, containerized deployments, Kubernetes, and DevSecOps practices.
+DevOps Engineer with 2 years of hands-on experience across Azure infrastructure, Terraform, CI/CD automation, containerized deployments, Kubernetes, and DevSecOps.
 
-I work with Infrastructure as Code using Terraform, deploy containerized workloads on Azure Kubernetes Service (AKS), build CI/CD pipelines using GitHub Actions and Azure DevOps, and implement monitoring and security checks across the delivery lifecycle.
+My day job is Azure and pipelines. My own time goes into projects like the one above — things I build to actually run, not just to demo, because I'd rather find out where a design breaks on my own dime than on a client's.
 
 - 🔧 DevOps Engineer @ **DevOps Insiders**
 - ☁️ Azure infrastructure provisioning and automation using Terraform
@@ -59,11 +69,11 @@ I work with Infrastructure as Code using Terraform, deploy containerized workloa
 
 | Project | What it does | Stack |
 |---|---|---|
-| [Axion Intelligence Platform](#1-axion-intelligence-platform) | Full-stack industrial IoT telemetry platform — 27 simulated assets streaming live data, deployed end-to-end on AKS with Terraform and GitHub Actions | Terraform, Azure (AKS, ACR), Kubernetes, FastAPI, React, PostgreSQL |
+| **[Axion Intelligence Platform](#1-axion-intelligence-platform)** ⭐ | Full-stack industrial IoT telemetry platform — 27 simulated assets streaming live data, deployed end-to-end on AKS | Terraform, Azure (AKS, ACR), Kubernetes, FastAPI, React, PostgreSQL |
 | [GitOps CI/CD Deployment Pipeline](#2-gitops-cicd-deployment-pipeline-fastapi--argocd--kind) | Two-repo GitOps setup — CI builds/scans/publishes an image, ArgoCD reconciles the cluster; rollback done entirely through Git | FastAPI, Docker, Trivy, GHCR, Helm, ArgoCD, Kind |
 | [Azure Terraform Network Foundation](#3-azure-terraform-network-foundation) | Hub-and-spoke Azure network foundation — Firewall, Bastion, deny-by-default NSGs, RBAC-scoped Key Vault | Terraform, Azure Firewall, Bastion, Key Vault, GitHub Actions |
-| [AWS Landing Network (Hands-on Project)](#4-aws-landing-network-hands-on-project) | Multi-AZ AWS network with ALB, private EC2 compute, and locked remote Terraform state | Terraform, VPC, ALB, IAM, S3, DynamoDB |
-| [Airflow Observability Pipeline](#5-airflow--observability-pipeline-docker-compose--prometheus--grafana) | Containerized Airflow re-architected to single-node LocalExecutor, instrumented with a StatsD → Prometheus → Grafana metrics pipeline | Docker Compose, Airflow, PostgreSQL, Prometheus, Grafana |
+| [AWS Landing Network](#4-aws-landing-network-hands-on-project) | Multi-AZ AWS network with ALB, private EC2 compute, and locked remote Terraform state | Terraform, VPC, ALB, IAM, S3, DynamoDB |
+| [Airflow Observability Pipeline](#5-airflow--observability-pipeline-docker-compose--prometheus--grafana) | Containerized Airflow re-architected to single-node LocalExecutor, instrumented with StatsD → Prometheus → Grafana | Docker Compose, Airflow, PostgreSQL, Prometheus, Grafana |
 
 ---
 
@@ -78,7 +88,9 @@ A production-style industrial IoT condition-monitoring platform — 27 simulated
 
 ### Architecture
 
-Terraform provisions the Azure footprint → GitHub Actions builds and pushes images to ACR → Kubernetes manifests roll the workloads onto AKS → LoadBalancer services expose the UI and API.
+![Axion Architecture](https://raw.githubusercontent.com/aniket-devop/axion-cloud-infrastructure/main/docs/architecture.png)
+
+*Terraform provisions the Azure footprint → GitHub Actions builds and pushes images to ACR → Kubernetes manifests roll the workloads onto AKS → LoadBalancer services expose the UI and API.*
 
 ### ⚙️ Key Engineering Decisions
 - Split ingestion (write-heavy, latency-sensitive) and query (aggregation + health scoring) into separate services so each scales independently
@@ -117,6 +129,9 @@ A two-repository GitOps demonstration: one repo owns the FastAPI application and
 
 ### Architecture
 
+![GitOps Pipeline Architecture](https://raw.githubusercontent.com/aniket-devop/gitops-kubernetes-config/main/screenshots/architecture-diagram.png)
+
+**Flow:**
 ```
 Developer → gitops-ci-pipeline → GitHub Actions → pytest → Docker build
    → Trivy CRITICAL scan → GHCR → Git commit to gitops-kubernetes-config
@@ -162,6 +177,10 @@ Runs on a local Kind cluster, not a managed cloud environment — no production 
 
 A Terraform-built Azure networking and security foundation: a hub VNet (Firewall + Bastion), a spoke VNet with a deny-by-default NSG and an AKS-designated subnet, egress forced through the Firewall via a route table, an RBAC-authorized Key Vault, and role assignments scoped to the resource group rather than the subscription. Deployable across two environments (`dev`, `prod`) from one DRY Terraform configuration.
 
+### Architecture
+
+![Azure Network Foundation Architecture](https://raw.githubusercontent.com/aniket-devop/azure-network-foundation-terraform/main/diagrams/architecture.png)
+
 ### ⚙️ Key Engineering Decisions
 - RBAC scoped to the **resource group**, not the subscription — limits blast radius of a compromised credential
 - Explicit `DenyAllInbound` NSG rule rather than relying on Azure's implicit platform defaults
@@ -200,6 +219,10 @@ This is a personal, sandbox-scale project — not a Cloud Adoption Framework "la
 
 A self-driven, hands-on project applying the same private-compute networking pattern used in the Azure project — this time in AWS. Multi-AZ VPC, ALB-fronted EC2 in private subnets, and locked remote Terraform state. AWS is a secondary, personal-project skill area alongside Azure as the primary professional cloud.
 
+### Architecture
+
+![AWS Landing Zone Architecture](https://raw.githubusercontent.com/aniket-devop/aws-terraform-landing-zone-project/main/diagrams/architecture.png)
+
 **How it works:** one VPC (`10.0.0.0/16`) across two AZs, each with a public subnet (ALB + NAT Gateway) and a private subnet (EC2 + Security Group + IAM role). The Internet Gateway only reaches the public subnets; EC2 security groups accept traffic only from the ALB; outbound-only internet access goes through the NAT Gateway; Terraform state is remote in S3 with DynamoDB locking.
 
 ### 🔁 CI/CD
@@ -229,6 +252,10 @@ terraform apply
 `Docker Compose` `Apache Airflow` `PostgreSQL` `Prometheus` `Grafana` `StatsD`
 
 A containerized Apache Airflow deployment, delivered as a freelance client project and re-architected from Airflow's official CeleryExecutor/Redis reference template into a single-node **LocalExecutor + PostgreSQL** setup. Instrumented end-to-end with a StatsD → Prometheus → Grafana metrics pipeline, fully orchestrated with a single `docker compose up`.
+
+### Architecture
+
+![Airflow Observability Architecture](https://raw.githubusercontent.com/aniket-devop/airflow-docker-grafana-monitoring/main/assets/architecture-diagram.png)
 
 **Components:** Airflow API Server, Scheduler (executes tasks directly via LocalExecutor — no separate worker), DAG Processor, Triggerer, PostgreSQL 16 (metadata store), StatsD Exporter, Prometheus, Grafana — all running as isolated services on one Docker Compose network.
 
@@ -312,14 +339,16 @@ curl http://localhost:8080  # Airflow UI
 
 <br/>
 
-## 📬 Contact
+## 📬 Let's Talk
 
-*Always happy to connect with fellow DevOps engineers and recruiters — feel free to reach out!*
+I'm currently **open to DevOps / Cloud Engineer roles** — full-time, Bengaluru or remote.
+
+If any of the above is relevant to a role you're hiring for, or you just want to compare notes on Terraform module design, AKS networking, or GitOps patterns — reach out. I read every message.
 
 <div align="center">
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/aniket484)
-[![Email](https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:aniketkmr484@gmail.com)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/aniket-devop)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Message%20me-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/aniket484)
+[![Email](https://img.shields.io/badge/Email-Send%20a%20note-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:aniketkmr484@gmail.com)
 
 </div>
+
