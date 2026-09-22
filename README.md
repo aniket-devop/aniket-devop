@@ -34,7 +34,7 @@ I work with Infrastructure as Code using Terraform, deploy containerized workloa
 - 🚀 CI/CD automation using GitHub Actions and Azure DevOps
 - 🔐 DevSecOps and IaC security using Trivy, TFLint, TFSec, and Checkov
 - 📊 Monitoring and observability using Prometheus and Grafana
-- 🔄 GitOps deployments using ArgoCD
+- 🔄 GitOps (ArgoCD) — personal project experience
 - 🌱 Hands-on AWS infrastructure project using Terraform
 - 🎓 BCA, Chandigarh Group of Colleges, Mohali
 - 📍 Bengaluru, Karnataka, India
@@ -59,48 +59,48 @@ I work with Infrastructure as Code using Terraform, deploy containerized workloa
 
 | Project | What it does | Stack |
 |---|---|---|
-| [Airflow Observability Pipeline](#1-airflow--observability-pipeline-docker-compose--prometheus--grafana) | Containerized Airflow re-architected to single-node LocalExecutor, instrumented with a StatsD → Prometheus → Grafana metrics pipeline | Docker Compose, Airflow, PostgreSQL, Prometheus, Grafana |
+| [Axion Intelligence Platform](#1-axion-intelligence-platform) | Full-stack industrial IoT telemetry platform — 27 simulated assets streaming live data, deployed end-to-end on AKS with Terraform and GitHub Actions | Terraform, Azure (AKS, ACR), Kubernetes, FastAPI, React, PostgreSQL |
 | [GitOps CI/CD Deployment Pipeline](#2-gitops-cicd-deployment-pipeline-fastapi--argocd--kind) | Two-repo GitOps setup — CI builds/scans/publishes an image, ArgoCD reconciles the cluster; rollback done entirely through Git | FastAPI, Docker, Trivy, GHCR, Helm, ArgoCD, Kind |
 | [Azure Terraform Network Foundation](#3-azure-terraform-network-foundation) | Hub-and-spoke Azure network foundation — Firewall, Bastion, deny-by-default NSGs, RBAC-scoped Key Vault | Terraform, Azure Firewall, Bastion, Key Vault, GitHub Actions |
 | [AWS Landing Network (Hands-on Project)](#4-aws-landing-network-hands-on-project) | Multi-AZ AWS network with ALB, private EC2 compute, and locked remote Terraform state | Terraform, VPC, ALB, IAM, S3, DynamoDB |
+| [Airflow Observability Pipeline](#5-airflow--observability-pipeline-docker-compose--prometheus--grafana) | Containerized Airflow re-architected to single-node LocalExecutor, instrumented with a StatsD → Prometheus → Grafana metrics pipeline | Docker Compose, Airflow, PostgreSQL, Prometheus, Grafana |
 
 ---
 
 <br/>
 
-## 1. Airflow + Observability Pipeline (Docker Compose + Prometheus + Grafana)
+## 1. Axion Intelligence Platform
 
-🔗 **Repo:** [airflow-docker-grafana-monitoring](https://github.com/aniket-devop/airflow-docker-grafana-monitoring)
-`Docker Compose` `Apache Airflow` `PostgreSQL` `Prometheus` `Grafana` `StatsD`
+🔗 **Repo:** [axion-cloud-infrastructure](https://github.com/aniket-devop/axion-cloud-infrastructure)
+`Terraform` `Azure (AKS, ACR)` `Kubernetes` `GitHub Actions` `FastAPI` `React` `PostgreSQL` `Docker`
 
-A containerized Apache Airflow deployment, delivered as a freelance client project and re-architected from Airflow's official CeleryExecutor/Redis reference template into a single-node **LocalExecutor + PostgreSQL** setup. Instrumented end-to-end with a StatsD → Prometheus → Grafana metrics pipeline, fully orchestrated with a single `docker compose up`.
+A production-style industrial IoT condition-monitoring platform — 27 simulated assets (pumps, motors, compressors) across five refinery sites stream temperature, vibration, and current readings every 5 seconds. Built end-to-end: Terraform provisions the Azure footprint, GitHub Actions builds and pushes images to ACR, and Kubernetes manifests roll the workloads onto AKS — with a live operations dashboard featuring 3D digital twins, live trend charts, and real-time health scoring.
 
 ### Architecture
 
-![Airflow Observability Architecture](https://raw.githubusercontent.com/aniket-devop/airflow-docker-grafana-monitoring/main/assets/architecture-diagram.png)
-
-**Components:** Airflow API Server, Scheduler (executes tasks directly via LocalExecutor — no separate worker), DAG Processor, Triggerer, PostgreSQL 16 (metadata store), StatsD Exporter, Prometheus, Grafana — all running as isolated services on one Docker Compose network.
-
-**Monitoring flow:** Airflow services emit StatsD metrics → StatsD Exporter republishes them in Prometheus format → Prometheus scrapes every 15s → Grafana added as a visualization data source.
+Terraform provisions the Azure footprint → GitHub Actions builds and pushes images to ACR → Kubernetes manifests roll the workloads onto AKS → LoadBalancer services expose the UI and API.
 
 ### ⚙️ Key Engineering Decisions
-- Swapped the official CeleryExecutor + Redis worker model for **LocalExecutor**, removing a message broker and separate worker fleet with no benefit at single-node scale — while keeping health checks, dependency ordering, and persistent metadata storage
-- Bridged metrics via **StatsD → Prometheus** since Airflow doesn't expose a native `/metrics` endpoint in this configuration
+- Split ingestion (write-heavy, latency-sensitive) and query (aggregation + health scoring) into separate services so each scales independently
+- Terraform `for_each` over an `environments` map — one module tree renders dev/staging/prod without duplicated root configs
+- Remote state bootstrapped in a separate `state-infrastructure/` stack, solving the chicken-and-egg backend problem cleanly
+- `admin_enabled = false` on ACR — forces identity-based auth instead of shared admin credentials
+- Health scoring computed server-side (SQL/Python), keeping the dashboard a thin client with consistent logic across consumers
 
-### 🔒 Honest Scope
-This is a working local/single-node deployment with a verified metrics pipeline — not a distributed production platform. No Grafana dashboards or alerting are pre-provisioned, and Prometheus/Grafana have no persistent storage; these are documented as deliberate scope boundaries, not oversights.
+### 📚 Honest Scope
+This is a portfolio build with intentional, documented gaps — database credentials are currently inline rather than in Key Vault-backed Secrets, storage uses `emptyDir` instead of a PersistentVolumeClaim, and there's no Ingress/TLS yet. These are listed openly in the repo's roadmap rather than glossed over.
 
 ### 🖥️ Commands
 ```bash
-docker compose up -d
-docker compose ps
-curl http://localhost:8080  # Airflow UI
+cd terraform && terraform init && terraform apply
+kubectl apply -f k8s/
 ```
 
 ### 🚀 Future Improvements
-- Ship a starter Grafana dashboard + automatic Prometheus datasource provisioning
-- Add Alertmanager with basic failure-rate alerts
-- Pin third-party image versions currently tracking `:latest`
+- Move database credentials to Kubernetes Secrets backed by Azure Key Vault
+- Replace `emptyDir` with a PersistentVolumeClaim on Azure Disk
+- Replace dual LoadBalancers with a single Ingress (NGINX + cert-manager) for TLS
+- Add HorizontalPodAutoscalers and resource requests/limits on all deployments
 
 <br/>
 
@@ -117,9 +117,6 @@ A two-repository GitOps demonstration: one repo owns the FastAPI application and
 
 ### Architecture
 
-![GitOps Pipeline Architecture](https://raw.githubusercontent.com/aniket-devop/gitops-kubernetes-config/main/screenshots/architecture-diagram.png)
-
-**Flow:**
 ```
 Developer → gitops-ci-pipeline → GitHub Actions → pytest → Docker build
    → Trivy CRITICAL scan → GHCR → Git commit to gitops-kubernetes-config
@@ -165,10 +162,6 @@ Runs on a local Kind cluster, not a managed cloud environment — no production 
 
 A Terraform-built Azure networking and security foundation: a hub VNet (Firewall + Bastion), a spoke VNet with a deny-by-default NSG and an AKS-designated subnet, egress forced through the Firewall via a route table, an RBAC-authorized Key Vault, and role assignments scoped to the resource group rather than the subscription. Deployable across two environments (`dev`, `prod`) from one DRY Terraform configuration.
 
-### Architecture
-
-![Azure Network Foundation Architecture](https://raw.githubusercontent.com/aniket-devop/azure-network-foundation-terraform/main/diagrams/architecture.png)
-
 ### ⚙️ Key Engineering Decisions
 - RBAC scoped to the **resource group**, not the subscription — limits blast radius of a compromised credential
 - Explicit `DenyAllInbound` NSG rule rather than relying on Azure's implicit platform defaults
@@ -207,10 +200,6 @@ This is a personal, sandbox-scale project — not a Cloud Adoption Framework "la
 
 A self-driven, hands-on project applying the same private-compute networking pattern used in the Azure project — this time in AWS. Multi-AZ VPC, ALB-fronted EC2 in private subnets, and locked remote Terraform state. AWS is a secondary, personal-project skill area alongside Azure as the primary professional cloud.
 
-### Architecture
-
-![AWS Landing Zone Architecture](https://raw.githubusercontent.com/aniket-devop/aws-terraform-landing-zone-project/main/diagrams/architecture.png)
-
 **How it works:** one VPC (`10.0.0.0/16`) across two AZs, each with a public subnet (ALB + NAT Gateway) and a private subnet (EC2 + Security Group + IAM role). The Internet Gateway only reaches the public subnets; EC2 security groups accept traffic only from the ALB; outbound-only internet access goes through the NAT Gateway; Terraform state is remote in S3 with DynamoDB locking.
 
 ### 🔁 CI/CD
@@ -227,6 +216,42 @@ terraform apply
 - HTTPS listener on the ALB with an ACM certificate
 - Auto Scaling Group instead of a static EC2 instance
 - CloudWatch alarms and a basic monitoring dashboard
+
+<br/>
+
+---
+
+<br/>
+
+## 5. Airflow + Observability Pipeline (Docker Compose + Prometheus + Grafana)
+
+🔗 **Repo:** [airflow-docker-grafana-monitoring](https://github.com/aniket-devop/airflow-docker-grafana-monitoring)
+`Docker Compose` `Apache Airflow` `PostgreSQL` `Prometheus` `Grafana` `StatsD`
+
+A containerized Apache Airflow deployment, delivered as a freelance client project and re-architected from Airflow's official CeleryExecutor/Redis reference template into a single-node **LocalExecutor + PostgreSQL** setup. Instrumented end-to-end with a StatsD → Prometheus → Grafana metrics pipeline, fully orchestrated with a single `docker compose up`.
+
+**Components:** Airflow API Server, Scheduler (executes tasks directly via LocalExecutor — no separate worker), DAG Processor, Triggerer, PostgreSQL 16 (metadata store), StatsD Exporter, Prometheus, Grafana — all running as isolated services on one Docker Compose network.
+
+**Monitoring flow:** Airflow services emit StatsD metrics → StatsD Exporter republishes them in Prometheus format → Prometheus scrapes every 15s → Grafana added as a visualization data source.
+
+### ⚙️ Key Engineering Decisions
+- Swapped the official CeleryExecutor + Redis worker model for **LocalExecutor**, removing a message broker and separate worker fleet with no benefit at single-node scale — while keeping health checks, dependency ordering, and persistent metadata storage
+- Bridged metrics via **StatsD → Prometheus** since Airflow doesn't expose a native `/metrics` endpoint in this configuration
+
+### 🔒 Honest Scope
+This is a working local/single-node deployment with a verified metrics pipeline — not a distributed production platform. No Grafana dashboards or alerting are pre-provisioned, and Prometheus/Grafana have no persistent storage; these are documented as deliberate scope boundaries, not oversights.
+
+### 🖥️ Commands
+```bash
+docker compose up -d
+docker compose ps
+curl http://localhost:8080  # Airflow UI
+```
+
+### 🚀 Future Improvements
+- Ship a starter Grafana dashboard + automatic Prometheus datasource provisioning
+- Add Alertmanager with basic failure-rate alerts
+- Pin third-party image versions currently tracking `:latest`
 
 <br/>
 
@@ -251,6 +276,7 @@ terraform apply
 | **GitOps** | ArgoCD |
 | **Security** | Trivy, TFLint, TFSec, Checkov |
 | **Monitoring** | Prometheus, Grafana |
+| **Backend & Data** | Python, FastAPI, PostgreSQL |
 | **Scripting & OS** | Python, Bash, Linux |
 | **Version Control** | Git, GitHub |
 
@@ -291,14 +317,6 @@ terraform apply
 *Always happy to connect with fellow DevOps engineers and recruiters — feel free to reach out!*
 
 <div align="center">
-
-<a href="https://linkedin.com/in/aniket484"><img src="icons/linkedin-flat.png" width="45" height="45"/></a>
-&nbsp;&nbsp;
-<a href="https://github.com/aniket-devop"><img src="icons/github-flat.png" width="45" height="45"/></a>
-&nbsp;&nbsp;
-<a href="mailto:aniketkmr484@gmail.com"><img src="icons/email-flat-blue.png" width="45" height="45"/></a>
-
-<br/><br/>
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/aniket484)
 [![Email](https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:aniketkmr484@gmail.com)
