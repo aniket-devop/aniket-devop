@@ -5,7 +5,7 @@
 ### ⚙️ DevOps Engineer &nbsp;|&nbsp; ☁️ Azure &nbsp;|&nbsp; 🏗️ Terraform &nbsp;|&nbsp; ☸️ Kubernetes &nbsp;|&nbsp; 🚀 CI/CD
 
 <a href="https://github.com/aniket-devop">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1200&color=38BDF8&center=true&vCenter=true&width=700&height=45&lines=I+make+infrastructure+boring+in+the+right+way;No+manual+clicks.+Everything+in+code.;Terraform+%E2%86%92+AKS+%E2%86%92+GitOps+with+ArgoCD;Open+to+DevOps+%2F+Cloud+Engineer+roles" alt="typing"/>
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1200&color=38BDF8&center=true&vCenter=true&width=700&height=45&lines=Turning+cloud+chaos+into+clean+code;I+make+infrastructure+boring+in+the+right+way;Terraform+%E2%86%92+AKS+%E2%86%92+GitOps+with+ArgoCD;Open+to+DevOps+%2F+Cloud+Engineer+roles" alt="typing"/>
 </a>
 
 <br/>
@@ -46,7 +46,9 @@
 
 ## 🧑‍💻 About Me
 
-I'm a DevOps Engineer with **2 years of hands-on experience** across Azure infrastructure, Terraform, CI/CD automation, containerized deployments and DevSecOps. My day job is Azure and pipelines. My own time goes into projects I build to actually *run*, not just to demo, because I'd rather find out where a design breaks on my own dime than on a client's.
+I'm a DevOps Engineer with **2 years of hands-on experience** turning Azure infrastructure, Terraform, CI/CD, containers and DevSecOps into systems that simply work.
+
+At work, that means pipelines and Azure. After work, it means building projects that actually *run*, not just demo, because I'd rather find out where a design breaks on my own dime than on a client's.
 
 ```yaml
 aniket:
@@ -90,19 +92,19 @@ aniket:
 <td width="33%" valign="top" align="center">
 
 ### 🔁 Reproducible
-Everything lives in Terraform and YAML. If it can't be rebuilt from code, it isn't done.
+Terraform and YAML are the source of truth. If it can't be rebuilt from code, it isn't done.
 
 </td>
 <td width="33%" valign="top" align="center">
 
 ### 🔐 Secure by default
-Deny-by-default NSGs, RBAC scoped to the resource group, and a Trivy gate before any image ships.
+Security isn't a last step, it's part of the pipeline: deny-by-default NSGs, RBAC scoped to the resource group, and a Trivy gate before any image ships.
 
 </td>
 <td width="33%" valign="top" align="center">
 
 ### 📚 Honest engineering
-Every project documents its scope, its gaps and its roadmap. No overstated claims.
+Every project spells out its scope, its gaps and its roadmap. I'd rather under-promise and show it running.
 
 </td>
 </tr>
@@ -155,7 +157,7 @@ flowchart LR
 
 ### ⭐ Axion Intelligence Platform · live on AKS
 
-27 simulated industrial assets (pumps, motors, compressors) across five refinery sites stream temperature, vibration and current readings every 5 seconds into a dashboard with 3D digital twins and real-time health scoring.
+A refinery-monitoring platform running live on AKS: 27 simulated industrial assets (pumps, motors, compressors) across five sites stream temperature, vibration and current readings every 5 seconds into a dashboard with 3D digital twins and real-time health scoring.
 
 ![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=flat-square&logo=terraform&logoColor=white)
 ![AKS](https://img.shields.io/badge/AKS%20%2F%20ACR-0078D4?style=flat-square&logo=microsoftazure&logoColor=white)
@@ -202,7 +204,7 @@ flowchart LR
 <td width="50%" valign="top">
 
 #### 🔄 GitOps CI/CD Pipeline
-CI builds, scans and publishes an image; ArgoCD deploys it.
+CI builds, scans and publishes. ArgoCD deploys. Git is the only way in.
 
 - 🔒 Trivy `CRITICAL` gate fails the job before GHCR
 - 🔒 Non-root container on `python:3.12-alpine`
@@ -253,7 +255,7 @@ The same private-compute pattern, rebuilt on AWS.
 <td width="50%" valign="top">
 
 #### 📊 Airflow Observability Pipeline
-Freelance client project, containerized and monitored.
+A freelance client project, containerized and fully monitored.
 
 - 🔧 Re-architected to LocalExecutor + PostgreSQL
 - 📈 StatsD → Prometheus → Grafana metrics pipeline
@@ -326,7 +328,7 @@ flowchart TB
 
 ## 📬 Let's Connect
 
-Hiring for a DevOps / Cloud role, or want to talk Terraform, AKS or GitOps? **I read every message.**
+Hiring for a DevOps / Cloud role, or just want to talk Terraform, AKS or GitOps? **Drop a message, I read every one.**
 
 <div align="center">
 
