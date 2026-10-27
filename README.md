@@ -12,6 +12,7 @@
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/aniket484)
 [![Email](https://img.shields.io/badge/Email-Say%20Hi-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:aniketkmr484@gmail.com)
 [![Projects](https://img.shields.io/badge/See-My%20Projects-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white)](#-featured-projects)
+[![Hiring](https://img.shields.io/badge/Status-Open%20to%20Work-22C55E?style=for-the-badge&logo=checkmarx&logoColor=white)](#-lets-connect)
 
 <img src="https://komarev.com/ghpvc/?username=aniket-devop&label=Profile%20Views&color=0e75b6&style=flat" alt="profile views"/>
 
@@ -20,9 +21,7 @@
 <br/>
 
 > [!IMPORTANT]
-> 🟢 **Open to DevOps / Cloud Engineer roles**: full-time, Bengaluru or remote. If you're hiring, jump to [Let's Connect](#-lets-connect).
-
-<br/>
+> 🟢 **Open to DevOps / Cloud Engineer roles** · full-time · Bengaluru or remote. Hiring? Jump to [Let's Connect](#-lets-connect).
 
 <div align="center">
 
@@ -36,11 +35,10 @@
 
 ## 🧑‍💻 About Me
 
-I'm a DevOps Engineer with **2 years of hands-on experience** across Azure infrastructure, Terraform, CI/CD automation, containerized deployments and DevSecOps. My day job is Azure and pipelines. My own time goes into projects I build to actually run, not just to demo.
+I'm a DevOps Engineer with **2 years of hands-on experience** across Azure infrastructure, Terraform, CI/CD automation, containerized deployments and DevSecOps. My day job is Azure and pipelines. My own time goes into projects I build to actually run, not just to demo, because I'd rather find out where a design breaks on my own dime than on a client's.
 
 - 🔭 **Currently building:** Azure/AKS platform projects and GitOps pipelines with ArgoCD
-- ⚙️ **Day job:** DevOps Engineer @ **DevOps Insiders**, Terraform on Azure, AKS, Helm, GitHub Actions, Azure DevOps
-- 🔐 **I care about:** security scanning in the pipeline (Trivy, TFLint, TFSec, Checkov), least-privilege RBAC, reproducible infra
+- ⚙️ **Day job:** DevOps Engineer @ **DevOps Insiders** · Terraform on Azure, AKS, Helm, GitHub Actions, Azure DevOps
 - 💬 **Ask me about:** Terraform module design, AKS networking, GitOps patterns
 - 🎓 **Education:** BCA, Chandigarh Group of Colleges, Mohali
 
@@ -53,12 +51,59 @@ I'm a DevOps Engineer with **2 years of hands-on experience** across Azure infra
 - Provision and manage Azure infrastructure with Terraform: resource groups, virtual networks and AKS
 - Build and maintain CI/CD pipelines in GitHub Actions and Azure DevOps to automate build, test and deployment
 - Containerize applications with Docker and deploy to Kubernetes/AKS using Helm charts
-- Integrate security and IaC scanning into the delivery lifecycle
+- Integrate security and IaC scanning (Trivy, TFLint, TFSec, Checkov) into the delivery lifecycle
 - Set up monitoring and observability with Prometheus and Grafana
 - Troubleshoot pipeline, infrastructure and deployment issues across environments
 - Work with developers and QA to keep release cycles smooth and reliable
 
 </details>
+
+---
+
+## 🧭 How I Work
+
+<table>
+<tr>
+<td width="33%" valign="top" align="center">
+
+### 🔁 Reproducible
+Everything lives in Terraform and YAML. If it can't be rebuilt from code, it isn't done.
+
+</td>
+<td width="33%" valign="top" align="center">
+
+### 🔐 Secure by default
+Deny-by-default NSGs, RBAC scoped to the resource group, and a Trivy gate before any image ships.
+
+</td>
+<td width="33%" valign="top" align="center">
+
+### 📚 Honest engineering
+Every project documents its scope, its gaps and its roadmap. No overstated claims.
+
+</td>
+</tr>
+</table>
+
+---
+
+## 🔄 How I Ship
+
+My GitOps pipeline, end to end (from the [GitOps project](https://github.com/aniket-devop/gitops-kubernetes-config)):
+
+```mermaid
+%%{init: {'theme':'base','themeVariables':{'primaryColor':'#0B3A6F','primaryTextColor':'#ffffff','primaryBorderColor':'#38BDF8','lineColor':'#38BDF8','secondaryColor':'#0F1A2E','tertiaryColor':'#0F1A2E','fontSize':'14px'}}}%%
+flowchart LR
+    A([👨‍💻 Git push]) --> B[⚙️ GitHub Actions<br/>build + test]
+    B --> C[🔐 Trivy scan<br/>CRITICAL gate]
+    C --> D[(📦 GHCR<br/>image)]
+    D --> E[📝 GitOps repo<br/>image tag commit]
+    E --> F[🔄 ArgoCD<br/>reconcile]
+    F --> G([☸️ Kubernetes])
+```
+
+> [!NOTE]
+> **CI never touches the cluster.** Deployment and rollback happen through Git alone: a `git revert` on the image-tag commit was enough for ArgoCD to restore the previous version.
 
 ---
 
@@ -95,14 +140,16 @@ I'm a DevOps Engineer with **2 years of hands-on experience** across Azure infra
 </tr>
 </table>
 
+<sub>🔐 IaC security scanning: TFLint · TFSec · Checkov &nbsp;|&nbsp; ☁️ Azure is my primary cloud; AWS is hands-on project experience.</sub>
+
 ---
 
 ## 🏗️ Featured Projects
 
 > [!TIP]
-> Every project below has an **architecture diagram**, an **honest scope** section and a **roadmap** in its repo README.
+> Every project has an **architecture diagram**, an **honest scope** section and a **roadmap** in its repo README.
 
-### ⭐ Axion Intelligence Platform: live on AKS
+### ⭐ Axion Intelligence Platform · live on AKS
 
 27 simulated industrial assets stream telemetry every 5 seconds into a dashboard with 3D digital twins and real-time health scoring. Terraform provisions Azure, GitHub Actions pushes images to ACR, Kubernetes rolls them onto AKS.
 
@@ -113,6 +160,10 @@ I'm a DevOps Engineer with **2 years of hands-on experience** across Azure infra
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
 ![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
+
+- 🧩 Ingestion and query split into separate services so each scales independently
+- 🏗️ Terraform `for_each` over an `environments` map renders dev/staging/prod from one module tree
+- 🔑 `admin_enabled = false` on ACR, so identity-based auth instead of shared admin credentials
 
 **[→ View repo](https://github.com/aniket-devop/axion-cloud-infrastructure)**
 
@@ -125,7 +176,11 @@ https://github.com/aniket-devop/axion-cloud-infrastructure/raw/main/docs/demo/ax
 <td width="50%" valign="top">
 
 #### 🔄 GitOps CI/CD Pipeline
-CI builds, scans (Trivy) and publishes an image; ArgoCD deploys it. **CI never touches the cluster**, and rollback is a pure `git revert`.
+CI builds, scans and publishes an image; ArgoCD deploys it.
+
+- 🔒 Trivy `CRITICAL` gate fails the job before GHCR
+- 🔒 Non-root container on `python:3.12-alpine`
+- 🔄 Rollback is a pure `git revert`
 
 ![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
 ![Trivy](https://img.shields.io/badge/Trivy-1904DA?style=flat-square&logo=aqua&logoColor=white)
@@ -138,7 +193,11 @@ CI builds, scans (Trivy) and publishes an image; ArgoCD deploys it. **CI never t
 <td width="50%" valign="top">
 
 #### 🔐 Azure Network Foundation
-Hub-and-spoke network with Firewall, Bastion (no public IPs), deny-by-default NSGs and an RBAC-scoped Key Vault. One DRY config for `dev` and `prod`.
+Hub-and-spoke network built with Terraform.
+
+- 🛡️ Firewall-forced egress via route table
+- 🚫 Bastion instead of a jump box, no VM has a public IP
+- 🔑 RBAC scoped to the resource group, not the subscription
 
 ![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=flat-square&logo=terraform&logoColor=white)
 ![Firewall](https://img.shields.io/badge/Azure%20Firewall-0078D4?style=flat-square&logo=microsoftazure&logoColor=white)
@@ -152,7 +211,11 @@ Hub-and-spoke network with Firewall, Bastion (no public IPs), deny-by-default NS
 <td width="50%" valign="top">
 
 #### 🌱 AWS Landing Network
-Multi-AZ VPC with ALB in front of private EC2, outbound via NAT, and Terraform state locked in S3 + DynamoDB.
+The same private-compute pattern, rebuilt on AWS.
+
+- 🌐 Multi-AZ VPC, ALB in front of private EC2
+- 📤 Outbound-only access through NAT Gateway
+- 🔒 Remote state in S3 with DynamoDB locking
 
 ![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=flat-square&logo=terraform&logoColor=white)
 ![AWS](https://img.shields.io/badge/VPC%20%2F%20ALB%20%2F%20EC2-232F3E?style=flat-square&logo=amazonaws&logoColor=white)
@@ -164,7 +227,11 @@ Multi-AZ VPC with ALB in front of private EC2, outbound via NAT, and Terraform s
 <td width="50%" valign="top">
 
 #### 📊 Airflow Observability Pipeline
-Client project: Airflow re-architected to LocalExecutor + PostgreSQL, with a StatsD → Prometheus → Grafana metrics pipeline, started with one `docker compose up`.
+Freelance client project, containerized and monitored.
+
+- 🔧 Re-architected to LocalExecutor + PostgreSQL
+- 📈 StatsD → Prometheus → Grafana metrics pipeline
+- ⚡ Whole stack starts with one `docker compose up`
 
 ![Airflow](https://img.shields.io/badge/Airflow-017CEE?style=flat-square&logo=apacheairflow&logoColor=white)
 ![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white)
