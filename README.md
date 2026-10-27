@@ -1,11 +1,10 @@
 <div align="center">
 
-# 👋 Hi, I'm Aniket Kumar
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0B3A6F,100:38BDF8&height=210&section=header&text=Aniket%20Kumar&fontSize=52&fontColor=ffffff&fontAlignY=36&animation=fadeIn&desc=DevOps%20Engineer%20%C2%B7%20Azure%20%C2%B7%20Terraform%20%C2%B7%20Kubernetes&descSize=18&descAlignY=58" alt="banner"/>
 
-### ⚙️ DevOps Engineer &nbsp;|&nbsp; ☁️ Azure &nbsp;|&nbsp; 🏗️ Terraform &nbsp;|&nbsp; ☸️ Kubernetes &nbsp;|&nbsp; 🚀 CI/CD
-
-**I make infrastructure boring in the right way.**
-*No manual clicks. No "it works on my machine." Everything reproducible, everything in code.*
+<a href="https://github.com/aniket-devop">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1200&color=38BDF8&center=true&vCenter=true&width=700&height=45&lines=I+make+infrastructure+boring+in+the+right+way;No+manual+clicks.+Everything+in+code.;Terraform+%E2%86%92+AKS+%E2%86%92+GitOps+with+ArgoCD;Open+to+DevOps+%2F+Cloud+Engineer+roles" alt="typing"/>
+</a>
 
 <br/>
 
@@ -15,6 +14,10 @@
 [![Hiring](https://img.shields.io/badge/Status-Open%20to%20Work-22C55E?style=for-the-badge&logo=checkmarx&logoColor=white)](#-lets-connect)
 
 <img src="https://komarev.com/ghpvc/?username=aniket-devop&label=Profile%20Views&color=0e75b6&style=flat" alt="profile views"/>
+
+<br/><br/>
+
+**[About](#-about-me)** · **[Journey](#-career-journey)** · **[How I Ship](#-how-i-ship)** · **[Stack](#-tech-stack)** · **[Projects](#-featured-projects)** · **[Stats](#-github-stats)** · **[Contact](#-lets-connect)**
 
 <br/>
 
@@ -27,24 +30,31 @@
 <br/>
 
 > [!IMPORTANT]
-> ### ⚡ Recruiter TL;DR
+> ### ⚡ Recruiter TL;DR (30 seconds)
 > 🟢 **Open to DevOps / Cloud Engineer roles** · full-time · Bengaluru or remote
 >
-> - 🎬 **Live AKS demo:** a full-stack platform I built end-to-end on Azure (Terraform → ACR → AKS), [watch it run](#-featured-projects)
-> - 🔄 **GitOps with ArgoCD:** CI never touches the cluster; rollback is a pure `git revert`
-> - 🔐 **Security built in:** Trivy gates, deny-by-default NSGs, RBAC scoped to the resource group
-> - 📚 **Honest engineering:** every project documents its scope, gaps and roadmap
+> | What | Proof |
+> |---|---|
+> | ☸️ **Ships to Kubernetes** | [Live AKS platform](#-axion-intelligence-platform--live-on-aks), built end-to-end: Terraform → ACR → AKS |
+> | 🔄 **GitOps, not click-ops** | ArgoCD reconciles from Git. CI never touches the cluster. Rollback = `git revert` |
+> | 🔐 **Security built in** | Trivy gate, deny-by-default NSGs, RBAC scoped to the resource group |
+> | 📚 **Honest engineering** | Every repo documents its scope, gaps and roadmap |
 
 ---
 
 ## 🧑‍💻 About Me
 
-I'm a DevOps Engineer with **2 years of hands-on experience** across Azure infrastructure, Terraform, CI/CD automation, containerized deployments and DevSecOps. My day job is Azure and pipelines. My own time goes into projects I build to actually run, not just to demo, because I'd rather find out where a design breaks on my own dime than on a client's.
+I'm a DevOps Engineer with **2 years of hands-on experience** across Azure infrastructure, Terraform, CI/CD automation, containerized deployments and DevSecOps. My day job is Azure and pipelines. My own time goes into projects I build to actually *run*, not just to demo, because I'd rather find out where a design breaks on my own dime than on a client's.
 
-- 🔭 **Currently building:** Azure/AKS platform projects and GitOps pipelines with ArgoCD
-- ⚙️ **Day job:** DevOps Engineer @ **DevOps Insiders** · Terraform on Azure, AKS, Helm, GitHub Actions, Azure DevOps
-- 💬 **Ask me about:** Terraform module design, AKS networking, GitOps patterns
-- 🎓 **Education:** BCA, Chandigarh Group of Colleges, Mohali
+```yaml
+aniket:
+  role: DevOps Engineer @ DevOps Insiders
+  currently_building: [Azure/AKS platform projects, GitOps pipelines with ArgoCD]
+  daily_drivers: [Terraform, AKS, Helm, GitHub Actions, Azure DevOps]
+  ask_me_about: [Terraform module design, AKS networking, GitOps patterns]
+  education: BCA, Chandigarh Group of Colleges, Mohali
+  open_to_work: true
+```
 
 ---
 
@@ -120,38 +130,19 @@ flowchart LR
 
 ## 🛠️ Tech Stack
 
-<table>
-<tr>
-<td width="190"><b>☁️ Cloud & IaC</b></td>
-<td><img src="https://skillicons.dev/icons?i=azure,aws,terraform" alt="cloud"/></td>
-</tr>
-<tr>
-<td><b>📦 Containers & GitOps</b></td>
-<td>
-<img src="https://skillicons.dev/icons?i=docker,kubernetes" alt="containers" align="top"/>
-<img src="https://img.shields.io/badge/Helm-0F1689?style=for-the-badge&logo=helm&logoColor=white" alt="Helm" align="top"/>
-<img src="https://img.shields.io/badge/ArgoCD-EF7B4D?style=for-the-badge&logo=argo&logoColor=white" alt="ArgoCD" align="top"/>
-</td>
-</tr>
-<tr>
-<td><b>🚀 CI/CD & Security</b></td>
-<td>
-<img src="https://skillicons.dev/icons?i=githubactions,git,github" alt="cicd" align="top"/>
-<img src="https://img.shields.io/badge/Azure_DevOps-0078D7?style=for-the-badge&logo=azuredevops&logoColor=white" alt="Azure DevOps" align="top"/>
-<img src="https://img.shields.io/badge/Trivy-1904DA?style=for-the-badge&logo=aqua&logoColor=white" alt="Trivy" align="top"/>
-</td>
-</tr>
-<tr>
-<td><b>📊 Monitoring</b></td>
-<td><img src="https://skillicons.dev/icons?i=prometheus,grafana" alt="monitoring"/></td>
-</tr>
-<tr>
-<td><b>💻 Languages & OS</b></td>
-<td><img src="https://skillicons.dev/icons?i=python,bash,linux,fastapi,react,postgres" alt="languages"/></td>
-</tr>
-</table>
+<div align="center">
+
+| | |
+|:---|:---|
+| **☁️ Cloud & IaC** | <img src="https://skillicons.dev/icons?i=azure,aws,terraform" alt="cloud"/> |
+| **📦 Containers & GitOps** | <img src="https://skillicons.dev/icons?i=docker,kubernetes" alt="containers" align="top"/> <img src="https://img.shields.io/badge/Helm-0F1689?style=for-the-badge&logo=helm&logoColor=white" alt="Helm" align="top"/> <img src="https://img.shields.io/badge/ArgoCD-EF7B4D?style=for-the-badge&logo=argo&logoColor=white" alt="ArgoCD" align="top"/> |
+| **🚀 CI/CD & Security** | <img src="https://skillicons.dev/icons?i=githubactions,git,github" alt="cicd" align="top"/> <img src="https://img.shields.io/badge/Azure_DevOps-0078D7?style=for-the-badge&logo=azuredevops&logoColor=white" alt="Azure DevOps" align="top"/> <img src="https://img.shields.io/badge/Trivy-1904DA?style=for-the-badge&logo=aqua&logoColor=white" alt="Trivy" align="top"/> |
+| **📊 Monitoring** | <img src="https://skillicons.dev/icons?i=prometheus,grafana" alt="monitoring"/> |
+| **💻 Languages & OS** | <img src="https://skillicons.dev/icons?i=python,bash,linux,fastapi,react,postgres" alt="languages"/> |
 
 <sub>🔐 IaC security scanning: TFLint · TFSec · Checkov &nbsp;|&nbsp; ☁️ Azure is my primary cloud; AWS is hands-on project experience.</sub>
+
+</div>
 
 ---
 
@@ -200,9 +191,11 @@ flowchart LR
 - 🏗️ Terraform `for_each` over an `environments` map renders dev/staging/prod from one module tree
 - 🔑 `admin_enabled = false` on ACR, so identity-based auth instead of shared admin credentials
 
-**[→ View repo](https://github.com/aniket-devop/axion-cloud-infrastructure)**
+[![View Repo](https://img.shields.io/badge/→%20View%20Repo-38BDF8?style=for-the-badge&logo=github&logoColor=0B3A6F)](https://github.com/aniket-devop/axion-cloud-infrastructure)
 
 <br/>
+
+### 🧰 More Projects
 
 <table>
 <tr>
@@ -302,6 +295,16 @@ flowchart TB
 
 ---
 
+## 🗺️ Currently Learning & Roadmap
+
+| Status | Focus |
+|:---:|---|
+| 🔨 **Building** | More AKS + GitOps patterns, ArgoCD with multi-environment promotion |
+| 📖 **Exploring** | Policy-as-code, deeper Kubernetes security, observability on AKS |
+| 🎯 **Next** | Cloud certifications and larger production-style platform projects |
+
+---
+
 ## 🔥 GitHub Stats
 
 <div align="center">
@@ -313,13 +316,17 @@ flowchart TB
 <img height="170" src="https://github-readme-stats.vercel.app/api?username=aniket-devop&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="stats"/>
 <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=aniket-devop&layout=compact&theme=tokyonight&hide_border=true" alt="languages"/>
 
+<br/><br/>
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=aniket-devop&bg_color=0D1117&color=38BDF8&line=22D3A6&point=ffffff&area=true&hide_border=true" alt="activity graph" width="95%"/>
+
 </div>
 
 ---
 
 ## 📬 Let's Connect
 
-Hiring for a DevOps / Cloud role, or want to talk Terraform, AKS or GitOps? I read every message.
+Hiring for a DevOps / Cloud role, or want to talk Terraform, AKS or GitOps? **I read every message.**
 
 <div align="center">
 
@@ -331,5 +338,7 @@ Hiring for a DevOps / Cloud role, or want to talk Terraform, AKS or GitOps? I re
 ⭐ *If something here helped you, a star on my repos means a lot.*
 
 **Thanks for visiting 💙**
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:38BDF8,100:0B3A6F&height=110&section=footer" alt="footer"/>
 
 </div>
