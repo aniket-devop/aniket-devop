@@ -1,290 +1,132 @@
 <div align="center">
 
-# Aniket Kumar
+# Hi 👋, I'm Aniket Kumar
+### DevOps Engineer | Cloud & Platform Infrastructure
 
-### DevOps Engineer — I make infrastructure boring in the right way.
-No manual clicks. No "it works on my machine." Everything reproducible, everything in code.
+*I build reproducible infrastructure in code — no manual clicks, no drift.*
 
-![Azure](https://img.shields.io/badge/Azure-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white)
-![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=for-the-badge&logo=terraform&logoColor=white)
-![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![GitHubActions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/aniket484)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:aniketkmr484@gmail.com)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/aniket-devop)
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/aniket484)
-[![Email](https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:aniketkmr484@gmail.com)
+<br/>
+
+![Azure](https://img.shields.io/badge/Azure-0078D4?style=flat-square&logo=microsoftazure&logoColor=white)
+![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=flat-square&logo=terraform&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
+![ArgoCD](https://img.shields.io/badge/ArgoCD-EF7B4D?style=flat-square&logo=argo&logoColor=white)
 
 </div>
 
-<br/>
+---
 
-> **Open to DevOps / Cloud Engineer roles.** If you're hiring, or just want to talk infrastructure, my inbox is always open — see [Contact](#-lets-talk) below.
+> 🚀 **Open to DevOps & Cloud Engineer roles (Bengaluru / Remote).** If you're hiring or want to chat about IaC, AKS, or GitOps, my inbox is open!
 
-<br/>
+---
 
-## 🎬 See it running, not just described
+## 🎬 Live Infrastructure Demo
 
-Most portfolios show you code. This one shows you a **live AKS cluster serving real traffic** — 27 simulated industrial assets streaming telemetry every 5 seconds into a dashboard with 3D digital twins and real-time health scoring.
+Most portfolios show code. This one features a **live AKS cluster** processing real telemetry from 27 simulated industrial assets, streaming data to a real-time health dashboard with 3D digital twins.
 
 https://github.com/aniket-devop/axion-cloud-infrastructure/raw/main/docs/demo/axion-deployment-demo.mp4
 
-**[→ Full writeup: Axion Intelligence Platform](#1-axion-intelligence-platform)** — Terraform, AKS, FastAPI, React, PostgreSQL, end-to-end on Azure.
+👉 **[Read Full Architecture & Setup: Axion Intelligence Platform](#1-axion-intelligence-platform)**
 
-<br/>
+---
 
 ## 📌 About Me
 
-DevOps Engineer with 2 years of hands-on experience across Azure infrastructure, Terraform, CI/CD automation, containerized deployments, Kubernetes, and DevSecOps.
+DevOps Engineer with **2 years of hands-on experience** architecting Azure infrastructure, writing modular Terraform, building automated CI/CD pipelines, and driving DevSecOps practices.
 
-My day job is Azure and pipelines. My own time goes into projects like the one above — things I build to actually run, not just to demo, because I'd rather find out where a design breaks on my own dime than on a client's.
+* 💼 **Current Role:** DevOps Engineer @ **DevOps Insiders**
+* ☁️ **Primary Cloud:** Microsoft Azure (AKS, VNets, App Gateway, ACR, Key Vault)
+* 🛠️ **IaC & Automation:** Terraform (modular, remote state, locking) & Ansible
+* ☸️ **Containers & GitOps:** Docker, Kubernetes, Helm, ArgoCD
+* 🔐 **DevSecOps & Scan:** Trivy, Checkov, TFLint, tfsec
+* 📊 **Observability:** Prometheus, Grafana
+* 🎓 **Education:** BCA — Chandigarh Group of Colleges, Mohali
+* 📍 **Location:** Bengaluru, Karnataka, India
 
-- 🔧 DevOps Engineer @ **DevOps Insiders**
-- ☁️ Azure infrastructure provisioning and automation using Terraform
-- ☸️ Containerized application deployments using Docker, Kubernetes, AKS, and Helm
-- 🚀 CI/CD automation using GitHub Actions and Azure DevOps
-- 🔐 DevSecOps and IaC security using Trivy, TFLint, TFSec, and Checkov
-- 📊 Monitoring and observability using Prometheus and Grafana
-- 🔄 GitOps (ArgoCD) — personal project experience
-- 🌱 Hands-on AWS infrastructure project using Terraform
-- 🎓 BCA, Chandigarh Group of Colleges, Mohali
-- 📍 Bengaluru, Karnataka, India
-
-<br/>
+---
 
 ## 💼 Professional Experience
 
-**DevOps Engineer — DevOps Insiders**
+### **DevOps Engineer** — *DevOps Insiders*
+* **Infrastructure as Code:** Provision and manage multi-environment Azure infrastructure (VNets, Subnets, NSGs, AKS, ACR) using modular Terraform with S3/Azure Blob backends and state locking.
+* **CI/CD Pipelines:** Design and maintain robust CI/CD automation workflows using **GitHub Actions** and **Azure DevOps**, reducing manual deployment effort.
+* **Containerization & Kubernetes:** Package microservices with Docker and deploy workloads to AKS using Helm charts.
+* **DevSecOps Integration:** Shift-left security by embedding Static Application Security Testing (SAST) and IaC scanners (`Trivy`, `Checkov`, `TFLint`) directly into pipeline gates.
+* **Monitoring & Support:** Configure Prometheus scrapers and Grafana dashboards for proactive node/pod monitoring and quick root-cause troubleshooting.
 
-- Provision and manage Azure infrastructure using Terraform, working with resource groups, virtual networks, and Azure Kubernetes Service (AKS)
-- Build and maintain CI/CD pipelines using GitHub Actions and Azure DevOps Pipelines to automate build, test, and deployment workflows
-- Containerize applications with Docker and deploy workloads to Kubernetes/AKS using Helm charts
-- Apply DevSecOps practices — integrating security and IaC scanning tooling into the delivery lifecycle
-- Set up monitoring and observability using Prometheus and Grafana
-- Troubleshoot pipeline, infrastructure, and deployment issues across environments
-- Collaborate with developers and QA to support smooth, reliable release cycles
-
-<br/>
+---
 
 ## 🏗️ Featured Projects
 
-| Project | What it does | Stack |
-|---|---|---|
-| **[Axion Intelligence Platform](#1-axion-intelligence-platform)** ⭐ | Full-stack industrial IoT telemetry platform — 27 simulated assets streaming live data, deployed end-to-end on AKS | Terraform, Azure (AKS, ACR), Kubernetes, FastAPI, React, PostgreSQL |
-| [GitOps CI/CD Deployment Pipeline](#2-gitops-cicd-deployment-pipeline-fastapi--argocd--kind) | Two-repo GitOps setup — CI builds/scans/publishes an image, ArgoCD reconciles the cluster; rollback done entirely through Git | FastAPI, Docker, Trivy, GHCR, Helm, ArgoCD, Kind |
-| [Azure Terraform Network Foundation](#3-azure-terraform-network-foundation) | Hub-and-spoke Azure network foundation — Firewall, Bastion, deny-by-default NSGs, RBAC-scoped Key Vault | Terraform, Azure Firewall, Bastion, Key Vault, GitHub Actions |
-| [AWS Landing Network](#4-aws-landing-network-hands-on-project) | Multi-AZ AWS network with ALB, private EC2 compute, and locked remote Terraform state | Terraform, VPC, ALB, IAM, S3, DynamoDB |
-| [Airflow Observability Pipeline](#5-airflow--observability-pipeline-docker-compose--prometheus--grafana) | Containerized Airflow re-architected to single-node LocalExecutor, instrumented with StatsD → Prometheus → Grafana | Docker Compose, Airflow, PostgreSQL, Prometheus, Grafana |
+| Project | Description | Stack |
+| :--- | :--- | :--- |
+| 🌟 **[Axion Platform](#1-axion-intelligence-platform)** | Industrial IoT telemetry platform — 27 assets streaming live data deployed end-to-end on AKS | `Terraform` `Azure (AKS)` `FastAPI` `PostgreSQL` |
+| 🔄 **[GitOps CI/CD Pipeline](#2-gitops-cicd-deployment-pipeline-fastapi--argocd--kind)** | Two-repo GitOps pipeline: CI tests/scans/builds, ArgoCD handles automated cluster reconciliation | `FastAPI` `ArgoCD` `Trivy` `Helm` `Kind` |
+| 🔒 **[Azure Network Foundation](#3-azure-terraform-network-foundation)** | Secure Hub-and-Spoke Azure architecture with Azure Firewall, Bastion, and strict NSG boundaries | `Terraform` `Azure Firewall` `Bastion` `Key Vault` |
+| ☁️ **[AWS Landing Network](#4-aws-landing-network-hands-on-project)** | Multi-AZ AWS VPC network with ALB, private EC2 instances, and locked remote backend state | `Terraform` `AWS VPC` `ALB` `S3/DynamoDB` |
+| 📊 **[Airflow Observability](#5-airflow--observability-pipeline-docker-compose--prometheus--grafana)** | Re-architected containerized Airflow to LocalExecutor with StatsD → Prometheus → Grafana metrics | `Docker Compose` `Airflow` `Prometheus` `Grafana` |
 
 ---
 
-<br/>
+## 🔍 Detailed Project Breakdown
 
-## 1. Axion Intelligence Platform
+### 1. Axion Intelligence Platform
+🔗 **Repo:** [`axion-cloud-infrastructure`](https://github.com/aniket-devop/axion-cloud-infrastructure)  
+`Terraform` `Azure (AKS, ACR)` `Kubernetes` `GitHub Actions` `FastAPI` `React` `PostgreSQL`
 
-🔗 **Repo:** [axion-cloud-infrastructure](https://github.com/aniket-devop/axion-cloud-infrastructure)
-`Terraform` `Azure (AKS, ACR)` `Kubernetes` `GitHub Actions` `FastAPI` `React` `PostgreSQL` `Docker`
-
-A production-style industrial IoT condition-monitoring platform — 27 simulated assets (pumps, motors, compressors) across five refinery sites stream temperature, vibration, and current readings every 5 seconds. Built end-to-end: Terraform provisions the Azure footprint, GitHub Actions builds and pushes images to ACR, and Kubernetes manifests roll the workloads onto AKS — with a live operations dashboard featuring 3D digital twins, live trend charts, and real-time health scoring.
-
-### Architecture
+Industrial IoT condition-monitoring platform featuring 27 simulated assets streaming telemetry every 5 seconds. Fully automated cloud-native stack.
 
 ![Axion Architecture](https://raw.githubusercontent.com/aniket-devop/axion-cloud-infrastructure/main/docs/architecture.png)
 
-*Terraform provisions the Azure footprint → GitHub Actions builds and pushes images to ACR → Kubernetes manifests roll the workloads onto AKS → LoadBalancer services expose the UI and API.*
-
-### ⚙️ Key Engineering Decisions
-- Split ingestion (write-heavy, latency-sensitive) and query (aggregation + health scoring) into separate services so each scales independently
-- Terraform `for_each` over an `environments` map — one module tree renders dev/staging/prod without duplicated root configs
-- Remote state bootstrapped in a separate `state-infrastructure/` stack, solving the chicken-and-egg backend problem cleanly
-- `admin_enabled = false` on ACR — forces identity-based auth instead of shared admin credentials
-- Health scoring computed server-side (SQL/Python), keeping the dashboard a thin client with consistent logic across consumers
-
-### 📚 Honest Scope
-This is a portfolio build with intentional, documented gaps — database credentials are currently inline rather than in Key Vault-backed Secrets, storage uses `emptyDir` instead of a PersistentVolumeClaim, and there's no Ingress/TLS yet. These are listed openly in the repo's roadmap rather than glossed over.
-
-### 🖥️ Commands
-```bash
-cd terraform && terraform init && terraform apply
-kubectl apply -f k8s/
-```
-
-### 🚀 Future Improvements
-- Move database credentials to Kubernetes Secrets backed by Azure Key Vault
-- Replace `emptyDir` with a PersistentVolumeClaim on Azure Disk
-- Replace dual LoadBalancers with a single Ingress (NGINX + cert-manager) for TLS
-- Add HorizontalPodAutoscalers and resource requests/limits on all deployments
-
-<br/>
+* **Key Decisions:** Decoupled ingestion and query services; dynamic Terraform `for_each` environment maps; strict identity-based ACR access (`admin_enabled = false`).
+* **Honest Scope:** Portfolio project — database secrets are currently raw Kubernetes secrets (moving to Azure Key Vault backend in next iteration).
 
 ---
 
-<br/>
-
-## 2. GitOps CI/CD Deployment Pipeline (FastAPI → ArgoCD → Kind)
-
-🔗 **App repo:** [gitops-ci-pipeline](https://github.com/aniket-devop/gitops-ci-pipeline) · **GitOps repo:** [gitops-kubernetes-config](https://github.com/aniket-devop/gitops-kubernetes-config)
+### 2. GitOps CI/CD Deployment Pipeline
+🔗 **App Repo:** [`gitops-ci-pipeline`](https://github.com/aniket-devop/gitops-ci-pipeline) | **Config Repo:** [`gitops-kubernetes-config`](https://github.com/aniket-devop/gitops-kubernetes-config)  
 `FastAPI` `Docker` `GitHub Actions` `Trivy` `GHCR` `Helm` `ArgoCD` `Kind`
 
-A two-repository GitOps demonstration: one repo owns the FastAPI application and its CI pipeline; the other owns the desired Kubernetes state that ArgoCD reconciles against. CI never touches the cluster — the boundary is enforced by design, not just documented.
-
-### Architecture
+Enforces strict separation of concerns between code integration and cluster deployment state using GitOps principles.
 
 ![GitOps Pipeline Architecture](https://raw.githubusercontent.com/aniket-devop/gitops-kubernetes-config/main/screenshots/architecture-diagram.png)
 
-**Flow:**
-```
-Developer → gitops-ci-pipeline → GitHub Actions → pytest → Docker build
-   → Trivy CRITICAL scan → GHCR → Git commit to gitops-kubernetes-config
-   → ArgoCD → Kind Kubernetes
-```
-
-### 🔁 CI/CD
-On every push to `main`: checkout → `pytest` → tag image with short commit SHA → Docker build → Trivy scan (`severity: CRITICAL`, hard-fails the job on a finding) → push to GHCR → commit the new tag to `gitops-kubernetes-config`. ArgoCD (running with `automated`, `prune: true`, `selfHeal: true`) picks up that commit on its own watch cycle and reconciles the Kind cluster — GitHub Actions never runs `kubectl` or holds cluster credentials.
-
-### 🔒 Security
-- Trivy CRITICAL gate hard-fails before an image reaches GHCR
-- Non-root container (`appuser`) on a minimal `python:3.12-alpine` base
-- Two separately scoped credentials — `GITHUB_TOKEN` for GHCR, a distinct `GITOPS_REPO_TOKEN` for the cross-repo commit — so neither can touch the cluster directly
-
-### 🔄 Rollback — a pure Git operation
-A `git revert` on the image-tag commit in `gitops-kubernetes-config` was enough for ArgoCD's `selfHeal` to reconcile the cluster back to the previous version — no `kubectl rollout undo`, no ArgoCD CLI. Verified with matching commit SHAs in both repos.
-
-### 🖥️ Commands
-```bash
-kubectl scale deployment gitops-demo --replicas=5 -n gitops-demo-dev
-kubectl get pods -n gitops-demo-dev -w
-argocd app get gitops-demo-dev
-```
-
-### 📚 Honest Scope
-Runs on a local Kind cluster, not a managed cloud environment — no production traffic, uptime, or scale claims. Only the `dev` environment is fully automated; `staging` exists but requires manual sync with no promotion path yet.
-
-### 🚀 Future Improvements
-- `dev` → `staging` promotion workflow
-- Move to a managed cloud Kubernetes service (e.g. AKS) and registry (e.g. ACR)
-- Ingress + TLS, Horizontal Pod Autoscaler, NetworkPolicy/RBAC
-
-<br/>
+* **Security Gate:** Pipeline hard-fails on any Trivy `CRITICAL` vulnerability finding before pushing images to GHCR.
+* **Git-Driven Rollback:** Rollbacks are triggered purely via `git revert` on the manifest repo, which ArgoCD automatically reconciles.
 
 ---
 
-<br/>
+### 3. Azure Terraform Network Foundation
+🔗 **Repo:** [`azure-network-foundation-terraform`](https://github.com/aniket-devop/azure-network-foundation-terraform)  
+`Terraform` `Azure Firewall` `Azure Bastion` `Key Vault` `Azure RBAC`
 
-## 3. Azure Terraform Network Foundation
+A secure enterprise Azure hub-and-spoke networking base with forced egress control.
 
-🔗 **Repo:** [azure-network-foundation-terraform](https://github.com/aniket-devop/azure-network-foundation-terraform)
-`Terraform` `Azure Firewall` `Azure Bastion` `Key Vault` `Azure RBAC` `GitHub Actions`
-
-A Terraform-built Azure networking and security foundation: a hub VNet (Firewall + Bastion), a spoke VNet with a deny-by-default NSG and an AKS-designated subnet, egress forced through the Firewall via a route table, an RBAC-authorized Key Vault, and role assignments scoped to the resource group rather than the subscription. Deployable across two environments (`dev`, `prod`) from one DRY Terraform configuration.
-
-### Architecture
-
-![Azure Network Foundation Architecture](https://raw.githubusercontent.com/aniket-devop/azure-network-foundation-terraform/main/diagrams/architecture.png)
-
-### ⚙️ Key Engineering Decisions
-- RBAC scoped to the **resource group**, not the subscription — limits blast radius of a compromised credential
-- Explicit `DenyAllInbound` NSG rule rather than relying on Azure's implicit platform defaults
-- **Azure Bastion** instead of a jump box — no VM in the design carries a public IP
-- Route table forcing all egress from the AKS subnet through the Firewall's private IP, so the firewall's allow-rules are actually enforced, not just configured
-- Key Vault secured via **RBAC + network ACL** (not a Private Endpoint) — a deliberate, documented trade-off for this project's scope
-
-### 🔁 CI/CD
-`.github/workflows/terraform-ci.yml` runs `terraform fmt -check`, `terraform init -backend=false`, and `terraform validate` on every PR and push to `main`. There is no `plan`/`apply` automation and no security-scanning step in this pipeline yet — noted here rather than overstated.
-
-### 🖥️ Commands
-```bash
-cd environments/dev
-terraform init
-terraform validate
-```
-
-### 📚 Honest Scope
-This is a personal, sandbox-scale project — not a Cloud Adoption Framework "landing zone" (no management-group hierarchy, no Azure Policy, no multi-subscription governance) and no compute is deployed yet. `dev` and `prod` are two `.tfvars`-differentiated instances of the same module set; there's no separate QA/staging environment.
-
-### 🚀 Future Improvements
-- Post `terraform plan` output as a PR comment before adding `apply` automation
-- Add `terraform test` coverage against real module resource names
-- Deploy an actual AKS cluster into the prepared `snet-aks` subnet
-
-<br/>
+* **Key Architecture:** Zero public IPs on internal VMs (Azure Bastion access only); forced route table egress through Azure Firewall; RBAC assigned strictly at Resource Group scope.
 
 ---
 
-<br/>
+### 4. AWS Landing Network
+🔗 **Repo:** [`aws-terraform-landing-zone-project`](https://github.com/aniket-devop/aws-terraform-landing-zone-project)  
+`Terraform` `AWS VPC` `EC2` `ALB` `IAM` `S3` `DynamoDB`
 
-## 4. AWS Landing Network (Hands-on Project)
-
-🔗 **Repo:** [aws-terraform-landing-zone-project](https://github.com/aniket-devop/aws-terraform-landing-zone-project)
-`Terraform` `VPC` `EC2` `ALB` `IAM` `S3` `DynamoDB`
-
-A self-driven, hands-on project applying the same private-compute networking pattern used in the Azure project — this time in AWS. Multi-AZ VPC, ALB-fronted EC2 in private subnets, and locked remote Terraform state. AWS is a secondary, personal-project skill area alongside Azure as the primary professional cloud.
-
-### Architecture
-
-![AWS Landing Zone Architecture](https://raw.githubusercontent.com/aniket-devop/aws-terraform-landing-zone-project/main/diagrams/architecture.png)
-
-**How it works:** one VPC (`10.0.0.0/16`) across two AZs, each with a public subnet (ALB + NAT Gateway) and a private subnet (EC2 + Security Group + IAM role). The Internet Gateway only reaches the public subnets; EC2 security groups accept traffic only from the ALB; outbound-only internet access goes through the NAT Gateway; Terraform state is remote in S3 with DynamoDB locking.
-
-### 🔁 CI/CD
-Every PR runs `terraform fmt -check` → `terraform validate` → `terraform plan` via GitHub Actions before anything is applied.
-
-### 🖥️ Commands
-```bash
-terraform init
-terraform plan
-terraform apply
-```
-
-### 🚀 Future Improvements
-- HTTPS listener on the ALB with an ACM certificate
-- Auto Scaling Group instead of a static EC2 instance
-- CloudWatch alarms and a basic monitoring dashboard
-
-<br/>
+Multi-AZ private network setup implementing high availability and secure remote state management in AWS.
 
 ---
 
-<br/>
-
-## 5. Airflow + Observability Pipeline (Docker Compose + Prometheus + Grafana)
-
-🔗 **Repo:** [airflow-docker-grafana-monitoring](https://github.com/aniket-devop/airflow-docker-grafana-monitoring)
+### 5. Airflow + Observability Pipeline
+🔗 **Repo:** [`airflow-docker-grafana-monitoring`](https://github.com/aniket-devop/airflow-docker-grafana-monitoring)  
 `Docker Compose` `Apache Airflow` `PostgreSQL` `Prometheus` `Grafana` `StatsD`
 
-A containerized Apache Airflow deployment, delivered as a freelance client project and re-architected from Airflow's official CeleryExecutor/Redis reference template into a single-node **LocalExecutor + PostgreSQL** setup. Instrumented end-to-end with a StatsD → Prometheus → Grafana metrics pipeline, fully orchestrated with a single `docker compose up`.
-
-### Architecture
-
-![Airflow Observability Architecture](https://raw.githubusercontent.com/aniket-devop/airflow-docker-grafana-monitoring/main/assets/architecture-diagram.png)
-
-**Components:** Airflow API Server, Scheduler (executes tasks directly via LocalExecutor — no separate worker), DAG Processor, Triggerer, PostgreSQL 16 (metadata store), StatsD Exporter, Prometheus, Grafana — all running as isolated services on one Docker Compose network.
-
-**Monitoring flow:** Airflow services emit StatsD metrics → StatsD Exporter republishes them in Prometheus format → Prometheus scrapes every 15s → Grafana added as a visualization data source.
-
-### ⚙️ Key Engineering Decisions
-- Swapped the official CeleryExecutor + Redis worker model for **LocalExecutor**, removing a message broker and separate worker fleet with no benefit at single-node scale — while keeping health checks, dependency ordering, and persistent metadata storage
-- Bridged metrics via **StatsD → Prometheus** since Airflow doesn't expose a native `/metrics` endpoint in this configuration
-
-### 🔒 Honest Scope
-This is a working local/single-node deployment with a verified metrics pipeline — not a distributed production platform. No Grafana dashboards or alerting are pre-provisioned, and Prometheus/Grafana have no persistent storage; these are documented as deliberate scope boundaries, not oversights.
-
-### 🖥️ Commands
-```bash
-docker compose up -d
-docker compose ps
-curl http://localhost:8080  # Airflow UI
-```
-
-### 🚀 Future Improvements
-- Ship a starter Grafana dashboard + automatic Prometheus datasource provisioning
-- Add Alertmanager with basic failure-rate alerts
-- Pin third-party image versions currently tracking `:latest`
-
-<br/>
+Production-tuned single-node Airflow stack with end-to-end metrics collection and monitoring.
 
 ---
-
-<br/>
 
 ## 🧰 Tech Stack
 
@@ -294,61 +136,44 @@ curl http://localhost:8080  # Airflow UI
 
 </div>
 
-| Category | Tools |
-|---|---|
-| **Cloud** | Microsoft Azure (primary) · AWS — Hands-on Project |
-| **IaC** | Terraform |
-| **CI/CD** | GitHub Actions, Azure DevOps Pipelines |
-| **Containers & Orchestration** | Docker, Kubernetes, AKS, Helm |
-| **GitOps** | ArgoCD |
-| **Security** | Trivy, TFLint, TFSec, Checkov |
-| **Monitoring** | Prometheus, Grafana |
-| **Backend & Data** | Python, FastAPI, PostgreSQL |
-| **Scripting & OS** | Python, Bash, Linux |
-| **Version Control** | Git, GitHub |
-
-<br/>
+| Category | Tools / Technologies |
+| :--- | :--- |
+| **Cloud Platforms** | Microsoft Azure (Primary), AWS (Project-based) |
+| **Infrastructure as Code** | Terraform, Azure RM Provider, AWS Provider |
+| **CI/CD Automation** | GitHub Actions, Azure DevOps Pipelines |
+| **Containers & Orchestration** | Docker, Kubernetes, Azure Kubernetes Service (AKS), Helm, ArgoCD |
+| **DevSecOps & Scanning** | Trivy, Checkov, TFLint, tfsec |
+| **Monitoring & Metrics** | Prometheus, Grafana, StatsD |
+| **Languages & Scripting** | Python, Bash, YAML, HCL |
 
 ---
 
-## 🎓 Education
-**Bachelor of Computer Applications (BCA) — Chandigarh Group of Colleges, Mohali**
-
-<br/>
-
-## 📊 GitHub Stats
+## 📊 GitHub Analytics
 
 <div align="center">
 
 <img src="https://streak-stats.demolab.com/?user=aniket-devop&hide_border=true&theme=dark&background=0D1117&ring=378ADD&fire=22C55E&currStreakLabel=378ADD" alt="GitHub Streak Stats"/>
 
-</div>
-
 <details>
-<summary><b>📈 GitHub profile stats — click to expand</b></summary>
+<summary><b>📈 View Detailed Contribution Stats</b></summary>
 <br/>
-
-<div align="center">
-
-<img src="https://github-readme-stats.vercel.app/api?username=aniket-devop&show_icons=true&theme=default&hide_border=true&count_private=true" alt="GitHub Stats" height="165"/>
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=aniket-devop&layout=compact&hide_border=true&theme=default" alt="Top Languages" height="165"/>
-
-</div>
-
+<img src="https://github-readme-stats.vercel.app/api?username=aniket-devop&show_icons=true&theme=dark&hide_border=true&count_private=true" alt="GitHub Stats" height="165"/>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=aniket-devop&layout=compact&hide_border=true&theme=dark" alt="Top Languages" height="165"/>
 </details>
 
-<br/>
+</div>
 
-## 📬 Let's Talk
+---
 
-I'm currently **open to DevOps / Cloud Engineer roles** — full-time, Bengaluru or remote.
+## 📬 Let's Connect
 
-If any of the above is relevant to a role you're hiring for, or you just want to compare notes on Terraform module design, AKS networking, or GitOps patterns — reach out. I read every message.
+I am actively exploring **DevOps Engineer / Cloud Engineer** roles (Bengaluru / Remote). 
+
+Feel free to reach out via LinkedIn or Email if you want to collaborate or discuss cloud architecture!
 
 <div align="center">
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Message%20me-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/aniket484)
-[![Email](https://img.shields.io/badge/Email-Send%20a%20note-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:aniketkmr484@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/aniket484)
+[![Email](https://img.shields.io/badge/Email-Contact%20Me-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:aniketkmr484@gmail.com)
 
 </div>
-
