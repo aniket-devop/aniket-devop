@@ -1,6 +1,8 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0B3A6F,100:38BDF8&height=210&section=header&text=Aniket%20Kumar&fontSize=52&fontColor=ffffff&fontAlignY=36&animation=fadeIn&desc=DevOps%20Engineer%20%C2%B7%20Azure%20%C2%B7%20Terraform%20%C2%B7%20Kubernetes&descSize=18&descAlignY=58" alt="banner"/>
+# 👋 Hi, I'm Aniket Kumar
+
+### ⚙️ DevOps Engineer &nbsp;|&nbsp; ☁️ Azure &nbsp;|&nbsp; 🏗️ Terraform &nbsp;|&nbsp; ☸️ Kubernetes &nbsp;|&nbsp; 🚀 CI/CD
 
 <a href="https://github.com/aniket-devop">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1200&color=38BDF8&center=true&vCenter=true&width=700&height=45&lines=I+make+infrastructure+boring+in+the+right+way;No+manual+clicks.+Everything+in+code.;Terraform+%E2%86%92+AKS+%E2%86%92+GitOps+with+ArgoCD;Open+to+DevOps+%2F+Cloud+Engineer+roles" alt="typing"/>
@@ -338,7 +340,5 @@ Hiring for a DevOps / Cloud role, or want to talk Terraform, AKS or GitOps? **I 
 ⭐ *If something here helped you, a star on my repos means a lot.*
 
 **Thanks for visiting 💙**
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:38BDF8,100:0B3A6F&height=110&section=footer" alt="footer"/>
 
 </div>
