@@ -193,11 +193,9 @@ flowchart LR
 - 🏗️ Terraform `for_each` over an `environments` map renders dev/staging/prod from one module tree
 - 🔑 `admin_enabled = false` on ACR, so identity-based auth instead of shared admin credentials
 
-[![View Repo](https://img.shields.io/badge/→%20View%20Repo-38BDF8?style=for-the-badge&logo=github&logoColor=0B3A6F)](https://github.com/aniket-devop/axion-cloud-infrastructure)
+**[→ View repo](https://github.com/aniket-devop/axion-cloud-infrastructure)**
 
 <br/>
-
-### 🧰 More Projects
 
 <table>
 <tr>
