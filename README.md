@@ -16,20 +16,24 @@
 
 <img src="https://komarev.com/ghpvc/?username=aniket-devop&label=Profile%20Views&color=0e75b6&style=flat" alt="profile views"/>
 
-</div>
-
 <br/>
-
-> [!IMPORTANT]
-> 🟢 **Open to DevOps / Cloud Engineer roles** · full-time · Bengaluru or remote. Hiring? Jump to [Let's Connect](#-lets-connect).
-
-<div align="center">
 
 | 🧑‍💻 Experience | ☁️ Primary Cloud | 🏗️ IaC | ☸️ Orchestration | 📍 Based in |
 |:---:|:---:|:---:|:---:|:---:|
 | **2 Years** | **Azure** | **Terraform** | **Kubernetes / AKS** | **Bengaluru, India** |
 
 </div>
+
+<br/>
+
+> [!IMPORTANT]
+> ### ⚡ Recruiter TL;DR
+> 🟢 **Open to DevOps / Cloud Engineer roles** · full-time · Bengaluru or remote
+>
+> - 🎬 **Live AKS demo:** a full-stack platform I built end-to-end on Azure (Terraform → ACR → AKS), [watch it run](#-featured-projects)
+> - 🔄 **GitOps with ArgoCD:** CI never touches the cluster; rollback is a pure `git revert`
+> - 🔐 **Security built in:** Trivy gates, deny-by-default NSGs, RBAC scoped to the resource group
+> - 📚 **Honest engineering:** every project documents its scope, gaps and roadmap
 
 ---
 
@@ -42,11 +46,18 @@ I'm a DevOps Engineer with **2 years of hands-on experience** across Azure infra
 - 💬 **Ask me about:** Terraform module design, AKS networking, GitOps patterns
 - 🎓 **Education:** BCA, Chandigarh Group of Colleges, Mohali
 
-<details>
-<summary><b>💼 Professional experience (click to expand)</b></summary>
-<br/>
+---
 
-**DevOps Engineer · DevOps Insiders**
+## 🛤️ Career Journey
+
+| When | Role | What I did |
+|:---:|---|---|
+| **Nov 2024 → Now** | **DevOps Engineer** · DevOps Insiders | Azure infrastructure with Terraform (resource groups, VNets, AKS), CI/CD in GitHub Actions and Azure DevOps, Helm deployments, Prometheus/Grafana monitoring, DevSecOps scanning |
+| **Aug 2023 → Oct 2024** | **DevOps & Cloud Engineer** · Freelance client projects | Airflow on Docker Compose + PostgreSQL, StatsD → Prometheus → Grafana monitoring, Terraform and shell deployment scripts |
+
+<details>
+<summary><b>💼 Day-to-day responsibilities at DevOps Insiders (click to expand)</b></summary>
+<br/>
 
 - Provision and manage Azure infrastructure with Terraform: resource groups, virtual networks and AKS
 - Build and maintain CI/CD pipelines in GitHub Actions and Azure DevOps to automate build, test and deployment
@@ -151,7 +162,7 @@ flowchart LR
 
 ### ⭐ Axion Intelligence Platform · live on AKS
 
-27 simulated industrial assets stream telemetry every 5 seconds into a dashboard with 3D digital twins and real-time health scoring. Terraform provisions Azure, GitHub Actions pushes images to ACR, Kubernetes rolls them onto AKS.
+27 simulated industrial assets (pumps, motors, compressors) across five refinery sites stream temperature, vibration and current readings every 5 seconds into a dashboard with 3D digital twins and real-time health scoring.
 
 ![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=flat-square&logo=terraform&logoColor=white)
 ![AKS](https://img.shields.io/badge/AKS%20%2F%20ACR-0078D4?style=flat-square&logo=microsoftazure&logoColor=white)
@@ -161,13 +172,35 @@ flowchart LR
 ![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
 
-- 🧩 Ingestion and query split into separate services so each scales independently
+https://github.com/aniket-devop/axion-cloud-infrastructure/raw/main/docs/demo/axion-deployment-demo.mp4
+
+**Delivery path:**
+
+```mermaid
+%%{init: {'theme':'base','themeVariables':{'primaryColor':'#0B3A6F','primaryTextColor':'#ffffff','primaryBorderColor':'#38BDF8','lineColor':'#38BDF8','secondaryColor':'#0F1A2E','tertiaryColor':'#0F1A2E','fontSize':'14px'}}}%%
+flowchart LR
+    T[🏗️ Terraform<br/>Azure footprint] --> R[(📦 ACR)]
+    G[⚙️ GitHub Actions<br/>build + push] --> R
+    R --> K[☸️ AKS<br/>Kubernetes manifests]
+    K --> L[🌐 LoadBalancer<br/>UI + API]
+```
+
+**Runtime:**
+
+```mermaid
+%%{init: {'theme':'base','themeVariables':{'primaryColor':'#0B3A6F','primaryTextColor':'#ffffff','primaryBorderColor':'#38BDF8','lineColor':'#22D3A6','secondaryColor':'#0F1A2E','tertiaryColor':'#0F1A2E','fontSize':'14px'}}}%%
+flowchart LR
+    A[🏭 27 simulated assets<br/>every 5 s] --> I[📥 Ingestion service]
+    I --> D[(🗄️ PostgreSQL)]
+    D --> Q[🧮 Query + health scoring<br/>service]
+    Q --> U[🖥️ React dashboard<br/>3D digital twins]
+```
+
+- 🧩 Ingestion (write-heavy) and query (aggregation + health scoring) are separate services, so each scales independently
 - 🏗️ Terraform `for_each` over an `environments` map renders dev/staging/prod from one module tree
 - 🔑 `admin_enabled = false` on ACR, so identity-based auth instead of shared admin credentials
 
 **[→ View repo](https://github.com/aniket-devop/axion-cloud-infrastructure)**
-
-https://github.com/aniket-devop/axion-cloud-infrastructure/raw/main/docs/demo/axion-deployment-demo.mp4
 
 <br/>
 
@@ -242,6 +275,30 @@ Freelance client project, containerized and monitored.
 </td>
 </tr>
 </table>
+
+<details>
+<summary><b>🔐 See the Azure network design (click to expand)</b></summary>
+<br/>
+
+```mermaid
+%%{init: {'theme':'base','themeVariables':{'primaryColor':'#0B3A6F','primaryTextColor':'#ffffff','primaryBorderColor':'#38BDF8','lineColor':'#38BDF8','secondaryColor':'#0F1A2E','tertiaryColor':'#0F1A2E','fontSize':'14px'}}}%%
+flowchart TB
+    subgraph HUB[🏢 Hub VNet]
+        FW[🛡️ Azure Firewall]
+        BA[🔑 Azure Bastion]
+    end
+    subgraph SPOKE[🧩 Spoke VNet]
+        NSG[🚫 NSG: deny-by-default]
+        AKS[☸️ snet-aks<br/>AKS subnet]
+    end
+    KV[(🔐 Key Vault<br/>RBAC + network ACL)]
+    AKS -- route table: all egress --> FW
+    BA -. admin access, no public IPs .-> SPOKE
+    NSG --- AKS
+    SPOKE -.-> KV
+```
+
+</details>
 
 ---
 
