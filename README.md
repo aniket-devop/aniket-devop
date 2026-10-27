@@ -1,9 +1,9 @@
 <div align="center">
 
 # ⚡ Aniket Kumar
-### **DevOps & Cloud Infrastructure Engineer**
+### **DevOps Engineer | Cloud Infrastructure & GitOps Specialist**
 
-*Automating cloud infrastructure with precision • Zero manual drift • Code-first deployments*
+*Automating production infrastructure with code • Zero manual drift • Built for scale*
 
 [![](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/aniket484)
 [![](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:aniketkmr484@gmail.com)
@@ -22,30 +22,29 @@
 
 ---
 
-> 💼 **Actively seeking DevOps & Cloud Engineer roles** in **Bengaluru or Remote**.  
-> If you're building modern cloud infrastructure, let's connect! 📬
+> 🚀 **Open for DevOps / Cloud Engineer opportunities** (Bengaluru / Remote).  
+> *Notice Period: Immediate / 0–15 Days* • Let's talk infrastructure! 📬
 
 ---
 
-## 🎬 Featured Live Demo
+## 🎬 Live Production Proof
 
-> 💡 *Most portfolios show code. This one runs live production traffic.*
+> 💡 *Most portfolios show sample code. This profile features a live running AKS cluster.*
 
-An **AKS Cluster** processing telemetry from **27 simulated industrial assets** in real-time with continuous health metrics & 3D digital twins.
+Real-time telemetry streaming from **27 simulated industrial assets** into a live dashboard with 3D digital twins and real-time health scoring — running end-to-end on **Azure Kubernetes Service (AKS)**.
 
 https://github.com/aniket-devop/axion-cloud-infrastructure/raw/main/docs/demo/axion-deployment-demo.mp4
 
-🎯 **[Explore Full Project Architecture & Code](#-1-axion-intelligence-platform)**
+👉 **[Read Full Architecture Writeup: Axion Intelligence Platform](#1-axion-intelligence-platform)**
 
 ---
 
-## 👨‍💻 Profile Overview
+## 📌 Executive Summary
 
 ```yaml
-Name: Aniket Kumar
-Role: DevOps Engineer
-Experience: 2+ Years
-Primary Cloud: Microsoft Azure
-Focus Areas: Infrastructure as Code (IaC), GitOps, DevSecOps, Observability
+Current Role: DevOps Engineer @ DevOps Insiders
+Experience: 2 Years (Hands-on Cloud Infrastructure & CI/CD Automation)
+Primary Cloud: Microsoft Azure (AKS, VNets, App Gateway, ACR, Key Vault)
+Secondary Cloud: AWS (VPC, ALB, EC2, S3 Remote Backend)
+Core Stack: Terraform, Docker, Kubernetes, Helm, ArgoCD, GitHub Actions
 Location: Bengaluru, Karnataka, India 🇮🇳
-Current Company: DevOps Insiders
