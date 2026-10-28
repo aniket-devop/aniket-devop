@@ -229,17 +229,12 @@ Client project. I re-architected Airflow's Celery/Redis setup into a single-node
 <img src="https://komarev.com/ghpvc/?username=aniket-devop&label=Profile+Views&color=0e75b6&style=for-the-badge" alt="Profile views"/>
 
 <br/><br/>
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=16&pause=900&color=39D0D8&center=false&vCenter=true&repeat=true&width=720&height=140&lines=%24+terraform+apply+-auto-approve;Apply+complete!+Resources%3A+42+added%2C+0+destroyed.;%24+kubectl+rollout+status+deploy%2Faxion;deployment+%22axion%22+successfully+rolled+out;%24+git+revert+HEAD+%23+rollback%2C+the+GitOps+way;%24+echo+%22Infrastructure+as+Code.+Everything+in+Git.%22" alt="DevOps terminal animation"/>
 
-<br/><br/>
+<img src="./assets/coding-terminal.svg" alt="Animated DevOps terminal" width="760"/>
 
-<table>
-<tr>
-<td>
+</div>
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=16&pause=900&color=39D0D8&vCenter=true&repeat=true&width=760&height=120&lines=%24+terraform+apply+%23+infra+as+code%2C+every+time;%24+git+push+origin+main+%23+pipeline+takes+over;%24+kubectl+get+pods+-n+axion+%23+27+assets+streaming+live;%24+git+revert+HEAD+%23+rollback+without+touching+the+cluster;%24+echo+%22Open+to+DevOps+%2F+Cloud+roles%22" alt="DevOps terminal animation"/>
-
-<br/><br/>
+<br/>
 
 <table>
 <tr>
@@ -273,6 +268,9 @@ currently:
 </td>
 </tr>
 </table>
+
+<br/>
+
 ## 📬 Let's Talk
 
 I'm open to **DevOps / Cloud Engineer** roles, full-time, in Bengaluru or remote. If something here matches what you're hiring for, or you want to compare notes on Terraform module design, AKS networking, or GitOps patterns, message me.
