@@ -218,6 +218,28 @@ Client project. I re-architected Airflow's Celery/Redis setup into a single-node
 
 <br/>
 
+## 📈 GitHub Activity
+
+<div align="center">
+
+<img src="https://streak-stats.demolab.com/?user=aniket-devop&theme=dark&background=0D1117&ring=58A6FF&fire=39D0D8&currStreakLabel=58A6FF&sideLabels=8B949E&dates=6E7681&currStreakNum=F0F6FC&sideNums=F0F6FC&stroke=30363D&hide_border=false&border_radius=12" alt="GitHub streak stats"/>
+
+<br/><br/>
+
+<img src="https://komarev.com/ghpvc/?username=aniket-devop&label=Profile+Views&color=0e75b6&style=for-the-badge" alt="Profile views"/>
+
+<br/><br/>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/aniket-devop/aniket-devop/output/github-snake-dark.svg"/>
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/aniket-devop/aniket-devop/output/github-snake.svg"/>
+  <img alt="Contribution snake" src="https://raw.githubusercontent.com/aniket-devop/aniket-devop/output/github-snake.svg" width="100%"/>
+</picture>
+
+</div>
+
+<br/>
+
 ## 📬 Let's Talk
 
 I'm open to **DevOps / Cloud Engineer** roles, full-time, in Bengaluru or remote. If something here matches what you're hiring for, or you want to compare notes on Terraform module design, AKS networking, or GitOps patterns, message me.
