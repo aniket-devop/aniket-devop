@@ -229,16 +229,31 @@ Client project. I re-architected Airflow's Celery/Redis setup into a single-node
 <img src="https://komarev.com/ghpvc/?username=aniket-devop&label=Profile+Views&color=0e75b6&style=for-the-badge" alt="Profile views"/>
 
 <br/><br/>
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=16&pause=900&color=39D0D8&center=false&vCenter=true&repeat=true&width=720&height=140&lines=%24+terraform+apply+-auto-approve;Apply+complete!+Resources%3A+42+added%2C+0+destroyed.;%24+kubectl+rollout+status+deploy%2Faxion;deployment+%22axion%22+successfully+rolled+out;%24+git+revert+HEAD+%23+rollback%2C+the+GitOps+way;%24+echo+%22Infrastructure+as+Code.+Everything+in+Git.%22" alt="DevOps terminal animation"/>
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/aniket-devop/aniket-devop/output/github-snake-dark.svg"/>
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/aniket-devop/aniket-devop/output/github-snake.svg"/>
-  <img alt="Contribution snake" src="https://raw.githubusercontent.com/aniket-devop/aniket-devop/output/github-snake.svg" width="100%"/>
-</picture>
+<br/><br/>
 
-</div>
+<table>
+<tr>
+<td>
 
-<br/>
+```yaml
+# 🧠 devops-notes.yaml
+principles:
+  - "If it's not in Git, it doesn't exist"
+  - "Automate it twice, then never touch it by hand"
+  - "A rollback you haven't tested is a hope, not a plan"
+  - "Shift security left: scan before you ship"
+  - "You can't fix what you can't observe"
+currently:
+  building: "AKS platform + GitOps pipelines"
+  learning: "Platform engineering & SRE practices"
+  status:   "Open to DevOps / Cloud roles 🚀"
+```
+
+</td>
+</tr>
+</table>
 
 ## 📬 Let's Talk
 
