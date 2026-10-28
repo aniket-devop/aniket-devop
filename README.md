@@ -237,24 +237,42 @@ Client project. I re-architected Airflow's Celery/Redis setup into a single-node
 <tr>
 <td>
 
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=16&pause=900&color=39D0D8&vCenter=true&repeat=true&width=760&height=120&lines=%24+terraform+apply+%23+infra+as+code%2C+every+time;%24+git+push+origin+main+%23+pipeline+takes+over;%24+kubectl+get+pods+-n+axion+%23+27+assets+streaming+live;%24+git+revert+HEAD+%23+rollback+without+touching+the+cluster;%24+echo+%22Open+to+DevOps+%2F+Cloud+roles%22" alt="DevOps terminal animation"/>
+
+<br/><br/>
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
 ```yaml
-# 🧠 devops-notes.yaml
+# 🧠 how I think
 principles:
-  - "If it's not in Git, it doesn't exist"
-  - "Automate it twice, then never touch it by hand"
-  - "A rollback you haven't tested is a hope, not a plan"
-  - "Shift security left: scan before you ship"
-  - "You can't fix what you can't observe"
+  - If it's not in Git, it doesn't exist
+  - Shift security left, scan before you ship
+  - A rollback you haven't tested is a hope
+  - You can't fix what you can't observe
 currently:
-  building: "AKS platform + GitOps pipelines"
-  learning: "Platform engineering & SRE practices"
-  status:   "Open to DevOps / Cloud roles 🚀"
+  building: AKS platform + GitOps
+  learning: Platform engineering, SRE
+```
+
+</td>
+<td width="50%" valign="top">
+
+```text
+# 🎯 what you get when you hire me
+✔ Infra that is reproducible, not clicked
+✔ Pipelines that scan before they ship
+✔ Rollbacks that are one git revert away
+✔ Dashboards before incidents, not after
+✔ Honest docs: limits stated upfront
+✔ Immediate joiner
 ```
 
 </td>
 </tr>
 </table>
-
 ## 📬 Let's Talk
 
 I'm open to **DevOps / Cloud Engineer** roles, full-time, in Bengaluru or remote. If something here matches what you're hiring for, or you want to compare notes on Terraform module design, AKS networking, or GitOps patterns, message me.
