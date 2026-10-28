@@ -230,7 +230,19 @@ Client project. I re-architected Airflow's Celery/Redis setup into a single-node
 
 <br/><br/>
 
-<img src="https://raw.githubusercontent.com/aniket-devop/aniket-devop/main/assets/coding-terminal.svg" alt="Animated DevOps terminal" width="760"/>
+<table>
+<tr>
+<td align="center">
+
+### ⚙️ _"If it's not in Git, it doesn't exist."_ 🚀
+
+<sub>🔁 **Automate** &nbsp;·&nbsp; 🛡️ **Secure** &nbsp;·&nbsp; 📊 **Observe** &nbsp;·&nbsp; ☁️ **Repeat**</sub>
+
+<sub>💡 _Infrastructure should be reproducible, rollbacks should be boring, and every change should leave a trail._</sub>
+
+</td>
+</tr>
+</table>
 
 </div>
 
@@ -280,7 +292,7 @@ I'm open to **DevOps / Cloud Engineer** roles, full-time, in Bengaluru or remote
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Message_me-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/aniket484)
 
 <!-- Optional: add your email as a clickable badge
-[![Email](https://img.shields.io/badge/Email-Write_to_me-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:YOUR_EMAIL_HERE)
+[![Email](https://img.shields.io/badge/Email-Write_to_me-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:YOUR_EMAIL_HERE)
 -->
 
 </div>
