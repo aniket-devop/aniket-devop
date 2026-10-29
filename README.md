@@ -1,11 +1,9 @@
-<!-- Profile README for github.com/aniket-devop/aniket-devop -->
-
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=230&color=0:0D1117,50:0078D4,100:844FBA&text=Aniket%20Kumar&fontColor=ffffff&fontSize=56&fontAlignY=38&desc=DevOps%20%26%20DevSecOps%20Engineer&descSize=20&descAlignY=60&animation=fadeIn" alt="Aniket Kumar, DevOps and DevSecOps Engineer" width="100%"/>
+# Aniket Kumar
 
 <a href="https://github.com/aniket-devop">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&pause=1200&color=58A6FF&center=true&vCenter=true&width=700&lines=DevOps+%26+DevSecOps+Engineer;I+make+infrastructure+boring+in+the+right+way.;Terraform+%C2%B7+AKS+%C2%B7+GitOps+%C2%B7+Observability" alt="DevOps and DevSecOps Engineer. I make infrastructure boring in the right way."/>
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&pause=1200&color=58A6FF&center=true&vCenter=true&width=700&lines=DevOps+Engineer+%7C+Cloud+Infrastructure+%7C+Automation;I+make+infrastructure+boring+in+the+right+way.;Terraform+%C2%B7+AKS+%C2%B7+GitOps+%C2%B7+Observability" alt="DevOps Engineer | Cloud Infrastructure | Automation. I make infrastructure boring in the right way."/>
 </a>
 
 <br/>
@@ -13,13 +11,12 @@
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-aniket484-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/aniket484)
 [![GitHub](https://img.shields.io/badge/GitHub-aniket--devop-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/aniket-devop)
 ![Open to roles](https://img.shields.io/badge/Open_to-DevOps_/_Cloud_roles-2ea043?style=for-the-badge)
-![Location](https://img.shields.io/badge/Bengaluru-India-orange?style=for-the-badge&logo=googlemaps&logoColor=white)
 
 <br/>
 
 | ☁️ **2 clouds** | 🏗️ **6 real projects** | 🔁 **Git-only rollback** | 📡 **27 assets streaming live** |
 |:---:|:---:|:---:|:---:|
-| Azure (primary) + AWS | Terraform · K8s · GitOps | Verified with Argo CD | Running on AKS |
+| Azure (primary) + AWS | Terraform · K8s · GitOps | Verified with ArgoCD | Running on AKS |
 
 </div>
 
@@ -27,14 +24,14 @@
 
 ## 👋 About
 
-DevOps Engineer with **2 years** of hands-on experience in Azure infrastructure, Terraform, CI/CD, Kubernetes, and DevSecOps. At **DevOps Insiders** I work on Azure provisioning and pipeline automation.
+DevOps Engineer with 2 years of hands-on experience in Azure infrastructure, Terraform, CI/CD, Kubernetes, and DevSecOps. At **DevOps Insiders** I work on Azure provisioning and pipeline automation.
 
 On my own time I build things that actually run: a live AKS platform, a GitOps pipeline with Git-only rollback, a hub-and-spoke Azure network. I'd rather find where a design breaks on my own dime than on a client's.
 
 > [!NOTE]
 > Every project below states its limits openly. Gaps are in each repo's roadmap, not hidden.
 
-📍 Bengaluru, India &nbsp;·&nbsp; 🎓 BCA, Chandigarh Group of Colleges &nbsp;·&nbsp; 💼 DevOps Insiders
+📍 Bengaluru, India &nbsp;·&nbsp; 🎓 BCA, Chandigarh Group of Colleges
 
 <br/>
 
@@ -46,21 +43,7 @@ flowchart LR
     B --> C["📦 Build<br/>Docker · GitHub Actions"]
     C --> D["🚀 Reconcile<br/>Argo CD · AKS · Helm"]
     D --> E["📊 Observe<br/>Prometheus · Grafana"]
-    R["⏪ git revert"] -.rollback.-> D
-
-    classDef src fill:#f1eafa,stroke:#844FBA,color:#3d1f66;
-    classDef check fill:#e6f6ec,stroke:#2f855a,color:#14452f;
-    classDef run fill:#e8f1fb,stroke:#0078D4,color:#003a70;
-    classDef obs fill:#fff4d6,stroke:#d19a00,color:#5c4300;
-    classDef back fill:#fde8e8,stroke:#c53030,color:#5a1313;
-    class A src;
-    class B,C check;
-    class D run;
-    class E obs;
-    class R back;
 ```
-
-**Git is the source of truth.** Changes ship by merging, and rollbacks happen by reverting a commit.
 
 <br/>
 
@@ -84,8 +67,6 @@ flowchart LR
 <img src="https://img.shields.io/badge/TFLint-5C4EE5?style=for-the-badge" alt="TFLint"/>
 <img src="https://img.shields.io/badge/tfsec-0B3D91?style=for-the-badge" alt="tfsec"/>
 <img src="https://img.shields.io/badge/Checkov-1F6FEB?style=for-the-badge" alt="Checkov"/>
-<img src="https://img.shields.io/badge/SonarQube-4E9BCD?style=for-the-badge&logo=sonarqubeserver&logoColor=white" alt="SonarQube"/>
-<img src="https://img.shields.io/badge/Infracost-FF6B35?style=for-the-badge" alt="Infracost"/>
 
 **📊 Observability**<br/>
 <img src="https://skillicons.dev/icons?i=prometheus,grafana&theme=dark" alt="Prometheus, Grafana"/>
@@ -96,19 +77,6 @@ flowchart LR
 <br/>
 
 ## 🏗️ Featured Projects
-
-### 📌 At a glance
-
-| # | Project | Focus | Core stack |
-|:-:|---|---|---|
-| 1 | **[Axion Intelligence Platform](https://github.com/aniket-devop/axion-cloud-infrastructure)** | End-to-end Terraform → ACR → AKS with live traffic | Terraform · AKS · GitHub Actions |
-| 2 | **[Azure Landing Zone & DevSecOps](https://github.com/aniket-devop/azure-landing-zone-devsecops)** | Secure three-tier platform with gated, scanned releases | Terraform · Azure DevOps · tfsec · Infracost |
-| 3 | **[GitOps CI/CD Pipeline](https://github.com/aniket-devop/gitops-kubernetes-config)** | CI builds and scans, Argo CD deploys, rollback is `git revert` | GitHub Actions · Trivy · Argo CD |
-| 4 | **[Azure Network Foundation](https://github.com/aniket-devop/azure-network-foundation-terraform)** | Hub-and-spoke, deny-by-default | Terraform · Firewall · Key Vault |
-| 5 | **[AWS Landing Network](https://github.com/aniket-devop/aws-terraform-landing-zone-project)** | Azure private-compute pattern rebuilt on AWS | Terraform · VPC · ALB |
-| 6 | **[Airflow Observability](https://github.com/aniket-devop/airflow-docker-grafana-monitoring)** | Re-architected Airflow with full metrics stack | Docker Compose · Prometheus · Grafana |
-
-<br/>
 
 ### ⭐ 1 · Axion Intelligence Platform
 **Terraform → ACR → AKS, end to end, serving real traffic.**
@@ -126,7 +94,7 @@ flowchart LR
 
 - Terraform `for_each` over an `environments` map: one module tree renders dev, staging, and prod
 - Remote state bootstrapped from a separate `state-infrastructure/` stack
-- Kubernetes base and overlays per environment, reconciled by Argo CD auto-sync
+- ACR `admin_enabled = false`: identity-based auth only
 - Ingestion and query split into separate services so each scales on its own
 - Path-filtered image builds: a frontend commit doesn't rebuild the backend
 
@@ -173,7 +141,7 @@ A three-tier Azure platform for an Industrial IoT monitoring system in petroleum
 <summary><b>⚙️ Key engineering decisions</b></summary>
 <br/>
 
-- `terraform validate`, tfsec, TFLint and Infracost all run **before** apply, then plan review and manual approval
+- `terraform validate`, tfsec, TFLint and Infracost all run before apply, then plan review and manual approval
 - Infrastructure and application CI/CD are separate, so neither waits on the other
 - Build once, promote the same artifact through Dev → Test → Prod with approval gates
 - Private endpoints for PostgreSQL, Azure Bastion for admin access, Key Vault for secrets
@@ -229,7 +197,7 @@ A two-repo GitOps setup. One repo owns the FastAPI app and its pipeline; the oth
 
 ---
 
-### 🌐 4 · Azure Terraform Network Foundation
+### 🛡️ 4 · Azure Terraform Network Foundation
 **Hub-and-spoke, deny-by-default, no public IPs on compute.**
 
 <a href="https://github.com/aniket-devop/azure-network-foundation-terraform">
@@ -299,14 +267,42 @@ Client project. I re-architected Airflow's Celery/Redis setup into a single-node
 
 <br/>
 
-## 🧠 How I Think
+## 📈 GitHub Activity
+
+<div align="center">
+
+<img src="https://streak-stats.demolab.com/?user=aniket-devop&theme=dark&background=0D1117&ring=58A6FF&fire=39D0D8&currStreakLabel=58A6FF&sideLabels=8B949E&dates=6E7681&currStreakNum=F0F6FC&sideNums=F0F6FC&stroke=30363D&hide_border=false&border_radius=12" alt="GitHub streak stats"/>
+
+<br/><br/>
+
+<img src="https://komarev.com/ghpvc/?username=aniket-devop&label=Profile+Views&color=0e75b6&style=for-the-badge" alt="Profile views"/>
+
+<br/><br/>
+
+<table>
+<tr>
+<td align="center">
+
+### ⚙️ _"If it's not in Git, it doesn't exist."_ 🚀
+
+<sub>🔁 **Automate** &nbsp;·&nbsp; 🛡️ **Secure** &nbsp;·&nbsp; 📊 **Observe** &nbsp;·&nbsp; ☁️ **Repeat**</sub>
+
+<sub>💡 _Infrastructure should be reproducible, rollbacks should be boring, and every change should leave a trail._</sub>
+
+</td>
+</tr>
+</table>
+
+</div>
+
+<br/>
 
 <table>
 <tr>
 <td width="50%" valign="top">
 
 ```yaml
-# 🧠 principles
+# 🧠 how I think
 principles:
   - If it's not in Git, it doesn't exist
   - Shift security left, scan before you ship
@@ -336,30 +332,6 @@ currently:
 
 <br/>
 
-## 📈 GitHub Activity
-
-<div align="center">
-
-<img src="https://streak-stats.demolab.com/?user=aniket-devop&theme=dark&background=0D1117&ring=58A6FF&fire=39D0D8&currStreakLabel=58A6FF&sideLabels=8B949E&dates=6E7681&currStreakNum=F0F6FC&sideNums=F0F6FC&stroke=30363D&hide_border=false&border_radius=12" alt="GitHub streak stats"/>
-
-<br/><br/>
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=aniket-devop&bg_color=0D1117&color=58A6FF&line=58A6FF&point=FFFFFF&area=true&area_color=58A6FF&hide_border=true&radius=12" alt="Contribution activity graph" width="95%"/>
-
-<br/><br/>
-
-<img src="https://komarev.com/ghpvc/?username=aniket-devop&label=Profile+Views&color=0e75b6&style=for-the-badge" alt="Profile views"/>
-
-<br/><br/>
-
-### ⚙️ _"If it's not in Git, it doesn't exist."_ 🚀
-
-<sub>🔁 **Automate** &nbsp;·&nbsp; 🛡️ **Secure** &nbsp;·&nbsp; 📊 **Observe** &nbsp;·&nbsp; ☁️ **Repeat**</sub>
-
-</div>
-
-<br/>
-
 ## 📬 Let's Talk
 
 I'm open to **DevOps / Cloud Engineer** roles, full-time, in Bengaluru or remote. If something here matches what you're hiring for, or you want to compare notes on Terraform module design, AKS networking, or GitOps patterns, message me.
@@ -371,9 +343,5 @@ I'm open to **DevOps / Cloud Engineer** roles, full-time, in Bengaluru or remote
 <!-- Optional: add your email as a clickable badge
 [![Email](https://img.shields.io/badge/Email-Write_to_me-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:YOUR_EMAIL_HERE)
 -->
-
-<br/>
-
-<img src="https://capsule-render.vercel.app/api?type=waving&height=100&color=0:844FBA,50:0078D4,100:0D1117&section=footer" alt="footer" width="100%"/>
 
 </div>
