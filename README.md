@@ -8,9 +8,12 @@
 
 <br/>
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-aniket484-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/aniket484)
-[![GitHub](https://img.shields.io/badge/GitHub-aniket--devop-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/aniket-devop)
-[![Medium](https://img.shields.io/badge/Medium-your--username-000000?style=for-the-badge&logo=medium&logoColor=white)](https://medium.com/@your-username)
+<a href="https://linkedin.com/in/aniket484"><img src="https://skillicons.dev/icons?i=linkedin" width="32" alt="LinkedIn"/></a>
+&nbsp;&nbsp;
+<a href="https://github.com/aniket-devop"><img src="https://skillicons.dev/icons?i=github&theme=light" width="32" alt="GitHub"/></a>
+&nbsp;&nbsp;
+<a href="https://medium.com/@aniketkmr484"><img src="https://skillicons.dev/icons?i=medium&theme=light" width="32" alt="Medium" align="absmiddle"/> <b>Medium</b></a>
+
 ![Open to roles](https://img.shields.io/badge/Open_to-DevOps_/_Cloud_roles-2ea043?style=for-the-badge)
 
 <br/>
