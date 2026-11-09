@@ -40,6 +40,22 @@ On my own time I build things that actually run: a live AKS platform, a GitOps p
 
 <br/>
 
+## 💼 Experience
+
+**DevOps Engineer** · DevOps Insiders &nbsp;|&nbsp; Nov 2024 – Present<br/>
+<sub>Industrial IoT monitoring application for a UK-based refinery client</sub>
+
+- Built and maintained 6+ CI/CD pipelines on Azure DevOps and GitHub Actions across Dev, QA and Staging
+- Provisioned Azure infrastructure with reusable Terraform modules and remote state; added 4 automated checks (fmt/validate, TFLint, tfsec, Checkov) to CI/CD
+- Deployed containerized services on AKS with Docker and Helm; built Prometheus and Grafana dashboards for application, pod and infrastructure health
+
+**DevOps Engineer** · Freelance &nbsp;|&nbsp; Jul 2026 – Aug 2026<br/>
+<sub>Airflow Observability Pipeline</sub>
+
+- Delivered a single-node Apache Airflow setup on Docker Compose (8 services), migrating from CeleryExecutor + Redis to LocalExecutor + PostgreSQL
+- Built Airflow-to-Grafana monitoring with StatsD, Prometheus and Grafana, and verified ~129 airflow_* metrics
+
+<br/>
 ## 🔄 How I Ship
 
 ```mermaid
@@ -343,10 +359,7 @@ I'm open to **DevOps / Cloud Engineer** roles, full-time, in Bengaluru or remote
 
 <div align="center">
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect_with_me-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/aniket484) [![Medium](https://img.shields.io/badge/Medium-aniketkmr484-000000?style=for-the-badge&logo=medium&logoColor=white)](https://medium.com/@aniketkmr484) [![GitHub](https://img.shields.io/badge/GitHub-aniket--devop-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/aniket-devop)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect_with_me-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/aniket484) [![Medium](https://img.shields.io/badge/Medium-aniketkmr484-000000?style=for-the-badge&logo=medium&logoColor=white)](https://medium.com/@aniketkmr484) [![GitHub](https://img.shields.io/badge/GitHub-aniket--devop-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/aniket-devop) [![Email](https://img.shields.io/badge/Email-Write_to_me-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:aniketkmr484@gmail.com) [![Resume](https://img.shields.io/badge/Resume-Download_PDF-2ea043?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](https://github.com/aniket-devop/aniket-devop/blob/main/Aniket_Kumar_Resume.pdf)
 
-<!-- Optional: add your email as a clickable badge
-[![Email](https://img.shields.io/badge/Email-Write_to_me-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:YOUR_EMAIL_HERE)
--->
 
 </div>
