@@ -68,35 +68,54 @@ flowchart LR
 
 <br/>
 
-## 🧰 Tech Stack
+## Tech Stack
 
-**☁️ Cloud &amp; IaC**<br/>
-<img src="https://skillicons.dev/icons?i=azure,aws,terraform&theme=dark" alt="Azure, AWS, Terraform"/> &nbsp;<sub>Azure is primary, AWS is project-level</sub>
+<table>
+<tr>
+<td width="170"><b>Cloud &amp; IaC</b></td>
+<td align="center" width="100"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" width="40" height="40" alt="Azure"/><br/><sub>Azure</sub></td>
+<td align="center" width="100"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg" width="40" height="40" alt="AWS"/><br/><sub>AWS</sub></td>
+<td align="center" width="100"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg" width="40" height="40" alt="Terraform"/><br/><sub>Terraform</sub></td>
+<td></td><td></td><td></td>
+</tr>
+<tr>
+<td><b>Containers</b></td>
+<td align="center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" width="40" height="40" alt="Docker"/><br/><sub>Docker</sub></td>
+<td align="center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-original.svg" width="40" height="40" alt="Kubernetes"/><br/><sub>Kubernetes</sub></td>
+<td align="center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/helm/helm-original.svg" width="40" height="40" alt="Helm"/><br/><sub>Helm</sub></td>
+<td></td><td></td><td></td>
+</tr>
+<tr>
+<td><b>CI/CD &amp; GitOps</b></td>
+<td align="center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/githubactions/githubactions-original.svg" width="40" height="40" alt="GitHub Actions"/><br/><sub>GitHub Actions</sub></td>
+<td align="center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azuredevops/azuredevops-original.svg" width="40" height="40" alt="Azure DevOps"/><br/><sub>Azure DevOps</sub></td>
+<td align="center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/argocd/argocd-original.svg" width="40" height="40" alt="Argo CD"/><br/><sub>Argo CD</sub></td>
+<td></td><td></td><td></td>
+</tr>
+<tr>
+<td><b>Observability</b></td>
+<td align="center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prometheus/prometheus-original.svg" width="40" height="40" alt="Prometheus"/><br/><sub>Prometheus</sub></td>
+<td align="center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/grafana/grafana-original.svg" width="40" height="40" alt="Grafana"/><br/><sub>Grafana</sub></td>
+<td></td><td></td><td></td><td></td>
+</tr>
+<tr>
+<td><b>Systems &amp; Code</b></td>
+<td align="center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" width="40" height="40" alt="Linux"/><br/><sub>Linux</sub></td>
+<td align="center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" width="40" height="40" alt="Bash"/><br/><sub>Bash</sub></td>
+<td align="center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="40" height="40" alt="Python"/><br/><sub>Python</sub></td>
+<td align="center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" width="40" height="40" alt="FastAPI"/><br/><sub>FastAPI</sub></td>
+<td align="center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" width="40" height="40" alt="PostgreSQL"/><br/><sub>PostgreSQL</sub></td>
+<td align="center"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="40" height="40" alt="Git"/><br/><sub>Git</sub></td>
+</tr>
+<tr>
+<td><b>DevSecOps</b></td>
+<td colspan="6"><code>Trivy</code> &nbsp; <code>tfsec</code> &nbsp; <code>TFLint</code> &nbsp; <code>Checkov</code> &nbsp; <code>SonarQube</code> &nbsp; <code>Infracost</code></td>
+</tr>
+</table>
 
-**📦 Containers &amp; Orchestration**<br/>
-<img src="https://skillicons.dev/icons?i=docker,kubernetes&theme=dark" alt="Docker, Kubernetes"/>
-<img src="https://img.shields.io/badge/Helm-0F1689?style=for-the-badge&logo=helm&logoColor=white" alt="Helm"/>
-<img src="https://img.shields.io/badge/AKS-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white" alt="AKS"/>
-
-**🔁 CI/CD &amp; GitOps**<br/>
-<img src="https://skillicons.dev/icons?i=githubactions&theme=dark" alt="GitHub Actions"/>
-<img src="https://img.shields.io/badge/Azure_DevOps-0078D7?style=for-the-badge&logo=azuredevops&logoColor=white" alt="Azure DevOps"/>
-<img src="https://img.shields.io/badge/Argo_CD-EF7B4D?style=for-the-badge&logo=argo&logoColor=white" alt="Argo CD"/>
-
-**🔐 DevSecOps**<br/>
-<img src="https://img.shields.io/badge/Trivy-1904DA?style=for-the-badge" alt="Trivy"/>
-<img src="https://img.shields.io/badge/TFLint-5C4EE5?style=for-the-badge" alt="TFLint"/>
-<img src="https://img.shields.io/badge/tfsec-0B3D91?style=for-the-badge" alt="tfsec"/>
-<img src="https://img.shields.io/badge/Checkov-1F6FEB?style=for-the-badge" alt="Checkov"/>
-
-**📊 Observability**<br/>
-<img src="https://skillicons.dev/icons?i=prometheus,grafana&theme=dark" alt="Prometheus, Grafana"/>
-
-**🐧 Systems &amp; Code**<br/>
-<img src="https://skillicons.dev/icons?i=linux,bash,python,fastapi,postgres,git&theme=dark" alt="Linux, Bash, Python, FastAPI, PostgreSQL, Git"/>
+<sub>Azure is my primary cloud (AKS in production work); AWS at project level.</sub>
 
 <br/>
-
 ## 🏗️ Featured Projects
 
 ### ⭐ 1 · Axion Intelligence Platform
