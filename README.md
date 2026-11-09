@@ -56,6 +56,7 @@ On my own time I build things that actually run: a live AKS platform, a GitOps p
 - Built Airflow-to-Grafana monitoring with StatsD, Prometheus and Grafana, and verified ~129 airflow_* metrics
 
 <br/>
+
 ## 🔄 How I Ship
 
 ```mermaid
@@ -116,6 +117,7 @@ flowchart LR
 <sub>Azure is my primary cloud (AKS in production work); AWS at project level.</sub>
 
 <br/>
+
 ## 🏗️ Featured Projects
 
 ### ⭐ 1 · Axion Intelligence Platform
@@ -203,14 +205,41 @@ A three-tier Azure platform for an Industrial IoT monitoring system in petroleum
 
 ---
 
-### 🔁 3 · GitOps CI/CD Pipeline
+### 🔁 3 · GitOps CI/CD + Observability Pipeline
 **CI builds and scans. Argo CD deploys. CI never touches the cluster.**
 
-<a href="https://github.com/aniket-devop/gitops-kubernetes-config">
-<img src="https://raw.githubusercontent.com/aniket-devop/gitops-kubernetes-config/main/screenshots/architecture-diagram.png" alt="GitOps pipeline architecture" width="100%"/>
-</a>
+```mermaid
+flowchart LR
+    Dev(["👤 Developer"]) --> T
 
-A two-repo GitOps setup. One repo owns the FastAPI app and its pipeline; the other owns the desired cluster state that Argo CD reconciles.
+    subgraph CI["⚙️ CI · GitHub Actions"]
+        T["pytest"] --> B["Docker build"] --> S["Trivy scan"] --> P["Push to GHCR"]
+    end
+
+    subgraph CD["🔁 GitOps · Argo CD"]
+        G[("gitops-kubernetes-config")] --> A["Argo CD<br/>auto-sync"]
+    end
+
+    subgraph K8S["☸️ Kubernetes"]
+        APP["FastAPI app"] --> OT["OpenTelemetry<br/>Collector"]
+        OT -->|traces| J["Jaeger"]
+        OT -->|RED metrics| PR["Prometheus"]
+        PR --> GF["Grafana"]
+        PR --> AM["Alertmanager"] --> SL["Slack alerts"]
+    end
+
+    P -->|update image tag| G
+    A -->|reconcile| APP
+
+    classDef ci fill:#e8f1fb,stroke:#2088FF,color:#003a70;
+    classDef gitops fill:#fdeee6,stroke:#EF7B4D,color:#5a2a13;
+    classDef obs fill:#e6f6ec,stroke:#2f855a,color:#14452f;
+    class T,B,S,P ci;
+    class G,A gitops;
+    class OT,J,PR,GF,AM,SL obs;
+```
+
+A two-repo GitOps setup. One repo owns the FastAPI app and its pipeline; the other owns the desired cluster state that Argo CD reconciles. The app is instrumented with OpenTelemetry, so every deploy ships with traces, RED metrics, dashboards and Slack alerts.
 
 <details>
 <summary><b>⚙️ Key engineering decisions</b></summary>
@@ -220,9 +249,20 @@ A two-repo GitOps setup. One repo owns the FastAPI app and its pipeline; the oth
 - Two separately scoped tokens, so GitHub Actions never holds cluster credentials
 - Argo CD with `automated`, `prune`, and `selfHeal`
 - **Rollback is a `git revert`**: no `kubectl rollout undo`, no Argo CD CLI
+- OpenTelemetry Collector fans out traces to Jaeger and metrics to Prometheus
+- Alertmanager rules for high error rate, high latency and service unavailable, routed to Slack
 - Non-root container on `python:3.12-alpine`
 
 **Honest scope:** runs on a local Kind cluster; only `dev` is fully automated.
+</details>
+
+<details>
+<summary><b>🖼️ Full architecture diagram</b></summary>
+<br/>
+
+<a href="https://github.com/aniket-devop/gitops-kubernetes-config">
+<img src="https://raw.githubusercontent.com/aniket-devop/gitops-kubernetes-config/main/screenshots/architecture-diagram.png" alt="GitOps and observability architecture" width="100%"/>
+</a>
 </details>
 
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
@@ -230,6 +270,10 @@ A two-repo GitOps setup. One repo owns the FastAPI app and its pipeline; the oth
 ![Helm](https://img.shields.io/badge/Helm-0F1689?style=flat-square&logo=helm&logoColor=white)
 ![Argo CD](https://img.shields.io/badge/Argo_CD-EF7B4D?style=flat-square&logo=argo&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![OpenTelemetry](https://img.shields.io/badge/OpenTelemetry-425CC7?style=flat-square&logo=opentelemetry&logoColor=white)
+![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white)
+![Grafana](https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=grafana&logoColor=white)
+![Jaeger](https://img.shields.io/badge/Jaeger-66CFE3?style=flat-square&logo=jaeger&logoColor=black)
 
 **[App repo →](https://github.com/aniket-devop/gitops-ci-pipeline)** &nbsp;·&nbsp; **[GitOps repo →](https://github.com/aniket-devop/gitops-kubernetes-config)**
 
