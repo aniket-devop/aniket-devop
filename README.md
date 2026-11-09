@@ -8,11 +8,11 @@
 
 <br/>
 
-<a href="https://linkedin.com/in/aniket484"><img src="https://skillicons.dev/icons?i=linkedin" width="32" alt="LinkedIn"/></a>
-&nbsp;&nbsp;
-<a href="https://github.com/aniket-devop"><img src="https://skillicons.dev/icons?i=github&theme=light" width="32" alt="GitHub"/></a>
-&nbsp;&nbsp;
-<a href="https://medium.com/@aniketkmr484"><img src="https://skillicons.dev/icons?i=medium&theme=light" width="32" alt="Medium" align="absmiddle"/> <b>Medium</b></a>
+<a href="https://linkedin.com/in/aniket484"><img src="https://cdn.simpleicons.org/linkedin/0A66C2" width="28" alt="LinkedIn"/></a>
+&nbsp;&nbsp;&nbsp;
+<a href="https://github.com/aniket-devop"><img src="https://cdn.simpleicons.org/github/181717" width="28" alt="GitHub"/></a>
+&nbsp;&nbsp;&nbsp;
+<a href="https://medium.com/@aniketkmr484"><img src="https://cdn.simpleicons.org/medium/000000" width="28" alt="Medium" align="absmiddle"/> <b>Medium</b></a>
 
 ![Open to roles](https://img.shields.io/badge/Open_to-DevOps_/_Cloud_roles-2ea043?style=for-the-badge)
 
