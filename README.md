@@ -2,13 +2,16 @@
 
 # Aniket Kumar
 
-<a href="https://github.com/aniket-devop"><b>DevOps Engineer</b></a> &nbsp;|&nbsp; Azure &nbsp;·&nbsp; Terraform &nbsp;·&nbsp; Kubernetes &nbsp;·&nbsp; GitOps
+<a href="https://github.com/aniket-devop">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&pause=1200&color=58A6FF&center=true&vCenter=true&width=700&lines=DevOps+Engineer+%7C+Cloud+Infrastructure+%7C+Automation;I+make+infrastructure+boring+in+the+right+way.;Terraform+%C2%B7+AKS+%C2%B7+GitOps+%C2%B7+Observability" alt="DevOps Engineer | Cloud Infrastructure | Automation. I make infrastructure boring in the right way."/>
+</a>
 
-Bengaluru, India &nbsp;·&nbsp; Open to DevOps / Cloud Engineer roles
+<br/>
 
-<a href="https://linkedin.com/in/aniket484">LinkedIn</a> &nbsp;·&nbsp;
-<a href="https://github.com/aniket-devop">GitHub</a> &nbsp;·&nbsp;
-<a href="https://medium.com/@aniketkmr484">Medium</a>
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-aniket484-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/aniket484)
+[![GitHub](https://img.shields.io/badge/GitHub-aniket--devop-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/aniket-devop)
+[![Medium](https://img.shields.io/badge/Medium-your--username-000000?style=for-the-badge&logo=medium&logoColor=white)](https://medium.com/@your-username)
+![Open to roles](https://img.shields.io/badge/Open_to-DevOps_/_Cloud_roles-2ea043?style=for-the-badge)
 
 <br/>
 
