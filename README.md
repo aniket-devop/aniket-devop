@@ -294,72 +294,76 @@ Client project. I re-architected Airflow's Celery/Redis setup into a single-node
 
 <img src="https://streak-stats.demolab.com/?user=aniket-devop&theme=dark&background=0D1117&ring=58A6FF&fire=39D0D8&currStreakLabel=58A6FF&sideLabels=8B949E&dates=6E7681&currStreakNum=F0F6FC&sideNums=F0F6FC&stroke=30363D&hide_border=false&border_radius=12" alt="GitHub streak stats"/>
 
-<br/><br/>
-
-<img src="https://komarev.com/ghpvc/?username=aniket-devop&label=Profile+Views&color=0e75b6&style=for-the-badge" alt="Profile views"/>
-
-<br/><br/>
-
-<table>
-<tr>
-<td align="center">
-
-### ⚙️ _"If it's not in Git, it doesn't exist."_ 🚀
-
-<sub>🔁 **Automate** &nbsp;·&nbsp; 🛡️ **Secure** &nbsp;·&nbsp; 📊 **Observe** &nbsp;·&nbsp; ☁️ **Repeat**</sub>
-
-<sub>💡 _Infrastructure should be reproducible, rollbacks should be boring, and every change should leave a trail._</sub>
-
-</td>
-</tr>
-</table>
-
 </div>
 
 <br/>
 
+<div align="center">
+
+<h3><i>"If it's not in Git, it doesn't exist."</i></h3>
+
+<sub>Automate &nbsp;·&nbsp; Secure &nbsp;·&nbsp; Observe &nbsp;·&nbsp; Repeat</sub>
+
+<br/>
+
+## What I Bring
+
 <table>
 <tr>
-<td width="50%" valign="top">
-
-```yaml
-# 🧠 how I think
-principles:
-  - If it's not in Git, it doesn't exist
-  - Shift security left, scan before you ship
-  - A rollback you haven't tested is a hope
-  - You can't fix what you can't observe
-currently:
-  building: AKS platform + GitOps
-  learning: Platform engineering, SRE
-```
-
+<td align="center" width="33%">
+<img src="https://skillicons.dev/icons?i=terraform&theme=dark" width="48" alt="Terraform"/><br/><br/>
+<b>Reproducible infrastructure</b><br/>
+<sub>Modular Terraform with remote state,<br/>no manual console changes</sub>
 </td>
-<td width="50%" valign="top">
-
-```text
-# 🎯 what you get when you hire me
-✔ Infra that is reproducible, not clicked
-✔ Pipelines that scan before they ship
-✔ Rollbacks that are one git revert away
-✔ Dashboards before incidents, not after
-✔ Honest docs: limits stated upfront
-✔ Immediate joiner
-```
-
+<td align="center" width="33%">
+<img src="https://skillicons.dev/icons?i=githubactions&theme=dark" width="48" alt="GitHub Actions"/><br/><br/>
+<b>Pipelines with security gates</b><br/>
+<sub>Trivy, tfsec and Checkov run<br/>before anything ships</sub>
+</td>
+<td align="center" width="33%">
+<img src="https://skillicons.dev/icons?i=git&theme=dark" width="48" alt="Git"/><br/><br/>
+<b>Git-based rollbacks</b><br/>
+<sub>Argo CD reconciles from Git,<br/>rollback is a <code>git revert</code></sub>
+</td>
+</tr>
+<tr>
+<td align="center">
+<img src="https://skillicons.dev/icons?i=kubernetes&theme=dark" width="48" alt="Kubernetes"/><br/><br/>
+<b>Kubernetes delivery</b><br/>
+<sub>AKS deployments with Docker and Helm</sub>
+</td>
+<td align="center">
+<img src="https://skillicons.dev/icons?i=grafana&theme=dark" width="48" alt="Grafana"/><br/><br/>
+<b>Observability</b><br/>
+<sub>Prometheus and Grafana dashboards<br/>for apps, pods and infrastructure</sub>
+</td>
+<td align="center">
+<img src="https://skillicons.dev/icons?i=azure&theme=dark" width="48" alt="Azure"/><br/><br/>
+<b>Azure-first cloud</b><br/>
+<sub>Landing zones, hub-and-spoke networking,<br/>AWS at project level</sub>
 </td>
 </tr>
 </table>
 
 <br/>
 
-## 📬 Let's Talk
+## Let's Talk
 
-I'm open to **DevOps / Cloud Engineer** roles, full-time, in Bengaluru or remote. If something here matches what you're hiring for, or you want to compare notes on Terraform module design, AKS networking, or GitOps patterns, message me.
+![Status](https://img.shields.io/badge/Status-Open_to_work-2ea043?style=flat-square)
+![Role](https://img.shields.io/badge/Role-DevOps_/_Cloud_Engineer-0078D4?style=flat-square)
+![Location](https://img.shields.io/badge/Location-Bengaluru_/_Remote-555555?style=flat-square)
+![Notice](https://img.shields.io/badge/Notice_period-Immediate-555555?style=flat-square)
 
-<div align="center">
+<br/>
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect_with_me-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/aniket484) [![Medium](https://img.shields.io/badge/Medium-aniketkmr484-000000?style=for-the-badge&logo=medium&logoColor=white)](https://medium.com/@aniketkmr484) [![GitHub](https://img.shields.io/badge/GitHub-aniket--devop-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/aniket-devop) [![Email](https://img.shields.io/badge/Email-Write_to_me-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:aniketkmr484@gmail.com) [![Resume](https://img.shields.io/badge/Resume-Download_PDF-2ea043?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](https://github.com/aniket-devop/aniket-devop/blob/main/Aniket_Kumar_Resume.pdf)
+Happy to compare notes on Terraform module design, AKS networking, or GitOps patterns.
 
+<br/>
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/aniket484) [![Email](https://img.shields.io/badge/Email-aniketkmr484@gmail.com-D14836?style=flat&logo=gmail&logoColor=white)](mailto:aniketkmr484@gmail.com) [![Resume](https://img.shields.io/badge/Resume-PDF-2ea043?style=flat&logo=adobeacrobatreader&logoColor=white)](https://github.com/aniket-devop/aniket-devop/blob/main/Aniket_Kumar_Resume.pdf)
+
+<br/>
+
+<img src="https://komarev.com/ghpvc/?username=aniket-devop&label=Profile+Views&color=0e75b6&style=flat-square" alt="Profile views"/>
 
 </div>
