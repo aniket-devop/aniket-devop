@@ -339,7 +339,7 @@ I'm open to **DevOps / Cloud Engineer** roles, full-time, in Bengaluru or remote
 
 <div align="center">
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Message_me-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/aniket484)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect_with_me-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/aniket484) [![Medium](https://img.shields.io/badge/Medium-aniketkmr484-000000?style=for-the-badge&logo=medium&logoColor=white)](https://medium.com/@aniketkmr484) [![GitHub](https://img.shields.io/badge/GitHub-aniket--devop-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/aniket-devop)
 
 <!-- Optional: add your email as a clickable badge
 [![Email](https://img.shields.io/badge/Email-Write_to_me-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:YOUR_EMAIL_HERE)
